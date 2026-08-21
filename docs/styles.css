@@ -1,0 +1,62 @@
+
+:root {
+  --mba-navy: #0B3A67;
+  --mba-blue: #0E5A9C;
+  --mba-ink: #25313d;
+  --mba-muted: #667481;
+  --mba-soft: #f4f7fa;
+  --mba-border: #dbe4ec;
+  --mba-green: #0f766e;
+  --mba-gold: #9a6700;
+}
+body { color: var(--mba-ink); }
+h1, h2, h3 { color: var(--mba-navy); font-weight: 700; }
+.sidebar-title { font-weight: 800; color: var(--mba-navy); }
+.sidebar-navigation .sidebar-item-text { line-height: 1.25; }
+.callout { border-radius: .55rem; }
+.mba-hero {
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--mba-border);
+  border-left: 5px solid var(--mba-blue);
+  background: linear-gradient(135deg, #f8fbff, #eef5fb);
+  border-radius: .6rem;
+  margin: 1rem 0 1.5rem;
+}
+.session-card {
+  border: 1px solid var(--mba-border);
+  border-radius: .55rem;
+  padding: 1rem 1.15rem;
+  margin: .8rem 0;
+  background: white;
+}
+.session-card strong { color: var(--mba-navy); }
+.key-idea {
+  border-left: 4px solid var(--mba-green);
+  background: #eefaf8;
+  padding: .9rem 1rem;
+  margin: 1rem 0;
+}
+.try-it {
+  border: 1px solid #b9d2ea;
+  border-top: 4px solid var(--mba-blue);
+  background: #fbfdff;
+  border-radius: .55rem;
+  padding: 1rem;
+  margin: 1.2rem 0;
+}
+.badge-presencial, .badge-auto, .badge-ia {
+  display: inline-block; padding: .18rem .55rem; border-radius: 1rem;
+  font-size: .78rem; font-weight: 700; margin-right: .3rem;
+}
+.badge-presencial { background: #e7f1fb; color: #0b4f88; }
+.badge-auto { background: #edf8f3; color: #176044; }
+.badge-ia { background: #f6efff; color: #6b21a8; }
+table { font-size: .96rem; }
+
+
+/* v0.9 · señales para conducción de clase */
+.session-legend{display:flex;gap:.55rem;flex-wrap:wrap;margin:.7rem 0 1.2rem 0;font-size:.76rem;font-weight:700;letter-spacing:.02em}
+.session-legend span{padding:.28rem .55rem;border:1px solid #d7e0e8;border-radius:999px;background:#fff}
+.role-demo{color:#174a73}.role-guided{color:#276749}.role-discuss{color:#744210}.role-challenge{color:#702459}
+.teacher-cue{border-left:4px solid #174a73;background:#f4f8fb;padding:.8rem 1rem;margin:1rem 0;border-radius:.25rem}
+.prompt-purpose{border-left:4px solid #6b46c1;background:#faf7ff;padding:.8rem 1rem;margin:1rem 0;border-radius:.25rem}

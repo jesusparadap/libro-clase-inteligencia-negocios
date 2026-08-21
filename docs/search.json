@@ -1,0 +1,2525 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "",
+    "text": "Analítica e Inteligencia de Negocios",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#de-datos-a-evidencia-para-decisiones",
+    "href": "index.html#de-datos-a-evidencia-para-decisiones",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "De datos a evidencia para decisiones",
+    "text": "De datos a evidencia para decisiones\nElectiva MBA · 36 horas presenciales · R + Power BI + IA\nEste libro es simultáneamente una ruta de clase y un laboratorio autónomo. Puedes ejecutar varios ejemplos directamente en el navegador mediante webR y volver a los fundamentos cuando necesites reforzar un concepto.",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-está-construido-el-aprendizaje",
+    "href": "index.html#cómo-está-construido-el-aprendizaje",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "Cómo está construido el aprendizaje",
+    "text": "Cómo está construido el aprendizaje\nCada encuentro tiene tres capas:\n\n1 · Explicar y demostrar\nEl docente proyecta el libro, plantea el problema empresarial y ejecuta ejemplos completos.\n\n\n2 · Copiar, ejecutar y modificar\nEl estudiante reutiliza código o prompts preparados. El tiempo se dedica a comprender qué cambia y por qué, no a transcribir.\n\n\n3 · Resolver y defender\nEn los mini-retos aumenta la autonomía: el estudiante decide qué herramienta usar, produce evidencia y justifica su interpretación.\n\nFuera de clase, los capítulos de consulta permiten volver a conceptos, sintaxis, ejemplos y profundizaciones sin depender de los apuntes tomados durante la sesión.",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#el-caso-transversal-novaretail",
+    "href": "index.html#el-caso-transversal-novaretail",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "El caso transversal · NovaRetail",
+    "text": "El caso transversal · NovaRetail\nNovaRetail es una empresa ficticia de retail omnicanal. A lo largo del curso integraremos:\n\nventas;\nclientes;\nproductos;\nsatisfacción;\ncanales y regiones.\n\nLos datos contienen problemas intencionales de calidad. El objetivo no es producir “el dashboard bonito”, sino reconstruir una cadena completa:\n\npregunta → datos → preparación → análisis → evidencia → comunicación → decisión",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#ruta",
+    "href": "index.html#ruta",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "Ruta",
+    "text": "Ruta\n\n\n\n\n\n\n\n\nEncuentro\nPregunta central\nProducto\n\n\n\n\nWeek 1 - Viernes\n¿Qué decisión estamos intentando soportar?\nmapa del problema + primeros KPI\n\n\nWeek 1 - Sábado\n¿Qué patrones merecen convertirse en hallazgos?\nEDA + visualizaciones\n\n\nWeek 2 - Viernes\n¿Qué resumen representa correctamente el fenómeno?\nperfil estadístico\n\n\nWeek 2 - Sábado\n¿Qué debe ocurrir antes de confiar en una cifra?\nETL + modelo preliminar\n\n\nWeek 3 - Viernes\n¿Cómo debe modelarse la información para que los KPI sean correctos?\nmodelo + DAX\n\n\nWeek 3 - Sábado\n¿Cómo convertimos evidencia en una decisión?\ndashboard + recomendación",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#ia-como-herramienta-transversal",
+    "href": "index.html#ia-como-herramienta-transversal",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "IA como herramienta transversal",
+    "text": "IA como herramienta transversal\nNo existe un “capítulo de IA” que luego desaparezca. La IA acompaña:\n\nformulación de hipótesis;\nexplicación y depuración de R;\npropuesta de controles de calidad;\ninterpretación crítica;\nDAX;\nrevisión de comunicación.\n\nPero existe una regla permanente:\n\nGenerar no es validar.",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "index.html#dos-rutas",
+    "href": "index.html#dos-rutas",
+    "title": "Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico",
+    "section": "Dos rutas",
+    "text": "Dos rutas\nRuta presencial sigue las seis sesiones.\nLaboratorio autónomo contiene fundamentos y referencias rápidas.\nDemos interactivas permiten experimentar directamente en el navegador.",
+    "crumbs": [
+      "Analítica e Inteligencia de Negocios"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html",
+    "href": "00-como-usar-libro.html",
+    "title": "1  Cómo utilizar este libro",
+    "section": "",
+    "text": "1.1 La lógica de cada sesión",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#la-lógica-de-cada-sesión",
+    "href": "00-como-usar-libro.html#la-lógica-de-cada-sesión",
+    "title": "1  Cómo utilizar este libro",
+    "section": "",
+    "text": "Práctica guiada: el docente modela el razonamiento sobre un problema empresarial.\nCheckpoint: se valida el resultado antes de seguir.\nTaller: aplicación sobre NovaRetail o el proyecto.\nCierre: hallazgos, limitaciones y conexión con la siguiente sesión.\n\n\n\n\n\n\n\nTip\n\n\n\nEn clase hacemos, discutimos y decidimos; en el libro puedes volver, practicar y profundizar.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#cómo-se-usa-durante-la-clase",
+    "href": "00-como-usar-libro.html#cómo-se-usa-durante-la-clase",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.2 Cómo se usa durante la clase",
+    "text": "1.2 Cómo se usa durante la clase\nLa página de sesión es la pantalla principal del profesor. Allí están la secuencia, tiempos, preguntas y enlaces. Cuando aparece un bloque de código o prompt de demostración, está pensado para copiar y ejecutar, no para transcribir desde cero.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#tres-tipos-de-contenido",
+    "href": "00-como-usar-libro.html#tres-tipos-de-contenido",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.3 Tres tipos de contenido",
+    "text": "1.3 Tres tipos de contenido\nRuta presencial contenido central del curso.\nTrabajo autónomo fundamentos para repasar a tu ritmo.\nIA + interacción demos, prompts y ejercicios de validación.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#cómo-trabajar-con-código",
+    "href": "00-como-usar-libro.html#cómo-trabajar-con-código",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.4 Cómo trabajar con código",
+    "text": "1.4 Cómo trabajar con código\nEn ejemplos conceptuales encontrarás webR; en análisis completos utilizaremos RStudio. La secuencia recomendada es:\n\nleer → analizar → ejecutar → interpretar → modificar → volver a ejecutar",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#niveles-de-uso-de-ia",
+    "href": "00-como-usar-libro.html#niveles-de-uso-de-ia",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.5 Niveles de uso de IA",
+    "text": "1.5 Niveles de uso de IA\n\n\n\n\n\n\n\nNivel\nUso\n\n\n\n\n0\nSin IA: autochequeos conceptuales\n\n\n1\nIA para explicar: dudas, errores, conceptos\n\n\n2\nIA para colaborar: alternativas de código, visualización o redacción, siempre validadas\n\n\n3\nIA como agente: trabajo sobre archivos y proyecto con reglas explícitas\n\n\n\nEn cualquier nivel, debes poder explicar y validar lo que entregas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#evaluación-para-aprender",
+    "href": "00-como-usar-libro.html#evaluación-para-aprender",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.6 Evaluación para aprender",
+    "text": "1.6 Evaluación para aprender\nEl libro usa preguntas de comprensión, checkpoints, errores deliberados, mini-quices, talleres y soluciones desplegables. Consulta Autochequeos por sesión.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-como-usar-libro.html#novaretail-como-hilo-conductor",
+    "href": "00-como-usar-libro.html#novaretail-como-hilo-conductor",
+    "title": "1  Cómo utilizar este libro",
+    "section": "1.7 NovaRetail como hilo conductor",
+    "text": "1.7 NovaRetail como hilo conductor\nWeek 1: comprender y explorar.\nWeek 2: validar, limpiar e integrar.\nWeek 3: modelar, comunicar y recomendar.\nEl botón Copiar de los bloques de código está activado en todo el sitio. Cuando un prompt de IA aparece en un bloque, se utiliza con la misma lógica: copiar primero; analizar y mejorar después.\n\n\n\n\n\n\nTipRegla de tiempo presencial\n\n\n\nSi escribir desde cero no es el objetivo de aprendizaje, no se evalúa velocidad de digitación. El tiempo de clase se reserva para formular preguntas, interpretar salidas, detectar errores, comparar respuestas y defender decisiones.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Cómo utilizar este libro</span>"
+    ]
+  },
+  {
+    "objectID": "00-preparacion.html",
+    "href": "00-preparacion.html",
+    "title": "2  Preparación del entorno",
+    "section": "",
+    "text": "2.1 Antes del primer encuentro\nTutorial: Instalar R y RStudio\nInstala:\ninstall.packages(c(\n  \"tidyverse\", \"readxl\", \"janitor\", \"lubridate\",\n  \"skimr\", \"scales\", \"tidytext\"\n))",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparación del entorno</span>"
+    ]
+  },
+  {
+    "objectID": "00-preparacion.html#antes-del-primer-encuentro",
+    "href": "00-preparacion.html#antes-del-primer-encuentro",
+    "title": "2  Preparación del entorno",
+    "section": "",
+    "text": "R\nRStudio.\nPower BI Desktop.\nLos paquetes de R usados en el curso.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparación del entorno</span>"
+    ]
+  },
+  {
+    "objectID": "00-preparacion.html#proyecto-de-trabajo",
+    "href": "00-preparacion.html#proyecto-de-trabajo",
+    "title": "2  Preparación del entorno",
+    "section": "2.2 Proyecto de trabajo",
+    "text": "2.2 Proyecto de trabajo\nCrea un proyecto de RStudio y conserva una estructura sencilla:\nproyecto/\n├── data/\n├── scripts/\n├── outputs/\n└── proyecto.Rproj\n\n\n\n\n\n\nAdvertencia\n\n\n\nEvita trabajar con rutas absolutas ligadas a un computador. El objetivo es que el análisis sea reproducible.\n\n\nLas celdas webR se ejecutan en el navegador del estudiante y no requieren que el lector tenga R instalado para experimentar con esos ejemplos.\n\n\n\n\n\n\nNota\n\n\n\nLa ruta presencial seguirá utilizando RStudio/Power BI para el trabajo completo. webR se usa como laboratorio de aprendizaje y repaso, no como sustituto del entorno profesional.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Preparación del entorno</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html",
+    "href": "sesiones/f1-viernes.html",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "",
+    "text": "3.1 Ruta de clase",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#ruta-de-clase",
+    "href": "sesiones/f1-viernes.html#ruta-de-clase",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "",
+    "text": "Minutos\nMomento\nProducto\n\n\n\n\n0–20\nApertura NovaRetail\nproblema y decisión\n\n\n20–55\nBusiness Analytics\nmapa decisión → pregunta → KPI\n\n\n55–90\nCómo funciona un LLM\ndemo token a token\n\n\n90–125\nPrompting C-T-F-R\nprompt empresarial copiable\n\n\n125–160\nRStudio\nproyecto, importación e inspección\n\n\n160–180\nCierre\nprimer KPI + hipótesis",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#apertura-crecer-significa-estar-mejor",
+    "href": "sesiones/f1-viernes.html#apertura-crecer-significa-estar-mejor",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.2 Apertura · ¿crecer significa estar mejor?",
+    "text": "3.2 Apertura · ¿crecer significa estar mejor?\nNovaRetail observa crecimiento comercial, descuentos heterogéneos y señales mixtas de satisfacción.\n¿qué decisión necesita tomar la gerencia?\nConsulta De los datos a las decisiones.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#ia-verla-funcionar-antes-de-pedirle-análisis",
+    "href": "sesiones/f1-viernes.html#ia-verla-funcionar-antes-de-pedirle-análisis",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.3 IA · verla funcionar antes de pedirle análisis",
+    "text": "3.3 IA · verla funcionar antes de pedirle análisis\nConsulta IA para el analista y realiza la demo. La discusión central es: una continuación plausible no equivale a un dato verdadero.\n\n3.3.1 Discusión\nTodos usan el mismo prompt. Comparamos: ¿respondió igual?, ¿qué preguntas se repiten?, ¿cuáles son realmente accionables?, ¿inventó información?, ¿qué propuesta no aceptaríamos?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#rstudio-primera-entrada-a-novaretail",
+    "href": "sesiones/f1-viernes.html#rstudio-primera-entrada-a-novaretail",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.4 RStudio · primera entrada a NovaRetail",
+    "text": "3.4 RStudio · primera entrada a NovaRetail\nEl estudiante no escribe desde cero. Copia y ejecuta:\nlibrary(tidyverse)\nventas &lt;- read_csv(\"data/ventas.csv\")\n\nglimpse(ventas)\ndim(ventas)\nnames(ventas)\nhead(ventas)\nPreguntas: ¿qué representa una fila?, ¿cuántas filas/columnas hay?, ¿qué tipos reconoció R?, ¿qué variable podría requerir revisión?\n\n3.4.1 Primer KPI\nventas |&gt;\n  summarise(\n    registros = n(),\n    ventas_totales = sum(valor_venta, na.rm = TRUE),\n    transacciones = n_distinct(id_venta),\n    clientes = n_distinct(id_cliente),\n    ticket_promedio = ventas_totales / transacciones\n  )\nCheckpoint: todavía no concluyas. ¿Incluimos cancelaciones? ¿hay duplicados? ¿el denominador de ticket es correcto?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#mini-reto-evaluable",
+    "href": "sesiones/f1-viernes.html#mini-reto-evaluable",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.5 Mini-reto evaluable",
+    "text": "3.5 Mini-reto evaluable\nFormula una pregunta empresarial propia, tres preguntas analíticas y un prompt C-T-F-R que ayude a diseñar el análisis sin pedir resultados inventados.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#transferencia-a-tu-proyecto-de-grado",
+    "href": "sesiones/f1-viernes.html#transferencia-a-tu-proyecto-de-grado",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.6 Transferencia a tu proyecto de grado",
+    "text": "3.6 Transferencia a tu proyecto de grado\nAbre tu propuesta de proyecto. Identifica problema existente → actor que usaría la evidencia → decisión/acción posible → tres preguntas analíticas → datos necesarios.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-viernes.html#salida",
+    "href": "sesiones/f1-viernes.html#salida",
+    "title": "3  Sesión 1 · Del problema empresarial al primer análisis",
+    "section": "3.7 Salida",
+    "text": "3.7 Salida\n\nDistingo decisión, pregunta de negocio y pregunta analítica.\nEntiendo generación token a token y riesgo de alucinación.\nPuedo inspeccionar NovaRetail en RStudio.\nSé por qué un KPI calculado todavía puede requerir validación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Sesión 1 · Del problema empresarial al primer análisis</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html",
+    "href": "01-analitica-negocios.html",
+    "title": "4  De los datos a las decisiones",
+    "section": "",
+    "text": "4.1 Propósito\nBusiness Analytics comienza con una decisión, no con una herramienta. Al finalizar podrás convertir una preocupación empresarial en preguntas analíticas útiles y evaluar si son específicas, accionables y medibles.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#el-ciclo",
+    "href": "01-analitica-negocios.html#el-ciclo",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.2 El ciclo",
+    "text": "4.2 El ciclo\nPregunta de negocio → Datos → Calidad/EDA → Análisis → Comunicación → Decisión → Nuevos datos\n\nLa técnica la decide la pregunta; no formulamos una pregunta para justificar la técnica que queremos usar.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#caso-novaretail",
+    "href": "01-analitica-negocios.html#caso-novaretail",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.3 Caso NovaRetail",
+    "text": "4.3 Caso NovaRetail\nLa gerencia observa crecimiento de ventas, mayor ticket promedio, más descuentos en ciertos canales y deterioro de satisfacción. Una pregunta vaga sería:\n\n¿Cómo podemos mejorar NovaRetail?\n\nUna versión analizable:\n\n¿Qué regiones, canales y categorías explican el deterioro simultáneo de satisfacción y desempeño comercial, y sobre cuáles debería priorizarse una intervención el próximo trimestre?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#el-filtro-de-una-buena-pregunta",
+    "href": "01-analitica-negocios.html#el-filtro-de-una-buena-pregunta",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.4 El filtro de una buena pregunta",
+    "text": "4.4 El filtro de una buena pregunta\nEspecífica: ¿define población, fenómeno y horizonte?\nAccionable: si tuvieras la respuesta mañana, ¿quién haría qué diferente?\nMedible: ¿existen datos capaces de responderla?\nCon dueño: ¿hay un área o persona con capacidad de actuar?\n\n\n\n\n\n\nAdvertencia\n\n\n\nUna pregunta puede ser técnicamente interesante y empresarialmente inútil. Si nadie cambia una decisión con la respuesta, probablemente es curiosidad, no Business Analytics.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#banco-de-preguntas",
+    "href": "01-analitica-negocios.html#banco-de-preguntas",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.5 Banco de preguntas",
+    "text": "4.5 Banco de preguntas\n\n4.5.1 A · Retail: “¿Cómo mejorar las ventas?”\n\n\nVer análisis\n\nDemasiado amplia. Una alternativa sería: ¿qué categorías con margen positivo y baja conversión deberían recibir mayor visibilidad en el canal web el próximo mes?\n\n\n\n4.5.2 B · Servicio: “¿Qué segmentos combinan compra frecuente y satisfacción decreciente durante el último trimestre?”\n\n\nVer análisis\n\nEs específica y medible. Será accionable si un área puede intervenir esos segmentos. La primera tarea es descriptiva/diagnóstica.\n\n\n\n4.5.3 C · Marketing: “¿Por qué los clientes no responden a nuestras promociones?”\n\n\nVer análisis\n\nEl “por qué” abre demasiadas explicaciones y sugiere causalidad. Conviene empezar por qué segmentos, canales y promociones presentan menor respuesta y cómo difieren del resto.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#pregunta-de-negocio-preguntas-analíticas",
+    "href": "01-analitica-negocios.html#pregunta-de-negocio-preguntas-analíticas",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.6 Pregunta de negocio → preguntas analíticas",
+    "text": "4.6 Pregunta de negocio → preguntas analíticas\nPara la pregunta “¿dónde debería priorizar NovaRetail una intervención comercial y de experiencia?” podemos derivar:\n\n¿Qué regiones y canales explican la mayor proporción de ventas?\n¿Dónde se concentra el uso de descuentos?\n¿Qué segmentos presentan menor satisfacción?\n¿Existen categorías con crecimiento acompañado de menor ticket o mayor descuento?\n¿Qué patrones dependen de pocas observaciones?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#dato-decisión",
+    "href": "01-analitica-negocios.html#dato-decisión",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.7 Dato → decisión",
+    "text": "4.7 Dato → decisión\n\n\n\n\n\n\n\nNivel\nEjemplo\n\n\n\n\nDato\nuna venta de $480.000\n\n\nInformación\nlas ventas web crecieron 18 %\n\n\nKPI\nticket promedio web = $312.000\n\n\nHallazgo\nel crecimiento web se concentra en promociones agresivas\n\n\nImplicación\nel crecimiento podría no implicar igual creación de valor\n\n\nRecomendación\nrevisar promociones específicas\n\n\nDecisión\nmodificar política promocional y monitorear margen/satisfacción",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#el-costo-de-equivocarse",
+    "href": "01-analitica-negocios.html#el-costo-de-equivocarse",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.8 El costo de equivocarse",
+    "text": "4.8 El costo de equivocarse\nPregunta también: ¿qué cuesta más, actuar cuando no era necesario o no actuar cuando sí lo era? Esta idea aparecerá en decisiones de calidad, KPI y comunicación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01-analitica-negocios.html#taller-mapa-de-decisión",
+    "href": "01-analitica-negocios.html#taller-mapa-de-decisión",
+    "title": "4  De los datos a las decisiones",
+    "section": "4.9 Taller · mapa de decisión",
+    "text": "4.9 Taller · mapa de decisión\nCompleta el siguiente mapa para transformar una situación empresarial en una pregunta que pueda ser analizada con datos. El propósito no es comenzar por las herramientas o los indicadores, sino identificar primero qué decisión necesita ser apoyada con evidencia.\n\n\n\n\n\n\n\n\nElemento\nPregunta guía\nTu respuesta\n\n\n\n\nSituación\n¿Qué está ocurriendo, preocupa o representa una oportunidad en la organización?\n\n\n\nQuién decide\n¿Qué persona, área o rol tiene capacidad para actuar sobre esta situación?\n\n\n\nDecisión concreta\n¿Qué decisión específica tendrá que tomar?\n\n\n\nPregunta de negocio\n¿Qué necesita saber para tomar mejor esa decisión?\n\n\n\nPregunta analítica 1\n¿Qué comportamiento, resultado o indicador necesito describir o comparar?\n\n\n\nPregunta analítica 2\n¿Dónde, cuándo o entre qué grupos necesito identificar diferencias?\n\n\n\nPregunta analítica 3\n¿Qué patrón, relación o comportamiento necesito investigar con los datos?\n\n\n\nDatos necesarios\n¿Qué variables o fuentes de información permitirían responder estas preguntas?\n\n\n\nKPI\n¿Qué indicador o conjunto de indicadores permitirá resumir y monitorear el desempeño?\n\n\n\nCosto de equivocarse\n¿Qué podría ocurrir si actuamos cuando no era necesario o si no actuamos cuando sí lo era?\n\n\n\n\n\n4.9.1 Prueba de claridad\nAl terminar, deberías poder completar esta frase:\n\nCuando tengamos la respuesta, __________ podrá decidir __________ usando evidencia sobre __________.\n\n\n\n\n\n\n\nTipComprueba tu mapa\n\n\n\nUna pregunta de negocio está vinculada con una decisión.\nUna pregunta analítica es aquella que podemos investigar utilizando los datos disponibles.\nSi no puedes identificar quién decidirá, qué decidirá y qué evidencia necesita, probablemente todavía debas precisar el problema.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>De los datos a las decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html",
+    "href": "01b-ia-llm.html",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "",
+    "text": "5.1 Qué necesitamos entender\nPara este curso bastan cinco ideas:",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#qué-necesitamos-entender",
+    "href": "01b-ia-llm.html#qué-necesitamos-entender",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "",
+    "text": "un LLM trabaja con tokens;\nestima probabilidades de continuaciones;\nel contexto cambia esas probabilidades;\ngenera la respuesta paso a paso;\nuna respuesta puede ser coherente y falsa.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente",
+    "href": "01b-ia-llm.html#la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.2 La idea central: predecir un token, volver a mirar el contexto y predecir el siguiente",
+    "text": "5.2 La idea central: predecir un token, volver a mirar el contexto y predecir el siguiente\nUn LLM no elige una frase completa de una lista. En cada paso hace algo más parecido a esto:\n\nobserva todo el contexto disponible;\nasigna una probabilidad a muchas continuaciones posibles;\nselecciona un token;\nlo agrega al texto;\nvuelve a calcular las probabilidades porque el contexto cambió;\nrepite el proceso hasta terminar la respuesta.\n\nPor eso el ejemplo no debe quedarse en escoger una sola palabra. La gracia está en ver cómo cada elección abre un nuevo conjunto de continuaciones.\n\n\n\n\n\n\nNotaImportante\n\n\n\nLas probabilidades de esta demo son inventadas con fines pedagógicos. No provienen de ChatGPT, Claude, Gemini ni de ningún modelo comercial. Queremos visualizar el mecanismo, no reproducir un modelo real.\n\n\n\n5.2.1 🎲 Demo interactiva · Construye la respuesta token a token\nEmpieza con la frase “Las ventas de NovaRetail”. En cada paso aparecen varias continuaciones posibles. Elige una y observa cómo cambia la distribución del siguiente token.\n\n  \n    ↺ Empezar de nuevo\n    ▶ Elegir siempre la más probable\n  \n\n  Contexto actual\n  Las ventas de NovaRetail▌\n\n  \n    Paso: 0\n    Probabilidad acumulada de la ruta: 100%\n  \n\n  ¿Qué token podría venir ahora?\n  \n\n  \n\n\n\n\n\n5.2.2 Qué debes observar\nHaz al menos tres recorridos:\n\nElige siempre la opción más probable. Verás una secuencia bastante convencional.\nEscoge una opción menos probable en uno de los primeros pasos. El árbol de continuaciones cambia porque el contexto ya es diferente.\nConstruye una frase con un número específico, por ejemplo “aumentaron un 12 %…”. Esa cifra aparece porque la elegiste dentro de la simulación; no porque el sistema haya consultado las ventas reales de NovaRetail.\n\nLa demo también muestra la probabilidad acumulada de la ruta. Una secuencia larga puede estar formada por elecciones razonables y, aun así, su combinación específica tener una probabilidad mucho menor. Esto ayuda a entender por qué un modelo puede producir muchas respuestas distintas a partir del mismo inicio.\n\nLa idea que quiero que te lleves: un LLM no decide primero una respuesta completa y luego la escribe. Va construyéndola token a token. Cada token que genera se convierte en parte del contexto que condiciona la siguiente predicción.\n\n\n\n5.2.3 ¿Y dónde nace la alucinación?\nImagina que después de:\n\n“Las ventas de NovaRetail aumentaron un 12 %…”\n\nel sistema continúa con:\n\n“…durante el último trimestre.”\n\nLa frase es perfectamente plausible. Pero si nunca le entregamos los datos reales de ventas, el 12 % sigue siendo una cifra inventada dentro de nuestra demostración. El modelo puede encadenar tokens altamente plausibles hasta construir una afirmación empresarial completamente falsa.\nEse es el puente hacia el resto del curso:\n\nprobabilidad lingüística ≠ evidencia empresarial\n\n\n\n5.2.4 Para profundizar · ¿por qué alucinan los modelos?\nSi quieres profundizar después de la clase, consulta estas dos explicaciones de los propios desarrolladores de modelos:\n\nOpenAI · Por qué los modelos de lenguaje se inventan cosas — conecta las alucinaciones con la predicción del siguiente token y con los incentivos de entrenamiento/evaluación.\nClaude · Why do AI models hallucinate? — material complementario de Anthropic para comprender por qué un modelo puede producir información plausible pero incorrecta.\n\n\n\n\n\n\n\nTipLectura autónoma\n\n\n\nNo necesitas leer estos recursos durante la clase. Vuelve a ellos después de experimentar con la demo y la cacería de alucinaciones.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#contexto-menos-adivinanzas",
+    "href": "01b-ia-llm.html#contexto-menos-adivinanzas",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.3 Contexto: menos adivinanzas",
+    "text": "5.3 Contexto: menos adivinanzas\nCompara:\n\n¿Cuál canal debería priorizar NovaRetail?\n\ncon:\n\nTengo ventas por región, canal, categoría, descuento y estado. Identifica qué canal merece investigación prioritaria. No asumas margen ni satisfacción si esos datos no están presentes. Para cada observación indica qué cálculo debería validarla.\n\nMás contexto reduce huecos, pero contexto irrelevante o contradictorio también puede empeorar la respuesta.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#un-prompt-analítico-con-c-t-f-r",
+    "href": "01b-ia-llm.html#un-prompt-analítico-con-c-t-f-r",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.4 Un prompt analítico con C-T-F-R",
+    "text": "5.4 Un prompt analítico con C-T-F-R\n\n\n\n\n\n\n\nComponente\nPregunta\n\n\n\n\nC · Contexto\n¿qué problema, datos y audiencia debe conocer?\n\n\nT · Tarea\n¿qué debe hacer exactamente?\n\n\nF · Formato\n¿cómo debe entregar la salida?\n\n\nR · Restricciones\n¿qué no debe asumir, inventar o hacer?\n\n\n\n\n5.4.1 Antes / después\n\n\nPrompt vago\n\n\nPrompt estructurado",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#constructor-de-prompts-para-analytics",
+    "href": "01b-ia-llm.html#constructor-de-prompts-para-analytics",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.5 Constructor de prompts para Analytics",
+    "text": "5.5 Constructor de prompts para Analytics\n\nEscenario: — En blanco —Explicar código RRevisar calidadRevisar DAXAuditar un hallazgo\n\n\nC · Contexto\n\n\n\nT · Tarea\n\n\n\nF · Formato\n\n\n\nR · Restricciones\n\n\n\n\n\n\n\n📋 Copiar\n\n\n🧹 Limpiar",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#la-primera-respuesta-es-un-borrador",
+    "href": "01b-ia-llm.html#la-primera-respuesta-es-un-borrador",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.6 La primera respuesta es un borrador",
+    "text": "5.6 La primera respuesta es un borrador\nItera con cuatro movimientos:\nAjustar — cambia audiencia, extensión o formato.\nProfundizar — pide explicación de un punto concreto.\nContrastar — exige una explicación alternativa compatible con la evidencia.\nVerificar — pide el cálculo o fuente que comprobaría cada afirmación.\n\nLa iteración útil no hace que la IA “suene mejor”; hace que el análisis sea más verificable.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#tres-tareas-reales",
+    "href": "01b-ia-llm.html#tres-tareas-reales",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.7 Tres tareas reales",
+    "text": "5.7 Tres tareas reales\n\n5.7.1 A · Explicar código R\n¿Describió lo que hace el código o inventó columnas/resultados? ¿Indicó qué verificar?\n\n\n5.7.2 B · Revisar DAX\nAntes de pedir una fórmula, pide definición de negocio, contexto de filtro y pruebas.\n\n\n5.7.3 C · Comunicar resultados\nObliga a separar observación, hipótesis, implicación y recomendación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#cacería-de-alucinaciones-en-analytics",
+    "href": "01b-ia-llm.html#cacería-de-alucinaciones-en-analytics",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.8 Cacería de alucinaciones en Analytics",
+    "text": "5.8 Cacería de alucinaciones en Analytics\nTrampa 1 · KPI imposible: “Con ventas, dime la categoría con mayor margen.” Si no hay costos, no puede saberlo.\nTrampa 2 · Causa conveniente: “Ventas web subieron y NPS bajó. ¿Qué causó el deterioro?” Puede proponer hipótesis, no demostrar causa.\nTrampa 3 · Cifra exacta ausente: “¿Cuánto vendió NovaRetail en junio?” Sin acceso al archivo o cálculo, la cifra no está verificada.\nClasifica cada salida como dato, inferencia, hipótesis o invención.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#plantilla-reutilizable-auditor-de-hallazgos",
+    "href": "01b-ia-llm.html#plantilla-reutilizable-auditor-de-hallazgos",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.9 Plantilla reutilizable: Auditor de hallazgos",
+    "text": "5.9 Plantilla reutilizable: Auditor de hallazgos\nCUÁNDO USARLA:\nCuando ya tengo un gráfico, tabla o resultado y quiero revisar si mi interpretación excede la evidencia.\n\nINSTRUCCIONES:\n1. Resume mi afirmación central.\n2. Separa observación, inferencia e hipótesis.\n3. Indica qué cálculo o fuente valida cada afirmación.\n4. Señala saltos causales o datos faltantes.\n5. Propón una redacción más prudente si es necesario.\n\nRESTRICCIONES:\nNo inventes cifras ni causas. Si algo no puede verificarse con la evidencia entregada, dilo explícitamente.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01b-ia-llm.html#checklist",
+    "href": "01b-ia-llm.html#checklist",
+    "title": "5  IA para el analista: LLMs, prompts y verificación",
+    "section": "5.10 Checklist",
+    "text": "5.10 Checklist\n\nEntiendo por qué plausible no significa verdadero.\nPuedo construir un C-T-F-R.\nSé ajustar, profundizar, contrastar y verificar.\nDistingo dato, inferencia, hipótesis e invención.\nPuedo pedir una ruta de validación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>IA para el analista: LLMs, prompts y verificación</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html",
+    "href": "01c-ia-agentes.html",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "",
+    "text": "6.1 Del chat al proyecto\nPedir “limpia mi base” en un chat exige pegar contexto. Un agente conectado al proyecto puede inspeccionar archivos. Por eso el problema cambia: ya no basta con un buen prompt; necesitamos reglas de proyecto.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#del-chat-al-proyecto",
+    "href": "01c-ia-agentes.html#del-chat-al-proyecto",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "",
+    "text": "6.1.1 ¿Necesito pagar para trabajar con un “agente”?\nNo necesariamente. En este curso distinguiremos tres niveles:\n\nChat que genera código: propone código; tú lo ejecutas y verificas.\nAsistente persistente/configurado: conserva instrucciones o archivos y reduce la repetición de contexto.\nAgente de código: puede inspeccionar archivos, ejecutar acciones/código, observar resultados y encadenar pasos bajo supervisión.\n\nPara aprender el razonamiento agentivo no es obligatorio que cada estudiante tenga acceso al nivel 3. Podemos practicar el ciclo:\n\nobjetivo → contexto → propuesta → ejecución → observación → corrección → validación\n\n\n\n6.1.2 Opciones sin suscripción obligatoria\n\n\n\n\n\n\n\n\nOpción\nRuta gratuita\nUso sugerido\n\n\n\n\nChatGPT Free\nchat, cargas/análisis con límites y uso de GPTs existentes; crear GPTs personalizados requiere plan pago\ngenerar/revisar R, interpretar errores, analizar archivos pequeños\n\n\nGemini + Gems\nlas cuentas personales pueden crear Gems con instrucciones/contexto\nconfigurar un asistente persistente para un caso analítico\n\n\nClaude Free\nchat gratuito; proyectos disponibles para usuarios gratuitos y ejecución de código/creación de archivos\nmantener contexto, analizar datos y revisar código\n\n\nRStudio + chat gratuito\nejecución local del código sugerido por la IA\nruta base y universal del curso\n\n\n\n\n\n\n\n\n\nImportanteRuta oficial del curso\n\n\n\nNinguna actividad evaluable dependerá de comprar ChatGPT Plus, Claude Pro, un plan pago de Gemini o créditos de API. Las capacidades avanzadas que requieran pago podrán aparecer como demostración docente, pero siempre habrá una ruta gratuita para alcanzar el objetivo de aprendizaje.\n\n\n\n\n6.1.3 ¿Y los agentes de código completos?\nLas ofertas cambian con rapidez. Actualmente, crear GPTs personalizados en ChatGPT requiere un plan pago y Claude Code está incluido en planes pagos como Pro/Max. Google también modificó en 2026 la disponibilidad individual de Gemini Code Assist/CLI. Por eso el curso no debe depender de una marca ni de una oferta gratuita temporal.\nPara estudiantes sin experiencia en programación, empezar con ejecución supervisada en RStudio es además pedagógicamente útil: obliga a observar qué código se propone, qué cambia en los datos y cómo se valida antes de delegar más autonomía.\n\n\n6.1.4 Demostración opcional del profesor\nEl profesor puede mostrar desde una cuenta con funciones avanzadas la diferencia entre:\nflujo supervisado: pedir código → copiar → ejecutar en RStudio → observar → volver al chat\ny\nflujo agentivo: dar objetivo → inspeccionar/editar/ejecutar → observar → corregir → validar.\nLa pregunta no será “¿qué producto es mejor?”, sino:\n\n¿qué responsabilidad sigue siendo del analista cuando la IA puede ejecutar acciones por sí misma?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#manifiesto-novaretail",
+    "href": "01c-ia-agentes.html#manifiesto-novaretail",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.2 Manifiesto NovaRetail",
+    "text": "6.2 Manifiesto NovaRetail\n- Nunca sobrescribas data/raw/.\n- Toda limpieza produce un archivo nuevo en data/clean/.\n- Documenta cada regla y cuántas filas afecta.\n- No elimines outliers automáticamente: repórtalos primero.\n- Si una decisión requiere una regla de negocio no documentada, detente y pregunta.\n- Todo script debe ejecutarse completo desde una sesión limpia.\n- Antes de afirmar una cifra, calcúlala con código.\nUna regla útil debe ser verificable. “Haz un buen análisis” no lo es.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#el-bucle-de-supervisión",
+    "href": "01c-ia-agentes.html#el-bucle-de-supervisión",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.3 El bucle de supervisión",
+    "text": "6.3 El bucle de supervisión\n\n\n\nCuando el agente…\nTú…\n\n\n\n\nlee archivos\nconfirmas que sean las fuentes correctas\n\n\npropone comandos\nentiendes qué harán antes de aprobar\n\n\nmodifica código\nrevisas el diff\n\n\nejecuta\nobservas errores y resultados\n\n\nreporta cifras\nhaces una validación independiente\n\n\nencuentra ambigüedad\naplicas criterio de negocio",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#misión-1-diagnóstico-sin-modificar",
+    "href": "01c-ia-agentes.html#misión-1-diagnóstico-sin-modificar",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.4 Misión 1 · Diagnóstico sin modificar",
+    "text": "6.4 Misión 1 · Diagnóstico sin modificar\nRevisa las tablas de NovaRetail y construye un diagnóstico de calidad con conteos exactos de duplicados, faltantes, tipos, categorías e integridad. No modifiques archivos. Para cada hallazgo indica el código usado. Si falta una regla de negocio, márcala como pendiente.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#misión-2-limpieza-auditable",
+    "href": "01c-ia-agentes.html#misión-2-limpieza-auditable",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.5 Misión 2 · Limpieza auditable",
+    "text": "6.5 Misión 2 · Limpieza auditable\nPropón un script reproducible. No sobrescribas raw. Cada transformación debe incluir problema, regla, registros afectados y validación posterior. Las decisiones ambiguas quedan pendientes, no se resuelven por supuesto.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#prueba-de-reproducibilidad",
+    "href": "01c-ia-agentes.html#prueba-de-reproducibilidad",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.6 Prueba de reproducibilidad",
+    "text": "6.6 Prueba de reproducibilidad\nOtra persona debe poder abrir, ejecutar, reconstruir artefactos y comprender las decisiones sin depender de una conversación perdida con la IA.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#prueba-de-la-cifra",
+    "href": "01c-ia-agentes.html#prueba-de-la-cifra",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.7 Prueba de la cifra",
+    "text": "6.7 Prueba de la cifra\nSi el agente reporta un KPI, recalcula al menos una cifra por una vía independiente. El objetivo es separar generación de verificación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "01c-ia-agentes.html#ruta-de-madurez",
+    "href": "01c-ia-agentes.html#ruta-de-madurez",
+    "title": "6  IA como agente de código: contexto, reglas y auditoría",
+    "section": "6.8 Ruta de madurez",
+    "text": "6.8 Ruta de madurez\nRStudio manual → IA explicadora → IA colaboradora → agente con contexto y reglas. El criterio profesional no cambia: entender, revisar y validar.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>IA como agente de código: contexto, reglas y auditoría</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html",
+    "href": "02-primeros-pasos-r.html",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "",
+    "text": "7.1 Propósito\nConstruiremos un flujo reproducible: escribir → ejecutar → observar → verificar.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#consola-vs.-script",
+    "href": "02-primeros-pasos-r.html#consola-vs.-script",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.2 Consola vs. script",
+    "text": "7.2 Consola vs. script\nPrueba en consola:\n48000 * 1.19\n(41 - 34) / 34 * 100\n(41 - 34) / 34 * 100 &gt; 15\nLa consola sirve para experimentar. El script conserva el análisis.\n\nPrueba de fuego: vacía el entorno, ejecuta el script desde arriba y llega al mismo resultado.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#objetos-bajo-vigilancia",
+    "href": "02-primeros-pasos-r.html#objetos-bajo-vigilancia",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.3 Objetos bajo vigilancia",
+    "text": "7.3 Objetos bajo vigilancia\nprecio_sin_iva &lt;- 48000\ntasa_iva &lt;- 0.19\nunidades_mes &lt;- 350\nprecio_final &lt;- precio_sin_iva * (1 + tasa_iva)\ningreso_mes &lt;- precio_final * unidades_mes\nCheckpoint: revisa en Environment que los objetos existan y que ingreso_mes sea razonable antes de seguir.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#tipos",
+    "href": "02-primeros-pasos-r.html#tipos",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.4 Tipos",
+    "text": "7.4 Tipos\nclass(precio_final)\nclass(precio_final &gt; 50000)\nLos tipos importan porque determinan qué operaciones son válidas.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#vectores-con-pregunta-de-negocio",
+    "href": "02-primeros-pasos-r.html#vectores-con-pregunta-de-negocio",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.5 Vectores con pregunta de negocio",
+    "text": "7.5 Vectores con pregunta de negocio\nventas_dia &lt;- c(1200,1500,1100,1800,2000,1300,1700)\nsum(ventas_dia)\nmean(ventas_dia)\nwhich.max(ventas_dia)\nsum(ventas_dia &gt; mean(ventas_dia))",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#data-frames",
+    "href": "02-primeros-pasos-r.html#data-frames",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.6 Data frames",
+    "text": "7.6 Data frames\ninventario &lt;- data.frame(\n  producto=c(\"Audífonos\",\"Cargador\",\"Forro\",\"Cable USB\",\"Soporte\"),\n  precio=c(85000,32000,25000,18000,41000),\n  unidades=c(12,40,55,70,8)\n)\nstr(inventario)\ndim(inventario)\nhead(inventario)\nPregunta que se repetirá todo el curso:\n\n¿Qué representa una fila?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#importa-novaretail",
+    "href": "02-primeros-pasos-r.html#importa-novaretail",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.7 Importa NovaRetail",
+    "text": "7.7 Importa NovaRetail\nlibrary(tidyverse)\nlibrary(janitor)\nventas &lt;- read_csv(\"data/ventas.csv\")\nglimpse(ventas)\nhead(ventas)",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#romper-cosas-a-propósito",
+    "href": "02-primeros-pasos-r.html#romper-cosas-a-propósito",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.8 Romper cosas a propósito",
+    "text": "7.8 Romper cosas a propósito\nmean(ventas$canal)\nventas_inexistentes\nLee los mensajes. Identifica objeto, función y tipo antes de corregir.\n\n\n\n\n\n\nTip\n\n\n\nDepuración con IA: “Explica el error, identifica la línea que falla y dame una sola comprobación antes de modificar el código.”",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#primer-resumen",
+    "href": "02-primeros-pasos-r.html#primer-resumen",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.9 Primer resumen",
+    "text": "7.9 Primer resumen\nventas |&gt;\n  summarise(\n    registros=n(),\n    ventas_totales=sum(valor_venta,na.rm=TRUE),\n    clientes=n_distinct(id_cliente),\n    ticket_promedio=mean(valor_venta,na.rm=TRUE)\n  )\nCheckpoint: ¿incluye canceladas?, ¿hay duplicados?, ¿qué significa exactamente ticket promedio?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "02-primeros-pasos-r.html#checklist",
+    "href": "02-primeros-pasos-r.html#checklist",
+    "title": "7  Primeros pasos con R: escribir, ejecutar y verificar",
+    "section": "7.10 Checklist",
+    "text": "7.10 Checklist\n\nDistingo consola y script.\nPuedo crear e inspeccionar objetos.\nPuedo inspeccionar una tabla.\nPuedo interpretar un error básico.\nPuedo importar NovaRetail.\nPuedo explicar la granularidad de una tabla.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Primeros pasos con R: escribir, ejecutar y verificar</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html",
+    "href": "sesiones/f1-sabado.html",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "",
+    "text": "8.1 Ruta",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#ruta",
+    "href": "sesiones/f1-sabado.html#ruta",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "",
+    "text": "Minutos\nBloque\nProducto\n\n\n\n\n0–45\nRecuperación + tipos de datos\nmapa de variables\n\n\n45–135\nManipulación con dplyr\nKPI segmentados\n\n\n135–210\nEDA + visualización\ntablas y gráficos\n\n\n210–225\nPausa\n\n\n\n225–300\nDatos cualitativos + text mining\npalabras/temas\n\n\n300–345\nIA sobre comentarios\ncomparación R vs IA\n\n\n345–405\nTaller NovaRetail\nhallazgos\n\n\n405–420\nCierre\nticket de salida",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#preparar-la-sesión",
+    "href": "sesiones/f1-sabado.html#preparar-la-sesión",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.2 Preparar la sesión",
+    "text": "8.2 Preparar la sesión\nCopia este bloque al inicio de tu script. Así la sesión puede ejecutarse de manera independiente.\nlibrary(tidyverse)\n\nventas &lt;- read_csv(\"data/ventas.csv\")\nclientes &lt;- read_csv(\"data/clientes.csv\")\nproductos &lt;- read_csv(\"data/productos.csv\")\nsatisfaccion &lt;- read_csv(\"data/satisfaccion.csv\")\n\nAntes de continuar: ¿qué representa una fila en cada tabla?.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#cuantitativo-cualitativo-y-texto",
+    "href": "sesiones/f1-sabado.html#cuantitativo-cualitativo-y-texto",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.3 Cuantitativo, cualitativo y texto",
+    "text": "8.3 Cuantitativo, cualitativo y texto\nClasificamos variables de las cuatro tablas. No basta con decir “numérica” o “texto”: preguntamos qué representa y qué operaciones tienen sentido.\nclientes &lt;- read_csv(\"data/clientes.csv\")\nproductos &lt;- read_csv(\"data/productos.csv\")\nsatisfaccion &lt;- read_csv(\"data/satisfaccion.csv\")",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#manipulación-pregunta-código-tabla-interpretación",
+    "href": "sesiones/f1-sabado.html#manipulación-pregunta-código-tabla-interpretación",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.4 Manipulación · pregunta → código → tabla → interpretación",
+    "text": "8.4 Manipulación · pregunta → código → tabla → interpretación\n\n8.4.1 Demo docente\n\n¿Qué regiones concentran las ventas completadas?\n\nventas_region &lt;- ventas |&gt;\n  filter(estado == \"Completada\") |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    transacciones = n_distinct(id_venta),\n    clientes = n_distinct(id_cliente),\n    .groups = \"drop\"\n  ) |&gt;\n  mutate(ticket_promedio = ventas / transacciones) |&gt;\n  arrange(desc(ventas))\n\nventas_region\nCheckpoint: antes una fila era una transacción; ahora una fila es una región.\n\n\n8.4.2 Hazlo conmigo\nCambia solamente la dimensión para responder por canal:\nventas |&gt;\n  filter(estado == \"Completada\") |&gt;\n  group_by(__________) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    transacciones = n_distinct(id_venta),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#eda-primero-tabla-después-gráfico",
+    "href": "sesiones/f1-sabado.html#eda-primero-tabla-después-gráfico",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.5 EDA · primero tabla, después gráfico",
+    "text": "8.5 EDA · primero tabla, después gráfico\nggplot(ventas_region, aes(x = reorder(region, ventas), y = ventas)) +\n  geom_col() + coord_flip() +\n  labs(title = \"Ventas completadas por región\", x = NULL, y = \"Ventas\")\nDiscusión: ¿el gráfico responde la pregunta?, ¿qué denominador falta?, ¿qué conclusión sería excesiva?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#datos-cualitativos-y-minería-de-texto",
+    "href": "sesiones/f1-sabado.html#datos-cualitativos-y-minería-de-texto",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.6 Datos cualitativos y minería de texto",
+    "text": "8.6 Datos cualitativos y minería de texto\nEjemplo ilustrativo con Python Datos cualitativos, minería de texto e IA y luego abre el notebook de Google Colab para la demostración. La progresión es:\ncomentario → token → frecuencia → comparación por NPS → interpretación → limitación.\nNo se pretende enseñar NLP avanzado; se pretende mostrar que el texto también puede convertirse en evidencia analítica.\n¿qué afirmación podemos verificar en la base y cuál depende de interpretación?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#taller-evaluable",
+    "href": "sesiones/f1-sabado.html#taller-evaluable",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.7 Taller evaluable",
+    "text": "8.7 Taller evaluable\nCada grupo elige una combinación de dimensión/variable categórica + KPI + experiencia del cliente y entrega:\n\ntabla reproducible;\ndos visualizaciones;\nuna exploración textual;\ndos hallazgos en formato evidencia → significado → implicación;\nuna hipótesis que todavía no puede afirmarse.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#transferencia-a-tu-proyecto-de-grado",
+    "href": "sesiones/f1-sabado.html#transferencia-a-tu-proyecto-de-grado",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.8 Transferencia a tu proyecto de grado",
+    "text": "8.8 Transferencia a tu proyecto de grado\nClasifica tus fuentes: estructuradas, textuales/no estructuradas o mixtas. Registra unidad de análisis, variables/campos, cobertura y una pregunta que podría responder cada fuente.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f1-sabado.html#salida",
+    "href": "sesiones/f1-sabado.html#salida",
+    "title": "8  Sesión 2 · Del dato al hallazgo",
+    "section": "8.9 Salida",
+    "text": "8.9 Salida\n\nManipulo sin perder la granularidad.\nDistingo variables cuantitativas, cualitativas y texto no estructurado.\nPuedo tokenizar y comparar texto de forma básica.\nPrimero verifico la tabla y luego comunico con gráfico.\nDistingo hallazgo de hipótesis.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Sesión 2 · Del dato al hallazgo</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html",
+    "href": "03-manipulacion-datos.html",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "",
+    "text": "9.1 Propósito\nLa secuencia será: pregunta → tabla → verificación → interpretación → visualización.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#setup",
+    "href": "03-manipulacion-datos.html#setup",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.2 Setup",
+    "text": "9.2 Setup\nlibrary(tidyverse)\nventas &lt;- read_csv(\"data/ventas.csv\")\nglimpse(ventas)",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#filter-qué-observaciones",
+    "href": "03-manipulacion-datos.html#filter-qué-observaciones",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.3 filter() — ¿qué observaciones?",
+    "text": "9.3 filter() — ¿qué observaciones?\nventas |&gt;\n  filter(estado==\"Completada\", region==\"Caribe\")",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#select-qué-variables",
+    "href": "03-manipulacion-datos.html#select-qué-variables",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.4 select() — ¿qué variables?",
+    "text": "9.4 select() — ¿qué variables?\nventas |&gt;\n  select(fecha,region,canal,categoria,descuento,valor_venta)",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#mutate-crear-información",
+    "href": "03-manipulacion-datos.html#mutate-crear-información",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.5 mutate() — crear información",
+    "text": "9.5 mutate() — crear información\nventas &lt;- ventas |&gt;\n  mutate(\n    valor_por_unidad=valor_venta/cantidad,\n    tiene_descuento=descuento&gt;0\n  )",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#arrange-inspeccionar-extremos",
+    "href": "03-manipulacion-datos.html#arrange-inspeccionar-extremos",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.6 arrange() — inspeccionar extremos",
+    "text": "9.6 arrange() — inspeccionar extremos\nventas |&gt;\n  arrange(desc(valor_venta)) |&gt;\n  select(id_venta,region,canal,categoria,valor_venta) |&gt;\n  head(10)\nUn extremo merece investigación; no se convierte automáticamente en error.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#group_by-summarise-cambiar-granularidad",
+    "href": "03-manipulacion-datos.html#group_by-summarise-cambiar-granularidad",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.7 group_by() + summarise() — cambiar granularidad",
+    "text": "9.7 group_by() + summarise() — cambiar granularidad\nkpi_region &lt;- ventas |&gt;\n  filter(estado==\"Completada\") |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas=sum(valor_venta,na.rm=TRUE),\n    transacciones=n_distinct(id_venta),\n    clientes=n_distinct(id_cliente),\n    .groups=\"drop\"\n  ) |&gt;\n  mutate(\n    ticket_promedio=ventas/transacciones,\n    ventas_por_cliente=ventas/clientes\n  )\n\nDespués del resumen, una fila representa una región, no una transacción.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#primero-tabla-después-gráfico",
+    "href": "03-manipulacion-datos.html#primero-tabla-después-gráfico",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.8 Primero tabla, después gráfico",
+    "text": "9.8 Primero tabla, después gráfico\nkpi_region |&gt; arrange(desc(ventas))\nSolo después:\nggplot(kpi_region,aes(x=reorder(region,ventas),y=ventas))+\n  geom_col()+coord_flip()+\n  labs(title=\"Ventas completadas por región\",x=NULL,y=\"Ventas\")",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#una-métrica-no-cuenta-toda-la-historia",
+    "href": "03-manipulacion-datos.html#una-métrica-no-cuenta-toda-la-historia",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.9 Una métrica no cuenta toda la historia",
+    "text": "9.9 Una métrica no cuenta toda la historia\nCompara ventas, clientes, ticket y ventas por cliente. La región líder puede cambiar según la pregunta.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#reto",
+    "href": "03-manipulacion-datos.html#reto",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.10 Reto",
+    "text": "9.10 Reto\nConstruye KPI por categoría: ventas, transacciones, clientes, unidades, descuento promedio y ticket. Escribe:\n\nuna descripción sustentada;\nuna hipótesis que requiera evidencia adicional.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#ia-como-auditor",
+    "href": "03-manipulacion-datos.html#ia-como-auditor",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.11 IA como auditor",
+    "text": "9.11 IA como auditor\n\n“Explica la granularidad antes y después del summarise(). Señala KPI con denominador discutible y qué prueba ejecutarías.”",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "03-manipulacion-datos.html#checklist",
+    "href": "03-manipulacion-datos.html#checklist",
+    "title": "9  Manipulación de datos: de la pregunta al KPI",
+    "section": "9.12 Checklist",
+    "text": "9.12 Checklist\n\nSé qué verbo cambia filas, columnas o variables.\nDetecto cuándo cambia la granularidad.\nVerifico la tabla antes del gráfico.\nDistingo descripción e hipótesis.\nPuedo justificar el denominador de un KPI.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manipulación de datos: de la pregunta al KPI</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html",
+    "href": "04-exploracion-visualizacion.html",
+    "title": "10  Exploración y visualización de datos",
+    "section": "",
+    "text": "10.1 Propósito\nEl análisis exploratorio de datos (EDA) busca comprender la estructura de una base antes de formular conclusiones. Exploraremos distribuciones, segmentos, valores atípicos y relaciones utilizando resúmenes y visualizaciones.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#propósito",
+    "href": "04-exploracion-visualizacion.html#propósito",
+    "title": "10  Exploración y visualización de datos",
+    "section": "",
+    "text": "NotaRuta de clase · Sábado\n\n\n\nEste capítulo se trabaja como laboratorio. La prioridad es producir pocas visualizaciones con interpretación, no una galería de gráficos.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#una-visualización-debe-responder-una-pregunta",
+    "href": "04-exploracion-visualizacion.html#una-visualización-debe-responder-una-pregunta",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.2 Una visualización debe responder una pregunta",
+    "text": "10.2 Una visualización debe responder una pregunta\nAntes de escribir ggplot(), formula la pregunta:\n\n¿Qué comparación quiero facilitar?\n\nEjemplos:\n\n¿qué regiones concentran las ventas?\n¿cómo se distribuye el valor de las transacciones?\n¿qué canales presentan mayor dispersión?\n¿cómo cambia el descuento entre categorías?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#ventas-por-región",
+    "href": "04-exploracion-visualizacion.html#ventas-por-región",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.3 Ventas por región",
+    "text": "10.3 Ventas por región\nPrimero construimos la tabla que alimentará el gráfico:\n\nventas_region &lt;- ventas |&gt;\n  filter(estado == \"Completada\") |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\nDespués visualizamos:\n\nlibrary(ggplot2)\n\nggplot(\n  ventas_region,\n  aes(x = reorder(region, ventas), y = ventas)\n) +\n  geom_col() +\n  coord_flip() +\n  labs(\n    title = \"Ventas por región\",\n    x = NULL,\n    y = \"Ventas\"\n  )\n\nLa gráfica facilita una comparación que ya existe en la tabla. No reemplaza el razonamiento.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#distribución-de-una-variable",
+    "href": "04-exploracion-visualizacion.html#distribución-de-una-variable",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.4 Distribución de una variable",
+    "text": "10.4 Distribución de una variable\n\nggplot(\n  ventas |&gt; filter(estado == \"Completada\"),\n  aes(x = valor_venta)\n) +\n  geom_histogram(bins = 30) +\n  labs(\n    title = \"Distribución del valor de las transacciones\",\n    x = \"Valor de venta\",\n    y = \"Frecuencia\"\n  )\n\nPregunta:\n\n¿la distribución es simétrica?\n¿existen colas largas?\n¿el promedio representa bien una transacción típica?\n¿aparecen observaciones que merecen inspección?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#comparar-distribuciones",
+    "href": "04-exploracion-visualizacion.html#comparar-distribuciones",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.5 Comparar distribuciones",
+    "text": "10.5 Comparar distribuciones\n\nggplot(\n  ventas |&gt; filter(estado == \"Completada\"),\n  aes(x = canal, y = valor_venta)\n) +\n  geom_boxplot() +\n  labs(\n    title = \"Valor de transacción por canal\",\n    x = NULL,\n    y = \"Valor de venta\"\n  )\n\nUn boxplot permite comparar posición, dispersión y valores extremos entre grupos.\n\n\n\n\n\n\nAdvertencia\n\n\n\nUn outlier es una observación que merece atención, no automáticamente un error.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#relación-entre-variables",
+    "href": "04-exploracion-visualizacion.html#relación-entre-variables",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.6 Relación entre variables",
+    "text": "10.6 Relación entre variables\nPodemos explorar si los descuentos y el valor de venta presentan algún patrón:\n\nggplot(\n  ventas |&gt; filter(estado == \"Completada\"),\n  aes(x = descuento, y = valor_venta)\n) +\n  geom_point(alpha = 0.35) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(\n    title = \"Descuento y valor de venta\",\n    x = \"Descuento\",\n    y = \"Valor de venta\"\n  )\n\nUna asociación visual no demuestra causalidad.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#la-estructura-de-una-interpretación",
+    "href": "04-exploracion-visualizacion.html#la-estructura-de-una-interpretación",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.7 La estructura de una interpretación",
+    "text": "10.7 La estructura de una interpretación\nPara cada visualización escribe tres elementos:\n\n10.7.1 Hallazgo\n¿Qué patrón relevante observas?\n\n\n10.7.2 Evidencia\n¿Qué comparación o magnitud sustenta el hallazgo?\n\n\n10.7.3 Implicación\n¿Por qué podría importarle a una persona que toma decisiones?\nEjemplo:\n\nHallazgo: la región A concentra las ventas, pero el canal web tiene menor ticket promedio.\nEvidencia: …\nImplicación: conviene investigar si la estrategia digital está impulsando volumen a costa del valor por operación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#visualizaciones-que-evitaremos",
+    "href": "04-exploracion-visualizacion.html#visualizaciones-que-evitaremos",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.8 Visualizaciones que evitaremos",
+    "text": "10.8 Visualizaciones que evitaremos\nEvita gráficos cuando:\n\nuna cifra única comunica mejor;\nexisten demasiadas categorías sin jerarquía;\nla escala exagera diferencias;\nel gráfico 3D agrega decoración y no información;\nse usan colores sin propósito;\nla conclusión depende de una comparación difícil de percibir.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#introducción-al-análisis-de-texto",
+    "href": "04-exploracion-visualizacion.html#introducción-al-análisis-de-texto",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.9 Introducción al análisis de texto",
+    "text": "10.9 Introducción al análisis de texto\nLos datos empresariales no son únicamente numéricos. Comentarios de clientes, encuestas y tickets contienen información no estructurada.\nLos comentarios que utilizaremos están en data/satisfaccion.csv, en la variable comentario. Primero cargamos ese archivo y luego podemos tokenizar los textos para estudiar términos frecuentes:\n\nlibrary(tidytext)\n\n# Los comentarios están en satisfaccion.csv\ncomentarios &lt;- readr::read_csv(\"data/satisfaccion.csv\") |&gt;\n  select(id_encuesta, id_cliente, calificacion, nps, comentario)\n\ncomentarios |&gt;\n  unnest_tokens(palabra, comentario) |&gt;\n  count(palabra, sort = TRUE)\n\nLa frecuencia de palabras es un punto de partida, no una interpretación completa del lenguaje.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#taller-de-eda",
+    "href": "04-exploracion-visualizacion.html#taller-de-eda",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.10 Taller de EDA",
+    "text": "10.10 Taller de EDA\nConstruye al menos cuatro visualizaciones:\n\nuna comparación entre categorías;\nuna distribución;\nuna comparación entre grupos;\nuna relación entre dos variables.\n\nPara cada una redacta hallazgo + evidencia + implicación.\nDespués selecciona únicamente las dos que llevarías a una reunión gerencial.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#analytics-ia",
+    "href": "04-exploracion-visualizacion.html#analytics-ia",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.11 Analytics + IA",
+    "text": "10.11 Analytics + IA\nEntrega a una IA una descripción estadística o los resultados de una tabla —sin datos sensibles— y solicita tres hipótesis.\nDespués clasifica cada respuesta:\n\nobservación sustentada;\ninterpretación plausible;\nespeculación;\nafirmación causal no demostrada.\n\nEsta clasificación es parte del trabajo analítico.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04-exploracion-visualizacion.html#producto-del-primer-fin-de-semana",
+    "href": "04-exploracion-visualizacion.html#producto-del-primer-fin-de-semana",
+    "title": "10  Exploración y visualización de datos",
+    "section": "10.12 Producto del primer fin de semana",
+    "text": "10.12 Producto del primer fin de semana\nAl terminar el bloque, cada equipo debe contar con:\n\npregunta de negocio;\nscript reproducible;\ndiagnóstico inicial de calidad;\ntabla de indicadores;\nanálisis exploratorio;\nvisualizaciones comentadas;\ntres hallazgos preliminares;\npreguntas que todavía no puede responder.\n\nEl segundo fin de semana comenzará precisamente con esas limitaciones.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Exploración y visualización de datos</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html",
+    "href": "04b-mineria-texto.html",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "",
+    "text": "11.1 ¿Qué son los datos cualitativos?\nLos datos cualitativos representan información no numérica: respuestas abiertas, entrevistas, grupos focales, documentos, tickets de servicio, reseñas, transcripciones, imágenes, audio u observaciones.\nNo todo texto es automáticamente “análisis cualitativo”. Una columna comentario es un dato; el análisis depende de la pregunta, de la unidad de análisis y del método utilizado.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#qué-son-los-datos-cualitativos",
+    "href": "04b-mineria-texto.html#qué-son-los-datos-cualitativos",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "",
+    "text": "11.1.1 Cuantitativo y cualitativo se complementan\n\n\n\n\n\n\n\nPregunta\nEjemplo\n\n\n\n\n¿Cuánto?\nNPS promedio, número de reclamos\n\n\n¿Dónde?\nregión/canal con mayor insatisfacción\n\n\n¿Qué?\ntemas mencionados en comentarios\n\n\n¿Cómo se experimenta?\nrelatos sobre servicio, entrega o calidad\n\n\n¿Por qué podría estar ocurriendo?\nhipótesis interpretativas que después deben contrastarse\n\n\n\nEn NovaRetail podemos cruzar calificacion y nps con comentario. En un proyecto la lógica es la misma: triangular fuentes y métodos cuando eso mejora la evidencia.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#antes-de-python-tres-decisiones-metodológicas",
+    "href": "04b-mineria-texto.html#antes-de-python-tres-decisiones-metodológicas",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.2 Antes de Python: tres decisiones metodológicas",
+    "text": "11.2 Antes de Python: tres decisiones metodológicas\n\n11.2.1 Pregunta\nNo escogemos LDA, sentimiento o un LLM porque estén disponibles. Primero definimos qué queremos comprender.\n\n\n11.2.2 Unidad de análisis\nPuede ser una entrevista completa, respuesta, párrafo, frase o episodio. Cambiar la unidad puede cambiar la interpretación.\n\n\n11.2.3 Muestreo\nEn corpus pequeños puede analizarse todo. En corpus grandes suele ser útil combinar procesamiento automatizado con muestras revisadas humanamente.\n\nHuman-in-the-loop: a medida que aumenta el volumen, la computación ayuda a escalar; la validación humana sigue siendo necesaria para verificar significado, categorías y excepciones.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#principales-metodologías-cualitativas",
+    "href": "04b-mineria-texto.html#principales-metodologías-cualitativas",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.3 Principales metodologías cualitativas",
+    "text": "11.3 Principales metodologías cualitativas\n\n11.3.1 Análisis de contenido\nParte habitualmente de categorías o reglas explícitas y examina la presencia de esas categorías en el corpus. Es especialmente útil cuando existen preguntas o hipótesis relativamente claras.\nÚsalo cuando: conoces de antemano categorías relevantes y quieres aplicarlas consistentemente.\nProducto típico: libro de códigos + codificación + frecuencias/comparaciones.\n\n\n11.3.2 Análisis temático\nBusca patrones de significado en el corpus. Puede ser inductivo, deductivo o híbrido.\nUna ruta ampliamente utilizada comprende:\n\nfamiliarización;\ngeneración de códigos;\nconstrucción de temas;\nrevisión;\ndefinición/nombre;\ncomunicación con evidencia textual.\n\nÚsalo cuando: quieres comprender qué patrones de experiencia o significado aparecen sin reducir el análisis a contar palabras.\n\n\n11.3.3 Teoría fundamentada\nBusca desarrollar categorías y relaciones conceptuales mediante comparación constante, codificación y memos. El análisis se retroalimenta con la recolección y continúa hasta alcanzar suficiente desarrollo conceptual/saturación.\nÚsala cuando: el propósito es construir teoría explicativa desde los datos, no simplemente describir frecuencias.\n\n\n\n\n\n\nAdvertencia\n\n\n\nTopic modeling, embeddings o un LLM pueden sugerir agrupaciones, pero no “hacen Grounded Theory” automáticamente. El método incluye decisiones de muestreo, comparación, memoing y construcción conceptual.\n\n\n\n\n11.3.4 Análisis narrativo y de discurso\nEl análisis narrativo estudia cómo se estructura y comunica una experiencia. El análisis del discurso estudia cómo el lenguaje construye posiciones, relaciones, significados o poder.\nÚsalos cuando: importa cómo se cuenta o construye una realidad, no únicamente qué palabras aparecen.\nReducir estos enfoques a frecuencias puede eliminar precisamente la información relevante.\n\n\n11.3.5 Análisis de redes de texto\nRepresenta términos/conceptos como nodos y coocurrencias como conexiones.\nÚsalo cuando: interesa observar qué conceptos aparecen conectados o cuáles ocupan posiciones centrales dentro del vocabulario.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#métodos-computacionales-qué-aceleran-y-qué-no",
+    "href": "04b-mineria-texto.html#métodos-computacionales-qué-aceleran-y-qué-no",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.4 Métodos computacionales: qué aceleran y qué no",
+    "text": "11.4 Métodos computacionales: qué aceleran y qué no\nLos métodos computacionales no son sustitutos exactos de las metodologías anteriores. Son herramientas de representación, exploración, clasificación y escala.\n\n\n\n\n\n\n\n\n\nTécnica\nPregunta útil\nQué produce\nSupuesto/limitación\n\n\n\n\nFrecuencias\n¿qué términos aparecen?\nconteos\nfrecuencia ≠ importancia\n\n\nN-gramas\n¿qué expresiones se repiten?\nsecuencias\ncontexto local\n\n\nCoocurrencias/redes\n¿qué conceptos aparecen juntos?\nrelaciones\ncoocurrencia ≠ causalidad\n\n\nTF-IDF\n¿qué términos distinguen grupos?\nrelevancia relativa\nno comprende significado completo\n\n\nSentimiento\n¿qué polaridad expresa el texto?\nclases/score\nsarcasmo, dominio e idioma\n\n\nLDA/NMF\n¿qué estructuras léxicas latentes aparecen?\ntópicos\nk e interpretación importan\n\n\nEmbeddings\n¿qué textos son semánticamente similares?\nvectores\ndepende del modelo\n\n\nClustering\n¿qué grupos naturales aparecen?\nclusters\nhay que interpretar/validar\n\n\nClasificación supervisada\n¿podemos reproducir códigos conocidos?\npredicción de categoría\nrequiere etiquetas confiables\n\n\nNER\n¿qué entidades aparecen?\npersonas/lugares/organizaciones\ndepende del dominio/modelo\n\n\nLLM\n¿podemos asistir codificación/resumen?\ncategorías, clasificación, síntesis\nvariabilidad, sesgo, alucinación",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#preprocesamiento-de-texto",
+    "href": "04b-mineria-texto.html#preprocesamiento-de-texto",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.5 Preprocesamiento de texto",
+    "text": "11.5 Preprocesamiento de texto\nEl pipeline puede incluir:\nnormalización → tokenización → stopwords → lematización/stemming → representación\nPero no existe una “limpieza universal”. El procesamiento depende de la pregunta.\nEjemplo: eliminar no sería problemático si queremos distinguir “me gustó” de “no me gustó”.\nEn español debemos usar recursos adecuados al idioma y revisar cómo tratan tildes, negación, expresiones locales y variantes léxicas.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#análisis-de-sentimiento",
+    "href": "04b-mineria-texto.html#análisis-de-sentimiento",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.6 Análisis de sentimiento",
+    "text": "11.6 Análisis de sentimiento\n\n11.6.1 Enfoque léxico\nUtiliza diccionarios de términos positivos/negativos.\nVentajas: transparente, barato, reproducible.\nLimitaciones: vocabulario incompleto, negaciones, sarcasmo y contexto.\n\n\n11.6.2 Modelos predictivos\nCuando existen textos previamente etiquetados podemos entrenar o utilizar modelos que predicen una clase, por ejemplo positivo/negativo o una categoría temática.\nAquí aparece la conexión con analítica predictiva:\n\ntexto → representación numérica → etiquetas conocidas → modelo → predicción para nuevos textos\n\nPara que tenga sentido deben existir etiquetas confiables y una evaluación fuera de los datos utilizados para entrenar. Un modelo con buena precisión sobre el mismo conjunto utilizado para construirlo no demuestra capacidad predictiva.\n\n\n11.6.3 Transformers\nModelos preentrenados pueden capturar contexto mejor que un diccionario, pero deben validarse para el idioma y dominio del proyecto.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#modelado-de-tópicos",
+    "href": "04b-mineria-texto.html#modelado-de-tópicos",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.7 Modelado de tópicos",
+    "text": "11.7 Modelado de tópicos\nLDA y NMF son métodos no supervisados: no reciben una columna con el “tema correcto”.\nEl analista debe decidir y revisar:\n\npreparación del texto;\nnúmero de tópicos;\npalabras representativas;\ndocumentos asociados;\nestabilidad;\nnombre/interpretación del tópico.\n\n\nEl algoritmo produce una estructura matemática. El tópico empresarial nace cuando el analista interpreta esa estructura con evidencia textual.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#embeddings-y-clustering-semántico",
+    "href": "04b-mineria-texto.html#embeddings-y-clustering-semántico",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.8 Embeddings y clustering semántico",
+    "text": "11.8 Embeddings y clustering semántico\nLos embeddings representan texto en vectores de forma que expresiones semánticamente próximas pueden quedar cercanas aunque utilicen vocabulario diferente.\nEsto permite aproximarse a casos como:\n\n“el pedido llegó tarde”\n“hubo demora con el envío”\n\nque un método puramente léxico podría tratar como muy distintos.\nDespués podemos agrupar embeddings mediante clustering. Nuevamente, el cluster no viene automáticamente con significado: se inspeccionan ejemplos, excepciones y estabilidad.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#ia-generativa-y-análisis-cualitativo",
+    "href": "04b-mineria-texto.html#ia-generativa-y-análisis-cualitativo",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.9 IA generativa y análisis cualitativo",
+    "text": "11.9 IA generativa y análisis cualitativo\nUn LLM puede apoyar:\n\npropuesta inicial de codebook;\ncodificación deductiva;\nbúsqueda de casos ambiguos;\ncomparación entre segmentos;\nresumen de temas;\nexplicación de tópicos;\nconstrucción de memos preliminares;\ngeneración de hipótesis para contrastar.\n\n\n11.9.1 Flujo recomendado\nmuestra → IA propone → humano revisa codebook → IA aplica → humano audita muestra → se documentan desacuerdos → se analiza\n\n\n11.9.2 Supuestos y riesgos\nTrazabilidad: cada código debe poder conectarse con texto real.\nVariabilidad: modelos/ejecuciones pueden responder diferente.\nAlucinación: la IA puede introducir explicaciones o categorías no sustentadas.\nPrivacidad: no deben enviarse datos identificables a servicios externos sin autorización.\nReproducibilidad: documenta modelo, fecha, prompt, muestra y decisiones.\n\n\n\n\n\n\nImportante\n\n\n\nPara este curso no se exige una API paga. El notebook genera prompts a partir del dataset y pueden copiarse a ChatGPT, Gemini o Claude. Automatizar mediante API es una extensión opcional.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#triangulación",
+    "href": "04b-mineria-texto.html#triangulación",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.10 Triangulación",
+    "text": "11.10 Triangulación\nUn análisis robusto puede combinar:\nlectura humana + técnica computacional + variables estructuradas + IA\nEjemplo:\n\nla lectura detecta frustración con promociones;\nlos n-gramas muestran “promoción confusa”;\nTF-IDF encuentra términos distintivos en clientes insatisfechos;\nun tópico agrupa vocabulario promocional;\nun LLM propone “transparencia de promociones”;\nla calificación/NPS permite observar si el patrón coincide con menor satisfacción.\n\nLa convergencia fortalece la interpretación. La divergencia también es un resultado que merece investigación.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#qué-técnica-usar",
+    "href": "04b-mineria-texto.html#qué-técnica-usar",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.11 ¿Qué técnica usar?",
+    "text": "11.11 ¿Qué técnica usar?\n\n\n\n\n\n\n\nContexto\nRuta razonable\n\n\n\n\n20–30 entrevistas profundas\nlectura + codificación temática + memos + comparación de casos\n\n\nrespuestas abiertas de encuesta\ncodificación + análisis de contenido + framework + segmentación\n\n\nmiles de reseñas\nmuestreo humano + TF-IDF/topics/embeddings + validación\n\n\ntickets etiquetados\nclasificación supervisada + auditoría de errores\n\n\ncustomer journeys\nanálisis narrativo + comparación entre casos\n\n\ncorpus donde importan relaciones lingüísticas/poder\nanálisis del discurso; computación solo como apoyo\n\n\ncorpus masivo sin categorías\nmuestreo + topic modeling/clustering + interpretación humana",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#laboratorio-en-google-colab",
+    "href": "04b-mineria-texto.html#laboratorio-en-google-colab",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.12 Laboratorio en Google Colab",
+    "text": "11.12 Laboratorio en Google Colab\nEn clase utilizaremos el notebook complementario:\nAnalisis cualitativo NovaRetail.ipynb\ny su dataset:\ndatos_cualitativos_prueba.csv\nEl dataset es sintético y fue construido deliberadamente para contener temas, polaridades y comentarios mixtos que permitan validar las técnicas. La columna tema_real_sintetico funciona como respuesta conocida solo con fines pedagógicos.\n\n11.12.1 En clase\nNo vamos a transcribir todo el notebook. La dinámica será:\n\nEjecutar → predecir qué debería ocurrir → observar salida → discutir supuestos → comparar métodos → modificar parámetros → volver a interpretar.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#para-tu-proyecto-de-grado",
+    "href": "04b-mineria-texto.html#para-tu-proyecto-de-grado",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.13 Para tu proyecto de grado",
+    "text": "11.13 Para tu proyecto de grado\nAntes de aplicar text mining o IA, responde:\n\n¿qué tipo de texto tienes?\n¿cuál es la unidad de análisis?\n¿qué pregunta buscas responder?\n¿el método será inductivo, deductivo o mixto?\n¿hay categorías/etiquetas existentes?\n¿qué volumen de texto tienes?\n¿qué parte requiere interpretación humana?\n¿cómo validarás el resultado automatizado?\n¿hay información sensible?\n¿qué decisión o insight esperas soportar?",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "04b-mineria-texto.html#referencias-metodológicas-de-base",
+    "href": "04b-mineria-texto.html#referencias-metodológicas-de-base",
+    "title": "11  Datos cualitativos, minería de texto e IA",
+    "section": "11.14 Referencias metodológicas de base",
+    "text": "11.14 Referencias metodológicas de base\n\nBraun, V. & Clarke, V. (2006). Using thematic analysis in psychology.\nGlaser, B. G. & Strauss, A. L. (1967). The Discovery of Grounded Theory.\nKrippendorff, K. Content Analysis: An Introduction to Its Methodology.",
+    "crumbs": [
+      "Semana 1 · De los datos a la información",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Datos cualitativos, minería de texto e IA</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html",
+    "href": "05-estadistica-decisiones.html",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "",
+    "text": "12.1 Propósito\nLa estadística descriptiva permite condensar grandes cantidades de datos, pero una medida solo es útil si representa correctamente el fenómeno que queremos comprender.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#propósito",
+    "href": "05-estadistica-decisiones.html#propósito",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "",
+    "text": "NotaRuta de clase · Fin de semana 2\n\n\n\nTiempo presencial orientativo: 3 horas el viernes. Trabajaremos interpretación antes que cálculo manual.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#el-promedio-puede-contar-una-historia-incompleta",
+    "href": "05-estadistica-decisiones.html#el-promedio-puede-contar-una-historia-incompleta",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.2 El promedio puede contar una historia incompleta",
+    "text": "12.2 El promedio puede contar una historia incompleta\nSupón dos sucursales:\n\n\n\nSucursal\nVentas de cinco operaciones\n\n\n\n\nA\n90, 95, 100, 105, 110\n\n\nB\n20, 30, 40, 50, 360\n\n\n\nAmbas tienen promedio 100. ¿Son comercialmente equivalentes?\nLa media resume el centro, pero es sensible a valores extremos. La mediana describe el valor que deja la mitad de observaciones a cada lado.\n\nventas |&gt;\n  filter(estado == \"Completada\") |&gt;\n  summarise(\n    promedio = mean(valor_venta, na.rm = TRUE),\n    mediana = median(valor_venta, na.rm = TRUE)\n  )",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#dispersión-no-basta-con-saber-dónde-está-el-centro",
+    "href": "05-estadistica-decisiones.html#dispersión-no-basta-con-saber-dónde-está-el-centro",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.3 Dispersión: no basta con saber dónde está el centro",
+    "text": "12.3 Dispersión: no basta con saber dónde está el centro\n\nventas |&gt;\n  summarise(\n    desviacion = sd(valor_venta, na.rm = TRUE),\n    minimo = min(valor_venta, na.rm = TRUE),\n    p25 = quantile(valor_venta, .25, na.rm = TRUE),\n    mediana = median(valor_venta, na.rm = TRUE),\n    p75 = quantile(valor_venta, .75, na.rm = TRUE),\n    maximo = max(valor_venta, na.rm = TRUE)\n  )\n\nDos segmentos con igual promedio pueden tener niveles de variabilidad muy diferentes. Esto puede cambiar una decisión sobre inventarios, capacidad o riesgo.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#percentiles",
+    "href": "05-estadistica-decisiones.html#percentiles",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.4 Percentiles",
+    "text": "12.4 Percentiles\nUn percentil responde preguntas como:\n\n¿Qué valor separa al 10 % de las transacciones más altas?\n\n\nquantile(ventas$valor_venta, probs = c(.25,.5,.75,.9), na.rm = TRUE)\n\nLos percentiles son particularmente útiles cuando las distribuciones son asimétricas.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#tasas-y-proporciones",
+    "href": "05-estadistica-decisiones.html#tasas-y-proporciones",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.5 Tasas y proporciones",
+    "text": "12.5 Tasas y proporciones\nMuchos KPI empresariales son cocientes.\n\nventas |&gt;\n  summarise(\n    transacciones = n(),\n    canceladas = sum(estado == \"Cancelada\"),\n    tasa_cancelacion = canceladas / transacciones\n  )\n\nSiempre pregunta cuál es el numerador, cuál es el denominador y si ambos corresponden a la misma población y periodo.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#crecimiento",
+    "href": "05-estadistica-decisiones.html#crecimiento",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.6 Crecimiento",
+    "text": "12.6 Crecimiento\nUna tasa de crecimiento compara periodos:\ncrecimiento = (valor_actual / valor_anterior) - 1\nUna tasa sin contexto puede ser engañosa. Crecer 50 % desde una base muy pequeña no equivale a aportar la mayor cantidad absoluta al negocio.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#correlación",
+    "href": "05-estadistica-decisiones.html#correlación",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.7 Correlación",
+    "text": "12.7 Correlación\n\ncor(\n  ventas$descuento,\n  ventas$valor_venta,\n  use = \"complete.obs\"\n)\n\nLa correlación resume asociación lineal. No demuestra causalidad.\n\n\n\n\n\n\nAdvertencia\n\n\n\nSi descuento y ventas están correlacionados, no podemos concluir automáticamente que el descuento causó el aumento. Categoría, temporada, canal o selección de clientes podrían explicar parte de la relación.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#segmentar-antes-de-concluir",
+    "href": "05-estadistica-decisiones.html#segmentar-antes-de-concluir",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.8 Segmentar antes de concluir",
+    "text": "12.8 Segmentar antes de concluir\n\nventas |&gt;\n  filter(estado == \"Completada\") |&gt;\n  group_by(canal) |&gt;\n  summarise(\n    promedio = mean(valor_venta, na.rm = TRUE),\n    mediana = median(valor_venta, na.rm = TRUE),\n    desviacion = sd(valor_venta, na.rm = TRUE),\n    .groups = \"drop\"\n  )\n\nUna estadística nacional puede ocultar diferencias importantes entre canales, regiones o segmentos.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#taller-gerencial",
+    "href": "05-estadistica-decisiones.html#taller-gerencial",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.9 Taller gerencial",
+    "text": "12.9 Taller gerencial\nPara cada afirmación decide qué evidencia adicional necesitas:\n\n“El canal web tiene mejores clientes porque su ticket promedio es mayor.”\n“Los descuentos están funcionando porque las ventas aumentaron.”\n“La región con mayor variabilidad es la de mayor riesgo.”\n“Los clientes Premium están más satisfechos.”\n\nEl objetivo es identificar cuándo una afirmación excede lo que la estadística descriptiva permite concluir.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#analytics-ia",
+    "href": "05-estadistica-decisiones.html#analytics-ia",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.10 Analytics + IA",
+    "text": "12.10 Analytics + IA\nPrompt sugerido:\n\nActúa como analista crítico. Te entregaré media, mediana, desviación, percentiles y tamaño de muestra de tres segmentos. Produce una interpretación ejecutiva y separa explícitamente: observaciones, hipótesis y conclusiones que no pueden demostrarse.\n\nEvalúa si la IA respeta realmente esas categorías.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#reto",
+    "href": "05-estadistica-decisiones.html#reto",
+    "title": "12  Estadística descriptiva para decisiones",
+    "section": "12.11 Reto",
+    "text": "12.11 Reto\nConstruye un perfil estadístico de NovaRetail por canal. Selecciona tres métricas y explica por qué son más útiles para una decisión comercial que limitarse al promedio.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Estadística descriptiva para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html",
+    "href": "06-calidad-etl.html",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "",
+    "text": "13.1 Propósito\nEl flujo es:",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#propósito",
+    "href": "06-calidad-etl.html#propósito",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "",
+    "text": "raw → diagnóstico → reglas → clean → validación → analysis-ready\n\n\n\n\n\n\n\nNota\n\n\n\nPrimero diagnosticamos. Después limpiamos. No se corrige lo que todavía no entendemos.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#carga",
+    "href": "06-calidad-etl.html#carga",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.2 Carga",
+    "text": "13.2 Carga\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(skimr)\nventas &lt;- read_csv(\"data/ventas.csv\") |&gt; clean_names()\nclientes &lt;- read_csv(\"data/clientes.csv\") |&gt; clean_names()\nproductos &lt;- read_csv(\"data/productos.csv\") |&gt; clean_names()\nsatisfaccion &lt;- read_csv(\"data/satisfaccion.csv\") |&gt; clean_names()",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#pregunta-cero-granularidad",
+    "href": "06-calidad-etl.html#pregunta-cero-granularidad",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.3 Pregunta cero: granularidad",
+    "text": "13.3 Pregunta cero: granularidad\n\n\n\nTabla\nUna fila representa\n\n\n\n\nventas\ntransacción\n\n\nclientes\ncliente\n\n\nproductos\nproducto\n\n\nsatisfacción\nrespuesta de encuesta",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#diagnóstico-general",
+    "href": "06-calidad-etl.html#diagnóstico-general",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.4 Diagnóstico general",
+    "text": "13.4 Diagnóstico general\nskim(ventas)\nBusca tipos, faltantes, valores únicos, rangos y distribuciones sospechosas.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#zoom-categorías",
+    "href": "06-calidad-etl.html#zoom-categorías",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.5 Zoom: categorías",
+    "text": "13.5 Zoom: categorías\nventas |&gt; count(canal,sort=TRUE)\nclientes |&gt; count(ciudad,sort=TRUE)\nLas categorías inconsistentes son peligrosas porque pueden producir KPI incorrectos sin generar error.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#zoom-duplicados",
+    "href": "06-calidad-etl.html#zoom-duplicados",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.6 Zoom: duplicados",
+    "text": "13.6 Zoom: duplicados\nventas |&gt; count(id_venta) |&gt; filter(n&gt;1)\nAntes de eliminar: ¿duplicado exacto, repetición válida o llave mal definida?",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#zoom-faltantes",
+    "href": "06-calidad-etl.html#zoom-faltantes",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.7 Zoom: faltantes",
+    "text": "13.7 Zoom: faltantes\nclientes |&gt; summarise(across(everything(), ~sum(is.na(.) | .==\"\")))\nNA no equivale automáticamente a cero.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#zoom-reglas-y-rangos",
+    "href": "06-calidad-etl.html#zoom-reglas-y-rangos",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.8 Zoom: reglas y rangos",
+    "text": "13.8 Zoom: reglas y rangos\nventas |&gt; filter(cantidad&lt;=0 | descuento&lt;0 | descuento&gt;1)\nUn valor imposible depende de una regla de negocio. Si no está documentada, se valida antes de corregir.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#outliers",
+    "href": "06-calidad-etl.html#outliers",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.9 Outliers",
+    "text": "13.9 Outliers\nSecuencia: identificar fila → mirar contexto → evaluar plausibilidad → decidir → documentar.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#una-corrección-una-verificación",
+    "href": "06-calidad-etl.html#una-corrección-una-verificación",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.10 Una corrección, una verificación",
+    "text": "13.10 Una corrección, una verificación\nventas_clean &lt;- ventas |&gt;\n  mutate(canal=str_to_title(str_trim(canal)))\nventas_clean |&gt; count(canal)",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#nunca-sobrescribas-raw",
+    "href": "06-calidad-etl.html#nunca-sobrescribas-raw",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.11 Nunca sobrescribas raw",
+    "text": "13.11 Nunca sobrescribas raw\ndata/raw/ventas.csv\ndata/clean/ventas_clean.csv",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#integridad-y-joins",
+    "href": "06-calidad-etl.html#integridad-y-joins",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.12 Integridad y joins",
+    "text": "13.12 Integridad y joins\nAntes:\nclientes |&gt; count(id_cliente) |&gt; filter(n&gt;1)\nproductos |&gt; count(id_producto) |&gt; filter(n&gt;1)\nHuérfanos:\nventas_clean |&gt; anti_join(clientes,by=\"id_cliente\")\nSolo después integra. Consulta Cuando un join multiplica filas.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#acta-de-limpieza",
+    "href": "06-calidad-etl.html#acta-de-limpieza",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.13 Acta de limpieza",
+    "text": "13.13 Acta de limpieza\nProblema:\nRegla:\nAcción:\nRegistros afectados:\nValidación posterior:\nRiesgo/supuesto:",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#prueba-de-reproducibilidad",
+    "href": "06-calidad-etl.html#prueba-de-reproducibilidad",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.14 Prueba de reproducibilidad",
+    "text": "13.14 Prueba de reproducibilidad\nReinicia R, limpia Environment, ejecuta de arriba a abajo y confirma que produces el mismo dataset y KPI.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#producto",
+    "href": "06-calidad-etl.html#producto",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.15 Producto",
+    "text": "13.15 Producto\nEntrega diagnóstico, acta, script, dataset final, tres validaciones y tres decisiones que requirieron criterio humano.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#ia-para-proponer-controles",
+    "href": "06-calidad-etl.html#ia-para-proponer-controles",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.16 IA para proponer controles",
+    "text": "13.16 IA para proponer controles\n\n“Clasifica controles en unicidad, completitud, validez, consistencia e integridad. Separa lo verificable técnicamente de lo que exige regla de negocio.”",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06-calidad-etl.html#checklist",
+    "href": "06-calidad-etl.html#checklist",
+    "title": "13  Calidad de datos y ETL: de raw a analysis-ready",
+    "section": "13.17 Checklist",
+    "text": "13.17 Checklist\n\nDiagnostiqué antes de limpiar.\nCada corrección tiene verificación.\nNo sobrescribí raw.\nRevisé cardinalidad antes de joins.\nDocumenté supuestos.\nEl script se reproduce desde una sesión limpia.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Calidad de datos y ETL: de raw a analysis-ready</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html",
+    "href": "06b-busqueda-evidencia-ia.html",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "",
+    "text": "14.1 Del hallazgo a una hipótesis\nSupón que NovaRetail muestra mayor uso de descuentos en segmentos con menor satisfacción. Eso es una observación. Una explicación posible sería: “La exposición frecuente a promociones puede modificar la percepción de valor”. Todavía no es una conclusión.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#separar-cuatro-niveles",
+    "href": "06b-busqueda-evidencia-ia.html#separar-cuatro-niveles",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.2 Separar cuatro niveles",
+    "text": "14.2 Separar cuatro niveles\n\n\n\n\n\n\n\n\nNivel\nEjemplo\nRespaldo\n\n\n\n\nObservación\nlos grupos difieren en descuento y satisfacción\ndatos NovaRetail\n\n\nAsociación\nlas variables se mueven conjuntamente\nanálisis estadístico\n\n\nHipótesis\npromociones afectan percepción de valor\nexplicación por contrastar\n\n\nCausalidad\nel descuento produjo el cambio\nevidencia causal apropiada",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#convertir-la-hipótesis-en-términos-de-búsqueda",
+    "href": "06b-busqueda-evidencia-ia.html#convertir-la-hipótesis-en-términos-de-búsqueda",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.3 Convertir la hipótesis en términos de búsqueda",
+    "text": "14.3 Convertir la hipótesis en términos de búsqueda\nConcepto 1: price promotions | discounts | promotional frequency\nConcepto 2: perceived value | brand equity | customer satisfaction\nContexto: retail | consumer behavior\n(\"price promotion\" OR discount*) AND\n(\"perceived value\" OR \"brand equity\" OR \"customer satisfaction\") AND\n(retail OR consumer)",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#ia-para-ampliar-términos-no-para-inventar-referencias",
+    "href": "06b-busqueda-evidencia-ia.html#ia-para-ampliar-términos-no-para-inventar-referencias",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.4 IA para ampliar términos, no para inventar referencias",
+    "text": "14.4 IA para ampliar términos, no para inventar referencias\nCONTEXTO\nEstoy investigando si la frecuencia de promociones y descuentos puede relacionarse con la percepción de valor o satisfacción en retail.\n\nTAREA\nAyúdame a construir una estrategia de búsqueda académica. Identifica conceptos principales, sinónimos en inglés y español y tres ecuaciones booleanas de distinta amplitud.\n\nFORMATO\nTabla: concepto | sinónimos | término recomendado. Después presenta las tres ecuaciones.\n\nRESTRICCIONES\nNo cites artículos, autores, DOI ni resultados. En esta etapa solo quiero términos y estrategia de búsqueda.\n\nPrimero usamos la IA para diseñar la búsqueda; las referencias se obtienen de una base o buscador académico verificable.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#buscar-y-registrar",
+    "href": "06b-busqueda-evidencia-ia.html#buscar-y-registrar",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.5 Buscar y registrar",
+    "text": "14.5 Buscar y registrar\n\n\n\n\n\n\n\n\n\n\n\nReferencia verificada\nPregunta/objetivo\nDatos/método\nHallazgo relevante\nLimitación\nUtilidad para NovaRetail\n\n\n\n\n\n\n\n\n\n\n\n\n\nAbre la fuente original antes de atribuirle una afirmación.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#ia-para-leer-mejor-una-fuente-ya-verificada",
+    "href": "06b-busqueda-evidencia-ia.html#ia-para-leer-mejor-una-fuente-ya-verificada",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.6 IA para leer mejor una fuente ya verificada",
+    "text": "14.6 IA para leer mejor una fuente ya verificada\nCONTEXTO\nEstoy evaluando una hipótesis sobre promociones y percepción de valor. El texto que proporcionaré pertenece a una fuente que ya verifiqué.\n\nTAREA\nExtrae pregunta de investigación, población/datos, método, resultado relevante y limitaciones. Señala qué partes no aparecen en el fragmento.\n\nFORMATO\nTabla de cinco filas y dos preguntas que debería resolver leyendo el documento completo.\n\nRESTRICCIONES\nTrabaja únicamente con el texto proporcionado. No completes información faltante con conocimiento externo.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#ejercicio-la-referencia-fantasma",
+    "href": "06b-busqueda-evidencia-ia.html#ejercicio-la-referencia-fantasma",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.7 Ejercicio · la referencia fantasma",
+    "text": "14.7 Ejercicio · la referencia fantasma\nPrueba deliberadamente:\nDame cinco artículos académicos que demuestren que los descuentos frecuentes reducen la percepción de valor en retail. Incluye autores, año, revista y DOI.\nNo uses la respuesta como bibliografía. Audítala: existencia, metadatos, DOI, correspondencia con la afirmación y tipo real de evidencia.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#volver-a-novaretail",
+    "href": "06b-busqueda-evidencia-ia.html#volver-a-novaretail",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.8 Volver a NovaRetail",
+    "text": "14.8 Volver a NovaRetail\nHallazgo interno:\nHipótesis inicial:\nQué dice la evidencia externa verificada:\nQué NO permite concluir:\nAnálisis adicional en NovaRetail:\nDecisión que podría verse afectada:",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#mini-reto-evaluable",
+    "href": "06b-busqueda-evidencia-ia.html#mini-reto-evaluable",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.9 Mini-reto evaluable",
+    "text": "14.9 Mini-reto evaluable\nSelecciona una hipótesis surgida de tu EDA. Entrega pregunta de búsqueda, ecuación, dos fuentes verificadas, matriz de evidencia, contraste con NovaRetail, conclusión prudente y declaración del uso de IA.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "06b-busqueda-evidencia-ia.html#regla-de-salida",
+    "href": "06b-busqueda-evidencia-ia.html#regla-de-salida",
+    "title": "14  Búsqueda bibliográfica, hipótesis y verificación con IA",
+    "section": "14.10 Regla de salida",
+    "text": "14.10 Regla de salida\n\nLa IA puede ayudarte a buscar, organizar, cuestionar y resumir. La afirmación académica debe poder rastrearse hasta la fuente original.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Búsqueda bibliográfica, hipótesis y verificación con IA</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html",
+    "href": "07-power-bi.html",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "",
+    "text": "15.1 Propósito\nEl objetivo de este capítulo es comprender cómo una base preparada se convierte en un modelo de información que puede alimentar indicadores y visualizaciones confiables.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#propósito",
+    "href": "07-power-bi.html#propósito",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "",
+    "text": "NotaRuta de clase · Sábado\n\n\n\nNo intentaremos dominar Power BI en una sesión. Construiremos el flujo mínimo correcto: obtener → transformar → modelar → medir → visualizar.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#antes-de-abrir-power-bi",
+    "href": "07-power-bi.html#antes-de-abrir-power-bi",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.2 Antes de abrir Power BI",
+    "text": "15.2 Antes de abrir Power BI\nDebemos poder responder:\n\n¿qué representa cada fila?\n¿cuál es la llave?\n¿qué tablas describen entidades?\n¿qué tabla registra eventos?\n¿qué KPI necesitamos?\n¿qué dimensiones utilizará la gerencia para segmentar?\n\nSi estas preguntas no están claras, Power BI no resolverá el problema.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#power-query-y-r-funciones-complementarias",
+    "href": "07-power-bi.html#power-query-y-r-funciones-complementarias",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.3 Power Query y R: funciones complementarias",
+    "text": "15.3 Power Query y R: funciones complementarias\nEn este curso usaremos R para aprender y documentar transformaciones analíticas, y Power Query para comprender el flujo de preparación dentro del ecosistema BI.\nNo es necesario repetir cada transformación dos veces. Lo importante es reconocer que ambos entornos permiten:\n\nimportar;\ntipar;\nfiltrar;\nreemplazar;\ncombinar;\nagrupar;\ndocumentar pasos.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#cargar-las-tablas",
+    "href": "07-power-bi.html#cargar-las-tablas",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.4 Cargar las tablas",
+    "text": "15.4 Cargar las tablas\nImporta:\n\nventas.csv;\nclientes.csv;\nproductos.csv;\nsatisfaccion.csv.\n\nEn Power Query revisa:\n\nnombres;\ntipos;\nerrores;\nvalores vacíos;\ncategorías;\nllaves.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#no-construir-una-sola-tabla-gigante-por-costumbre",
+    "href": "07-power-bi.html#no-construir-una-sola-tabla-gigante-por-costumbre",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.5 No construir una sola tabla gigante por costumbre",
+    "text": "15.5 No construir una sola tabla gigante por costumbre\nPara BI suele ser útil separar:\nHechos: eventos medibles, como ventas.\nDimensiones: entidades que describen esos eventos, como cliente, producto y fecha.\nNuestro modelo evolucionará hacia:\n             DimCliente\n                  │\nDimFecha ─── FactVentas ─── DimProducto\n                  │\n              DimCanal\nLa satisfacción puede requerir una tabla de hechos adicional porque una encuesta no necesariamente tiene la misma granularidad que una venta.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#granularidad",
+    "href": "07-power-bi.html#granularidad",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.6 Granularidad",
+    "text": "15.6 Granularidad\nPregunta esencial:\n\n¿Qué representa una fila?\n\nEn ventas.csv, una fila representa una transacción registrada.\nEn clientes.csv, una fila representa un cliente.\nEn satisfaccion.csv, una fila representa una respuesta de encuesta.\nCombinar tablas con granularidades diferentes sin pensar puede duplicar medidas.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#primeras-medidas",
+    "href": "07-power-bi.html#primeras-medidas",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.7 Primeras medidas",
+    "text": "15.7 Primeras medidas\nEn Power BI construiremos posteriormente medidas como:\nVentas =\nSUM(FactVentas[ValorVenta])\n\nTransacciones =\nDISTINCTCOUNT(FactVentas[IdVenta])\n\nClientes =\nDISTINCTCOUNT(FactVentas[IdCliente])\n\nTicket Promedio =\nDIVIDE([Ventas], [Transacciones])\nPor ahora interesa entender qué calcula cada medida y bajo qué filtros cambia.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#página-de-diagnóstico",
+    "href": "07-power-bi.html#página-de-diagnóstico",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.8 Página de diagnóstico",
+    "text": "15.8 Página de diagnóstico\nAntes del dashboard final crea una página sencilla con:\n\nventas;\ntransacciones;\nclientes;\nticket promedio;\nevolución mensual;\nventas por región;\nventas por canal;\nventas por categoría.\n\nIncluye segmentadores para comprobar que las medidas responden correctamente.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#validación-cruzada",
+    "href": "07-power-bi.html#validación-cruzada",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.9 Validación cruzada",
+    "text": "15.9 Validación cruzada\nUna buena práctica del curso será comparar una cifra de Power BI con una cifra calculada en R.\nSi no coinciden, investiga:\n\nfiltros;\nduplicados;\nestados de transacción;\ntipos;\nrelaciones;\ngranularidad;\ndefinición de la medida.\n\n\n\n\n\n\n\nTip\n\n\n\nUna cifra que coincide entre dos herramientas no garantiza que sea conceptualmente correcta, pero una cifra que no coincide es una señal clara de que debemos investigar.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "07-power-bi.html#reto",
+    "href": "07-power-bi.html#reto",
+    "title": "15  Del dataset analítico a Power BI",
+    "section": "15.10 Reto",
+    "text": "15.10 Reto\nConstruye la primera página de diagnóstico y responde:\n\n¿qué KPI cambia más al filtrar por región?\n¿qué segmentación revela una historia que el total ocultaba?\n¿qué cifra validaste contra R?\n¿qué duda sobre el modelo queda abierta?\n\nEsta página será el punto de partida del tercer fin de semana.",
+    "crumbs": [
+      "Semana 2 · De la información a las decisiones",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Del dataset analítico a Power BI</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/evidencia-ia.html",
+    "href": "interactivos/evidencia-ia.html",
+    "title": "16  Interactivo · Dato, hipótesis o invención",
+    "section": "",
+    "text": "Situación: “Las ventas aumentaron 10 % y el NPS cayó 12 puntos.”\n\nClasifica mentalmente cada frase y luego revela la respuesta.\n\n\n\n\n\nUna respuesta útil de IA puede contener hipótesis y recomendaciones. El problema aparece cuando esas categorías se presentan como si fueran hechos observados.",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactivo · Dato, hipótesis o invención</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/filter-select-groupby.html",
+    "href": "interactivos/filter-select-groupby.html",
+    "title": "17  Interactivo · ¿Qué hace cada verbo?",
+    "section": "",
+    "text": "17.1 Pruébalo tú mismo",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/filter-select-groupby.html#pruébalo-tú-mismo",
+    "href": "interactivos/filter-select-groupby.html#pruébalo-tú-mismo",
+    "title": "17  Interactivo · ¿Qué hace cada verbo?",
+    "section": "",
+    "text": "Original\n\n\nselect()\n\n\nfilter()\n\n\ngroup_by() + summarise()",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/filter-select-groupby.html#ahora-escríbelo-en-r",
+    "href": "interactivos/filter-select-groupby.html#ahora-escríbelo-en-r",
+    "title": "17  Interactivo · ¿Qué hace cada verbo?",
+    "section": "17.2 Ahora escríbelo en R",
+    "text": "17.2 Ahora escríbelo en R\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/filter-select-groupby.html#preguntas-de-comprensión",
+    "href": "interactivos/filter-select-groupby.html#preguntas-de-comprensión",
+    "title": "17  Interactivo · ¿Qué hace cada verbo?",
+    "section": "17.3 Preguntas de comprensión",
+    "text": "17.3 Preguntas de comprensión\n\n¿Cuál operación cambia columnas sin eliminar filas?\n¿Cuál cambia la población observada?\n¿Por qué un resumen por región ya no tiene granularidad de transacción?",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/outliers.html",
+    "href": "interactivos/outliers.html",
+    "title": "18  Interactivo · El outlier y el promedio",
+    "section": "",
+    "text": "18.1 Mueve la operación extrema\n¿Qué medida permanece más estable? ¿Significa eso que siempre debemos preferirla?",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/outliers.html#mueve-la-operación-extrema",
+    "href": "interactivos/outliers.html#mueve-la-operación-extrema",
+    "title": "18  Interactivo · El outlier y el promedio",
+    "section": "",
+    "text": "Valor extremo:",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/joins.html",
+    "href": "interactivos/joins.html",
+    "title": "19  Interactivo · Cuando un join multiplica filas",
+    "section": "",
+    "text": "19.1 Diagnóstico en R\nTenemos ventas:\nY una supuesta dimensión de clientes:",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/joins.html#diagnóstico-en-r",
+    "href": "interactivos/joins.html#diagnóstico-en-r",
+    "title": "19  Interactivo · Cuando un join multiplica filas",
+    "section": "",
+    "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\nAntes de integrar, valida la cardinalidad. Una dimensión que debería tener una fila por cliente no puede contener dos versiones simultáneas sin una regla explícita.",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
+    ]
+  },
+  {
+    "objectID": "interactivos/contexto-filtro.html",
+    "href": "interactivos/contexto-filtro.html",
+    "title": "20  Interactivo · Contexto de filtro",
+    "section": "",
+    "text": "20.1 Pregunta\nLa fórmula conceptual de Ventas = SUM(ValorVenta) permanece igual. Lo que cambia es el conjunto de filas visible para la medida.\nSi un gerente selecciona Caribe, ¿debería cambiar también el número de clientes? ¿Qué tendría que ocurrir en el modelo para que el filtro se propague correctamente?",
+    "crumbs": [
+      "Laboratorios interactivos",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Interactivo · Contexto de filtro</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html",
+    "href": "labs/lab-01-fundamentos-r.html",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "",
+    "text": "21.1 R como calculadora\nEste laboratorio es material de consulta autónoma. No es necesario memorizarlo antes de comenzar la ruta principal.\n2 + 2\n\n[1] 4\n\n10 / 4\n\n[1] 2.5\n\n(120 + 150 + 180) / 3\n\n[1] 150",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#objetos",
+    "href": "labs/lab-01-fundamentos-r.html#objetos",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.2 Objetos",
+    "text": "21.2 Objetos\n\nventas_mes &lt;- 12500000\nmeta_mes &lt;- 12000000\nregion &lt;- \"Caribe\"\ncumple_meta &lt;- ventas_mes &gt;= meta_mes\n\nConsulta:\n\nventas_mes\n\n[1] 12500000\n\ncumple_meta\n\n[1] TRUE",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#tipos-básicos",
+    "href": "labs/lab-01-fundamentos-r.html#tipos-básicos",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.3 Tipos básicos",
+    "text": "21.3 Tipos básicos\n\nclass(ventas_mes)\n\n[1] \"numeric\"\n\nclass(region)\n\n[1] \"character\"\n\nclass(cumple_meta)\n\n[1] \"logical\"\n\n\nEncontrarás frecuentemente:\n\nnumeric / double;\ninteger;\ncharacter;\nlogical;\nfechas.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#operadores",
+    "href": "labs/lab-01-fundamentos-r.html#operadores",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.4 Operadores",
+    "text": "21.4 Operadores\n\n21.4.1 Aritméticos\n+, -, *, /, ^\n\n\n21.4.2 Comparación\n&gt;, &lt;, &gt;=, &lt;=, ==, !=\n\n\n21.4.3 Lógicos\n&, |, !\n\nventas_mes &gt; meta_mes\n\n[1] TRUE\n\nregion == \"Caribe\"\n\n[1] TRUE\n\nventas_mes &gt; meta_mes & region == \"Caribe\"\n\n[1] TRUE",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#funciones",
+    "href": "labs/lab-01-fundamentos-r.html#funciones",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.5 Funciones",
+    "text": "21.5 Funciones\nUna función recibe argumentos y devuelve un resultado.\n\nround(12.567, digits = 2)\n\n[1] 12.57\n\nsqrt(144)\n\n[1] 12\n\n\nLa ayuda de R puede consultarse con:\n\n?round\n\nstarting httpd help server ... done",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#valores-faltantes",
+    "href": "labs/lab-01-fundamentos-r.html#valores-faltantes",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.6 Valores faltantes",
+    "text": "21.6 Valores faltantes\n\nventas &lt;- c(120, 150, NA, 180)\n\nmean(ventas)\n\n[1] NA\n\nmean(ventas, na.rm = TRUE)\n\n[1] 150\n\n\nNA significa que el valor está ausente. No debe confundirse automáticamente con cero.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#errores-como-parte-del-aprendizaje",
+    "href": "labs/lab-01-fundamentos-r.html#errores-como-parte-del-aprendizaje",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.7 Errores como parte del aprendizaje",
+    "text": "21.7 Errores como parte del aprendizaje\nLee el mensaje de error antes de modificar código. Pregunta:\n\n¿qué función falló?\n¿qué objeto estaba utilizando?\n¿el nombre existe?\n¿el tipo de dato es correcto?\n¿falta cargar un paquete?",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-01-fundamentos-r.html#reto",
+    "href": "labs/lab-01-fundamentos-r.html#reto",
+    "title": "21  Laboratorio 1 · Fundamentos de R",
+    "section": "21.8 Reto",
+    "text": "21.8 Reto\nCrea:\n\nun objeto con ventas actuales;\notro con la meta;\notro con crecimiento esperado;\nuna condición que indique si se alcanzó la meta.\n\nDespués calcula cuánto falta o cuánto se supera la meta.\n\n\n\n\n\n\nTip\n\n\n\nPide a una IA que explique el mensaje de error, no que reescriba inmediatamente todo tu código. Aprenderás más del proceso de depuración.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html",
+    "href": "labs/lab-02-estructuras.html",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "",
+    "text": "22.1 Vectores\nUn vector contiene elementos del mismo tipo.\nventas_mensuales &lt;- c(12.5, 13.8, 12.1, 15.6, 16.2, 15.9)\nPodemos operar sobre el conjunto:\nmean(ventas_mensuales)\n\n[1] 14.35\n\nmedian(ventas_mensuales)\n\n[1] 14.7\n\nmax(ventas_mensuales)\n\n[1] 16.2\n\nsum(ventas_mensuales)\n\n[1] 86.1",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#indexación",
+    "href": "labs/lab-02-estructuras.html#indexación",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.2 Indexación",
+    "text": "22.2 Indexación\n\nventas_mensuales[1]\n\n[1] 12.5\n\nventas_mensuales[2:4]\n\n[1] 13.8 12.1 15.6\n\nventas_mensuales[ventas_mensuales &gt; 15]\n\n[1] 15.6 16.2 15.9",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#vectores-de-texto",
+    "href": "labs/lab-02-estructuras.html#vectores-de-texto",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.3 Vectores de texto",
+    "text": "22.3 Vectores de texto\n\nregiones &lt;- c(\"Caribe\", \"Andina\", \"Pacífica\", \"Orinoquía\")\nregiones[2]\n\n[1] \"Andina\"",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#data-frames",
+    "href": "labs/lab-02-estructuras.html#data-frames",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.4 Data frames",
+    "text": "22.4 Data frames\nUna tabla empresarial suele contener columnas de diferentes tipos.\n\nsucursales &lt;- data.frame(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160),\n  cumple_meta = c(TRUE, TRUE, FALSE)\n)\n\nsucursales\n\n           ciudad ventas cumple_meta\n1    Barranquilla    120        TRUE\n2   Bogot&lt;U+00E1&gt;    180        TRUE\n3 Medell&lt;U+00ED&gt;n    160       FALSE\n\n\nAcceso a una columna:\n\nsucursales$ventas\n\n[1] 120 180 160\n\n\nObserva que una columna de un data frame puede comportarse como un vector.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#tibbles",
+    "href": "labs/lab-02-estructuras.html#tibbles",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.5 Tibbles",
+    "text": "22.5 Tibbles\nEl tidyverse utiliza frecuentemente tibble, una versión moderna de las tablas en R.\n\nlibrary(tibble)\n\nsucursales_tbl &lt;- tibble(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160)\n)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#factores",
+    "href": "labs/lab-02-estructuras.html#factores",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.6 Factores",
+    "text": "22.6 Factores\nLos factores representan variables categóricas y pueden ser útiles cuando existe un conjunto controlado de niveles.\n\nprioridad &lt;- factor(\n  c(\"Alta\", \"Media\", \"Baja\"),\n  levels = c(\"Baja\", \"Media\", \"Alta\"),\n  ordered = TRUE\n)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#matrices",
+    "href": "labs/lab-02-estructuras.html#matrices",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.7 Matrices",
+    "text": "22.7 Matrices\nUna matriz contiene elementos del mismo tipo en filas y columnas.\n\nm &lt;- matrix(1:9, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\nNo será una estructura central en las sesiones presenciales, pero es útil reconocerla.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#listas",
+    "href": "labs/lab-02-estructuras.html#listas",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.8 Listas",
+    "text": "22.8 Listas\nUna lista puede contener objetos de distintos tipos.\n\nreporte &lt;- list(\n  periodo = \"2026-1\",\n  ventas = ventas_mensuales,\n  regiones = regiones\n)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#qué-estructura-veremos-más",
+    "href": "labs/lab-02-estructuras.html#qué-estructura-veremos-más",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.9 ¿Qué estructura veremos más?",
+    "text": "22.9 ¿Qué estructura veremos más?\nPara análisis de negocios, la mayor parte del curso operará sobre data frames/tibbles, aunque comprender vectores ayuda a entender qué ocurre dentro de cada columna.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-02-estructuras.html#reto",
+    "href": "labs/lab-02-estructuras.html#reto",
+    "title": "22  Laboratorio 2 · Estructuras de datos en R",
+    "section": "22.10 Reto",
+    "text": "22.10 Reto\nConstruye un tibble con seis meses y sus ventas. Añade una variable lógica que indique si cada mes superó una meta de 14 millones.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html",
+    "href": "labs/lab-03-tidyverse.html",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "",
+    "text": "23.1 Pipe\nEste laboratorio funciona como referencia rápida durante los ejercicios.\ndatos |&gt;\n  operacion_1() |&gt;\n  operacion_2()\nLéelo de izquierda a derecha: toma estos datos y luego…",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#select",
+    "href": "labs/lab-03-tidyverse.html#select",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.2 select()",
+    "text": "23.2 select()\n\nventas |&gt;\n  select(fecha, region, valor_venta)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#filter",
+    "href": "labs/lab-03-tidyverse.html#filter",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.3 filter()",
+    "text": "23.3 filter()\n\nventas |&gt;\n  filter(region == \"Caribe\", valor_venta &gt; 200000)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#mutate",
+    "href": "labs/lab-03-tidyverse.html#mutate",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.4 mutate()",
+    "text": "23.4 mutate()\n\nventas |&gt;\n  mutate(\n    tiene_descuento = descuento &gt; 0\n  )",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#arrange",
+    "href": "labs/lab-03-tidyverse.html#arrange",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.5 arrange()",
+    "text": "23.5 arrange()\n\nventas |&gt;\n  arrange(desc(valor_venta))",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#group_by-summarise",
+    "href": "labs/lab-03-tidyverse.html#group_by-summarise",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.6 group_by() + summarise()",
+    "text": "23.6 group_by() + summarise()\n\nventas |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    clientes = n_distinct(id_cliente),\n    .groups = \"drop\"\n  )",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#count",
+    "href": "labs/lab-03-tidyverse.html#count",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.7 count()",
+    "text": "23.7 count()\n\nventas |&gt;\n  count(canal, sort = TRUE)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#distinct",
+    "href": "labs/lab-03-tidyverse.html#distinct",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.8 distinct()",
+    "text": "23.8 distinct()\n\nventas |&gt;\n  distinct(id_cliente)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#joins",
+    "href": "labs/lab-03-tidyverse.html#joins",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.9 Joins",
+    "text": "23.9 Joins\nCuando dos tablas comparten una llave:\n\nventas |&gt;\n  left_join(clientes, by = \"id_cliente\")\n\nAntes del join revisa la unicidad de la llave para evitar multiplicar registros accidentalmente.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#pivot",
+    "href": "labs/lab-03-tidyverse.html#pivot",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.10 Pivot",
+    "text": "23.10 Pivot\n\ndatos |&gt;\n  pivot_longer(\n    cols = starts_with(\"venta_\"),\n    names_to = \"periodo\",\n    values_to = \"venta\"\n  )\n\npivot_longer() y pivot_wider() cambian la forma de una tabla; no deberían cambiar el significado de las observaciones.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-03-tidyverse.html#pro-tip",
+    "href": "labs/lab-03-tidyverse.html#pro-tip",
+    "title": "23  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "23.11 Pro Tip",
+    "text": "23.11 Pro Tip\n\n\n\nNecesito…\nFunción\n\n\n\n\ncolumnas\nselect()\n\n\nfilas\nfilter()\n\n\ncrear variable\nmutate()\n\n\nordenar\narrange()\n\n\nagrupar\ngroup_by()\n\n\nindicador\nsummarise()\n\n\nfrecuencia\ncount()\n\n\núnicos\ndistinct()\n\n\ncombinar tablas\n*_join()\n\n\ncambiar forma\npivot_*()\n\n\n\nNo memorices todo a la vez. Regresa a esta página cuando lo necesites.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-04-importacion.html",
+    "href": "labs/lab-04-importacion.html",
+    "title": "24  Laboratorio 4 · Importación de datos",
+    "section": "",
+    "text": "24.1 Comprobaciones posteriores\nInspecciona dimensiones, nombres, tipos, faltantes y primeras observaciones antes de iniciar cualquier análisis.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 4 · Importación de datos</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-05-ggplot.html",
+    "href": "labs/lab-05-ggplot.html",
+    "title": "25  Laboratorio 5 · ggplot2",
+    "section": "",
+    "text": "25.1 Pregunta\nPiensa en la gramática: datos + estética + geometría + etiquetas.\n¿Qué comparación debe facilitar el gráfico? La elección visual debe venir después de la pregunta.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Laboratorio 5 · ggplot2</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06-estadistica.html",
+    "href": "labs/lab-06-estadistica.html",
+    "title": "26  Laboratorio 6 · Estadística de consulta",
+    "section": "",
+    "text": "26.1 Tendencia central\nx &lt;- c(80, 90, 100, 110, 120)\nmean(x)\n\n[1] 100\n\nmedian(x)\n\n[1] 100",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06-estadistica.html#dispersión",
+    "href": "labs/lab-06-estadistica.html#dispersión",
+    "title": "26  Laboratorio 6 · Estadística de consulta",
+    "section": "26.2 Dispersión",
+    "text": "26.2 Dispersión\n\nsd(x)\n\n[1] 15.81139\n\nrange(x)\n\n[1]  80 120\n\nIQR(x)\n\n[1] 20",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06-estadistica.html#percentiles",
+    "href": "labs/lab-06-estadistica.html#percentiles",
+    "title": "26  Laboratorio 6 · Estadística de consulta",
+    "section": "26.3 Percentiles",
+    "text": "26.3 Percentiles\n\nquantile(x, c(.25,.5,.75,.9))\n\n25% 50% 75% 90% \n 90 100 110 116",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06-estadistica.html#correlación",
+    "href": "labs/lab-06-estadistica.html#correlación",
+    "title": "26  Laboratorio 6 · Estadística de consulta",
+    "section": "26.4 Correlación",
+    "text": "26.4 Correlación\n\ncor(datos$x, datos$y, use = \"complete.obs\")\n\nRecuerda: correlación no implica causalidad.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-06-estadistica.html#reto",
+    "href": "labs/lab-06-estadistica.html#reto",
+    "title": "26  Laboratorio 6 · Estadística de consulta",
+    "section": "26.5 Reto",
+    "text": "26.5 Reto\nCompara dos grupos que tengan promedios similares pero dispersión diferente. Explica cuál medida adicional comunicarías a una persona que debe tomar una decisión.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html",
+    "href": "labs/lab-07-dax.html",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "",
+    "text": "27.1 Agregaciones\nEste laboratorio es una referencia rápida. DAX se aprende mejor entendiendo contexto y significado que memorizando funciones.",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html#agregaciones",
+    "href": "labs/lab-07-dax.html#agregaciones",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "",
+    "text": "Ventas = SUM(FactVentas[ValorVenta])\nClientes = DISTINCTCOUNT(FactVentas[IdCliente])",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html#división-segura",
+    "href": "labs/lab-07-dax.html#división-segura",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "27.2 División segura",
+    "text": "27.2 División segura\nTicket Promedio = DIVIDE([Ventas], [Transacciones])",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html#modificar-contexto",
+    "href": "labs/lab-07-dax.html#modificar-contexto",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "27.3 Modificar contexto",
+    "text": "27.3 Modificar contexto\nVentas Completadas =\nCALCULATE(\n    SUM(FactVentas[ValorVenta]),\n    FactVentas[Estado] = \"Completada\"\n)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html#iteradores",
+    "href": "labs/lab-07-dax.html#iteradores",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "27.4 Iteradores",
+    "text": "27.4 Iteradores\nMargen Estimado =\nSUMX(\n    FactVentas,\n    FactVentas[ValorVenta] -\n    FactVentas[Cantidad] * RELATED(DimProducto[CostoUnitario])\n)",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "labs/lab-07-dax.html#preguntas-para-depurar-una-medida",
+    "href": "labs/lab-07-dax.html#preguntas-para-depurar-una-medida",
+    "title": "27  Laboratorio 7 · DAX de consulta",
+    "section": "27.5 Preguntas para depurar una medida",
+    "text": "27.5 Preguntas para depurar una medida\n\n¿Qué pretende medir?\n¿Cuál es su numerador y denominador?\n¿Qué filtros deberían afectarla?\n¿Qué tabla contiene cada campo?\n¿el resultado total coincide con una validación independiente?",
+    "crumbs": [
+      "Laboratorio de consulta",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html",
+    "href": "evaluacion/quices-autodiagnostico.html",
+    "title": "28  Autochequeos por sesión",
+    "section": "",
+    "text": "28.1 Sesión 1 · Pregunta de negocio + IA\nIntenta responder antes de abrir la solución.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-1-pregunta-de-negocio-ia",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-1-pregunta-de-negocio-ia",
+    "title": "28  Autochequeos por sesión",
+    "section": "",
+    "text": "28.1.1 ¿Cuál pregunta es más accionable?\n\n¿Cómo mejorar las ventas?\n\n¿Qué categorías con caída de ventas y alta satisfacción deberían priorizarse en una campaña de reactivación el próximo mes?\n\n¿Por qué compra la gente?\n\n\n\nRespuesta\n\nb. Define fenómeno, intervención y horizonte con suficiente precisión.\n\n\n\n28.1.2 La IA afirma: “la caída del NPS fue causada por demoras”. ¿Qué es?\n\n\nRespuesta\n\nUna hipótesis si no existe evidencia causal. No debe presentarse como hecho.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-2-r-manipulación-eda",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-2-r-manipulación-eda",
+    "title": "28  Autochequeos por sesión",
+    "section": "28.2 Sesión 2 · R + manipulación + EDA",
+    "text": "28.2 Sesión 2 · R + manipulación + EDA\n\n28.2.1 Después de group_by(region) |&gt; summarise(...), ¿qué representa una fila?\n\n\nRespuesta\n\nUna región. La granularidad cambió.\n\n\n\n28.2.2 ¿Por qué revisar la tabla antes del gráfico?\n\n\nRespuesta\n\nPorque una visualización puede representar perfectamente un KPI mal definido.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-3-estadística",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-3-estadística",
+    "title": "28  Autochequeos por sesión",
+    "section": "28.3 Sesión 3 · Estadística",
+    "text": "28.3 Sesión 3 · Estadística\n\n28.3.1 Dos grupos tienen la misma media y distinta dispersión. ¿Son equivalentes?\n\n\nRespuesta\n\nNo. La media no describe variabilidad ni forma.\n\n\n\n28.3.2 Correlación positiva entre descuento y ventas, ¿demuestra causalidad?\n\n\nRespuesta\n\nNo. Describe asociación, no mecanismo causal.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-4-calidad-etl",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-4-calidad-etl",
+    "title": "28  Autochequeos por sesión",
+    "section": "28.4 Sesión 4 · Calidad + ETL",
+    "text": "28.4 Sesión 4 · Calidad + ETL\n\n28.4.1 Web, web y WEB: ¿qué riesgo existe?\n\n\nRespuesta\n\nDividir una categoría real en grupos falsos y producir KPI erróneos sin error técnico.\n\n\n\n28.4.2 ¿Qué revisar antes de left_join()?\n\n\nRespuesta\n\nGranularidad, unicidad/cardinalidad de llaves y registros huérfanos.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-5-modelo-dax",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-5-modelo-dax",
+    "title": "28  Autochequeos por sesión",
+    "section": "28.5 Sesión 5 · Modelo + DAX",
+    "text": "28.5 Sesión 5 · Modelo + DAX\n\n28.5.1 ¿Por qué [Ventas] cambia al seleccionar región?\n\n\nRespuesta\n\nPorque la misma medida se evalúa bajo un contexto de filtro diferente.\n\n\n\n28.5.2 ¿DAX válido sintácticamente garantiza KPI correcto?\n\n\nRespuesta\n\nNo. Definición, relaciones y contexto pueden producir una medida conceptualmente incorrecta.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion/quices-autodiagnostico.html#sesión-6-dashboard-storytelling",
+    "href": "evaluacion/quices-autodiagnostico.html#sesión-6-dashboard-storytelling",
+    "title": "28  Autochequeos por sesión",
+    "section": "28.6 Sesión 6 · Dashboard + storytelling",
+    "text": "28.6 Sesión 6 · Dashboard + storytelling\n\n28.6.1 ¿Qué va primero: gráfico o decisión del usuario?\n\n\nRespuesta\n\nLa decisión. El gráfico facilita una tarea de interpretación.\n\n\n\n28.6.2 ¿Qué diferencia un hallazgo de una cifra?\n\n\nRespuesta\n\nEl hallazgo conecta evidencia con significado para el problema.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+    ]
+  },
+  {
+    "objectID": "recursos/lecturas.html",
+    "href": "recursos/lecturas.html",
+    "title": "29  Lecturas y rutas de profundización",
+    "section": "",
+    "text": "29.1 R y tidyverse\nLa ruta presencial está limitada a 36 horas. Estos recursos amplían el estudio sin inflar las sesiones.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+    ]
+  },
+  {
+    "objectID": "recursos/lecturas.html#r-y-tidyverse",
+    "href": "recursos/lecturas.html#r-y-tidyverse",
+    "title": "29  Lecturas y rutas de profundización",
+    "section": "",
+    "text": "R for Data Science (2e) — importación, transformación, visualización y flujo reproducible.\nR para Inteligencia de Negocios — referencia complementaria para fundamentos, limpieza y análisis exploratorio.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+    ]
+  },
+  {
+    "objectID": "recursos/lecturas.html#ia-y-analytics",
+    "href": "recursos/lecturas.html#ia-y-analytics",
+    "title": "29  Lecturas y rutas de profundización",
+    "section": "29.2 IA y Analytics",
+    "text": "29.2 IA y Analytics\nPara cualquier lectura sobre IA, utiliza esta pregunta de control:\n\n¿La herramienta está reemplazando una habilidad que todavía necesito construir o ampliando una habilidad que ya comprendo?\n\nLa declaración de uso de IA del proyecto debe permitir rastrear qué se pidió, qué se aceptó, qué se corrigió y cómo se validó.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+    ]
+  },
+  {
+    "objectID": "recursos/lecturas.html#qué-estudiar-después",
+    "href": "recursos/lecturas.html#qué-estudiar-después",
+    "title": "29  Lecturas y rutas de profundización",
+    "section": "29.3 Qué estudiar después",
+    "text": "29.3 Qué estudiar después\nRutas naturales: forecasting, clasificación, regresión predictiva, clustering, causalidad, optimización y agentes de datos. Permanecen como profundización porque no corresponden al núcleo de esta electiva intensiva.",
+    "crumbs": [
+      "Evaluación y recursos",
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+    ]
+  },
+  {
+    "objectID": "extras/extra-forecasting.html",
+    "href": "extras/extra-forecasting.html",
+    "title": "30  Profundización · Forecasting",
+    "section": "",
+    "text": "Este contenido no forma parte de las 30 horas centrales. Se deja como ruta posterior para estudiantes interesados en extender el análisis descriptivo hacia pronósticos.\nSe recomienda abordarlo después de dominar preparación, exploración, validación y comunicación de datos.",
+    "crumbs": [
+      "Profundización",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Profundización · Forecasting</span>"
+    ]
+  },
+  {
+    "objectID": "extras/extra-shiny.html",
+    "href": "extras/extra-shiny.html",
+    "title": "31  Profundización · Shiny",
+    "section": "",
+    "text": "Shiny permite construir aplicaciones web interactivas desde R. No forma parte de la evaluación central porque el curso prioriza Power BI como herramienta de BI, pero constituye una ruta útil de profundización.",
+    "crumbs": [
+      "Profundización",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Profundización · Shiny</span>"
+    ]
+  }
+]

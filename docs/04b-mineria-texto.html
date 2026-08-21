@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; Datos cualitativos, minería de texto e IA – Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05-estadistica-decisiones.html" rel="next">
+<link href="./04-exploracion-visualizacion.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fd5297dacf173028d6edd3476b8de6b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f1-viernes.html">Semana 1 · De los datos a la información</a></li><li class="breadcrumb-item"><a href="./04b-mineria-texto.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analítica e Inteligencia de Negocios</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-como-usar-libro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cómo utilizar este libro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-preparacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparación del entorno</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 1 · De los datos a la información</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-viernes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sesión 1 · Del problema empresarial al primer análisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-analitica-negocios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">De los datos a las decisiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01b-ia-llm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01c-ia-agentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">IA como agente de código: contexto, reglas y auditoría</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-primeros-pasos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Primeros pasos con R: escribir, ejecutar y verificar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-sabado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sesión 2 · Del dato al hallazgo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-manipulacion-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Manipulación de datos: de la pregunta al KPI</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-exploracion-visualizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exploración y visualización de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04b-mineria-texto.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 2 · De la información a las decisiones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-estadistica-decisiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Estadística descriptiva para decisiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-calidad-etl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Calidad de datos y ETL: de raw a analysis-ready</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06b-busqueda-evidencia-ia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Búsqueda bibliográfica, hipótesis y verificación con IA</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-power-bi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Del dataset analítico a Power BI</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorios interactivos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/evidencia-ia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Interactivo · Dato, hipótesis o invención</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/filter-select-groupby.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interactivo · ¿Qué hace cada verbo?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/outliers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Interactivo · El outlier y el promedio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/joins.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/contexto-filtro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Contexto de filtro</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorio de consulta</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-01-fundamentos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Laboratorio 1 · Fundamentos de R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-02-estructuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Laboratorio 2 · Estructuras de datos en R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-03-tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Laboratorio 3 · Guía rápida de tidyverse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-04-importacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Laboratorio 4 · Importación de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-05-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Laboratorio 5 · ggplot2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-06-estadistica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Laboratorio 6 · Estadística de consulta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-07-dax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Laboratorio 7 · DAX de consulta</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación y recursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluacion/quices-autodiagnostico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Autochequeos por sesión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos/lecturas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Lecturas y rutas de profundización</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Profundización</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Profundización · Forecasting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Profundización · Shiny</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#qué-son-los-datos-cualitativos" id="toc-qué-son-los-datos-cualitativos" class="nav-link active" data-scroll-target="#qué-son-los-datos-cualitativos"><span class="header-section-number">11.1</span> ¿Qué son los datos cualitativos?</a>
+  <ul class="collapse">
+  <li><a href="#cuantitativo-y-cualitativo-se-complementan" id="toc-cuantitativo-y-cualitativo-se-complementan" class="nav-link" data-scroll-target="#cuantitativo-y-cualitativo-se-complementan"><span class="header-section-number">11.1.1</span> Cuantitativo y cualitativo se complementan</a></li>
+  </ul></li>
+  <li><a href="#antes-de-python-tres-decisiones-metodológicas" id="toc-antes-de-python-tres-decisiones-metodológicas" class="nav-link" data-scroll-target="#antes-de-python-tres-decisiones-metodológicas"><span class="header-section-number">11.2</span> Antes de Python: tres decisiones metodológicas</a>
+  <ul class="collapse">
+  <li><a href="#pregunta" id="toc-pregunta" class="nav-link" data-scroll-target="#pregunta"><span class="header-section-number">11.2.1</span> Pregunta</a></li>
+  <li><a href="#unidad-de-análisis" id="toc-unidad-de-análisis" class="nav-link" data-scroll-target="#unidad-de-análisis"><span class="header-section-number">11.2.2</span> Unidad de análisis</a></li>
+  <li><a href="#muestreo" id="toc-muestreo" class="nav-link" data-scroll-target="#muestreo"><span class="header-section-number">11.2.3</span> Muestreo</a></li>
+  </ul></li>
+  <li><a href="#principales-metodologías-cualitativas" id="toc-principales-metodologías-cualitativas" class="nav-link" data-scroll-target="#principales-metodologías-cualitativas"><span class="header-section-number">11.3</span> Principales metodologías cualitativas</a>
+  <ul class="collapse">
+  <li><a href="#análisis-de-contenido" id="toc-análisis-de-contenido" class="nav-link" data-scroll-target="#análisis-de-contenido"><span class="header-section-number">11.3.1</span> Análisis de contenido</a></li>
+  <li><a href="#análisis-temático" id="toc-análisis-temático" class="nav-link" data-scroll-target="#análisis-temático"><span class="header-section-number">11.3.2</span> Análisis temático</a></li>
+  <li><a href="#teoría-fundamentada" id="toc-teoría-fundamentada" class="nav-link" data-scroll-target="#teoría-fundamentada"><span class="header-section-number">11.3.3</span> Teoría fundamentada</a></li>
+  <li><a href="#análisis-narrativo-y-de-discurso" id="toc-análisis-narrativo-y-de-discurso" class="nav-link" data-scroll-target="#análisis-narrativo-y-de-discurso"><span class="header-section-number">11.3.4</span> Análisis narrativo y de discurso</a></li>
+  <li><a href="#análisis-de-redes-de-texto" id="toc-análisis-de-redes-de-texto" class="nav-link" data-scroll-target="#análisis-de-redes-de-texto"><span class="header-section-number">11.3.5</span> Análisis de redes de texto</a></li>
+  </ul></li>
+  <li><a href="#métodos-computacionales-qué-aceleran-y-qué-no" id="toc-métodos-computacionales-qué-aceleran-y-qué-no" class="nav-link" data-scroll-target="#métodos-computacionales-qué-aceleran-y-qué-no"><span class="header-section-number">11.4</span> Métodos computacionales: qué aceleran y qué no</a></li>
+  <li><a href="#preprocesamiento-de-texto" id="toc-preprocesamiento-de-texto" class="nav-link" data-scroll-target="#preprocesamiento-de-texto"><span class="header-section-number">11.5</span> Preprocesamiento de texto</a></li>
+  <li><a href="#análisis-de-sentimiento" id="toc-análisis-de-sentimiento" class="nav-link" data-scroll-target="#análisis-de-sentimiento"><span class="header-section-number">11.6</span> Análisis de sentimiento</a>
+  <ul class="collapse">
+  <li><a href="#enfoque-léxico" id="toc-enfoque-léxico" class="nav-link" data-scroll-target="#enfoque-léxico"><span class="header-section-number">11.6.1</span> Enfoque léxico</a></li>
+  <li><a href="#modelos-predictivos" id="toc-modelos-predictivos" class="nav-link" data-scroll-target="#modelos-predictivos"><span class="header-section-number">11.6.2</span> Modelos predictivos</a></li>
+  <li><a href="#transformers" id="toc-transformers" class="nav-link" data-scroll-target="#transformers"><span class="header-section-number">11.6.3</span> Transformers</a></li>
+  </ul></li>
+  <li><a href="#modelado-de-tópicos" id="toc-modelado-de-tópicos" class="nav-link" data-scroll-target="#modelado-de-tópicos"><span class="header-section-number">11.7</span> Modelado de tópicos</a></li>
+  <li><a href="#embeddings-y-clustering-semántico" id="toc-embeddings-y-clustering-semántico" class="nav-link" data-scroll-target="#embeddings-y-clustering-semántico"><span class="header-section-number">11.8</span> Embeddings y clustering semántico</a></li>
+  <li><a href="#ia-generativa-y-análisis-cualitativo" id="toc-ia-generativa-y-análisis-cualitativo" class="nav-link" data-scroll-target="#ia-generativa-y-análisis-cualitativo"><span class="header-section-number">11.9</span> IA generativa y análisis cualitativo</a>
+  <ul class="collapse">
+  <li><a href="#flujo-recomendado" id="toc-flujo-recomendado" class="nav-link" data-scroll-target="#flujo-recomendado"><span class="header-section-number">11.9.1</span> Flujo recomendado</a></li>
+  <li><a href="#supuestos-y-riesgos" id="toc-supuestos-y-riesgos" class="nav-link" data-scroll-target="#supuestos-y-riesgos"><span class="header-section-number">11.9.2</span> Supuestos y riesgos</a></li>
+  </ul></li>
+  <li><a href="#triangulación" id="toc-triangulación" class="nav-link" data-scroll-target="#triangulación"><span class="header-section-number">11.10</span> Triangulación</a></li>
+  <li><a href="#qué-técnica-usar" id="toc-qué-técnica-usar" class="nav-link" data-scroll-target="#qué-técnica-usar"><span class="header-section-number">11.11</span> ¿Qué técnica usar?</a></li>
+  <li><a href="#laboratorio-en-google-colab" id="toc-laboratorio-en-google-colab" class="nav-link" data-scroll-target="#laboratorio-en-google-colab"><span class="header-section-number">11.12</span> Laboratorio en Google Colab</a>
+  <ul class="collapse">
+  <li><a href="#en-clase" id="toc-en-clase" class="nav-link" data-scroll-target="#en-clase"><span class="header-section-number">11.12.1</span> En clase</a></li>
+  </ul></li>
+  <li><a href="#para-tu-proyecto-de-grado" id="toc-para-tu-proyecto-de-grado" class="nav-link" data-scroll-target="#para-tu-proyecto-de-grado"><span class="header-section-number">11.13</span> Para tu proyecto de grado</a></li>
+  <li><a href="#referencias-metodológicas-de-base" id="toc-referencias-metodológicas-de-base" class="nav-link" data-scroll-target="#referencias-metodológicas-de-base"><span class="header-section-number">11.14</span> Referencias metodológicas de base</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f1-viernes.html">Semana 1 · De los datos a la información</a></li><li class="breadcrumb-item"><a href="./04b-mineria-texto.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="mba-hero">
+<p><strong>Pregunta empresarial:</strong> los KPI pueden indicar <em>cuánto</em> ocurre, pero muchos proyectos necesitan comprender <strong>qué dicen las personas, qué significados aparecen y qué patrones se repiten</strong>. Este capítulo presenta el mapa conceptual. La demostración computacional completa se desarrolla en el notebook de Google Colab.</p>
+</div>
+<section id="qué-son-los-datos-cualitativos" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="qué-son-los-datos-cualitativos"><span class="header-section-number">11.1</span> ¿Qué son los datos cualitativos?</h2>
+<p>Los datos cualitativos representan información no numérica: respuestas abiertas, entrevistas, grupos focales, documentos, tickets de servicio, reseñas, transcripciones, imágenes, audio u observaciones.</p>
+<p>No todo texto es automáticamente “análisis cualitativo”. Una columna <code>comentario</code> es un <strong>dato</strong>; el análisis depende de la pregunta, de la unidad de análisis y del método utilizado.</p>
+<section id="cuantitativo-y-cualitativo-se-complementan" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="cuantitativo-y-cualitativo-se-complementan"><span class="header-section-number">11.1.1</span> Cuantitativo y cualitativo se complementan</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pregunta</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>¿Cuánto?</td>
+<td>NPS promedio, número de reclamos</td>
+</tr>
+<tr class="even">
+<td>¿Dónde?</td>
+<td>región/canal con mayor insatisfacción</td>
+</tr>
+<tr class="odd">
+<td>¿Qué?</td>
+<td>temas mencionados en comentarios</td>
+</tr>
+<tr class="even">
+<td>¿Cómo se experimenta?</td>
+<td>relatos sobre servicio, entrega o calidad</td>
+</tr>
+<tr class="odd">
+<td>¿Por qué podría estar ocurriendo?</td>
+<td>hipótesis interpretativas que después deben contrastarse</td>
+</tr>
+</tbody>
+</table>
+<p>En NovaRetail podemos cruzar <code>calificacion</code> y <code>nps</code> con <code>comentario</code>. En un proyecto la lógica es la misma: <strong>triangular</strong> fuentes y métodos cuando eso mejora la evidencia.</p>
+</section>
+</section>
+<section id="antes-de-python-tres-decisiones-metodológicas" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="antes-de-python-tres-decisiones-metodológicas"><span class="header-section-number">11.2</span> Antes de Python: tres decisiones metodológicas</h2>
+<section id="pregunta" class="level3" data-number="11.2.1">
+<h3 data-number="11.2.1" class="anchored" data-anchor-id="pregunta"><span class="header-section-number">11.2.1</span> Pregunta</h3>
+<p>No escogemos LDA, sentimiento o un LLM porque estén disponibles. Primero definimos qué queremos comprender.</p>
+</section>
+<section id="unidad-de-análisis" class="level3" data-number="11.2.2">
+<h3 data-number="11.2.2" class="anchored" data-anchor-id="unidad-de-análisis"><span class="header-section-number">11.2.2</span> Unidad de análisis</h3>
+<p>Puede ser una entrevista completa, respuesta, párrafo, frase o episodio. Cambiar la unidad puede cambiar la interpretación.</p>
+</section>
+<section id="muestreo" class="level3" data-number="11.2.3">
+<h3 data-number="11.2.3" class="anchored" data-anchor-id="muestreo"><span class="header-section-number">11.2.3</span> Muestreo</h3>
+<p>En corpus pequeños puede analizarse todo. En corpus grandes suele ser útil combinar procesamiento automatizado con muestras revisadas humanamente.</p>
+<div class="key-idea">
+<p><strong>Human-in-the-loop:</strong> a medida que aumenta el volumen, la computación ayuda a escalar; la validación humana sigue siendo necesaria para verificar significado, categorías y excepciones.</p>
+</div>
+</section>
+</section>
+<section id="principales-metodologías-cualitativas" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="principales-metodologías-cualitativas"><span class="header-section-number">11.3</span> Principales metodologías cualitativas</h2>
+<section id="análisis-de-contenido" class="level3" data-number="11.3.1">
+<h3 data-number="11.3.1" class="anchored" data-anchor-id="análisis-de-contenido"><span class="header-section-number">11.3.1</span> Análisis de contenido</h3>
+<p>Parte habitualmente de categorías o reglas explícitas y examina la presencia de esas categorías en el corpus. Es especialmente útil cuando existen preguntas o hipótesis relativamente claras.</p>
+<p><strong>Úsalo cuando:</strong> conoces de antemano categorías relevantes y quieres aplicarlas consistentemente.</p>
+<p><strong>Producto típico:</strong> libro de códigos + codificación + frecuencias/comparaciones.</p>
+</section>
+<section id="análisis-temático" class="level3" data-number="11.3.2">
+<h3 data-number="11.3.2" class="anchored" data-anchor-id="análisis-temático"><span class="header-section-number">11.3.2</span> Análisis temático</h3>
+<p>Busca patrones de significado en el corpus. Puede ser inductivo, deductivo o híbrido.</p>
+<p>Una ruta ampliamente utilizada comprende:</p>
+<ol type="1">
+<li>familiarización;</li>
+<li>generación de códigos;</li>
+<li>construcción de temas;</li>
+<li>revisión;</li>
+<li>definición/nombre;</li>
+<li>comunicación con evidencia textual.</li>
+</ol>
+<p><strong>Úsalo cuando:</strong> quieres comprender qué patrones de experiencia o significado aparecen sin reducir el análisis a contar palabras.</p>
+</section>
+<section id="teoría-fundamentada" class="level3" data-number="11.3.3">
+<h3 data-number="11.3.3" class="anchored" data-anchor-id="teoría-fundamentada"><span class="header-section-number">11.3.3</span> Teoría fundamentada</h3>
+<p>Busca desarrollar categorías y relaciones conceptuales mediante comparación constante, codificación y memos. El análisis se retroalimenta con la recolección y continúa hasta alcanzar suficiente desarrollo conceptual/saturación.</p>
+<p><strong>Úsala cuando:</strong> el propósito es <strong>construir teoría explicativa desde los datos</strong>, no simplemente describir frecuencias.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Topic modeling, embeddings o un LLM pueden sugerir agrupaciones, pero <strong>no “hacen Grounded Theory” automáticamente</strong>. El método incluye decisiones de muestreo, comparación, memoing y construcción conceptual.</p>
+</div>
+</div>
+</section>
+<section id="análisis-narrativo-y-de-discurso" class="level3" data-number="11.3.4">
+<h3 data-number="11.3.4" class="anchored" data-anchor-id="análisis-narrativo-y-de-discurso"><span class="header-section-number">11.3.4</span> Análisis narrativo y de discurso</h3>
+<p>El análisis narrativo estudia cómo se estructura y comunica una experiencia. El análisis del discurso estudia cómo el lenguaje construye posiciones, relaciones, significados o poder.</p>
+<p><strong>Úsalos cuando:</strong> importa <em>cómo</em> se cuenta o construye una realidad, no únicamente qué palabras aparecen.</p>
+<p>Reducir estos enfoques a frecuencias puede eliminar precisamente la información relevante.</p>
+</section>
+<section id="análisis-de-redes-de-texto" class="level3" data-number="11.3.5">
+<h3 data-number="11.3.5" class="anchored" data-anchor-id="análisis-de-redes-de-texto"><span class="header-section-number">11.3.5</span> Análisis de redes de texto</h3>
+<p>Representa términos/conceptos como nodos y coocurrencias como conexiones.</p>
+<p><strong>Úsalo cuando:</strong> interesa observar qué conceptos aparecen conectados o cuáles ocupan posiciones centrales dentro del vocabulario.</p>
+</section>
+</section>
+<section id="métodos-computacionales-qué-aceleran-y-qué-no" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="métodos-computacionales-qué-aceleran-y-qué-no"><span class="header-section-number">11.4</span> Métodos computacionales: qué aceleran y qué no</h2>
+<p>Los métodos computacionales no son sustitutos exactos de las metodologías anteriores. Son <strong>herramientas de representación, exploración, clasificación y escala</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Técnica</th>
+<th>Pregunta útil</th>
+<th>Qué produce</th>
+<th>Supuesto/limitación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frecuencias</td>
+<td>¿qué términos aparecen?</td>
+<td>conteos</td>
+<td>frecuencia ≠ importancia</td>
+</tr>
+<tr class="even">
+<td>N-gramas</td>
+<td>¿qué expresiones se repiten?</td>
+<td>secuencias</td>
+<td>contexto local</td>
+</tr>
+<tr class="odd">
+<td>Coocurrencias/redes</td>
+<td>¿qué conceptos aparecen juntos?</td>
+<td>relaciones</td>
+<td>coocurrencia ≠ causalidad</td>
+</tr>
+<tr class="even">
+<td>TF-IDF</td>
+<td>¿qué términos distinguen grupos?</td>
+<td>relevancia relativa</td>
+<td>no comprende significado completo</td>
+</tr>
+<tr class="odd">
+<td>Sentimiento</td>
+<td>¿qué polaridad expresa el texto?</td>
+<td>clases/score</td>
+<td>sarcasmo, dominio e idioma</td>
+</tr>
+<tr class="even">
+<td>LDA/NMF</td>
+<td>¿qué estructuras léxicas latentes aparecen?</td>
+<td>tópicos</td>
+<td><code>k</code> e interpretación importan</td>
+</tr>
+<tr class="odd">
+<td>Embeddings</td>
+<td>¿qué textos son semánticamente similares?</td>
+<td>vectores</td>
+<td>depende del modelo</td>
+</tr>
+<tr class="even">
+<td>Clustering</td>
+<td>¿qué grupos naturales aparecen?</td>
+<td>clusters</td>
+<td>hay que interpretar/validar</td>
+</tr>
+<tr class="odd">
+<td>Clasificación supervisada</td>
+<td>¿podemos reproducir códigos conocidos?</td>
+<td>predicción de categoría</td>
+<td>requiere etiquetas confiables</td>
+</tr>
+<tr class="even">
+<td>NER</td>
+<td>¿qué entidades aparecen?</td>
+<td>personas/lugares/organizaciones</td>
+<td>depende del dominio/modelo</td>
+</tr>
+<tr class="odd">
+<td>LLM</td>
+<td>¿podemos asistir codificación/resumen?</td>
+<td>categorías, clasificación, síntesis</td>
+<td>variabilidad, sesgo, alucinación</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="preprocesamiento-de-texto" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="preprocesamiento-de-texto"><span class="header-section-number">11.5</span> Preprocesamiento de texto</h2>
+<p>El pipeline puede incluir:</p>
+<p><strong>normalización → tokenización → stopwords → lematización/stemming → representación</strong></p>
+<p>Pero no existe una “limpieza universal”. El procesamiento depende de la pregunta.</p>
+<p>Ejemplo: eliminar <code>no</code> sería problemático si queremos distinguir <strong>“me gustó”</strong> de <strong>“no me gustó”</strong>.</p>
+<p>En español debemos usar recursos adecuados al idioma y revisar cómo tratan tildes, negación, expresiones locales y variantes léxicas.</p>
+</section>
+<section id="análisis-de-sentimiento" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="análisis-de-sentimiento"><span class="header-section-number">11.6</span> Análisis de sentimiento</h2>
+<section id="enfoque-léxico" class="level3" data-number="11.6.1">
+<h3 data-number="11.6.1" class="anchored" data-anchor-id="enfoque-léxico"><span class="header-section-number">11.6.1</span> Enfoque léxico</h3>
+<p>Utiliza diccionarios de términos positivos/negativos.</p>
+<p><strong>Ventajas:</strong> transparente, barato, reproducible.</p>
+<p><strong>Limitaciones:</strong> vocabulario incompleto, negaciones, sarcasmo y contexto.</p>
+</section>
+<section id="modelos-predictivos" class="level3" data-number="11.6.2">
+<h3 data-number="11.6.2" class="anchored" data-anchor-id="modelos-predictivos"><span class="header-section-number">11.6.2</span> Modelos predictivos</h3>
+<p>Cuando existen textos previamente etiquetados podemos entrenar o utilizar modelos que predicen una clase, por ejemplo positivo/negativo o una categoría temática.</p>
+<p>Aquí aparece la conexión con <strong>analítica predictiva</strong>:</p>
+<blockquote class="blockquote">
+<p><strong>texto → representación numérica → etiquetas conocidas → modelo → predicción para nuevos textos</strong></p>
+</blockquote>
+<p>Para que tenga sentido deben existir etiquetas confiables y una evaluación fuera de los datos utilizados para entrenar. Un modelo con buena precisión sobre el mismo conjunto utilizado para construirlo no demuestra capacidad predictiva.</p>
+</section>
+<section id="transformers" class="level3" data-number="11.6.3">
+<h3 data-number="11.6.3" class="anchored" data-anchor-id="transformers"><span class="header-section-number">11.6.3</span> Transformers</h3>
+<p>Modelos preentrenados pueden capturar contexto mejor que un diccionario, pero deben validarse para el idioma y dominio del proyecto.</p>
+</section>
+</section>
+<section id="modelado-de-tópicos" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="modelado-de-tópicos"><span class="header-section-number">11.7</span> Modelado de tópicos</h2>
+<p>LDA y NMF son métodos no supervisados: no reciben una columna con el “tema correcto”.</p>
+<p>El analista debe decidir y revisar:</p>
+<ul>
+<li>preparación del texto;</li>
+<li>número de tópicos;</li>
+<li>palabras representativas;</li>
+<li>documentos asociados;</li>
+<li>estabilidad;</li>
+<li>nombre/interpretación del tópico.</li>
+</ul>
+<div class="key-idea">
+<p>El algoritmo produce una estructura matemática. <strong>El tópico empresarial nace cuando el analista interpreta esa estructura con evidencia textual.</strong></p>
+</div>
+</section>
+<section id="embeddings-y-clustering-semántico" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="embeddings-y-clustering-semántico"><span class="header-section-number">11.8</span> Embeddings y clustering semántico</h2>
+<p>Los embeddings representan texto en vectores de forma que expresiones semánticamente próximas pueden quedar cercanas aunque utilicen vocabulario diferente.</p>
+<p>Esto permite aproximarse a casos como:</p>
+<blockquote class="blockquote">
+<p>“el pedido llegó tarde”<br>
+“hubo demora con el envío”</p>
+</blockquote>
+<p>que un método puramente léxico podría tratar como muy distintos.</p>
+<p>Después podemos agrupar embeddings mediante clustering. Nuevamente, el cluster no viene automáticamente con significado: se inspeccionan ejemplos, excepciones y estabilidad.</p>
+</section>
+<section id="ia-generativa-y-análisis-cualitativo" class="level2" data-number="11.9">
+<h2 data-number="11.9" class="anchored" data-anchor-id="ia-generativa-y-análisis-cualitativo"><span class="header-section-number">11.9</span> IA generativa y análisis cualitativo</h2>
+<p>Un LLM puede apoyar:</p>
+<ul>
+<li>propuesta inicial de <code>codebook</code>;</li>
+<li>codificación deductiva;</li>
+<li>búsqueda de casos ambiguos;</li>
+<li>comparación entre segmentos;</li>
+<li>resumen de temas;</li>
+<li>explicación de tópicos;</li>
+<li>construcción de memos preliminares;</li>
+<li>generación de hipótesis para contrastar.</li>
+</ul>
+<section id="flujo-recomendado" class="level3" data-number="11.9.1">
+<h3 data-number="11.9.1" class="anchored" data-anchor-id="flujo-recomendado"><span class="header-section-number">11.9.1</span> Flujo recomendado</h3>
+<p><strong>muestra → IA propone → humano revisa codebook → IA aplica → humano audita muestra → se documentan desacuerdos → se analiza</strong></p>
+</section>
+<section id="supuestos-y-riesgos" class="level3" data-number="11.9.2">
+<h3 data-number="11.9.2" class="anchored" data-anchor-id="supuestos-y-riesgos"><span class="header-section-number">11.9.2</span> Supuestos y riesgos</h3>
+<p><strong>Trazabilidad:</strong> cada código debe poder conectarse con texto real.</p>
+<p><strong>Variabilidad:</strong> modelos/ejecuciones pueden responder diferente.</p>
+<p><strong>Alucinación:</strong> la IA puede introducir explicaciones o categorías no sustentadas.</p>
+<p><strong>Privacidad:</strong> no deben enviarse datos identificables a servicios externos sin autorización.</p>
+<p><strong>Reproducibilidad:</strong> documenta modelo, fecha, prompt, muestra y decisiones.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para este curso <strong>no se exige una API paga</strong>. El notebook genera prompts a partir del dataset y pueden copiarse a ChatGPT, Gemini o Claude. Automatizar mediante API es una extensión opcional.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="triangulación" class="level2" data-number="11.10">
+<h2 data-number="11.10" class="anchored" data-anchor-id="triangulación"><span class="header-section-number">11.10</span> Triangulación</h2>
+<p>Un análisis robusto puede combinar:</p>
+<p><strong>lectura humana + técnica computacional + variables estructuradas + IA</strong></p>
+<p>Ejemplo:</p>
+<ul>
+<li>la lectura detecta frustración con promociones;</li>
+<li>los n-gramas muestran “promoción confusa”;</li>
+<li>TF-IDF encuentra términos distintivos en clientes insatisfechos;</li>
+<li>un tópico agrupa vocabulario promocional;</li>
+<li>un LLM propone “transparencia de promociones”;</li>
+<li>la calificación/NPS permite observar si el patrón coincide con menor satisfacción.</li>
+</ul>
+<p>La convergencia fortalece la interpretación. La divergencia <strong>también es un resultado que merece investigación</strong>.</p>
+</section>
+<section id="qué-técnica-usar" class="level2" data-number="11.11">
+<h2 data-number="11.11" class="anchored" data-anchor-id="qué-técnica-usar"><span class="header-section-number">11.11</span> ¿Qué técnica usar?</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Contexto</th>
+<th>Ruta razonable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20–30 entrevistas profundas</td>
+<td>lectura + codificación temática + memos + comparación de casos</td>
+</tr>
+<tr class="even">
+<td>respuestas abiertas de encuesta</td>
+<td>codificación + análisis de contenido + framework + segmentación</td>
+</tr>
+<tr class="odd">
+<td>miles de reseñas</td>
+<td>muestreo humano + TF-IDF/topics/embeddings + validación</td>
+</tr>
+<tr class="even">
+<td>tickets etiquetados</td>
+<td>clasificación supervisada + auditoría de errores</td>
+</tr>
+<tr class="odd">
+<td>customer journeys</td>
+<td>análisis narrativo + comparación entre casos</td>
+</tr>
+<tr class="even">
+<td>corpus donde importan relaciones lingüísticas/poder</td>
+<td>análisis del discurso; computación solo como apoyo</td>
+</tr>
+<tr class="odd">
+<td>corpus masivo sin categorías</td>
+<td>muestreo + topic modeling/clustering + interpretación humana</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="laboratorio-en-google-colab" class="level2" data-number="11.12">
+<h2 data-number="11.12" class="anchored" data-anchor-id="laboratorio-en-google-colab"><span class="header-section-number">11.12</span> Laboratorio en Google Colab</h2>
+<p>En clase utilizaremos el notebook complementario:</p>
+<p><a href="https://colab.research.google.com/drive/1XuM18lqqhJLDUY0yUyo6VV4TIT5QzFnG?usp=sharing"><code>Analisis cualitativo NovaRetail.ipynb</code></a></p>
+<p>y su dataset:</p>
+<p><a href="https://drive.google.com/file/d/1jzgBonSAjW686cw7sFon5Ks77UIS5Ssp/view?usp=sharing"><code>datos_cualitativos_prueba.csv</code></a></p>
+<p>El dataset es sintético y fue construido deliberadamente para contener temas, polaridades y comentarios mixtos que permitan validar las técnicas. La columna <code>tema_real_sintetico</code> funciona como respuesta conocida <strong>solo con fines pedagógicos</strong>.</p>
+<section id="en-clase" class="level3" data-number="11.12.1">
+<h3 data-number="11.12.1" class="anchored" data-anchor-id="en-clase"><span class="header-section-number">11.12.1</span> En clase</h3>
+<p>No vamos a transcribir todo el notebook. La dinámica será:</p>
+<blockquote class="blockquote">
+<p><strong>Ejecutar → predecir qué debería ocurrir → observar salida → discutir supuestos → comparar métodos → modificar parámetros → volver a interpretar.</strong></p>
+</blockquote>
+</section>
+</section>
+<section id="para-tu-proyecto-de-grado" class="level2" data-number="11.13">
+<h2 data-number="11.13" class="anchored" data-anchor-id="para-tu-proyecto-de-grado"><span class="header-section-number">11.13</span> Para tu proyecto de grado</h2>
+<p>Antes de aplicar text mining o IA, responde:</p>
+<ol type="1">
+<li>¿qué tipo de texto tienes?</li>
+<li>¿cuál es la unidad de análisis?</li>
+<li>¿qué pregunta buscas responder?</li>
+<li>¿el método será inductivo, deductivo o mixto?</li>
+<li>¿hay categorías/etiquetas existentes?</li>
+<li>¿qué volumen de texto tienes?</li>
+<li>¿qué parte requiere interpretación humana?</li>
+<li>¿cómo validarás el resultado automatizado?</li>
+<li>¿hay información sensible?</li>
+<li>¿qué decisión o insight esperas soportar?</li>
+</ol>
+</section>
+<section id="referencias-metodológicas-de-base" class="level2" data-number="11.14">
+<h2 data-number="11.14" class="anchored" data-anchor-id="referencias-metodológicas-de-base"><span class="header-section-number">11.14</span> Referencias metodológicas de base</h2>
+<ul>
+<li>Braun, V. &amp; Clarke, V. (2006). <em>Using thematic analysis in psychology</em>.</li>
+<li>Glaser, B. G. &amp; Strauss, A. L. (1967). <em>The Discovery of Grounded Theory</em>.</li>
+<li>Krippendorff, K. <em>Content Analysis: An Introduction to Its Methodology</em>.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04-exploracion-visualizacion.html" class="pagination-link" aria-label="Exploración y visualización de datos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exploración y visualización de datos</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./05-estadistica-decisiones.html" class="pagination-link" aria-label="Estadística descriptiva para decisiones">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Estadística descriptiva para decisiones</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

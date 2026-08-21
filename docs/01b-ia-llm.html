@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; IA para el analista: LLMs, prompts y verificación – Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./01c-ia-agentes.html" rel="next">
+<link href="./01-analitica-negocios.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fd5297dacf173028d6edd3476b8de6b4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f1-viernes.html">Semana 1 · De los datos a la información</a></li><li class="breadcrumb-item"><a href="./01b-ia-llm.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analítica e Inteligencia de Negocios</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-como-usar-libro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cómo utilizar este libro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-preparacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparación del entorno</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 1 · De los datos a la información</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-viernes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sesión 1 · Del problema empresarial al primer análisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-analitica-negocios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">De los datos a las decisiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01b-ia-llm.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01c-ia-agentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">IA como agente de código: contexto, reglas y auditoría</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-primeros-pasos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Primeros pasos con R: escribir, ejecutar y verificar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-sabado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sesión 2 · Del dato al hallazgo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-manipulacion-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Manipulación de datos: de la pregunta al KPI</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-exploracion-visualizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exploración y visualización de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04b-mineria-texto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 2 · De la información a las decisiones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-estadistica-decisiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Estadística descriptiva para decisiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-calidad-etl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Calidad de datos y ETL: de raw a analysis-ready</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06b-busqueda-evidencia-ia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Búsqueda bibliográfica, hipótesis y verificación con IA</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-power-bi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Del dataset analítico a Power BI</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorios interactivos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/evidencia-ia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Interactivo · Dato, hipótesis o invención</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/filter-select-groupby.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interactivo · ¿Qué hace cada verbo?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/outliers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Interactivo · El outlier y el promedio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/joins.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/contexto-filtro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Contexto de filtro</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorio de consulta</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-01-fundamentos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Laboratorio 1 · Fundamentos de R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-02-estructuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Laboratorio 2 · Estructuras de datos en R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-03-tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Laboratorio 3 · Guía rápida de tidyverse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-04-importacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Laboratorio 4 · Importación de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-05-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Laboratorio 5 · ggplot2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-06-estadistica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Laboratorio 6 · Estadística de consulta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-07-dax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Laboratorio 7 · DAX de consulta</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación y recursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluacion/quices-autodiagnostico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Autochequeos por sesión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos/lecturas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Lecturas y rutas de profundización</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Profundización</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Profundización · Forecasting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Profundización · Shiny</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#qué-necesitamos-entender" id="toc-qué-necesitamos-entender" class="nav-link active" data-scroll-target="#qué-necesitamos-entender"><span class="header-section-number">5.1</span> Qué necesitamos entender</a></li>
+  <li><a href="#la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente" id="toc-la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente" class="nav-link" data-scroll-target="#la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente"><span class="header-section-number">5.2</span> La idea central: predecir <strong>un token, volver a mirar el contexto y predecir el siguiente</strong></a>
+  <ul class="collapse">
+  <li><a href="#demo-interactiva-construye-la-respuesta-token-a-token" id="toc-demo-interactiva-construye-la-respuesta-token-a-token" class="nav-link" data-scroll-target="#demo-interactiva-construye-la-respuesta-token-a-token"><span class="header-section-number">5.2.1</span> 🎲 Demo interactiva · Construye la respuesta token a token</a></li>
+  <li><a href="#qué-debes-observar" id="toc-qué-debes-observar" class="nav-link" data-scroll-target="#qué-debes-observar"><span class="header-section-number">5.2.2</span> Qué debes observar</a></li>
+  <li><a href="#y-dónde-nace-la-alucinación" id="toc-y-dónde-nace-la-alucinación" class="nav-link" data-scroll-target="#y-dónde-nace-la-alucinación"><span class="header-section-number">5.2.3</span> ¿Y dónde nace la alucinación?</a></li>
+  <li><a href="#para-profundizar-por-qué-alucinan-los-modelos" id="toc-para-profundizar-por-qué-alucinan-los-modelos" class="nav-link" data-scroll-target="#para-profundizar-por-qué-alucinan-los-modelos"><span class="header-section-number">5.2.4</span> Para profundizar · ¿por qué alucinan los modelos?</a></li>
+  </ul></li>
+  <li><a href="#contexto-menos-adivinanzas" id="toc-contexto-menos-adivinanzas" class="nav-link" data-scroll-target="#contexto-menos-adivinanzas"><span class="header-section-number">5.3</span> Contexto: menos adivinanzas</a></li>
+  <li><a href="#un-prompt-analítico-con-c-t-f-r" id="toc-un-prompt-analítico-con-c-t-f-r" class="nav-link" data-scroll-target="#un-prompt-analítico-con-c-t-f-r"><span class="header-section-number">5.4</span> Un prompt analítico con C-T-F-R</a>
+  <ul class="collapse">
+  <li><a href="#antes-después" id="toc-antes-después" class="nav-link" data-scroll-target="#antes-después"><span class="header-section-number">5.4.1</span> Antes / después</a></li>
+  </ul></li>
+  <li><a href="#constructor-de-prompts-para-analytics" id="toc-constructor-de-prompts-para-analytics" class="nav-link" data-scroll-target="#constructor-de-prompts-para-analytics"><span class="header-section-number">5.5</span> Constructor de prompts para Analytics</a></li>
+  <li><a href="#la-primera-respuesta-es-un-borrador" id="toc-la-primera-respuesta-es-un-borrador" class="nav-link" data-scroll-target="#la-primera-respuesta-es-un-borrador"><span class="header-section-number">5.6</span> La primera respuesta es un borrador</a></li>
+  <li><a href="#tres-tareas-reales" id="toc-tres-tareas-reales" class="nav-link" data-scroll-target="#tres-tareas-reales"><span class="header-section-number">5.7</span> Tres tareas reales</a>
+  <ul class="collapse">
+  <li><a href="#a-explicar-código-r" id="toc-a-explicar-código-r" class="nav-link" data-scroll-target="#a-explicar-código-r"><span class="header-section-number">5.7.1</span> A · Explicar código R</a></li>
+  <li><a href="#b-revisar-dax" id="toc-b-revisar-dax" class="nav-link" data-scroll-target="#b-revisar-dax"><span class="header-section-number">5.7.2</span> B · Revisar DAX</a></li>
+  <li><a href="#c-comunicar-resultados" id="toc-c-comunicar-resultados" class="nav-link" data-scroll-target="#c-comunicar-resultados"><span class="header-section-number">5.7.3</span> C · Comunicar resultados</a></li>
+  </ul></li>
+  <li><a href="#cacería-de-alucinaciones-en-analytics" id="toc-cacería-de-alucinaciones-en-analytics" class="nav-link" data-scroll-target="#cacería-de-alucinaciones-en-analytics"><span class="header-section-number">5.8</span> Cacería de alucinaciones en Analytics</a></li>
+  <li><a href="#plantilla-reutilizable-auditor-de-hallazgos" id="toc-plantilla-reutilizable-auditor-de-hallazgos" class="nav-link" data-scroll-target="#plantilla-reutilizable-auditor-de-hallazgos"><span class="header-section-number">5.9</span> Plantilla reutilizable: Auditor de hallazgos</a></li>
+  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist"><span class="header-section-number">5.10</span> Checklist</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f1-viernes.html">Semana 1 · De los datos a la información</a></li><li class="breadcrumb-item"><a href="./01b-ia-llm.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="mba-hero">
+<p><strong>Pregunta guía:</strong> ¿cómo usar un LLM para acelerar trabajo analítico sin confundir una respuesta plausible con evidencia?</p>
+</div>
+<section id="qué-necesitamos-entender" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="qué-necesitamos-entender"><span class="header-section-number">5.1</span> Qué necesitamos entender</h2>
+<p>Para este curso bastan cinco ideas:</p>
+<ol type="1">
+<li>un LLM trabaja con <strong>tokens</strong>;</li>
+<li>estima probabilidades de continuaciones;</li>
+<li>el <strong>contexto</strong> cambia esas probabilidades;</li>
+<li>genera la respuesta paso a paso;</li>
+<li>una respuesta puede ser coherente y falsa.</li>
+</ol>
+</section>
+<section id="la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="la-idea-central-predecir-un-token-volver-a-mirar-el-contexto-y-predecir-el-siguiente"><span class="header-section-number">5.2</span> La idea central: predecir <strong>un token, volver a mirar el contexto y predecir el siguiente</strong></h2>
+<p>Un LLM no elige una frase completa de una lista. En cada paso hace algo más parecido a esto:</p>
+<ol type="1">
+<li>observa todo el contexto disponible;</li>
+<li>asigna una probabilidad a muchas continuaciones posibles;</li>
+<li>selecciona un token;</li>
+<li>lo agrega al texto;</li>
+<li>vuelve a calcular las probabilidades porque <strong>el contexto cambió</strong>;</li>
+<li>repite el proceso hasta terminar la respuesta.</li>
+</ol>
+<p>Por eso el ejemplo no debe quedarse en escoger una sola palabra. La gracia está en ver cómo <strong>cada elección abre un nuevo conjunto de continuaciones</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Las probabilidades de esta demo son <strong>inventadas con fines pedagógicos</strong>. No provienen de ChatGPT, Claude, Gemini ni de ningún modelo comercial. Queremos visualizar el mecanismo, no reproducir un modelo real.</p>
+</div>
+</div>
+<section id="demo-interactiva-construye-la-respuesta-token-a-token" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="demo-interactiva-construye-la-respuesta-token-a-token"><span class="header-section-number">5.2.1</span> 🎲 Demo interactiva · Construye la respuesta token a token</h3>
+<p>Empieza con la frase <strong>“Las ventas de NovaRetail”</strong>. En cada paso aparecen varias continuaciones posibles. Elige una y observa cómo cambia la distribución del siguiente token.</p>
+<div class="try-it" id="token-lab">
+  <div class="tok-toolbar">
+    <button type="button" id="tok-reset" class="tok-action">↺ Empezar de nuevo</button>
+    <button type="button" id="tok-greedy" class="tok-action">▶ Elegir siempre la más probable</button>
+  </div>
+
+  <div class="tok-label">Contexto actual</div>
+  <div id="tok-sentence" class="tok-sentence">Las ventas de NovaRetail▌</div>
+
+  <div class="tok-meta">
+    <div><strong>Paso:</strong> <span id="tok-step">0</span></div>
+    <div><strong>Probabilidad acumulada de la ruta:</strong> <span id="tok-pathprob">100%</span></div>
+  </div>
+
+  <div class="tok-question">¿Qué token podría venir ahora?</div>
+  <div id="tok-options" class="tok-options"></div>
+
+  <div id="tok-comment" class="session-card tok-comment"></div>
+</div>
+<style>
+#token-lab .tok-toolbar{
+  display:flex;
+  gap:.55rem;
+  flex-wrap:wrap;
+  margin-bottom:1rem;
+}
+#token-lab .tok-action{
+  border:1px solid #0E5A9C;
+  background:#ffffff;
+  color:#0B3A67;
+  border-radius:.4rem;
+  padding:.5rem .75rem;
+  font-weight:650;
+  cursor:pointer;
+}
+#token-lab .tok-action:hover{
+  background:#eef5fb;
+}
+#token-lab .tok-label{
+  font-size:.84rem;
+  color:#667481;
+  margin-bottom:.3rem;
+}
+#token-lab .tok-sentence{
+  padding:1rem 1.1rem;
+  background:#f4f7fa;
+  border:1px solid #dbe4ec;
+  border-radius:.45rem;
+  font-size:1.13rem;
+  min-height:3.3rem;
+}
+#token-lab .tok-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  margin-top:.85rem;
+  flex-wrap:wrap;
+}
+#token-lab .tok-question{
+  margin-top:1.1rem;
+  font-weight:750;
+}
+#token-lab .tok-options{
+  margin-top:.5rem;
+}
+#token-lab .tok-option-row{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  margin:.5rem 0;
+}
+#token-lab .tok-option-btn{
+  min-width:190px;
+  text-align:left;
+  border:1px solid #b9d2ea;
+  background:#fff;
+  border-radius:.38rem;
+  padding:.48rem .68rem;
+  cursor:pointer;
+  font-weight:650;
+}
+#token-lab .tok-option-btn:hover{
+  background:#eef5fb;
+}
+#token-lab .tok-bar-track{
+  flex:1;
+  min-width:120px;
+  max-width:420px;
+  height:10px;
+  background:#edf2f7;
+  border-radius:999px;
+  overflow:hidden;
+}
+#token-lab .tok-bar{
+  height:100%;
+  background:#9ec5e8;
+  border-radius:999px;
+}
+#token-lab .tok-comment{
+  margin-top:1rem;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tree = {
+    root: {
+      next: [
+        [" aumentaron", .48, "up"],
+        [" cayeron", .27, "down"],
+        [" se", .16, "se"],
+        [" mostraron", .09, "show"]
+      ]
+    },
+
+    up: {next:[[" un",.44,"up_un"],[" en",.29,"up_en"],[" más",.17,"up_mas"],[" fuertemente",.10,"up_fuerte"]]},
+    up_un: {next:[[" 12",.36,"up_12"],[" 8",.28,"up_8"],[" 15",.21,"up_15"],[" 3",.15,"up_3"]]},
+    up_12: {next:[[" %",.93,"up_pct"],[" puntos",.04,"up_points"],[" veces",.03,"up_times"]]},
+    up_8: {next:[[" %",.94,"up_pct"],[" puntos",.04,"up_points"],[" veces",.02,"up_times"]]},
+    up_15: {next:[[" %",.95,"up_pct"],[" puntos",.03,"up_points"],[" veces",.02,"up_times"]]},
+    up_3: {next:[[" %",.94,"up_pct"],[" puntos",.04,"up_points"],[" veces",.02,"up_times"]]},
+    up_pct: {next:[[" durante",.34,"durante"],[" frente",.31,"frente"],[" en",.22,"en_periodo"],[", pero",.13,"pero"]]},
+    durante:{next:[[" el",.79,"durante_el"],[" este",.13,"durante_este"],[" julio",.08,"final"]]},
+    durante_el:{next:[[" último",.52,"ultimo"],[" segundo",.28,"segundo"],[" trimestre",.20,"final"]]},
+    ultimo:{next:[[" trimestre",.76,"final"],[" mes",.24,"final"]]},
+    segundo:{next:[[" trimestre",.82,"final"],[" semestre",.18,"final"]]},
+    durante_este:{next:[[" trimestre",.72,"final"],[" mes",.28,"final"]]},
+    frente:{next:[[" al",.51,"frente_al"],[" a",.37,"frente_a"],[" a igual",.12,"final"]]},
+    frente_al:{next:[[" trimestre",.61,"frente_trim"],[" año",.39,"frente_year"]]},
+    frente_trim:{next:[[" anterior",.88,"final"],[" previo",.12,"final"]]},
+    frente_year:{next:[[" anterior",.91,"final"],[" pasado",.09,"final"]]},
+    frente_a:{next:[[" 2025",.54,"final"],[" la",.46,"frente_la"]]},
+    frente_la:{next:[[" meta",.58,"final"],[" competencia",.42,"final"]]},
+    en_periodo:{next:[[" junio",.39,"final"],[" el",.36,"durante_el"],[" Colombia",.25,"final"]]},
+    pero:{next:[[" el",.42,"pero_el"],[" con",.33,"pero_con"],[" la",.25,"pero_la"]]},
+    pero_el:{next:[[" NPS",.57,"nps"],[" margen",.43,"margen"]]},
+    nps:{next:[[" cayó",.72,"final"],[" mejoró",.28,"final"]]},
+    margen:{next:[[" cayó",.63,"final"],[" aumentó",.37,"final"]]},
+    pero_con:{next:[[" mayor",.55,"mayor"],[" menor",.45,"menor"]]},
+    mayor:{next:[[" descuento",.67,"final"],[" volumen",.33,"final"]]},
+    menor:{next:[[" margen",.61,"final"],[" satisfacción",.39,"final"]]},
+    pero_la:{next:[[" satisfacción",.64,"sat"],[" rentabilidad",.36,"rent"]]},
+    sat:{next:[[" disminuyó",.69,"final"],[" mejoró",.31,"final"]]},
+    rent:{next:[[" cayó",.66,"final"],[" aumentó",.34,"final"]]},
+
+    up_en:{next:[[" Colombia",.30,"final"],[" junio",.28,"final"],[" comparación",.24,"en_comp"],[" todas",.18,"en_todas"]]},
+    en_comp:{next:[[" con",.83,"en_comp_con"],[" al",.17,"frente_al"]]},
+    en_comp_con:{next:[[" 2025",.53,"final"],[" el",.47,"durante_el"]]},
+    en_todas:{next:[[" las",.88,"en_todas_las"],[" sus",.12,"en_todas_sus"]]},
+    en_todas_las:{next:[[" regiones",.81,"final"],[" categorías",.19,"final"]]},
+    en_todas_sus:{next:[[" regiones",.78,"final"],[" tiendas",.22,"final"]]},
+    up_mas:{next:[[" de",.46,"up_mas_de"],[" rápido",.31,"final"],[" que",.23,"up_mas_que"]]},
+    up_mas_de:{next:[[" lo",.62,"up_mas_de_lo"],[" 10",.38,"up_10"]]},
+    up_mas_de_lo:{next:[[" esperado",.74,"final"],[" previsto",.26,"final"]]},
+    up_10:{next:[[" %",.96,"final"],[" puntos",.04,"final"]]},
+    up_mas_que:{next:[[" el",.61,"durante_el"],[" nunca",.39,"final"]]},
+    up_fuerte:{next:[[" durante",.42,"durante"],[" en",.38,"en_periodo"],[" pese",.20,"pese"]]},
+    pese:{next:[[" a",.91,"pese_a"],[" al",.09,"frente_al"]]},
+    pese_a:{next:[[" una",.54,"pese_una"],[" menores",.46,"pese_menor"]]},
+    pese_una:{next:[[" caída",.62,"pese_caida"],[" desaceleración",.38,"final"]]},
+    pese_caida:{next:[[" del",.71,"pese_del"],[" en",.29,"en_periodo"]]},
+    pese_del:{next:[[" NPS",.63,"final"],[" margen",.37,"final"]]},
+    pese_menor:{next:[[" descuentos",.58,"final"],[" visitas",.42,"final"]]},
+
+    down:{next:[[" un",.39,"down_un"],[" en",.33,"down_en"],[" durante",.18,"durante"],[" ligeramente",.10,"final"]]},
+    down_un:{next:[[" 6",.34,"down_6"],[" 4",.29,"down_4"],[" 10",.22,"down_10"],[" 2",.15,"down_2"]]},
+    down_6:{next:[[" %",.94,"down_pct"],[" puntos",.06,"final"]]},
+    down_4:{next:[[" %",.94,"down_pct"],[" puntos",.06,"final"]]},
+    down_10:{next:[[" %",.96,"down_pct"],[" puntos",.04,"final"]]},
+    down_2:{next:[[" %",.93,"down_pct"],[" puntos",.07,"final"]]},
+    down_pct:{next:[[" durante",.36,"durante"],[" frente",.34,"frente"],[", mientras",.30,"mientras"]]},
+    down_en:{next:[[" junio",.35,"final"],[" el",.35,"durante_el"],[" algunas",.30,"down_alg"]]},
+    down_alg:{next:[[" regiones",.63,"final"],[" categorías",.37,"final"]]},
+    mientras:{next:[[" la",.55,"mientras_la"],[" el",.45,"mientras_el"]]},
+    mientras_la:{next:[[" satisfacción",.61,"sat"],[" competencia",.39,"final"]]},
+    mientras_el:{next:[[" NPS",.60,"nps"],[" canal",.40,"mientras_canal"]]},
+    mientras_canal:{next:[[" web",.72,"final"],[" físico",.28,"final"]]},
+
+    se:{next:[[" mantuvieron",.51,"se_mant"],[" concentraron",.31,"se_conc"],[" recuperaron",.18,"se_rec"]]},
+    se_mant:{next:[[" estables",.59,"final"],[" cerca",.25,"se_cerca"],[" por",.16,"se_por"]]},
+    se_cerca:{next:[[" de",.84,"se_cerca_de"],[" del",.16,"pese_del"]]},
+    se_cerca_de:{next:[[" la",.54,"se_cerca_la"],[" los",.46,"se_cerca_los"]]},
+    se_cerca_la:{next:[[" meta",.71,"final"],[" tendencia",.29,"final"]]},
+    se_cerca_los:{next:[[" niveles",.76,"se_niveles"],[" resultados",.24,"final"]]},
+    se_niveles:{next:[[" anteriores",.83,"final"],[" esperados",.17,"final"]]},
+    se_por:{next:[[" encima",.57,"se_encima"],[" debajo",.43,"se_debajo"]]},
+    se_encima:{next:[[" de",.94,"se_encima_de"],[" del",.06,"pese_del"]]},
+    se_debajo:{next:[[" de",.95,"se_encima_de"],[" del",.05,"pese_del"]]},
+    se_encima_de:{next:[[" la",.69,"se_cerca_la"],[" 2025",.31,"final"]]},
+    se_conc:{next:[[" en",.88,"se_conc_en"],[" principalmente",.12,"se_conc_prin"]]},
+    se_conc_en:{next:[[" el",.38,"se_conc_el"],[" dos",.34,"se_conc_dos"],[" la",.28,"se_conc_la"]]},
+    se_conc_el:{next:[[" canal",.57,"se_canal"],[" Caribe",.43,"final"]]},
+    se_canal:{next:[[" web",.66,"final"],[" físico",.34,"final"]]},
+    se_conc_dos:{next:[[" regiones",.64,"final"],[" categorías",.36,"final"]]},
+    se_conc_la:{next:[[" región",.55,"se_region"],[" categoría",.45,"se_categoria"]]},
+    se_region:{next:[[" Caribe",.67,"final"],[" Andina",.33,"final"]]},
+    se_categoria:{next:[[" Tecnología",.61,"final"],[" Hogar",.39,"final"]]},
+    se_conc_prin:{next:[[" en",.91,"se_conc_en"],[" durante",.09,"durante"]]},
+    se_rec:{next:[[" durante",.45,"durante"],[" en",.35,"en_periodo"],[" tras",.20,"tras"]]},
+    tras:{next:[[" dos",.56,"tras_dos"],[" una",.44,"pese_una"]]},
+    tras_dos:{next:[[" meses",.79,"final"],[" trimestres",.21,"final"]]},
+
+    show:{next:[[" una",.42,"show_una"],[" señales",.31,"show_sig"],[" un",.27,"show_un"]]},
+    show_una:{next:[[" recuperación",.52,"show_rec"],[" caída",.31,"pese_caida"],[" tendencia",.17,"show_tend"]]},
+    show_rec:{next:[[" moderada",.62,"final"],[" en",.38,"en_periodo"]]},
+    show_tend:{next:[[" positiva",.58,"final"],[" mixta",.42,"final"]]},
+    show_sig:{next:[[" de",.79,"show_sig_de"],[" mixtas",.21,"final"]]},
+    show_sig_de:{next:[[" recuperación",.57,"final"],[" desaceleración",.43,"final"]]},
+    show_un:{next:[[" crecimiento",.59,"show_growth"],[" comportamiento",.41,"show_beh"]]},
+    show_growth:{next:[[" desigual",.64,"final"],[" moderado",.36,"final"]]},
+    show_beh:{next:[[" mixto",.71,"final"],[" estable",.29,"final"]]},
+
+    up_points:{next:[[" porcentuales",.87,"final"],[" frente",.13,"frente"]]},
+    up_times:{next:[[" frente",.76,"frente"],[" durante",.24,"durante"]]},
+    final:{next:[[".",1,"end"]]},
+    end:{next:[]}
+  };
+
+  let node="root", sentence="Las ventas de NovaRetail", step=0, pathProb=1;
+  const sent=document.getElementById("tok-sentence"), opts=document.getElementById("tok-options"), st=document.getElementById("tok-step"), pp=document.getElementById("tok-pathprob"), comment=document.getElementById("tok-comment");
+  if(!sent) return;
+
+  function explanation(){
+    if(node==="root") return "El modelo observa el contexto inicial y distribuye probabilidad entre muchas continuaciones. Aquí mostramos solo unas pocas.";
+    if(node==="end") return "La secuencia terminó. Observa que nunca se eligió una frase completa: cada token modificó el contexto para el paso siguiente.";
+    return "Al agregar el token anterior cambió el contexto; por eso cambian también las probabilidades de las siguientes continuaciones.";
+  }
+
+  function render(){
+    sent.textContent=sentence+"▌"; st.textContent=step; pp.textContent=(pathProb*100).toFixed(pathProb<.01?3:1)+"%"; comment.textContent=explanation(); opts.innerHTML="";
+    const choices=(tree[node]||{next:[]}).next;
+    if(!choices.length){ sent.textContent=sentence; return; }
+    choices.forEach(([token,prob,target])=>{
+      const wrap=document.createElement("div");
+      wrap.className="tok-option-row";
+
+      const b=document.createElement("button");
+      b.type="button";
+      b.className="tok-option-btn";
+      b.textContent=(token==="."?".":token.trim())+" · "+Math.round(prob*100)+"%";
+      b.onclick=()=>choose(token,prob,target);
+
+      const track=document.createElement("div");
+      track.className="tok-bar-track";
+      const bar=document.createElement("div");
+      bar.className="tok-bar";
+      bar.style.width=(prob*100)+"%";
+      track.appendChild(bar);
+
+      wrap.appendChild(b);
+      wrap.appendChild(track);
+      opts.appendChild(wrap);
+    });
+  }
+
+  function choose(token,prob,target){ sentence+=token; pathProb*=prob; step++; node=target; render(); }
+  function reset(){node="root";sentence="Las ventas de NovaRetail";step=0;pathProb=1;render();}
+  function greedy(){
+    reset(); let guard=0;
+    const timer=setInterval(()=>{
+      const c=(tree[node]||{next:[]}).next;
+      if(!c.length||guard++>20){clearInterval(timer);return;}
+      const best=[...c].sort((a,b)=>b[1]-a[1])[0]; choose(best[0],best[1],best[2]);
+      if(node==="end") clearInterval(timer);
+    },450);
+  }
+  document.getElementById("tok-reset").onclick=reset;
+  document.getElementById("tok-greedy").onclick=greedy;
+  render();
+});
+</script>
+</section>
+<section id="qué-debes-observar" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="qué-debes-observar"><span class="header-section-number">5.2.2</span> Qué debes observar</h3>
+<p>Haz al menos tres recorridos:</p>
+<ol type="1">
+<li><strong>Elige siempre la opción más probable.</strong> Verás una secuencia bastante convencional.</li>
+<li><strong>Escoge una opción menos probable en uno de los primeros pasos.</strong> El árbol de continuaciones cambia porque el contexto ya es diferente.</li>
+<li><strong>Construye una frase con un número específico</strong>, por ejemplo “aumentaron un 12 %…”. Esa cifra aparece porque la elegiste dentro de la simulación; <strong>no porque el sistema haya consultado las ventas reales de NovaRetail</strong>.</li>
+</ol>
+<p>La demo también muestra la <strong>probabilidad acumulada de la ruta</strong>. Una secuencia larga puede estar formada por elecciones razonables y, aun así, su combinación específica tener una probabilidad mucho menor. Esto ayuda a entender por qué un modelo puede producir muchas respuestas distintas a partir del mismo inicio.</p>
+<div class="key-idea">
+<p><strong>La idea que quiero que te lleves:</strong> un LLM no decide primero una respuesta completa y luego la escribe. Va construyéndola token a token. Cada token que genera se convierte en parte del contexto que condiciona la siguiente predicción.</p>
+</div>
+</section>
+<section id="y-dónde-nace-la-alucinación" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="y-dónde-nace-la-alucinación"><span class="header-section-number">5.2.3</span> ¿Y dónde nace la alucinación?</h3>
+<p>Imagina que después de:</p>
+<blockquote class="blockquote">
+<p><strong>“Las ventas de NovaRetail aumentaron un 12 %…”</strong></p>
+</blockquote>
+<p>el sistema continúa con:</p>
+<blockquote class="blockquote">
+<p><strong>“…durante el último trimestre.”</strong></p>
+</blockquote>
+<p>La frase es perfectamente plausible. Pero si nunca le entregamos los datos reales de ventas, el <strong>12 % sigue siendo una cifra inventada dentro de nuestra demostración</strong>. El modelo puede encadenar tokens altamente plausibles hasta construir una afirmación empresarial completamente falsa.</p>
+<p>Ese es el puente hacia el resto del curso:</p>
+<blockquote class="blockquote">
+<p><strong>probabilidad lingüística ≠ evidencia empresarial</strong></p>
+</blockquote>
+</section>
+<section id="para-profundizar-por-qué-alucinan-los-modelos" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="para-profundizar-por-qué-alucinan-los-modelos"><span class="header-section-number">5.2.4</span> Para profundizar · ¿por qué alucinan los modelos?</h3>
+<p>Si quieres profundizar después de la clase, consulta estas dos explicaciones de los propios desarrolladores de modelos:</p>
+<ul>
+<li><a href="https://openai.com/es-ES/index/why-language-models-hallucinate/">OpenAI · Por qué los modelos de lenguaje se inventan cosas</a> — conecta las alucinaciones con la predicción del siguiente token y con los incentivos de entrenamiento/evaluación.</li>
+<li><a href="https://claude.com/resources/tutorials/why-do-ai-models-hallucinate">Claude · Why do AI models hallucinate?</a> — material complementario de Anthropic para comprender por qué un modelo puede producir información plausible pero incorrecta.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Lectura autónoma
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No necesitas leer estos recursos durante la clase. Vuelve a ellos después de experimentar con la demo y la cacería de alucinaciones.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="contexto-menos-adivinanzas" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="contexto-menos-adivinanzas"><span class="header-section-number">5.3</span> Contexto: menos adivinanzas</h2>
+<p>Compara:</p>
+<blockquote class="blockquote">
+<p>¿Cuál canal debería priorizar NovaRetail?</p>
+</blockquote>
+<p>con:</p>
+<blockquote class="blockquote">
+<p>Tengo ventas por región, canal, categoría, descuento y estado. Identifica qué canal merece investigación prioritaria. No asumas margen ni satisfacción si esos datos no están presentes. Para cada observación indica qué cálculo debería validarla.</p>
+</blockquote>
+<p>Más contexto reduce huecos, pero <strong>contexto irrelevante o contradictorio también puede empeorar la respuesta</strong>.</p>
+</section>
+<section id="un-prompt-analítico-con-c-t-f-r" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="un-prompt-analítico-con-c-t-f-r"><span class="header-section-number">5.4</span> Un prompt analítico con C-T-F-R</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>C · Contexto</strong></td>
+<td>¿qué problema, datos y audiencia debe conocer?</td>
+</tr>
+<tr class="even">
+<td><strong>T · Tarea</strong></td>
+<td>¿qué debe hacer exactamente?</td>
+</tr>
+<tr class="odd">
+<td><strong>F · Formato</strong></td>
+<td>¿cómo debe entregar la salida?</td>
+</tr>
+<tr class="even">
+<td><strong>R · Restricciones</strong></td>
+<td>¿qué no debe asumir, inventar o hacer?</td>
+</tr>
+</tbody>
+</table>
+<section id="antes-después" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="antes-después"><span class="header-section-number">5.4.1</span> Antes / después</h3>
+<div class="try-it">
+<button id="pb-bad">
+<p>Prompt vago</p>
+</button>
+<button id="pb-good">
+<p>Prompt estructurado</p>
+</button>
+<div id="pb-panel" class="session-card" style="margin-top:.7rem">
+
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const p=document.getElementById("pb-panel"); if(!p)return;
+ const bad='<b>“Analiza las ventas y dime qué hacer.”</b><br><br>No define pregunta, audiencia, formato ni límites.';
+ const good='<b>C:</b> preparo un comité comercial de NovaRetail y tengo ventas, región, canal, categoría, descuento y estado.<br><br><b>T:</b> identifica tres patrones que merezcan investigación prioritaria.<br><br><b>F:</b> tabla con patrón, evidencia necesaria e implicación.<br><br><b>R:</b> no afirmes causalidad ni inventes cifras; marca los datos faltantes.';
+ document.getElementById("pb-bad").onclick=()=>p.innerHTML=bad;
+ document.getElementById("pb-good").onclick=()=>p.innerHTML=good; p.innerHTML=bad;
+});
+</script>
+</section>
+</section>
+<section id="constructor-de-prompts-para-analytics" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="constructor-de-prompts-para-analytics"><span class="header-section-number">5.5</span> Constructor de prompts para Analytics</h2>
+<div class="try-it">
+<p><label><b>Escenario:</b></label> <select id="mba-preset"><option value="blank">— En blanco —</option><option value="r">Explicar código R</option><option value="calidad">Revisar calidad</option><option value="dax">Revisar DAX</option><option value="hallazgo">Auditar un hallazgo</option></select></p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.7rem;margin-top:.8rem">
+<div>
+<p><b>C · Contexto</b></p>
+<textarea id="mba-c" style="width:100%;min-height:105px"></textarea>
+</div>
+<div>
+<p><b>T · Tarea</b></p>
+<textarea id="mba-t" style="width:100%;min-height:105px"></textarea>
+</div>
+<div>
+<p><b>F · Formato</b></p>
+<textarea id="mba-f" style="width:100%;min-height:105px"></textarea>
+</div>
+<div>
+<p><b>R · Restricciones</b></p>
+<textarea id="mba-r" style="width:100%;min-height:105px"></textarea>
+</div>
+</div>
+<div id="mba-prompt-out" class="session-card" style="white-space:pre-wrap">
+
+</div>
+<button id="mba-copy">
+<p>📋 Copiar</p>
+</button>
+<button id="mba-clear">
+<p>🧹 Limpiar</p>
+</button>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const P={
+ r:{c:"Estoy analizando NovaRetail en R y estoy aprendiendo la sintaxis.",t:"Explica línea por línea el código que pegaré y señala qué objeto cambia.",f:"Tabla: línea | qué hace | qué verificar.",r:"No reescribas todo. Corrige un error a la vez y no inventes columnas."},
+ calidad:{c:"Tengo una tabla que debe quedar lista para análisis y Power BI.",t:"Propón controles de calidad y clasifícalos por unicidad, completitud, validez, consistencia e integridad.",f:"Tabla: control | regla | prueba | riesgo.",r:"No supongas reglas de negocio; marca las que requieren confirmación humana."},
+ dax:{c:"Tengo un modelo estrella en Power BI y una medida DAX que debo validar.",t:"Explica qué calcula, qué contexto la afecta y qué casos pueden engañar.",f:"Significado | contexto | pruebas.",r:"No propongas fórmula nueva hasta explicar la actual; no asumas relaciones no descritas."},
+ hallazgo:{c:"Tengo un resultado de NovaRetail para una audiencia gerencial.",t:"Audita mi interpretación y separa observación, inferencia, hipótesis e implicación.",f:"Tabla con afirmación | categoría | evidencia | dato faltante.",r:"No inventes causas ni cifras."}
+ };
+ const ids=['mba-c','mba-t','mba-f','mba-r'], out=document.getElementById('mba-prompt-out'); if(!out)return;
+ function render(){const v=ids.map(id=>document.getElementById(id).value.trim());out.textContent=['CONTEXTO:\n'+v[0],'TAREA:\n'+v[1],'FORMATO:\n'+v[2],'RESTRICCIONES:\n'+v[3]].join('\n\n');}
+ ids.forEach(id=>document.getElementById(id).addEventListener('input',render));
+ document.getElementById('mba-preset').onchange=e=>{const x=P[e.target.value]||{c:'',t:'',f:'',r:''};['c','t','f','r'].forEach(k=>document.getElementById('mba-'+k).value=x[k]);render();};
+ document.getElementById('mba-clear').onclick=()=>{ids.forEach(id=>document.getElementById(id).value='');render();};
+ document.getElementById('mba-copy').onclick=()=>navigator.clipboard?.writeText(out.textContent); render();
+});
+</script>
+</section>
+<section id="la-primera-respuesta-es-un-borrador" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="la-primera-respuesta-es-un-borrador"><span class="header-section-number">5.6</span> La primera respuesta es un borrador</h2>
+<p>Itera con cuatro movimientos:</p>
+<p><strong>Ajustar</strong> — cambia audiencia, extensión o formato.<br>
+<strong>Profundizar</strong> — pide explicación de un punto concreto.<br>
+<strong>Contrastar</strong> — exige una explicación alternativa compatible con la evidencia.<br>
+<strong>Verificar</strong> — pide el cálculo o fuente que comprobaría cada afirmación.</p>
+<div class="key-idea">
+<p>La iteración útil no hace que la IA “suene mejor”; hace que el análisis sea más verificable.</p>
+</div>
+</section>
+<section id="tres-tareas-reales" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="tres-tareas-reales"><span class="header-section-number">5.7</span> Tres tareas reales</h2>
+<section id="a-explicar-código-r" class="level3" data-number="5.7.1">
+<h3 data-number="5.7.1" class="anchored" data-anchor-id="a-explicar-código-r"><span class="header-section-number">5.7.1</span> A · Explicar código R</h3>
+<p>¿Describió lo que hace el código o inventó columnas/resultados? ¿Indicó qué verificar?</p>
+</section>
+<section id="b-revisar-dax" class="level3" data-number="5.7.2">
+<h3 data-number="5.7.2" class="anchored" data-anchor-id="b-revisar-dax"><span class="header-section-number">5.7.2</span> B · Revisar DAX</h3>
+<p>Antes de pedir una fórmula, pide definición de negocio, contexto de filtro y pruebas.</p>
+</section>
+<section id="c-comunicar-resultados" class="level3" data-number="5.7.3">
+<h3 data-number="5.7.3" class="anchored" data-anchor-id="c-comunicar-resultados"><span class="header-section-number">5.7.3</span> C · Comunicar resultados</h3>
+<p>Obliga a separar <strong>observación, hipótesis, implicación y recomendación</strong>.</p>
+</section>
+</section>
+<section id="cacería-de-alucinaciones-en-analytics" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="cacería-de-alucinaciones-en-analytics"><span class="header-section-number">5.8</span> Cacería de alucinaciones en Analytics</h2>
+<p><strong>Trampa 1 · KPI imposible:</strong> “Con ventas, dime la categoría con mayor margen.” Si no hay costos, no puede saberlo.<br>
+<strong>Trampa 2 · Causa conveniente:</strong> “Ventas web subieron y NPS bajó. ¿Qué causó el deterioro?” Puede proponer hipótesis, no demostrar causa.<br>
+<strong>Trampa 3 · Cifra exacta ausente:</strong> “¿Cuánto vendió NovaRetail en junio?” Sin acceso al archivo o cálculo, la cifra no está verificada.</p>
+<p>Clasifica cada salida como <strong>dato, inferencia, hipótesis o invención</strong>.</p>
+</section>
+<section id="plantilla-reutilizable-auditor-de-hallazgos" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="plantilla-reutilizable-auditor-de-hallazgos"><span class="header-section-number">5.9</span> Plantilla reutilizable: Auditor de hallazgos</h2>
+<pre class="text"><code>CUÁNDO USARLA:
+Cuando ya tengo un gráfico, tabla o resultado y quiero revisar si mi interpretación excede la evidencia.
+
+INSTRUCCIONES:
+1. Resume mi afirmación central.
+2. Separa observación, inferencia e hipótesis.
+3. Indica qué cálculo o fuente valida cada afirmación.
+4. Señala saltos causales o datos faltantes.
+5. Propón una redacción más prudente si es necesario.
+
+RESTRICCIONES:
+No inventes cifras ni causas. Si algo no puede verificarse con la evidencia entregada, dilo explícitamente.</code></pre>
+</section>
+<section id="checklist" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="checklist"><span class="header-section-number">5.10</span> Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">Entiendo por qué plausible no significa verdadero.</label></li>
+<li><label><input type="checkbox">Puedo construir un C-T-F-R.</label></li>
+<li><label><input type="checkbox">Sé ajustar, profundizar, contrastar y verificar.</label></li>
+<li><label><input type="checkbox">Distingo dato, inferencia, hipótesis e invención.</label></li>
+<li><label><input type="checkbox">Puedo pedir una ruta de validación.</label></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./01-analitica-negocios.html" class="pagination-link" aria-label="De los datos a las decisiones">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">De los datos a las decisiones</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01c-ia-agentes.html" class="pagination-link" aria-label="IA como agente de código: contexto, reglas y auditoría">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">IA como agente de código: contexto, reglas y auditoría</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
