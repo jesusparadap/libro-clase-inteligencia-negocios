@@ -440,7 +440,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#debes-responder-2" id="toc-debes-responder-2" class="nav-link" data-scroll-target="#debes-responder-2"><span class="header-section-number">14.6.1</span> Debes responder</a></li>
   </ul></li>
-  <li><a href="#extensión-mba-una-media-global-puede-ocultar-el-problema" id="toc-extensión-mba-una-media-global-puede-ocultar-el-problema" class="nav-link" data-scroll-target="#extensión-mba-una-media-global-puede-ocultar-el-problema"><span class="header-section-number">14.7</span> Extensión MBA · una media global puede ocultar el problema</a></li>
+  <li><a href="#una-media-global-puede-ocultar-el-problema" id="toc-una-media-global-puede-ocultar-el-problema" class="nav-link" data-scroll-target="#una-media-global-puede-ocultar-el-problema"><span class="header-section-number">14.7</span> Una media global puede ocultar el problema</a></li>
   <li><a href="#entregable" id="toc-entregable" class="nav-link" data-scroll-target="#entregable"><span class="header-section-number">14.8</span> Entregable</a>
   <ul class="collapse">
   <li><a href="#plantilla-para-cada-hallazgo" id="toc-plantilla-para-cada-hallazgo" class="nav-link" data-scroll-target="#plantilla-para-cada-hallazgo"><span class="header-section-number">14.8.1</span> Plantilla para cada hallazgo</a></li>
@@ -474,7 +474,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="mba-hero">
-<p><strong>Producto del viernes · Semana 2:</strong> un análisis exploratorio reproducible y una nota ejecutiva de máximo dos páginas. El propósito no es demostrar fórmulas: es convertir resultados descriptivos en evidencia útil sin exceder lo que los datos permiten afirmar.</p>
+<p><strong>Producto:</strong> un análisis exploratorio reproducible y una nota ejecutiva de máximo dos páginas. El propósito no es demostrar fórmulas: es convertir resultados descriptivos en evidencia útil sin exceder lo que los datos permiten afirmar.</p>
 </div>
 <section id="caso" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="caso"><span class="header-section-number">14.1</span> Caso</h2>
@@ -680,12 +680,12 @@ Tip
 <li>¿Cuál es el sentido y la fortaleza aparente de la asociación?</li>
 <li>¿La nube muestra subgrupos, asimetría o valores extremos?</li>
 <li>¿Qué variables disponibles podrían estar ocultando diferencias relevantes?</li>
-<li>Completa: “Con estos resultados podemos afirmar <strong><em>; todavía no podemos afirmar </em></strong>”.</li>
+<li>Completa: “Con estos resultados podemos afirmar <strong><em>; todavía no podemos afirmar</em></strong> ”.</li>
 </ol>
 </section>
 </section>
-<section id="extensión-mba-una-media-global-puede-ocultar-el-problema" class="level2" data-number="14.7">
-<h2 data-number="14.7" class="anchored" data-anchor-id="extensión-mba-una-media-global-puede-ocultar-el-problema"><span class="header-section-number">14.7</span> Extensión MBA · una media global puede ocultar el problema</h2>
+<section id="una-media-global-puede-ocultar-el-problema" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="una-media-global-puede-ocultar-el-problema"><span class="header-section-number">14.7</span> Una media global puede ocultar el problema</h2>
 <p>La relación entre IMC y costo puede comportarse distinto entre personas fumadoras y no fumadoras. Compara antes de concluir.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aggregate</span>(charges <span class="sc">~</span> smoker, <span class="at">data =</span> insureco,</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>          <span class="at">FUN =</span> <span class="cf">function</span>(x) <span class="fu">c</span>(</span>

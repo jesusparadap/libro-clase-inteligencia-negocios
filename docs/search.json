@@ -1284,7 +1284,7 @@
     "href": "sesiones/f2-viernes.html#preparación",
     "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
     "section": "12.3 Preparación",
-    "text": "12.3 Preparación\n\nAbre el Tutorial ejecutable · Análisis exploratorio de datos.\nEspera a que WebR indique que está listo.\nEjecuta las celdas en orden; el código corre dentro del navegador.\nPara el taller, descarga insureco.csv y abre RStudio.\n\n\n\n\n\n\n\nImportante\n\n\n\nLa clase no evalúa memoria de sintaxis. Evalúa que el estudiante pueda formular, ejecutar, leer, verificar, interpretar y comunicar.",
+    "text": "12.3 Preparación\n\nAbre el Tutorial ejecutable · Análisis exploratorio de datos.\nEspera a que WebR indique que está listo.\nEjecuta las celdas en orden; el código corre dentro del navegador.\nPara el taller, descarga insureco.csv y abre RStudio.\n\n\n\n\n\n\n\nImportante\n\n\n\nNo se evalúa memoria de sintaxis. Se evalúa que el estudiante pueda formular, ejecutar, leer, verificar, interpretar y comunicar.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
@@ -1295,7 +1295,7 @@
     "href": "sesiones/f2-viernes.html#apertura-la-trampa-del-promedio",
     "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
     "section": "12.4 Apertura · la trampa del promedio",
-    "text": "12.4 Apertura · la trampa del promedio\n\nProfesor: presenta dos grupos con media 100 y dispersión radicalmente distinta. Antes de mostrar la desviación, pide una decisión. Después pregunta qué información faltaba.\n\nA &lt;- c(90, 95, 100, 105, 110)\nB &lt;- c(20, 30, 40, 50, 360)\n\nrbind(\n  A = c(media = mean(A), mediana = median(A), sd = sd(A)),\n  B = c(media = mean(B), mediana = median(B), sd = sd(B))\n)\nLa frase que guía el viernes es:\n\nCentro sin dispersión y distribución es una historia incompleta.",
+    "text": "12.4 Apertura · la trampa del promedio\nA &lt;- c(90, 95, 100, 105, 110)\nB &lt;- c(20, 30, 40, 50, 360)\n\nrbind(\n  A = c(media = mean(A), mediana = median(A), sd = sd(A)),\n  B = c(media = mean(B), mediana = median(B), sd = sd(B))\n)\n\nCentro sin dispersión y distribución es una historia incompleta.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
@@ -1317,7 +1317,7 @@
     "href": "sesiones/f2-viernes.html#taller-evaluable",
     "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
     "section": "12.6 Taller evaluable",
-    "text": "12.6 Taller evaluable\nInicia el Taller evaluable · InsureCO.\nEl núcleo reproduce las tres actividades del material original:\n\ndescribir la edad mediante centro y dispersión;\nrelacionar hábito de fumar y región con una tabla de contingencia;\nexplorar IMC y costo de póliza mediante dispersión y correlación.\n\nLa versión adaptada añade denominadores, comparación de grupos, prudencia causal, reproducibilidad y una nota ejecutiva.",
+    "text": "12.6 Taller evaluable\nInicia el Taller evaluable · InsureCO.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
@@ -1335,22 +1335,11 @@
     ]
   },
   {
-    "objectID": "sesiones/f2-viernes.html#ticket-de-salida",
-    "href": "sesiones/f2-viernes.html#ticket-de-salida",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
-    "section": "12.8 Ticket de salida",
-    "text": "12.8 Ticket de salida\nCompleta en una sola frase:\n\nPara apoyar la decisión ________, no basta con reportar ________; también necesito revisar ________, porque ________.",
-    "crumbs": [
-      "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
-    ]
-  },
-  {
     "objectID": "sesiones/f2-viernes.html#checklist-de-cierre",
     "href": "sesiones/f2-viernes.html#checklist-de-cierre",
     "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
-    "section": "12.9 Checklist de cierre",
-    "text": "12.9 Checklist de cierre\n\nSé qué representa una fila.\nNo reporto media sin distribución y tamaño de muestra.\nPuedo construir un porcentaje con denominador explícito.\nInvestigo atípicos antes de excluirlos.\nNo confundo correlación con causalidad.\nPuedo reproducir el análisis InsureCO desde un archivo limpio.",
+    "section": "12.8 Checklist de cierre",
+    "text": "12.8 Checklist de cierre\n\nSé qué representa una fila.\nNo reporto media sin distribución y tamaño de muestra.\nPuedo construir un porcentaje con denominador explícito.\nInvestigo atípicos antes de excluirlos.\nNo confundo correlación con causalidad.\nPuedo reproducir el análisis InsureCO desde un archivo limpio.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
@@ -1361,7 +1350,7 @@
     "href": "05-estadistica-decisiones.html",
     "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
     "section": "",
-    "text": "13.1 Resultados de aprendizaje\nEste tutorial adapta y amplía AED_2.Rmd, el material original de la Parte 1. Conserva su recorrido —reconocer los datos, resumir variables, detectar anomalías y estudiar relaciones— y lo orienta a estudiantes de MBA: menos demostración matemática y más criterio para decidir qué calcular, cómo leerlo y qué no concluir.\nAl terminar podrás:",
+    "text": "13.1 Resultados de aprendizaje\nAl terminar podrás:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
@@ -1372,7 +1361,7 @@
     "href": "05-estadistica-decisiones.html#resultados-de-aprendizaje",
     "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
     "section": "",
-    "text": "reconocer la unidad de análisis, dimensiones, nombres y tipos de una tabla;\ncalcular e interpretar media, mediana, moda, mínimo, máximo, rango, cuartiles, IQR, varianza, desviación estándar, coeficiente de variación y percentiles;\nconstruir frecuencias, proporciones, tablas cruzadas, histogramas, diagramas de caja y dispersión;\ncomparar grupos y reconocer cuándo un promedio global oculta diferencias;\nidentificar observaciones atípicas sin confundirlas automáticamente con errores;\ninterpretar asociación y correlación sin afirmar causalidad.\n\n\n\n\n\n\n\nTipCómo usar las celdas\n\n\n\nEspera a que WebR indique que está listo. Ejecuta las celdas en orden con el botón Run. Después modifica un valor y vuelve a ejecutar. Si pierdes los objetos creados, regresa a Iniciar el tutorial.",
+    "text": "reconocer la unidad de análisis, dimensiones, nombres y tipos de una tabla;\ncalcular e interpretar media, mediana, moda, mínimo, máximo, rango, cuartiles, IQR, varianza, desviación estándar y percentiles;\nconstruir frecuencias, proporciones, tablas cruzadas, histogramas, diagramas de caja y dispersión;\ncomparar grupos y reconocer cuándo un promedio global oculta diferencias;\nidentificar observaciones atípicas sin confundirlas automáticamente con errores;\ninterpretar asociación y correlación sin afirmar causalidad.\n\n\n\n\n\n\n\nTipCómo usar las celdas\n\n\n\nEspera a que WebR indique que está listo. Ejecuta las celdas en orden con el botón Run. Después modifica un valor y vuelve a ejecutar. Si pierdes los objetos creados, regresa a Iniciar el tutorial.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
@@ -1416,7 +1405,7 @@
     "href": "05-estadistica-decisiones.html#estadísticas-descriptivas",
     "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
     "section": "13.5 4. Estadísticas descriptivas",
-    "text": "13.5 4. Estadísticas descriptivas\n\n13.5.1 4.1 Una vista general\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nsummary() es útil para orientarse, pero no sustituye una selección consciente de medidas. Para una variable numérica conviene observar al menos tamaño, centro, dispersión, posición y extremos.\n\n\n13.5.2 4.2 Media, mediana y moda\n\n\n\n\n\n\n\n\nMedida\nPregunta que ayuda a responder\nPrecaución\n\n\n\n\nMedia\n¿cuál es el balance promedio?\ncambia con valores extremos\n\n\nMediana\n¿cuál es el punto central al ordenar?\nno usa la magnitud completa de los extremos\n\n\nModa\n¿qué valor o categoría es más frecuente?\npuede haber más de una o ninguna moda útil\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n13.5.3 La trampa del promedio\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLas dos series tienen la misma media, pero no describen el mismo comportamiento. Para una decisión sobre riesgo, capacidad o consistencia, esa diferencia es material.\n\n\n13.5.4 4.3 Mínimo, máximo, rango, cuartiles y percentiles\nUn percentil p es un punto de corte: aproximadamente p % de las observaciones queda en o por debajo de ese valor. El percentil 50 es la mediana.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLectura empresarial: el percentil 90 permite preguntar “¿a partir de qué valor se encuentra el 10 % superior?”. El IQR describe la amplitud del 50 % central y es menos sensible a extremos que el rango.\n\n\n13.5.5 4.4 Varianza, desviación estándar y coeficiente de variación\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nLa varianza está en unidades al cuadrado y se utiliza mucho dentro de métodos estadísticos.\nLa desviación estándar vuelve a la unidad original y facilita la interpretación.\nEl coeficiente de variación (CV) expresa la desviación respecto a la media y puede ayudar a comparar variabilidad relativa cuando la media es positiva y tiene sentido usar el cero como referencia.\n\n\n\n\n\n\n\nAdvertencia\n\n\n\nEl CV puede ser inestable o engañoso cuando la media es cero, cercana a cero o puede tomar valores negativos. No es una medida universal.\n\n\n\n\n13.5.6 4.5 Un perfil reproducible\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "text": "13.5 4. Estadísticas descriptivas\n\n13.5.1 4.1 Una vista general\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nsummary() es útil para orientarse, pero no sustituye una selección consciente de medidas. Para una variable numérica conviene observar al menos tamaño, centro, dispersión, posición y extremos.\n\n\n13.5.2 4.2 Media, mediana y moda\n\n\n\n\n\n\n\n\nMedida\nPregunta que ayuda a responder\nPrecaución\n\n\n\n\nMedia\n¿cuál es el balance promedio?\ncambia con valores extremos\n\n\nMediana\n¿cuál es el punto central al ordenar?\nno usa la magnitud completa de los extremos\n\n\nModa\n¿qué valor o categoría es más frecuente?\npuede haber más de una o ninguna moda útil\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n13.5.3 La trampa del promedio\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLas dos series tienen la misma media, pero no describen el mismo comportamiento. Para una decisión sobre riesgo, capacidad o consistencia, esa diferencia es importante.\n\n\n13.5.4 4.3 Mínimo, máximo, rango, cuartiles y percentiles\nUn percentil p es un punto de corte: aproximadamente p % de las observaciones queda en o por debajo de ese valor. El percentil 50 es la mediana.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLectura empresarial: el percentil 90 permite preguntar “¿a partir de qué valor se encuentra el 10 % superior?”. El IQR describe la amplitud del 50 % central y es menos sensible a extremos que el rango.\n\n\n13.5.5 4.4 Varianza, desviación estándar y coeficiente de variación\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nLa varianza está en unidades al cuadrado y se utiliza mucho dentro de métodos estadísticos.\nLa desviación estándar vuelve a la unidad original y facilita la interpretación.\nEl coeficiente de variación (CV) expresa la desviación respecto a la media y puede ayudar a comparar variabilidad relativa cuando la media es positiva y tiene sentido usar el cero como referencia.\n\n\n\n\n\n\n\nAdvertencia\n\n\n\nEl CV puede ser inestable o engañoso cuando la media es cero, cercana a cero o puede tomar valores negativos. No es una medida universal.\n\n\n\n\n13.5.6 4.5 Un perfil reproducible\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
@@ -1493,7 +1482,7 @@
     "href": "05-estadistica-decisiones.html#referencias-de-base",
     "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
     "section": "13.12 Referencias de base",
-    "text": "13.12 Referencias de base\n\nPearson, R. (2018). Exploratory Data Analysis Using R.\nWickham, H. et al. dplyr: A Grammar of Data Manipulation.\nMaterial del curso original: Parte 1/AED_2.Rmd, “AED univariados” y “AED bivariados”.",
+    "text": "13.12 Referencias de base\n\nPearson, R. (2018). Exploratory Data Analysis Using R.\nWickham, H. et al. dplyr: A Grammar of Data Manipulation.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
@@ -1577,11 +1566,11 @@
     ]
   },
   {
-    "objectID": "talleres/taller-insureco.html#extensión-mba-una-media-global-puede-ocultar-el-problema",
-    "href": "talleres/taller-insureco.html#extensión-mba-una-media-global-puede-ocultar-el-problema",
+    "objectID": "talleres/taller-insureco.html#una-media-global-puede-ocultar-el-problema",
+    "href": "talleres/taller-insureco.html#una-media-global-puede-ocultar-el-problema",
     "title": "14  Taller evaluable · InsureCO",
-    "section": "14.7 Extensión MBA · una media global puede ocultar el problema",
-    "text": "14.7 Extensión MBA · una media global puede ocultar el problema\nLa relación entre IMC y costo puede comportarse distinto entre personas fumadoras y no fumadoras. Compara antes de concluir.\naggregate(charges ~ smoker, data = insureco,\n          FUN = function(x) c(\n            n = length(x),\n            media = mean(x),\n            mediana = median(x),\n            sd = sd(x),\n            p90 = quantile(x, .90)\n          ))\n\nboxplot(charges ~ smoker, data = insureco,\n        col = c(\"#9ecae1\", \"#fdae6b\"),\n        xlab = \"¿Fuma?\", ylab = \"Costo observado\",\n        main = \"Costo por hábito de fumar\")\n\nby(insureco[, c(\"bmi\", \"charges\")],\n   insureco$smoker,\n   function(d) cor(d$bmi, d$charges))\nEsta extensión no pide explicar causalmente el costo. Busca reconocer que una estadística agregada puede mezclar grupos con comportamientos diferentes.",
+    "section": "14.7 Una media global puede ocultar el problema",
+    "text": "14.7 Una media global puede ocultar el problema\nLa relación entre IMC y costo puede comportarse distinto entre personas fumadoras y no fumadoras. Compara antes de concluir.\naggregate(charges ~ smoker, data = insureco,\n          FUN = function(x) c(\n            n = length(x),\n            media = mean(x),\n            mediana = median(x),\n            sd = sd(x),\n            p90 = quantile(x, .90)\n          ))\n\nboxplot(charges ~ smoker, data = insureco,\n        col = c(\"#9ecae1\", \"#fdae6b\"),\n        xlab = \"¿Fuma?\", ylab = \"Costo observado\",\n        main = \"Costo por hábito de fumar\")\n\nby(insureco[, c(\"bmi\", \"charges\")],\n   insureco$smoker,\n   function(d) cor(d$bmi, d$charges))\nEsta extensión no pide explicar causalmente el costo. Busca reconocer que una estadística agregada puede mezclar grupos con comportamientos diferentes.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
