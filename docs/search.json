@@ -1249,100 +1249,100 @@
   {
     "objectID": "sesiones/f2-viernes.html",
     "href": "sesiones/f2-viernes.html",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "",
     "text": "12.1 Resultados de la sesión\nAl finalizar podrás:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#resultados-de-la-sesión",
     "href": "sesiones/f2-viernes.html#resultados-de-la-sesión",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "",
     "text": "seleccionar medidas descriptivas según la pregunta y el tipo de variable;\nejecutar un AED completo en R desde el navegador;\ncomparar distribuciones y grupos, no solo promedios;\nconstruir e interpretar tablas cruzadas y correlaciones;\ncomunicar un hallazgo sin confundir asociación con causalidad;\nproducir el primer taller evaluable de la semana 2.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#ruta-de-clase-180-minutos",
     "href": "sesiones/f2-viernes.html#ruta-de-clase-180-minutos",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.2 Ruta de clase · 180 minutos",
     "text": "12.2 Ruta de clase · 180 minutos\n\n\n\n\n\n\n\n\n\nMinutos\nBloque\nDinámica\nProducto\n\n\n\n\n0–15\nReconexión\nde los hallazgos de semana 1 a “¿un promedio basta?”\npregunta analítica\n\n\n15–35\nMisma media, distinto negocio\ndemo + discusión\nconflicto conceptual\n\n\n35–80\nCentro, posición y dispersión\nWebR: ejecutar → modificar → interpretar\nperfil descriptivo\n\n\n80–90\nPausa\n\n\n\n\n90–120\nDistribución, grupos y atípicos\nWebR + preguntas guiadas\ncomparación prudente\n\n\n120–145\nBivariado\ntablas cruzadas, dispersión y correlación\nlectura de asociación\n\n\n145–175\nTaller InsureCO\ntrabajo individual/parejas\nanálisis iniciado\n\n\n175–180\nCierre\nticket de salida\ndecisión + límite",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#preparación",
     "href": "sesiones/f2-viernes.html#preparación",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.3 Preparación",
     "text": "12.3 Preparación\n\nAbre el Tutorial ejecutable · Análisis exploratorio de datos.\nEspera a que WebR indique que está listo.\nEjecuta las celdas en orden; el código corre dentro del navegador.\nPara el taller, descarga insureco.csv y abre RStudio.\n\n\n\n\n\n\n\nImportante\n\n\n\nNo se evalúa memoria de sintaxis. Se evalúa que el estudiante pueda formular, ejecutar, leer, verificar, interpretar y comunicar.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#apertura-la-trampa-del-promedio",
     "href": "sesiones/f2-viernes.html#apertura-la-trampa-del-promedio",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.4 Apertura · la trampa del promedio",
     "text": "12.4 Apertura · la trampa del promedio\nA &lt;- c(90, 95, 100, 105, 110)\nB &lt;- c(20, 30, 40, 50, 360)\n\nrbind(\n  A = c(media = mean(A), mediana = median(A), sd = sd(A)),\n  B = c(media = mean(B), mediana = median(B), sd = sd(B))\n)\n\nCentro sin dispersión y distribución es una historia incompleta.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#laboratorio-guiado-en-webr",
     "href": "sesiones/f2-viernes.html#laboratorio-guiado-en-webr",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.5 Laboratorio guiado en WebR",
     "text": "12.5 Laboratorio guiado en WebR\nTrabaja las secciones 1–7 del tutorial con esta dinámica:\n\nanticipa qué salida esperas;\nejecuta;\ndescribe qué cambió;\nmodifica una variable o parámetro;\ninterpreta para una decisión;\nnombra una conclusión que todavía no es válida.\n\n\n12.5.1 Preguntas que deben quedar claras\n\n\n\n\n\n\n\nConcepto\nPregunta de comprensión\n\n\n\n\nMedia vs. mediana\n¿qué ocurre cuando aparecen extremos?\n\n\nPercentil 90\n¿qué umbral separa al 10 % superior?\n\n\nIQR\n¿dónde se concentra el 50 % central?\n\n\nDesviación estándar\n¿qué tan alejados están los valores de la media?\n\n\nCV\n¿cuándo tiene sentido comparar variabilidad relativa?\n\n\nFrecuencia vs. porcentaje\n¿cuál es el denominador?\n\n\nBoxplot\n¿una observación marcada es necesariamente un error?\n\n\nCorrelación\n¿qué asociación mide y qué causalidad no demuestra?",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#taller-evaluable",
     "href": "sesiones/f2-viernes.html#taller-evaluable",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.6 Taller evaluable",
     "text": "12.6 Taller evaluable\nInicia el Taller evaluable · InsureCO.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#transferencia-a-tu-proyecto-de-grado",
     "href": "sesiones/f2-viernes.html#transferencia-a-tu-proyecto-de-grado",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.7 Transferencia a tu proyecto de grado",
     "text": "12.7 Transferencia a tu proyecto de grado\nSelecciona una variable resultado o KPI de tu proyecto y completa:\nUnidad de análisis:\nVariable/KPI:\nTipo:\nMedida de centro pertinente:\nMedida de dispersión pertinente:\nSegmentos a comparar:\nVisualización:\nUna interpretación incorrecta que debo evitar:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-viernes.html#checklist-de-cierre",
     "href": "sesiones/f2-viernes.html#checklist-de-cierre",
-    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "title": "12  Sesión 3 · Del dato a la evidencia",
     "section": "12.8 Checklist de cierre",
     "text": "12.8 Checklist de cierre\n\nSé qué representa una fila.\nNo reporto media sin distribución y tamaño de muestra.\nPuedo construir un porcentaje con denominador explícito.\nInvestigo atípicos antes de excluirlos.\nNo confundo correlación con causalidad.\nPuedo reproducir el análisis InsureCO desde un archivo limpio.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Del dato a la evidencia</span>"
     ]
   },
   {
@@ -1623,177 +1623,177 @@
   {
     "objectID": "sesiones/f2-sabado.html",
     "href": "sesiones/f2-sabado.html",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "",
-    "text": "15.1 Propósito\nEl sábado no es una maratón de nombres ni una clase de demostraciones matemáticas. Es una visita guiada a una caja de herramientas para que puedas:",
+    "text": "15.1 Propósito\nUna caja de herramientas para que puedas:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#propósito",
     "href": "sesiones/f2-sabado.html#propósito",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "",
-    "text": "distinguir descripción, regresión, clasificación y aprendizaje no supervisado;\nasociar una pregunta empresarial con una familia de técnicas;\nejecutar modelos preparados en Google Colab;\ncomparar contra una línea base y usar datos de prueba;\ninterpretar errores, umbrales, segmentos y componentes;\nreconocer cuándo un resultado no justifica una decisión.\n\n\n15.1.1 Cómo utilizar esta página como profesor\nEsta página es el guion de conducción. El notebook es la demostración y el espacio de práctica. En cada bloque conviene mantener la misma rutina:\n\nExplicar la intuición con lenguaje sencillo y una representación técnica mínima.\nPedir una predicción antes de ejecutar: “¿qué creen que ocurrirá?”.\nEjecutar una celda y nombrar literalmente qué representa cada salida.\nModificar un parámetro para que el grupo observe que el resultado depende de decisiones analíticas.\nTraducir a negocio: qué decisión podría apoyar y qué costo tiene equivocarse.\nCerrar con un límite: qué conclusión no está respaldada.\n\n\n\n\n\n\n\nTip\n\n\n\nNo necesitas explicar cómo se demuestra algebraicamente cada algoritmo. Sí conviene poder explicar qué problema resuelve, qué información recibe, qué aprende, qué devuelve, cómo se evalúa y cómo puede fallar.",
+    "text": "distinguir descripción, regresión, clasificación y aprendizaje no supervisado;\nasociar una pregunta empresarial con una familia de técnicas;\nejecutar modelos preparados en Google Colab;\ncomparar contra una línea base y usar datos de prueba;\ninterpretar errores, umbrales, segmentos y componentes;\nreconocer cuándo un resultado no justifica una decisión.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
-    "objectID": "sesiones/f2-sabado.html#ruta-de-clase-360-minutos-efectivos-60-de-pausas",
-    "href": "sesiones/f2-sabado.html#ruta-de-clase-360-minutos-efectivos-60-de-pausas",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
-    "section": "15.2 Ruta de clase · 360 minutos efectivos + 60 de pausas",
-    "text": "15.2 Ruta de clase · 360 minutos efectivos + 60 de pausas\n\n\n\n\n\n\n\n\n\nMinutos\nBloque\nTécnica\nProducto\n\n\n\n\n0–25\nDe pregunta a tarea\nmapa supervisado/no supervisado\nficha de problema\n\n\n25–60\nDatos antes del modelo\nunidad, llaves, fuga, train/test y base\ntabla analítica validada\n\n\n60–90\nRelacionar\ncorrelación Pearson/Spearman\nhipótesis prudente\n\n\n90–150\nEstimar un número\nregresión simple y múltiple\nMAE/RMSE/R² vs. base\n\n\n150–165\nPausa\n\n\n\n\n165–235\nPredecir una categoría\nlogística + matriz de confusión + umbral\ndecisión sobre costo del error\n\n\n235–280\nReglas y ensambles\nárbol + Random Forest\ninterpretación y comparación\n\n\n280–325\nPausa larga\n\n\n\n\n325–375\nEncontrar perfiles\nK-means + evaluación\nperfiles de clientes\n\n\n375–395\nPCA y anomalías\nreducción + excepciones\nmapa de continuidad\n\n\n395–415\nMini-reto\numbral o k\nevidencia evaluable\n\n\n415–420\nCierre\nficha de modelo\ntransferencia al proyecto\n\n\n\nLas explicaciones, preguntas de anticipación y microactividades están desarrolladas dentro del notebook. El tiempo no se ocupa en transcribir código, sino en ejecutar, cambiar, comparar e interpretar.",
+    "objectID": "sesiones/f2-sabado.html#ruta-de-clase",
+    "href": "sesiones/f2-sabado.html#ruta-de-clase",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
+    "section": "15.2 Ruta de clase",
+    "text": "15.2 Ruta de clase\n\n\n\n\n\n\n\n\n\nMinutos\nBloque\nTécnica\nProducto\n\n\n\n\n0–25\nDe pregunta a tarea\nmapa supervisado/no supervisado\nficha de problema\n\n\n25–60\nDatos antes del modelo\nunidad, llaves, fuga, train/test y base\ntabla analítica validada\n\n\n60–90\nRelacionar\ncorrelación Pearson/Spearman\nhipótesis prudente\n\n\n90–150\nEstimar un número\nregresión simple y múltiple\nMAE/RMSE/R² vs. base\n\n\n150–165\nPausa\n\n\n\n\n165–235\nPredecir una categoría\nlogística + matriz de confusión + umbral\ndecisión sobre costo del error\n\n\n235–280\nReglas y ensambles\nárbol + Random Forest\ninterpretación y comparación\n\n\n280–325\nPausa larga\n\n\n\n\n325–375\nEncontrar perfiles\nK-means + evaluación\nperfiles de clientes\n\n\n375–395\nPCA y anomalías\nreducción + excepciones\nmapa de continuidad\n\n\n395–415\nMini-reto\numbral o k\nevidencia evaluable\n\n\n415–420\nCierre\nficha de modelo\ntransferencia al proyecto",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#material-de-trabajo",
     "href": "sesiones/f2-sabado.html#material-de-trabajo",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.3 Material de trabajo",
     "text": "15.3 Material de trabajo\n\nLee la Caja de herramientas analíticas para decisiones.\nDescarga el notebook modelos_novaretail_colab.ipynb.\nAbre Google Colab, selecciona Archivo → Subir notebook y carga el .ipynb.\nDescarga el paquete recomendado datos_semana2.zip. Contiene los cuatro CSV.\nCuando el notebook muestre Elegir archivos, arrastra o selecciona datos_semana2.zip.\n\nComo alternativa puedes cargar los archivos individualmente:\n\nventas.csv\nclientes.csv\nproductos.csv\ninsureco.csv\n\nEl notebook valida nombres, columnas y dimensiones. Si falta un archivo, se detiene con un mensaje que indica exactamente cuál debe cargarse.\n\n\n\n\n\n\nImportante\n\n\n\nNinguna actividad evaluable exige API, GPU ni suscripción paga. Colab y las librerías utilizadas pueden ejecutarse con una cuenta gratuita.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloque-1-pregunta-antes-que-algoritmo",
     "href": "sesiones/f2-sabado.html#bloque-1-pregunta-antes-que-algoritmo",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.4 Bloque 1 · Pregunta antes que algoritmo",
-    "text": "15.4 Bloque 1 · Pregunta antes que algoritmo\n\nProfesor: entrega cuatro preguntas y pide escoger la salida esperada antes de mencionar técnicas: número, categoría/probabilidad, grupo sin etiqueta o resumen de dimensiones.\n\n\n\n\n\n\n\n\n\nPregunta NovaRetail\nSalida\nFamilia\n\n\n\n\n¿Qué costo de póliza estimamos?\nnúmero\nregresión\n\n\n¿Qué transacción podría cancelarse?\nprobabilidad/clase\nclasificación\n\n\n¿Qué perfiles de clientes aparecen?\ngrupo sin etiqueta\nclustering\n\n\n¿Podemos resumir varias métricas?\ncomponentes\nPCA\n\n\n\n\n15.4.1 Quick check\nSi no puedes definir la unidad de análisis, la salida y el uso, todavía no debes escoger algoritmo.\n\n\n15.4.2 Explicación sencilla pero técnica\nUn modelo es una regla aprendida a partir de datos. Esa regla recibe información y produce una salida:\ninformación disponible (X) → modelo → salida estimada\nCuando conocemos históricamente la salida correcta, el aprendizaje es supervisado. Cuando no existe esa etiqueta y buscamos estructura, es no supervisado.\n\n\n\n\n\n\n\n\n\nTipo\nExiste y\nEjemplo\nCómo se evalúa inicialmente\n\n\n\n\nRegresión\nsí, numérica\ncosto de póliza\nerror fuera de muestra\n\n\nClasificación\nsí, categoría\ncancelada/completada\nmatriz y métricas\n\n\nClustering\nno\nperfiles de clientes\nseparación, estabilidad y utilidad\n\n\nPCA\nno\nresumir métricas\nvarianza explicada e interpretación\n\n\n\n\nCómo decirlo: “Supervisado no significa que una persona vigila al algoritmo. Significa que el histórico contiene una respuesta con la cual el modelo puede comparar lo que predice”.\n\n\n\n15.4.3 Actividad de clasificación de preguntas · 10 minutos\nPide al grupo que clasifique cinco preguntas de sus proyectos como descriptivas, regresión, clasificación o no supervisadas. Exige que justifiquen qué representa una fila y cuál sería la salida.",
+    "text": "15.4 Bloque 1 · Pregunta antes que algoritmo\n\n\n\n\n\n\n\n\nPregunta NovaRetail\nSalida\nModelo\n\n\n\n\n¿Qué costo de póliza estimamos?\nnúmero\nregresión\n\n\n¿Qué transacción podría cancelarse?\nprobabilidad/clase\nclasificación\n\n\n¿Qué perfiles de clientes aparecen?\ngrupo sin etiqueta\nclustering\n\n\n¿Podemos resumir varias métricas?\ncomponentes\nPCA\n\n\n\n\n15.4.1 Quick check\nSi no puedes definir la unidad de análisis, la salida y el uso, todavía no debes escoger algoritmo.\n\n\n15.4.2 Explicación sencilla pero técnica\nUn modelo es una regla aprendida a partir de datos. Esa regla recibe información y produce una salida:\ninformación disponible (X) → modelo → salida estimada\nCuando conocemos históricamente la salida correcta, el aprendizaje es supervisado. Cuando no existe esa etiqueta y buscamos estructura, es no supervisado.\n\n\n\n\n\n\n\n\n\nTipo\nExiste y\nEjemplo\nCómo se evalúa inicialmente\n\n\n\n\nRegresión\nsí, numérica\ncosto de póliza\nerror fuera de muestra\n\n\nClasificación\nsí, categoría\ncancelada/completada\nmatriz y métricas\n\n\nClustering\nno\nperfiles de clientes\nseparación, estabilidad y utilidad\n\n\nPCA\nno\nresumir métricas\nvarianza explicada e interpretación\n\n\n\n\nCómo decirlo: “Supervisado no significa que una persona vigila al algoritmo. Significa que el histórico contiene una respuesta con la cual el modelo puede comparar lo que predice”.\n\n\n\n15.4.3 Actividad de clasificación de preguntas · 10 minutos\nClasificar cinco preguntas de sus proyectos como descriptivas, regresión, clasificación o no supervisadas. Justificar qué representa una fila y cuál sería la salida.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloque-2-auditoría-y-tabla-analítica",
     "href": "sesiones/f2-sabado.html#bloque-2-auditoría-y-tabla-analítica",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.5 Bloque 2 · Auditoría y tabla analítica",
-    "text": "15.5 Bloque 2 · Auditoría y tabla analítica\nEjecuta las secciones 1–3 del notebook.\nDetente en cuatro comprobaciones:\n\nexiste un id_venta duplicado;\nclientes y productos tienen llave única;\nel join mantiene el número esperado de filas;\nlas variables usadas estarían disponibles en el momento real de decidir.\n\n\nUn modelo puede ejecutar sin error sobre una tabla equivocada. La validación de datos es parte del modelo.\n\n\n15.5.1 Conceptos para explicar\nUnidad de análisis: entidad representada por una fila. En ventas es una transacción; en la tabla de clustering será un cliente.\nLlave: variable que identifica una observación o conecta tablas. Una llave duplicada en una dimensión puede multiplicar filas al hacer un join.\nFuga de información: predictor que incorpora información futura o que se aprendió usando el conjunto de prueba. Puede crear un desempeño excelente pero imposible de reproducir en operación.\nPipeline: secuencia donde preparación y modelo se ejecutan de manera ordenada, aprendiendo transformaciones solamente con entrenamiento.\n\nPregunta al grupo: “Si quiero predecir una cancelación antes de que ocurra, ¿podría usar una variable registrada después de cerrar el caso?”. La respuesta es no: sería mirar la solución antes del examen.\n\n\n\n15.5.2 Producto del bloque\nCada estudiante debe poder completar:\nUna fila representa:\nLa llave es:\nEl objetivo existe en el momento:\nEstas variables sí están disponibles al decidir:\nEsta variable produciría fuga:",
+    "text": "15.5 Bloque 2 · Auditoría y tabla analítica\nEjecuta las secciones 1–3 del notebook.\nDetente en cuatro comprobaciones:\n\nexiste un id_venta duplicado;\nclientes y productos tienen llave única;\nel join mantiene el número esperado de filas;\nlas variables usadas estarían disponibles en el momento real de decidir.\n\n\nUn modelo puede ejecutar sin error sobre una tabla equivocada. La validación de datos es parte del modelo.\n\n\n15.5.1 Conceptos para explicar\nUnidad de análisis: entidad representada por una fila. En ventas es una transacción; en la tabla de clustering será un cliente.\nLlave: variable que identifica una observación o conecta tablas. Una llave duplicada en una dimensión puede multiplicar filas al hacer un join.\nFuga de información: predictor que incorpora información futura o que se aprendió usando el conjunto de prueba. Puede crear un desempeño excelente pero imposible de reproducir en operación.\nPipeline: secuencia donde preparación y modelo se ejecutan de manera ordenada, aprendiendo transformaciones solamente con entrenamiento.\n\n“Si quiero predecir una cancelación antes de que ocurra, ¿podría usar una variable registrada después de cerrar el caso?”. La respuesta es no: sería mirar la solución antes del examen.\n\n\n\n15.5.2 Producto del bloque\nCada estudiante debe poder completar:\nUna fila representa:\nLa llave es:\nEl objetivo existe en el momento:\nEstas variables sí están disponibles al decidir:\nEsta variable produciría fuga:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloque-3-correlación",
     "href": "sesiones/f2-sabado.html#bloque-3-correlación",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.6 Bloque 3 · Correlación",
     "text": "15.6 Bloque 3 · Correlación\nPregunta antes de ejecutar:\n\n¿Qué asociación esperas entre precio_lista, cantidad, descuento y valor_venta?\n\nDespués de la matriz y los diagramas, completa:\nObservamos:\nUna explicación plausible:\nUna explicación alternativa:\nNo podemos concluir:\n\n15.6.1 Qué debes explicar\nLa correlación reduce una relación a un número entre −1 y 1. Pearson resume proximidad a una línea; Spearman trabaja con el orden de los valores y puede captar relaciones monotónicas menos lineales.\nUn valor cercano a cero no significa “no existe ninguna relación”. Puede existir una curva, grupos mezclados o una tercera variable relevante. Por eso el orden correcto es:\n\ngráfica → coeficiente → segmentación → interpretación prudente\n\n\nEjemplo oral: “Las ventas de helado y los casos de insolación pueden aumentar juntos. La correlación no significa que el helado cause insolación; la temperatura puede afectar ambos”.\n\n\n\n15.6.2 Microactividad\nCompara Pearson y Spearman; después calcula por canal. El producto es una frase agregada, una frase segmentada y una explicación alternativa.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloque-4-regresión",
     "href": "sesiones/f2-sabado.html#bloque-4-regresión",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.7 Bloque 4 · Regresión",
     "text": "15.7 Bloque 4 · Regresión\nEl notebook compara:\n\nlínea base que predice siempre el promedio;\nregresión simple de charges con IMC;\nregresión múltiple con edad, IMC, hijos, sexo, hábito de fumar y región.\n\n\n15.7.1 Intuición del modelo\nEn una regresión simple construimos una recta:\ncosto estimado = intercepto + pendiente × IMC\nLa recta no pasa por todos los puntos. El residuo es la distancia vertical entre la observación y su predicción. El algoritmo elige coeficientes que reduzcan globalmente esos errores según su criterio de ajuste.\nEn regresión múltiple, el resultado combina varias variables. “Manteniendo constantes las demás variables” significa que el coeficiente intenta separar asociaciones dentro del conjunto incluido; no significa que el estudio sea causal.\n\n\n15.7.2 Por qué usamos una línea base\nPredecir siempre el promedio es una estrategia muy simple. Si un modelo complejo no la supera en prueba, su complejidad no aporta. El estudiante debe comparar modelos contra esa referencia, no solo mirar si Python imprimió un número.\n\n\n15.7.3 Lo que debes poder explicar\n\n\n\nConcepto\nLenguaje MBA\n\n\n\n\nX\ninformación disponible para estimar\n\n\ny\nresultado numérico que queremos estimar\n\n\nentrenamiento\nobservaciones usadas para aprender\n\n\nprueba\nobservaciones reservadas para evaluar generalización\n\n\nMAE\nerror absoluto promedio en pesos\n\n\nRMSE\nerror que penaliza más los fallos grandes\n\n\nR²\nvariación capturada; no es causalidad ni utilidad automática\n\n\n\n\n\n15.7.4 Discusión\nUn modelo puede tener buen R² y, aun así, ser inapropiado si utiliza información posterior a la decisión, falla en casos costosos o no supera una regla simple en condiciones reales.\n\n\n15.7.5 Resultado esperado y lectura docente\nCon semilla 42, el modelo simple con IMC explica muy poco; el múltiple alcanza aproximadamente R² = 0,77 y MAE ≈ 4.244. La comparación permite explicar que más información pertinente puede mejorar la estimación.\nNo digas “fumar causa un aumento de X” a partir del coeficiente. Di:\n\n“Dentro de este modelo y estos datos, la condición de fumador aporta información importante para estimar charges”.\n\n\n\n15.7.6 Extensiones dentro del notebook\n\ninspección de coeficientes;\nauditoría de residuos por grupo;\nescenarios de sensibilidad no causal;\nretiro de smoker para medir cuánto cambia el desempeño.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloques-5-y-6-clasificación-árbol-y-random-forest",
     "href": "sesiones/f2-sabado.html#bloques-5-y-6-clasificación-árbol-y-random-forest",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.8 Bloques 5 y 6 · Clasificación, árbol y Random Forest",
-    "text": "15.8 Bloques 5 y 6 · Clasificación, árbol y Random Forest\nLa pregunta será si los datos disponibles permiten ordenar transacciones por riesgo de cancelación.\n\n15.8.1 Regresión logística\nProduce una probabilidad entre 0 y 1. Esa probabilidad se convierte en clase mediante un umbral. El valor 0,50 es una convención; no representa necesariamente el costo real del negocio.\n\n\n15.8.2 Árbol\nDivide las observaciones con preguntas sucesivas. Es visual y captura relaciones no lineales, pero un árbol muy profundo puede memorizar ruido.\n\n\n15.8.3 Random Forest\nConstruye muchos árboles con variaciones de observaciones y variables, y agrega sus predicciones. Suele ser más estable, pero ya no cabe en una única regla fácil de mostrar.\n\n\n15.8.4 Antes de mirar accuracy\nCalcula mentalmente qué accuracy obtiene un modelo que siempre predice “Completada”. Esa es la línea base que debemos superar de manera relevante.\n\n\n15.8.5 Costo de equivocarse\n\n\n\n\n\n\n\n\nError\nEjemplo\nCosto posible\n\n\n\n\nFalso positivo\nintervenir una venta que se completaría\ncosto/contacto/fricción\n\n\nFalso negativo\nno intervenir una venta que se cancela\nmargen, experiencia, pérdida\n\n\n\nModifica el umbral del Random Forest y observa el intercambio entre precision, recall y cantidad de alertas.\n\n\n15.8.6 Cómo explicar las métricas\n\n\n\nMétrica\nPregunta en lenguaje cotidiano\n\n\n\n\nPrecision\ncuando genero una alerta, ¿qué tan seguido tengo razón?\n\n\nRecall\nde todos los casos que debía detectar, ¿cuántos encontré?\n\n\nF1\n¿qué equilibrio existe entre las dos anteriores?\n\n\nROC-AUC\n¿el ranking coloca normalmente más arriba a los positivos?\n\n\n\nCuando solo 9 % cancela, predecir siempre “Completada” alcanza cerca de 91 % de accuracy y detecta cero cancelaciones. Esta es la razón para no escoger modelos por accuracy aislada.\n\n\n\n\n\n\nAdvertencia\n\n\n\nSi ROC-AUC y otras métricas muestran poca señal, no recomendamos desplegar por el simple hecho de que el código funciona. La conclusión correcta puede ser “los datos actuales no permiten una clasificación útil”.\n\n\n\n\n15.8.7 Árbol vs. bosque\n\nun árbol ofrece reglas visibles, pero puede ser inestable;\nRandom Forest combina muchos árboles y suele ganar estabilidad/predicción;\nla importancia de una variable no demuestra efecto causal;\nmayor desempeño no siempre compensa menor explicabilidad.\n\n\n\n15.8.8 Resultado esperado y conversación docente\nLos modelos de cancelación tienen poca señal: logística obtiene ROC-AUC cercana a 0,60 y Random Forest alrededor de 0,53. Esta es una oportunidad deliberada para enseñar:\n\nel código puede funcionar y el modelo puede no ser útil.\n\nPregunta qué información previa podría ayudar: tiempos de entrega prometidos, disponibilidad, historial de contacto o método de pago, siempre aclarando que son propuestas y no columnas existentes.\n\n\n15.8.9 Actividades dentro del notebook\n\ncomparar matrices de confusión;\nmover el umbral entre 0,20 y 0,60;\nconvertir capacidad operativa en número máximo de alertas;\nauditar errores por canal;\ncambiar profundidad del árbol;\ndistinguir importancia predictiva y causalidad.",
+    "text": "15.8 Bloques 5 y 6 · Clasificación, árbol y Random Forest\nLa pregunta será si los datos disponibles permiten ordenar transacciones por riesgo de cancelación.\n\n15.8.1 Regresión logística\nProduce una probabilidad entre 0 y 1. Esa probabilidad se convierte en clase mediante un umbral. El valor 0,50 es una convención; no representa necesariamente el costo real del negocio.\n\n\n15.8.2 Árbol\nDivide las observaciones con preguntas sucesivas. Es visual y captura relaciones no lineales, pero un árbol muy profundo puede memorizar ruido.\n\n\n15.8.3 Random Forest\nConstruye muchos árboles con variaciones de observaciones y variables, y agrega sus predicciones. Suele ser más estable, pero ya no cabe en una única regla fácil de mostrar.\n\n\n15.8.4 Antes de mirar accuracy\nCalcula mentalmente qué accuracy obtiene un modelo que siempre predice “Completada”. Esa es la línea base que debemos superar de manera relevante.\n\n\n15.8.5 Costo de equivocarse\n\n\n\n\n\n\n\n\nError\nEjemplo\nCosto posible\n\n\n\n\nFalso positivo\nintervenir una venta que se completaría\ncosto/contacto/fricción\n\n\nFalso negativo\nno intervenir una venta que se cancela\nmargen, experiencia, pérdida\n\n\n\nModifica el umbral del Random Forest y observa el intercambio entre precision, recall y cantidad de alertas.\n\n\n15.8.6 Cómo explicar las métricas\n\n\n\n\n\n\n\nMétrica\nPregunta en lenguaje cotidiano\n\n\n\n\nPrecision\ncuando genero una alerta, ¿qué tan seguido tengo razón?\n\n\nRecall\nde todos los casos que debía detectar, ¿cuántos encontré?\n\n\nF1\n¿qué equilibrio existe entre las dos anteriores?\n\n\nROC-AUC\n¿el ranking coloca normalmente más arriba a los positivos?\n\n\n\nCuando solo 9 % cancela, predecir siempre “Completada” alcanza cerca de 91 % de accuracy y detecta cero cancelaciones. Esta es la razón para no escoger modelos por accuracy aislada.\n\n\n\n\n\n\nAdvertencia\n\n\n\nSi ROC-AUC y otras métricas muestran poca señal, no recomendamos desplegar por el simple hecho de que el código funciona. La conclusión correcta puede ser “los datos actuales no permiten una clasificación útil”.\n\n\n\n\n15.8.7 Árbol vs. bosque\n\nun árbol ofrece reglas visibles, pero puede ser inestable;\nRandom Forest combina muchos árboles y suele ganar estabilidad/predicción;\nla importancia de una variable no demuestra efecto causal;\nmayor desempeño no siempre compensa menor explicabilidad.\n\n\n\n15.8.8 Resultado esperado y conversación docente\nLos modelos de cancelación tienen poca señal: logística obtiene ROC-AUC cercana a 0,60 y Random Forest alrededor de 0,53. Esta es una oportunidad deliberada para enseñar:\n\nel código puede funcionar y el modelo puede no ser útil.\n\nPregunta qué información previa podría ayudar: tiempos de entrega prometidos, disponibilidad, historial de contacto o método de pago, siempre aclarando que son propuestas y no columnas existentes.\n\n\n15.8.9 Actividades dentro del notebook\n\ncomparar matrices de confusión;\nmover el umbral entre 0,20 y 0,60;\nconvertir capacidad operativa en número máximo de alertas;\nauditar errores por canal;\ncambiar profundidad del árbol;\ndistinguir importancia predictiva y causalidad.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#bloque-7-clustering-de-clientes",
     "href": "sesiones/f2-sabado.html#bloque-7-clustering-de-clientes",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.9 Bloque 7 · Clustering de clientes",
     "text": "15.9 Bloque 7 · Clustering de clientes\nPrimero se construye una fila por cliente con:\ntransacciones\ncompras completadas\ngasto total\nticket promedio\ndescuento promedio\ntasa de cancelación\nDespués se estandariza y se comparan alternativas de k.\n\n15.9.1 Intuición de K-means\nK-means alterna dos acciones: asigna cada cliente al centro más cercano y vuelve a calcular los centros. Repite hasta estabilizarse.\nLa distancia depende de las variables y su escala. Sin estandarizar, gasto_total dominaría a una tasa entre 0 y 1. Estandarizar convierte las variables a una referencia común de media 0 y desviación 1.\n\n\n15.9.2 Cómo escoger k\n\nel “codo” busca el punto donde agregar grupos reduce cada vez menos la distancia interna;\nsilhouette compara cohesión y separación;\nel tamaño evita clusters minúsculos sin capacidad operativa;\nla estabilidad pregunta si la solución cambia demasiado;\nla utilidad exige una acción diferenciada legítima.\n\nNo existe un botón que determine automáticamente el segmento verdadero.\n\n\n15.9.3 Preguntas de interpretación\n\n¿El silhouette favorece claramente una solución?\n¿Los grupos tienen tamaños suficientes?\n¿Media y mediana cuentan historias parecidas?\n¿Qué nombre empresarial propondrías y con qué evidencia?\n¿Qué acción diferenciada sería legítima?\n¿Qué riesgo ético u operativo aparece?\n\nEl algoritmo devuelve números de cluster; el significado se construye y valida.\n\n\n15.9.4 Cómo nombrar segmentos\nEvita nombres como “buenos”, “malos” o “premium” sin evidencia. Primero describe el perfil relativo:\n\n“Mayor frecuencia y gasto, descuento promedio cercano a la media”.\n\nDespués pregunta si ese perfil se mantiene al revisar mediana, tamaño y casos representativos. Solo entonces se propone un nombre empresarial.\n\n\n15.9.5 Resultado esperado\nLos silhouette para k = 3 y k = 4 son similares, alrededor de 0,27. No hay una separación contundente. La discusión debe combinar métrica, perfiles y utilidad, y puede concluir legítimamente que la segmentación necesita más datos o mejores variables.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#profundización-autónoma",
     "href": "sesiones/f2-sabado.html#profundización-autónoma",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.10 Profundización autónoma",
     "text": "15.10 Profundización autónoma\nEl notebook deja ejecutables:\n\nPCA: resumir varias métricas de cliente y visualizar en dos componentes;\nIsolation Forest: marcar combinaciones inusuales para investigación.\n\nLa caja de herramientas también presenta medoides, jerárquico, DBSCAN, recomendación, NLP y análisis espacial. Son rutas de continuidad: no se aplican todas en vivo ni se exigen en todo proyecto.\n\n15.10.1 PCA en lenguaje sencillo\nPCA construye nuevas dimensiones que resumen variación. Las cargas indican qué variables contribuyen; los scores ubican a cada cliente; la varianza explicada indica cuánto conserva cada componente. Una gráfica de dos componentes siempre pierde parte de la información.\n\n\n15.10.2 Anomalías en lenguaje sencillo\nIsolation Forest marca combinaciones fáciles de aislar. contamination = 0.03 no descubre que 3 % sea fraude: le ordena al algoritmo marcar aproximadamente 3 % para revisión. El resultado es una lista priorizada, no una condena.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#mini-reto-evaluable",
     "href": "sesiones/f2-sabado.html#mini-reto-evaluable",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.11 Mini-reto evaluable",
     "text": "15.11 Mini-reto evaluable\nEscoge una ruta del notebook:\n\n15.11.1 A · Umbral de clasificación\nCompara tres umbrales. Entrega métricas, matriz/costos y una recomendación —incluida la opción de no usar el modelo—.\n\n\n15.11.2 B · Número de clusters\nCompara k = 2, 3 y 4. Entrega silhouette, tamaños, perfiles y una recomendación —incluida la opción de no segmentar—.\n\n\n15.11.3 Formato\n\nuna tabla;\nuna visualización;\ndos hallazgos;\nuna decisión;\nuna limitación.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#ia-como-copiloto",
     "href": "sesiones/f2-sabado.html#ia-como-copiloto",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.12 IA como copiloto",
     "text": "15.12 IA como copiloto\nLa IA participa en cada bloque para proponer, explicar y auditar, pero no decide qué modelo “ganó”. Usa el prompt de la sección 17 y exige:\n\nno inventar columnas;\nseparar entrenamiento y prueba;\ncomparar con línea base;\nseñalar fuga;\ndistinguir asociación de causalidad;\nexplicar errores en términos empresariales.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#transferencia-a-tu-proyecto-de-grado",
     "href": "sesiones/f2-sabado.html#transferencia-a-tu-proyecto-de-grado",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.13 Transferencia a tu proyecto de grado",
     "text": "15.13 Transferencia a tu proyecto de grado\nCompleta la ficha mínima de modelo de la caja de herramientas.\nNo es obligatorio usar machine learning. Si tu pregunta, tamaño de muestra o calidad de datos no lo justifican, documentar esa decisión demuestra criterio analítico.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#ticket-de-salida",
     "href": "sesiones/f2-sabado.html#ticket-de-salida",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.14 Ticket de salida",
     "text": "15.14 Ticket de salida\n\nUtilizaría ________ para responder ________. Lo evaluaría con ________ porque el error más costoso es ________. No lo usaría para afirmar ________.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
     "objectID": "sesiones/f2-sabado.html#checklist",
     "href": "sesiones/f2-sabado.html#checklist",
-    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "title": "15  Sesión 4 · De la evidencia a los modelos",
     "section": "15.15 Checklist",
     "text": "15.15 Checklist\n\nEmpiezo por la pregunta, no por el algoritmo.\nDefino unidad, X, y y momento de decisión.\nComparo con una línea base.\nEvalúo fuera de entrenamiento.\nConecto métricas con el costo del error.\nNo confundo importancia, asociación o clusters con causalidad.\nSé que “no usar el modelo” puede ser la mejor decisión.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · De la evidencia a los modelos</span>"
     ]
   },
   {
