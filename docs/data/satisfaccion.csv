@@ -1,0 +1,241 @@
+﻿id_encuesta,id_cliente,fecha,calificacion,nps,comentario
+S001,C018,2026-03-06,4,8,Buena experiencia
+S002,C067,2026-06-23,5,9,Volvería a comprar
+S003,C038,2026-02-14,4,6,Problemas con el pedido
+S004,C159,2026-05-05,5,10,Buena experiencia
+S005,C146,2026-06-10,2,3,Atención lenta
+S006,C124,2026-06-18,4,8,Muy buen producto
+S007,C075,2026-02-17,4,8,Muy buen producto
+S008,C019,2026-01-03,5,10,Compra fácil y rápida
+S009,C161,2026-04-14,5,10,Muy buen producto
+S010,C048,2026-03-09,5,10,Buena experiencia
+S011,C146,2026-02-05,5,10,Buena experiencia
+S012,C123,2026-01-25,2,4,Demora en la entrega
+S013,C070,2026-05-31,4,8,Buena experiencia
+S014,C114,2026-01-30,5,9,Muy buen producto
+S015,C066,2026-01-05,5,9,Muy buen producto
+S016,C075,2026-01-21,4,7,Compra fácil y rápida
+S017,C106,2026-05-15,5,9,Buena experiencia
+S018,C021,2026-03-16,4,7,Volvería a comprar
+S019,C151,2026-01-26,5,10,Buena experiencia
+S020,C131,2026-01-25,5,9,Excelente atención y entrega rápida
+S021,C137,2026-06-11,5,9,Excelente atención y entrega rápida
+S022,C039,2026-04-04,4,8,Excelente atención y entrega rápida
+S023,C089,2026-06-25,2,4,Atención lenta
+S024,C101,2026-05-28,5,9,Buena experiencia
+S025,C088,2026-05-12,5,10,Volvería a comprar
+S026,C038,2026-03-24,3,5,Demora en la entrega
+S027,C034,2026-02-28,5,9,Volvería a comprar
+S028,C002,2026-03-14,4,7,Volvería a comprar
+S029,C053,2026-05-20,4,7,Buena experiencia
+S030,C034,2026-02-17,5,10,Volvería a comprar
+S031,C119,2026-03-28,4,6,Atención lenta
+S032,C068,2026-02-08,1,1,Atención lenta
+S033,C001,2026-01-16,4,7,Compra fácil y rápida
+S034,C091,2026-03-12,5,10,Excelente atención y entrega rápida
+S035,C043,2026-03-03,5,10,Compra fácil y rápida
+S036,C169,2026-03-08,4,8,Muy buen producto
+S037,C081,2026-02-08,5,10,Compra fácil y rápida
+S038,C092,2026-05-02,5,10,Volvería a comprar
+S039,C090,2026-06-26,4,8,Excelente atención y entrega rápida
+S040,C098,2026-03-07,4,8,Compra fácil y rápida
+S041,C088,2026-03-19,5,10,Volvería a comprar
+S042,C028,2026-03-31,3,5,Producto llegó tarde
+S043,C179,2026-01-30,3,5,Atención lenta
+S044,C149,2026-06-09,5,10,Compra fácil y rápida
+S045,C147,2026-05-01,5,9,Muy buen producto
+S046,C025,2026-04-01,4,8,Muy buen producto
+S047,C008,2026-04-07,4,8,Excelente atención y entrega rápida
+S048,C058,2026-01-31,4,7,Excelente atención y entrega rápida
+S049,C148,2026-06-20,5,10,Muy buen producto
+S050,C135,2026-06-06,2,2,Problemas con el pedido
+S051,C079,2026-05-31,2,2,Problemas con el pedido
+S052,C117,2026-06-02,5,10,Volvería a comprar
+S053,C179,2026-05-09,5,10,Excelente atención y entrega rápida
+S054,C175,2026-01-09,5,10,Compra fácil y rápida
+S055,C142,2026-01-15,4,6,Problemas con el pedido
+S056,C028,2026-06-03,4,7,Volvería a comprar
+S057,C130,2026-04-11,5,10,Muy buen producto
+S058,C159,2026-05-04,5,10,Excelente atención y entrega rápida
+S059,C145,2026-03-04,5,10,Compra fácil y rápida
+S060,C014,2026-02-09,3,5,Demora en la entrega
+S061,C150,2026-03-04,4,7,Compra fácil y rápida
+S062,C016,2026-03-15,4,6,El descuento no compensó la espera
+S063,C059,2026-02-04,5,10,Compra fácil y rápida
+S064,C161,2026-06-20,5,9,Buena experiencia
+S065,C168,2026-04-12,5,9,Muy buen producto
+S066,C049,2026-02-13,2,4,Demora en la entrega
+S067,C160,2026-03-18,5,9,Compra fácil y rápida
+S068,C040,2026-05-28,2,4,El descuento no compensó la espera
+S069,C083,2026-01-20,4,8,Buena experiencia
+S070,C162,2026-04-20,5,9,Buena experiencia
+S071,C087,2026-06-18,2,2,El descuento no compensó la espera
+S072,C096,2026-02-14,5,10,Buena experiencia
+S073,C118,2026-04-20,5,10,Buena experiencia
+S074,C127,2026-06-22,2,4,El descuento no compensó la espera
+S075,C007,2026-03-29,4,7,Buena experiencia
+S076,C029,2026-02-16,2,4,Atención lenta
+S077,C044,2026-06-24,2,4,Producto llegó tarde
+S078,C176,2026-06-19,4,8,Volvería a comprar
+S079,C057,2026-03-06,2,4,Demora en la entrega
+S080,C141,2026-06-10,5,9,Excelente atención y entrega rápida
+S081,C178,2026-04-03,3,5,Producto llegó tarde
+S082,C112,2026-06-29,4,7,Buena experiencia
+S083,C069,2026-03-16,4,7,Compra fácil y rápida
+S084,C158,2026-04-08,2,3,Producto llegó tarde
+S085,C012,2026-01-12,5,9,Excelente atención y entrega rápida
+S086,C035,2026-05-07,4,6,Demora en la entrega
+S087,C146,2026-03-27,5,9,Volvería a comprar
+S088,C163,2026-03-19,4,7,Excelente atención y entrega rápida
+S089,C122,2026-01-16,5,10,Excelente atención y entrega rápida
+S090,C175,2026-03-07,4,7,Muy buen producto
+S091,C084,2026-06-13,2,4,Demora en la entrega
+S092,C098,2026-06-25,4,8,Buena experiencia
+S093,C078,2026-04-30,4,8,Buena experiencia
+S094,C145,2026-06-13,5,9,Buena experiencia
+S095,C040,2026-03-10,3,5,Demora en la entrega
+S096,C092,2026-01-21,4,8,Buena experiencia
+S097,C128,2026-06-30,5,10,Muy buen producto
+S098,C140,2026-01-28,4,7,Compra fácil y rápida
+S099,C056,2026-06-15,1,0,Producto llegó tarde
+S100,C010,2026-02-13,4,6,Demora en la entrega
+S101,C122,2026-05-15,2,2,Producto llegó tarde
+S102,C167,2026-06-21,4,6,Demora en la entrega
+S103,C077,2026-04-21,5,10,Volvería a comprar
+S104,C100,2026-05-08,5,10,Compra fácil y rápida
+S105,C094,2026-06-17,3,5,Atención lenta
+S106,C032,2026-05-25,5,9,Compra fácil y rápida
+S107,C165,2026-01-28,5,9,Buena experiencia
+S108,C161,2026-01-23,4,8,Muy buen producto
+S109,C163,2026-04-04,4,8,Muy buen producto
+S110,C036,2026-01-18,5,9,Volvería a comprar
+S111,C074,2026-02-06,4,8,Volvería a comprar
+S112,C057,2026-01-22,5,9,Excelente atención y entrega rápida
+S113,C011,2026-03-07,2,3,El descuento no compensó la espera
+S114,C113,2026-01-26,2,2,Producto llegó tarde
+S115,C093,2026-05-18,5,9,Excelente atención y entrega rápida
+S116,C032,2026-03-01,5,10,Excelente atención y entrega rápida
+S117,C042,2026-02-05,4,7,Compra fácil y rápida
+S118,C017,2026-01-26,4,8,Compra fácil y rápida
+S119,C074,2026-06-08,5,9,Excelente atención y entrega rápida
+S120,C080,2026-05-01,2,3,Demora en la entrega
+S121,C106,2026-02-17,2,4,Demora en la entrega
+S122,C014,2026-05-08,2,3,El descuento no compensó la espera
+S123,C010,2026-06-18,5,9,Volvería a comprar
+S124,C159,2026-05-12,1,1,Atención lenta
+S125,C103,2026-05-31,4,8,Volvería a comprar
+S126,C101,2026-02-17,5,9,Muy buen producto
+S127,C065,2026-02-14,5,9,Excelente atención y entrega rápida
+S128,C162,2026-03-22,4,8,Compra fácil y rápida
+S129,C131,2026-03-28,4,8,Buena experiencia
+S130,C049,2026-04-09,4,8,Compra fácil y rápida
+S131,C174,2026-01-05,5,9,Compra fácil y rápida
+S132,C052,2026-05-24,5,10,Buena experiencia
+S133,C041,2026-05-23,5,10,Muy buen producto
+S134,C107,2026-05-03,2,3,Producto llegó tarde
+S135,C099,2026-04-15,4,8,Compra fácil y rápida
+S136,C049,2026-01-06,5,10,Compra fácil y rápida
+S137,C069,2026-01-04,1,1,Producto llegó tarde
+S138,C040,2026-01-17,4,8,Buena experiencia
+S139,C105,2026-02-24,5,10,Compra fácil y rápida
+S140,C045,2026-05-09,2,2,Demora en la entrega
+S141,C005,2026-05-03,4,8,Compra fácil y rápida
+S142,C004,2026-01-13,5,9,Volvería a comprar
+S143,C087,2026-01-15,4,8,Muy buen producto
+S144,C012,2026-03-21,3,5,Producto llegó tarde
+S145,C086,2026-04-12,5,10,Excelente atención y entrega rápida
+S146,C179,2026-02-01,2,4,Problemas con el pedido
+S147,C054,2026-04-29,3,5,Demora en la entrega
+S148,C076,2026-02-28,4,7,Volvería a comprar
+S149,C151,2026-01-03,5,9,Volvería a comprar
+S150,C087,2026-04-11,5,10,Muy buen producto
+S151,C038,2026-05-24,4,6,Problemas con el pedido
+S152,C032,2026-02-22,5,9,Buena experiencia
+S153,C112,2026-01-08,4,6,Atención lenta
+S154,C001,2026-03-07,5,9,Volvería a comprar
+S155,C056,2026-05-31,4,7,Volvería a comprar
+S156,C115,2026-01-16,5,9,Volvería a comprar
+S157,C074,2026-03-10,4,8,Excelente atención y entrega rápida
+S158,C102,2026-01-06,2,3,Demora en la entrega
+S159,C151,2026-05-11,4,6,Producto llegó tarde
+S160,C038,2026-05-02,4,7,Buena experiencia
+S161,C059,2026-06-29,1,0,Problemas con el pedido
+S162,C113,2026-04-29,3,5,El descuento no compensó la espera
+S163,C151,2026-06-03,5,10,Compra fácil y rápida
+S164,C164,2026-04-30,5,9,Volvería a comprar
+S165,C178,2026-02-05,4,6,El descuento no compensó la espera
+S166,C171,2026-02-20,2,3,Producto llegó tarde
+S167,C006,2026-06-11,2,3,Producto llegó tarde
+S168,C064,2026-01-02,5,10,Muy buen producto
+S169,C178,2026-04-04,4,7,Muy buen producto
+S170,C110,2026-04-02,4,8,Volvería a comprar
+S171,C028,2026-02-01,2,4,Demora en la entrega
+S172,C028,2026-03-09,5,10,Excelente atención y entrega rápida
+S173,C107,2026-03-21,5,9,Excelente atención y entrega rápida
+S174,C172,2026-03-15,4,6,Demora en la entrega
+S175,C059,2026-05-27,4,8,Muy buen producto
+S176,C038,2026-05-19,5,9,Volvería a comprar
+S177,C092,2026-06-09,2,4,El descuento no compensó la espera
+S178,C071,2026-06-20,5,10,Muy buen producto
+S179,C049,2026-05-26,4,8,Compra fácil y rápida
+S180,C138,2026-02-13,2,4,Atención lenta
+S181,C088,2026-05-18,4,7,Muy buen producto
+S182,C079,2026-01-06,4,8,Muy buen producto
+S183,C018,2026-03-11,4,7,Compra fácil y rápida
+S184,C104,2026-05-22,4,7,Excelente atención y entrega rápida
+S185,C158,2026-06-22,1,0,Atención lenta
+S186,C073,2026-01-27,4,8,Buena experiencia
+S187,C102,2026-02-05,3,5,El descuento no compensó la espera
+S188,C018,2026-02-07,5,9,Muy buen producto
+S189,C008,2026-05-16,5,9,Volvería a comprar
+S190,C092,2026-02-09,1,1,El descuento no compensó la espera
+S191,C057,2026-03-16,5,10,Volvería a comprar
+S192,C175,2026-05-13,5,9,Volvería a comprar
+S193,C083,2026-06-04,4,6,Demora en la entrega
+S194,C180,2026-03-11,1,1,Demora en la entrega
+S195,C085,2026-02-08,5,10,Compra fácil y rápida
+S196,C169,2026-02-24,4,7,Buena experiencia
+S197,C126,2026-03-07,5,10,Muy buen producto
+S198,C085,2026-03-18,2,3,Demora en la entrega
+S199,C001,2026-02-25,5,9,Compra fácil y rápida
+S200,C102,2026-06-25,5,10,Excelente atención y entrega rápida
+S201,C151,2026-02-13,4,8,Compra fácil y rápida
+S202,C111,2026-01-06,5,9,Volvería a comprar
+S203,C096,2026-06-17,4,6,Demora en la entrega
+S204,C170,2026-02-09,4,7,Muy buen producto
+S205,C130,2026-06-26,4,7,Volvería a comprar
+S206,C134,2026-06-27,4,6,Demora en la entrega
+S207,C006,2026-05-08,5,9,Volvería a comprar
+S208,C061,2026-01-04,5,9,Volvería a comprar
+S209,C077,2026-02-13,5,10,Excelente atención y entrega rápida
+S210,C124,2026-06-05,5,10,Buena experiencia
+S211,C141,2026-02-05,4,7,Muy buen producto
+S212,C134,2026-06-07,2,4,Producto llegó tarde
+S213,C081,2026-01-20,4,7,Muy buen producto
+S214,C160,2026-01-29,3,5,El descuento no compensó la espera
+S215,C107,2026-02-13,4,6,Producto llegó tarde
+S216,C098,2026-02-23,5,9,Muy buen producto
+S217,C009,2026-02-25,2,2,El descuento no compensó la espera
+S218,C071,2026-03-18,2,4,Problemas con el pedido
+S219,C011,2026-06-14,4,7,Excelente atención y entrega rápida
+S220,C098,2026-06-07,1,1,Problemas con el pedido
+S221,C093,2026-02-26,5,10,Volvería a comprar
+S222,C092,2026-01-13,4,8,Buena experiencia
+S223,C037,2026-01-02,5,9,Volvería a comprar
+S224,C076,2026-06-16,5,9,Excelente atención y entrega rápida
+S225,C156,2026-03-02,2,3,Producto llegó tarde
+S226,C071,2026-04-16,4,8,Muy buen producto
+S227,C105,2026-04-17,5,9,Muy buen producto
+S228,C068,2026-03-12,4,8,Volvería a comprar
+S229,C145,2026-05-17,5,10,Buena experiencia
+S230,C080,2026-06-05,5,9,Muy buen producto
+S231,C030,2026-02-12,4,7,Buena experiencia
+S232,C032,2026-02-24,4,7,Buena experiencia
+S233,C146,2026-03-14,5,10,Muy buen producto
+S234,C008,2026-03-06,5,10,Compra fácil y rápida
+S235,C150,2026-02-07,4,8,Excelente atención y entrega rápida
+S236,C158,2026-04-22,2,2,Demora en la entrega
+S237,C033,2026-03-20,4,8,Compra fácil y rápida
+S238,C047,2026-03-24,5,10,Excelente atención y entrega rápida
+S239,C108,2026-01-12,4,6,Producto llegó tarde
+S240,C090,2026-01-10,5,10,Muy buen producto

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>20&nbsp; Interactivo · Cuando un join multiplica filas – Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</title>
+<title>13&nbsp; Tutorial ejecutable · Análisis exploratorio de datos – Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,25 +29,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../interactivos/contexto-filtro.html" rel="next">
-<link href="../interactivos/outliers.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bbde93b468415cd362b97874392ba5da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./talleres/taller-insureco.html" rel="next">
+<link href="./sesiones/f2-viernes.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bbde93b468415cd362b97874392ba5da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -364,7 +364,7 @@ globalThis.qwebrSetupRPackages = !(qwebrInstallRPackagesList.indexOf("") !== -1)
 globalThis.qwebrAutoloadRPackages = true;
 
 // Display a startup message?
-globalThis.qwebrShowStartupMessage = true;
+globalThis.qwebrShowStartupMessage = false;
 globalThis.qwebrShowHeaderMessage = false;
 
 // Describe the webR settings that should be used
@@ -376,7 +376,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"clientes <- data.frame(\n id_cliente=c(\"C01\",\"C02\",\"C02\"),\n segmento=c(\"Premium\",\"Nuevo\",\"Frecuente\")\n)\n\ntable(clientes$id_cliente)","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
+globalThis.qwebrCellDetails = [{"code":"datos <- mtcars\ndatos$vs <- factor(datos$vs,\n                   levels = c(0, 1),\n                   labels = c(\"Motor en V\", \"Motor recto\"))\ndatos$am <- factor(datos$am,\n                   levels = c(0, 1),\n                   labels = c(\"Automática\", \"Manual\"))\n\nhead(datos)","id":1,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-1","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"dim(datos)                 # filas y columnas\nnames(datos)               # nombres de variables\nstr(datos)                 # estructura y tipos\nhead(datos, 6)             # primeras observaciones","id":2,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-2","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"unicos <- sapply(datos, function(x) length(unique(x)))\nfaltantes <- sapply(datos, function(x) sum(is.na(x)))\n\nrbind(valores_unicos = unicos,\n      valores_faltantes = faltantes)","id":3,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-3","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"summary(datos)","id":4,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-4","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"moda <- function(x) {\n  frecuencias <- table(x)\n  names(frecuencias)[frecuencias == max(frecuencias)]\n}\n\nc(\n  media = mean(datos$mpg, na.rm = TRUE),\n  mediana = median(datos$mpg, na.rm = TRUE)\n)\nmoda(datos$cyl)","id":5,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-5","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"A <- c(90, 95, 100, 105, 110)\nB <- c(20, 30, 40, 50, 360)\n\nrbind(\n  A = c(media = mean(A), mediana = median(A), desviacion = sd(A)),\n  B = c(media = mean(B), mediana = median(B), desviacion = sd(B))\n)","id":6,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-6","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"x <- datos$mpg\n\nc(\n  minimo = min(x, na.rm = TRUE),\n  maximo = max(x, na.rm = TRUE),\n  rango = diff(range(x, na.rm = TRUE)),\n  IQR = IQR(x, na.rm = TRUE)\n)\n\nquantile(x,\n         probs = c(0, .10, .25, .50, .75, .90, 1),\n         na.rm = TRUE)","id":7,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-7","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"c(\n  varianza = var(x, na.rm = TRUE),\n  desviacion_estandar = sd(x, na.rm = TRUE),\n  coeficiente_variacion = sd(x, na.rm = TRUE) / abs(mean(x, na.rm = TRUE))\n)","id":8,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-8","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"perfil <- function(x) {\n  c(\n    n = sum(!is.na(x)),\n    media = mean(x, na.rm = TRUE),\n    mediana = median(x, na.rm = TRUE),\n    minimo = min(x, na.rm = TRUE),\n    p25 = quantile(x, .25, na.rm = TRUE),\n    p75 = quantile(x, .75, na.rm = TRUE),\n    maximo = max(x, na.rm = TRUE),\n    rango = diff(range(x, na.rm = TRUE)),\n    IQR = IQR(x, na.rm = TRUE),\n    varianza = var(x, na.rm = TRUE),\n    desviacion = sd(x, na.rm = TRUE),\n    CV = sd(x, na.rm = TRUE) / abs(mean(x, na.rm = TRUE))\n  )\n}\n\nround(perfil(datos$mpg), 3)","id":9,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-9","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"frecuencia <- table(datos$am)\nfrecuencia\nround(prop.table(frecuencia) * 100, 1)","id":10,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-10","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"par(mfrow = c(1, 2))\nhist(datos$mpg,\n     col = \"#9ecae1\", border = \"white\",\n     main = \"Distribución de mpg\", xlab = \"Millas por galón\")\nplot(density(datos$mpg),\n     lwd = 3, col = \"#0E5A9C\",\n     main = \"Densidad suavizada\", xlab = \"Millas por galón\")\nrug(datos$mpg)\npar(mfrow = c(1, 1))","id":11,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-11","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"par(mfrow = c(1, 2))\nhist(datos$mpg, col = \"#9ecae1\", border = \"white\",\n     main = \"Histograma\", xlab = \"mpg\")\nqqnorm(datos$mpg, main = \"Gráfico Q-Q\")\nqqline(datos$mpg, col = \"#b91c1c\", lwd = 2)\npar(mfrow = c(1, 1))\n\nshapiro.test(datos$mpg)","id":12,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-12","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"Q1 <- quantile(datos$wt, .25)\nQ3 <- quantile(datos$wt, .75)\nRIQ <- IQR(datos$wt)\nlimite_inferior <- Q1 - 1.5 * RIQ\nlimite_superior <- Q3 + 1.5 * RIQ\n\ndatos$wt[datos$wt < limite_inferior | datos$wt > limite_superior]\nboxplot(datos$wt, horizontal = TRUE,\n        col = \"#99d8c9\", main = \"Peso y posibles atípicos\")","id":13,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-13","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"numericas <- datos[, c(\"mpg\", \"disp\", \"hp\", \"wt\", \"qsec\")]\ndistancia <- mahalanobis(\n  numericas,\n  center = colMeans(numericas),\n  cov = cov(numericas)\n)\n\nhead(sort(distancia, decreasing = TRUE), 5)\nbarplot(distancia, col = \"#9ecae1\",\n        main = \"Distancia multivariable\", ylab = \"Mahalanobis\")","id":14,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-14","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"tabla_cruzada <- table(Transmision = datos$am,\n                       Motor = datos$vs)\ntabla_cruzada\n\n# Porcentajes dentro de cada tipo de transmisión\nround(prop.table(tabla_cruzada, margin = 1) * 100, 1)","id":15,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-15","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"aggregate(mpg ~ am, data = datos,\n          FUN = function(x) c(\n            n = length(x),\n            media = mean(x),\n            mediana = median(x),\n            sd = sd(x),\n            IQR = IQR(x)\n          ))\n\nboxplot(mpg ~ am, data = datos,\n        col = c(\"#9ecae1\", \"#99d8c9\"),\n        xlab = \"Transmisión\", ylab = \"Millas por galón\")","id":16,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-16","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"plot(datos$wt, datos$mpg,\n     pch = 19, col = \"#0E5A9C\",\n     xlab = \"Peso (miles de libras)\",\n     ylab = \"Millas por galón\",\n     main = \"Peso y eficiencia\")\nabline(lm(mpg ~ wt, data = datos), col = \"#b91c1c\", lwd = 2)\n\ncor(datos$wt, datos$mpg, method = \"pearson\")\ncor(datos$wt, datos$mpg, method = \"spearman\")","id":17,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-17","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"variables <- datos[, c(\"mpg\", \"disp\", \"hp\", \"wt\", \"qsec\")]\nround(cor(variables), 2)\npairs(variables, pch = 19, col = \"#0E5A9C\")","id":18,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-18","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}},{"code":"variable <- datos$mpg\ngrupo <- datos$am\n\nround(perfil(variable), 2)\naggregate(variable, by = list(grupo = grupo), FUN = median)\nboxplot(variable ~ grupo,\n        col = \"#9ecae1\", xlab = \"Grupo\", ylab = \"Variable\")","id":19,"options":{"autorun":"false","classes":"","comment":"","context":"interactive","dpi":72,"editor-font-scale":"1","editor-max-height":"","editor-quick-suggestions":"false","editor-word-wrap":"true","fig-cap":"","fig-height":5,"fig-width":7,"label":"unnamed-chunk-19","message":"true","out-height":"","out-width":"700px","output":"true","read-only":"false","results":"markup","warning":"true"}}];
 
 </script>
 <script type="module">
@@ -1631,7 +1631,7 @@ globalThis.qwebrExecuteCode = async function (
 </script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -1643,7 +1643,7 @@ globalThis.qwebrExecuteCode = async function (
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../interactivos/evidencia-ia.html">Laboratorios interactivos</a></li><li class="breadcrumb-item"><a href="../interactivos/joins.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f2-viernes.html">Semana 2 · De la evidencia a los modelos</a></li><li class="breadcrumb-item"><a href="./05-estadistica-decisiones.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tutorial ejecutable · Análisis exploratorio de datos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -1658,7 +1658,7 @@ globalThis.qwebrExecuteCode = async function (
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</a> 
+      <a href="./">Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -1670,19 +1670,19 @@ globalThis.qwebrExecuteCode = async function (
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Analítica e Inteligencia de Negocios</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../00-como-usar-libro.html" class="sidebar-item-text sidebar-link">
+  <a href="./00-como-usar-libro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cómo utilizar este libro</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../00-preparacion.html" class="sidebar-item-text sidebar-link">
+  <a href="./00-preparacion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparación del entorno</span></span></a>
   </div>
 </li>
@@ -1697,55 +1697,55 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sesiones/f1-viernes.html" class="sidebar-item-text sidebar-link">
+  <a href="./sesiones/f1-viernes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sesión 1 · Del problema empresarial al primer análisis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01-analitica-negocios.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-analitica-negocios.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">De los datos a las decisiones</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01b-ia-llm.html" class="sidebar-item-text sidebar-link">
+  <a href="./01b-ia-llm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../01c-ia-agentes.html" class="sidebar-item-text sidebar-link">
+  <a href="./01c-ia-agentes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">IA como agente de código: contexto, reglas y auditoría</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../02-primeros-pasos-r.html" class="sidebar-item-text sidebar-link">
+  <a href="./02-primeros-pasos-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Primeros pasos con R: escribir, ejecutar y verificar</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sesiones/f1-sabado.html" class="sidebar-item-text sidebar-link">
+  <a href="./sesiones/f1-sabado.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sesión 2 · Del dato al hallazgo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../03-manipulacion-datos.html" class="sidebar-item-text sidebar-link">
+  <a href="./03-manipulacion-datos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Manipulación de datos: de la pregunta al KPI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../04-exploracion-visualizacion.html" class="sidebar-item-text sidebar-link">
+  <a href="./04-exploracion-visualizacion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exploración y visualización de datos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../04b-mineria-texto.html" class="sidebar-item-text sidebar-link">
+  <a href="./04b-mineria-texto.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></span></a>
   </div>
 </li>
@@ -1762,31 +1762,31 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sesiones/f2-viernes.html" class="sidebar-item-text sidebar-link">
+  <a href="./sesiones/f2-viernes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sesión 3 · Viernes · Del dato a la evidencia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../05-estadistica-decisiones.html" class="sidebar-item-text sidebar-link">
+  <a href="./05-estadistica-decisiones.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tutorial ejecutable · Análisis exploratorio de datos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../talleres/taller-insureco.html" class="sidebar-item-text sidebar-link">
+  <a href="./talleres/taller-insureco.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Taller evaluable · InsureCO</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sesiones/f2-sabado.html" class="sidebar-item-text sidebar-link">
+  <a href="./sesiones/f2-sabado.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sesión 4 · Sábado · De la evidencia a los modelos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../05b-caja-herramientas-modelos.html" class="sidebar-item-text sidebar-link">
+  <a href="./05b-caja-herramientas-modelos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas analíticas para decisiones</span></span></a>
   </div>
 </li>
@@ -1803,31 +1803,31 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../interactivos/evidencia-ia.html" class="sidebar-item-text sidebar-link">
+  <a href="./interactivos/evidencia-ia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interactivo · Dato, hipótesis o invención</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../interactivos/filter-select-groupby.html" class="sidebar-item-text sidebar-link">
+  <a href="./interactivos/filter-select-groupby.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Interactivo · ¿Qué hace cada verbo?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../interactivos/outliers.html" class="sidebar-item-text sidebar-link">
+  <a href="./interactivos/outliers.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interactivo · El outlier y el promedio</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../interactivos/joins.html" class="sidebar-item-text sidebar-link active">
+  <a href="./interactivos/joins.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../interactivos/contexto-filtro.html" class="sidebar-item-text sidebar-link">
+  <a href="./interactivos/contexto-filtro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Interactivo · Contexto de filtro</span></span></a>
   </div>
 </li>
@@ -1844,43 +1844,43 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-01-fundamentos-r.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-01-fundamentos-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Laboratorio 1 · Fundamentos de R</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-02-estructuras.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-02-estructuras.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Laboratorio 2 · Estructuras de datos en R</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-03-tidyverse.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-03-tidyverse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Laboratorio 3 · Guía rápida de tidyverse</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-04-importacion.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-04-importacion.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Laboratorio 4 · Importación de datos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-05-ggplot.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-05-ggplot.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Laboratorio 5 · ggplot2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-06-estadistica.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-06-estadistica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Laboratorio 6 · Estadística de consulta</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab-07-dax.html" class="sidebar-item-text sidebar-link">
+  <a href="./labs/lab-07-dax.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Laboratorio 7 · DAX de consulta</span></span></a>
   </div>
 </li>
@@ -1897,13 +1897,13 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../evaluacion/quices-autodiagnostico.html" class="sidebar-item-text sidebar-link">
+  <a href="./evaluacion/quices-autodiagnostico.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Autochequeos por sesión</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../recursos/lecturas.html" class="sidebar-item-text sidebar-link">
+  <a href="./recursos/lecturas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Lecturas y rutas de profundización</span></span></a>
   </div>
 </li>
@@ -1920,13 +1920,13 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../extras/extra-forecasting.html" class="sidebar-item-text sidebar-link">
+  <a href="./extras/extra-forecasting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Profundización · Forecasting</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../extras/extra-shiny.html" class="sidebar-item-text sidebar-link">
+  <a href="./extras/extra-shiny.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Profundización · Shiny</span></span></a>
   </div>
 </li>
@@ -1942,7 +1942,43 @@ globalThis.qwebrExecuteCode = async function (
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#diagnóstico-en-r" id="toc-diagnóstico-en-r" class="nav-link active" data-scroll-target="#diagnóstico-en-r"><span class="header-section-number">20.1</span> Diagnóstico en R</a></li>
+  <li><a href="#resultados-de-aprendizaje" id="toc-resultados-de-aprendizaje" class="nav-link active" data-scroll-target="#resultados-de-aprendizaje"><span class="header-section-number">13.1</span> Resultados de aprendizaje</a></li>
+  <li><a href="#estrategia-general-de-aed" id="toc-estrategia-general-de-aed" class="nav-link" data-scroll-target="#estrategia-general-de-aed"><span class="header-section-number">13.2</span> 1. Estrategia general de AED</a></li>
+  <li><a href="#iniciar-el-tutorial" id="toc-iniciar-el-tutorial" class="nav-link" data-scroll-target="#iniciar-el-tutorial"><span class="header-section-number">13.3</span> 2. Iniciar el tutorial</a></li>
+  <li><a href="#características-básicas-y-tipos" id="toc-características-básicas-y-tipos" class="nav-link" data-scroll-target="#características-básicas-y-tipos"><span class="header-section-number">13.4</span> 3. Características básicas y tipos</a>
+  <ul class="collapse">
+  <li><a href="#valores-únicos-y-faltantes" id="toc-valores-únicos-y-faltantes" class="nav-link" data-scroll-target="#valores-únicos-y-faltantes"><span class="header-section-number">13.4.1</span> Valores únicos y faltantes</a></li>
+  </ul></li>
+  <li><a href="#estadísticas-descriptivas" id="toc-estadísticas-descriptivas" class="nav-link" data-scroll-target="#estadísticas-descriptivas"><span class="header-section-number">13.5</span> 4. Estadísticas descriptivas</a>
+  <ul class="collapse">
+  <li><a href="#una-vista-general" id="toc-una-vista-general" class="nav-link" data-scroll-target="#una-vista-general"><span class="header-section-number">13.5.1</span> 4.1 Una vista general</a></li>
+  <li><a href="#media-mediana-y-moda" id="toc-media-mediana-y-moda" class="nav-link" data-scroll-target="#media-mediana-y-moda"><span class="header-section-number">13.5.2</span> 4.2 Media, mediana y moda</a></li>
+  <li><a href="#la-trampa-del-promedio" id="toc-la-trampa-del-promedio" class="nav-link" data-scroll-target="#la-trampa-del-promedio"><span class="header-section-number">13.5.3</span> La trampa del promedio</a></li>
+  <li><a href="#mínimo-máximo-rango-cuartiles-y-percentiles" id="toc-mínimo-máximo-rango-cuartiles-y-percentiles" class="nav-link" data-scroll-target="#mínimo-máximo-rango-cuartiles-y-percentiles"><span class="header-section-number">13.5.4</span> 4.3 Mínimo, máximo, rango, cuartiles y percentiles</a></li>
+  <li><a href="#varianza-desviación-estándar-y-coeficiente-de-variación" id="toc-varianza-desviación-estándar-y-coeficiente-de-variación" class="nav-link" data-scroll-target="#varianza-desviación-estándar-y-coeficiente-de-variación"><span class="header-section-number">13.5.5</span> 4.4 Varianza, desviación estándar y coeficiente de variación</a></li>
+  <li><a href="#un-perfil-reproducible" id="toc-un-perfil-reproducible" class="nav-link" data-scroll-target="#un-perfil-reproducible"><span class="header-section-number">13.5.6</span> 4.5 Un perfil reproducible</a></li>
+  </ul></li>
+  <li><a href="#frecuencias-y-distribuciones" id="toc-frecuencias-y-distribuciones" class="nav-link" data-scroll-target="#frecuencias-y-distribuciones"><span class="header-section-number">13.6</span> 5. Frecuencias y distribuciones</a>
+  <ul class="collapse">
+  <li><a href="#variable-cualitativa" id="toc-variable-cualitativa" class="nav-link" data-scroll-target="#variable-cualitativa"><span class="header-section-number">13.6.1</span> Variable cualitativa</a></li>
+  <li><a href="#histograma-y-densidad" id="toc-histograma-y-densidad" class="nav-link" data-scroll-target="#histograma-y-densidad"><span class="header-section-number">13.6.2</span> Histograma y densidad</a></li>
+  <li><a href="#forma-simetría-y-normalidad" id="toc-forma-simetría-y-normalidad" class="nav-link" data-scroll-target="#forma-simetría-y-normalidad"><span class="header-section-number">13.6.3</span> Forma: simetría y normalidad</a></li>
+  </ul></li>
+  <li><a href="#observaciones-atípicas-investigar-antes-de-eliminar" id="toc-observaciones-atípicas-investigar-antes-de-eliminar" class="nav-link" data-scroll-target="#observaciones-atípicas-investigar-antes-de-eliminar"><span class="header-section-number">13.7</span> 6. Observaciones atípicas: investigar antes de eliminar</a>
+  <ul class="collapse">
+  <li><a href="#profundización-opcional-anomalía-multivariable" id="toc-profundización-opcional-anomalía-multivariable" class="nav-link" data-scroll-target="#profundización-opcional-anomalía-multivariable"><span class="header-section-number">13.7.1</span> Profundización opcional · anomalía multivariable</a></li>
+  </ul></li>
+  <li><a href="#relaciones-entre-variables" id="toc-relaciones-entre-variables" class="nav-link" data-scroll-target="#relaciones-entre-variables"><span class="header-section-number">13.8</span> 7. Relaciones entre variables</a>
+  <ul class="collapse">
+  <li><a href="#dos-variables-cualitativas-tabla-cruzada" id="toc-dos-variables-cualitativas-tabla-cruzada" class="nav-link" data-scroll-target="#dos-variables-cualitativas-tabla-cruzada"><span class="header-section-number">13.8.1</span> 7.1 Dos variables cualitativas: tabla cruzada</a></li>
+  <li><a href="#cualitativa-y-cuantitativa-comparar-grupos" id="toc-cualitativa-y-cuantitativa-comparar-grupos" class="nav-link" data-scroll-target="#cualitativa-y-cuantitativa-comparar-grupos"><span class="header-section-number">13.8.2</span> 7.2 Cualitativa y cuantitativa: comparar grupos</a></li>
+  <li><a href="#dos-variables-cuantitativas-dispersión-y-correlación" id="toc-dos-variables-cuantitativas-dispersión-y-correlación" class="nav-link" data-scroll-target="#dos-variables-cuantitativas-dispersión-y-correlación"><span class="header-section-number">13.8.3</span> 7.3 Dos variables cuantitativas: dispersión y correlación</a></li>
+  <li><a href="#matriz-de-correlaciones" id="toc-matriz-de-correlaciones" class="nav-link" data-scroll-target="#matriz-de-correlaciones"><span class="header-section-number">13.8.4</span> Matriz de correlaciones</a></li>
+  </ul></li>
+  <li><a href="#quick-reference-qué-medida-usar" id="toc-quick-reference-qué-medida-usar" class="nav-link" data-scroll-target="#quick-reference-qué-medida-usar"><span class="header-section-number">13.9</span> 8. Quick Reference · ¿qué medida usar?</a></li>
+  <li><a href="#reto-guiado" id="toc-reto-guiado" class="nav-link" data-scroll-target="#reto-guiado"><span class="header-section-number">13.10</span> 9. Reto guiado</a></li>
+  <li><a href="#puente-hacia-el-taller-insureco" id="toc-puente-hacia-el-taller-insureco" class="nav-link" data-scroll-target="#puente-hacia-el-taller-insureco"><span class="header-section-number">13.11</span> 10. Puente hacia el taller InsureCO</a></li>
+  <li><a href="#referencias-de-base" id="toc-referencias-de-base" class="nav-link" data-scroll-target="#referencias-de-base"><span class="header-section-number">13.12</span> Referencias de base</a></li>
   </ul>
 </nav>
     </div>
@@ -2233,9 +2269,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 }
 </script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../interactivos/evidencia-ia.html">Laboratorios interactivos</a></li><li class="breadcrumb-item"><a href="../interactivos/joins.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f2-viernes.html">Semana 2 · De la evidencia a los modelos</a></li><li class="breadcrumb-item"><a href="./05-estadistica-decisiones.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tutorial ejecutable · Análisis exploratorio de datos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tutorial ejecutable · Análisis exploratorio de datos</span></h1>
 </div>
 
 
@@ -2253,100 +2289,463 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 
 <div class="mba-hero">
-<p><strong>Problema:</strong> los joins pueden ejecutar sin error y, aun así, alterar silenciosamente un KPI.</p>
+<p><strong>Propósito:</strong> aprender a describir, comparar y relacionar variables antes de construir un modelo. Cada bloque de R se ejecuta directamente en el navegador: no requiere instalación ni modifica archivos de tu computador.</p>
 </div>
-<p>Tenemos ventas:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>id_cliente</th>
-<th style="text-align: right;">venta</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C01</td>
-<td style="text-align: right;">100</td>
-</tr>
-<tr class="even">
-<td>C02</td>
-<td style="text-align: right;">200</td>
-</tr>
-</tbody>
-</table>
-<p>Y una supuesta dimensión de clientes:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>id_cliente</th>
-<th>segmento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>C01</td>
-<td>Premium</td>
-</tr>
-<tr class="even">
-<td>C02</td>
-<td>Nuevo</td>
-</tr>
-<tr class="odd">
-<td>C02</td>
-<td>Frecuente</td>
-</tr>
-</tbody>
-</table>
-<div class="try-it">
-<button id="join-run">
-Ejecutar join conceptual
-</button>
-<div id="join-result" style="margin-top:1rem">
-
+<p>Este tutorial adapta y amplía <code>AED_2.Rmd</code>, el material original de la <strong>Parte 1</strong>. Conserva su recorrido —reconocer los datos, resumir variables, detectar anomalías y estudiar relaciones— y lo orienta a estudiantes de MBA: menos demostración matemática y más criterio para decidir <strong>qué calcular, cómo leerlo y qué no concluir</strong>.</p>
+<section id="resultados-de-aprendizaje" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="resultados-de-aprendizaje"><span class="header-section-number">13.1</span> Resultados de aprendizaje</h2>
+<p>Al terminar podrás:</p>
+<ul>
+<li>reconocer la unidad de análisis, dimensiones, nombres y tipos de una tabla;</li>
+<li>calcular e interpretar media, mediana, moda, mínimo, máximo, rango, cuartiles, IQR, varianza, desviación estándar, coeficiente de variación y percentiles;</li>
+<li>construir frecuencias, proporciones, tablas cruzadas, histogramas, diagramas de caja y dispersión;</li>
+<li>comparar grupos y reconocer cuándo un promedio global oculta diferencias;</li>
+<li>identificar observaciones atípicas sin confundirlas automáticamente con errores;</li>
+<li>interpretar asociación y correlación sin afirmar causalidad.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Cómo usar las celdas
 </div>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded",()=>{
- document.getElementById("join-run").onclick=()=>{
- document.getElementById("join-result").innerHTML=`
- 
-<table class="caption-top" data-quarto-postprocess="true" style="width:100%">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">id_cliente</td>
-<td data-quarto-table-cell-role="th">venta</td>
-<td data-quarto-table-cell-role="th">segmento</td>
-</tr>
-<tr class="even">
-<td>C01</td>
-<td>100</td>
-<td>Premium</td>
-</tr>
-<tr class="odd">
-<td>C02</td>
-<td>200</td>
-<td>Nuevo</td>
-</tr>
-<tr class="even">
-<td>C02</td>
-<td>200</td>
-<td>Frecuente</td>
-</tr>
-</tbody>
-</table>
-
- <p><strong>Venta antes:</strong> 300 &nbsp; → &nbsp; <strong>Venta después:</strong> 500</p>
- <p>El código “funcionó”, pero la llave de la dimensión no era única.</p>`;
- };
-});
-</script>
-<section id="diagnóstico-en-r" class="level2" data-number="20.1">
-<h2 data-number="20.1" class="anchored" data-anchor-id="diagnóstico-en-r"><span class="header-section-number">20.1</span> Diagnóstico en R</h2>
+<div class="callout-body-container callout-body">
+<p>Espera a que WebR indique que está listo. Ejecuta las celdas <strong>en orden</strong> con el botón Run. Después modifica un valor y vuelve a ejecutar. Si pierdes los objetos creados, regresa a <strong>Iniciar el tutorial</strong>.</p>
+</div>
+</div>
+</section>
+<section id="estrategia-general-de-aed" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="estrategia-general-de-aed"><span class="header-section-number">13.2</span> 1. Estrategia general de AED</h2>
+<p>Antes de buscar un resultado atractivo, sigue esta secuencia:</p>
+<ol type="1">
+<li>define la pregunta y qué representa una fila;</li>
+<li>inspecciona dimensiones, nombres, tipos, valores únicos y faltantes;</li>
+<li>resume cada variable según su tipo;</li>
+<li>observa distribuciones y posibles anomalías;</li>
+<li>compara segmentos;</li>
+<li>explora relaciones entre variables;</li>
+<li>separa <strong>observación, interpretación e hipótesis</strong>.</li>
+</ol>
+<div class="key-idea">
+El AED no es una colección de comandos. Es una conversación disciplinada con los datos antes de modelar o decidir.
+</div>
+</section>
+<section id="iniciar-el-tutorial" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="iniciar-el-tutorial"><span class="header-section-number">13.3</span> 2. Iniciar el tutorial</h2>
+<p>Usaremos <code>mtcars</code>, una base incluida en R con 32 modelos de automóvil. Una fila representa un modelo y las columnas describen consumo, diseño y desempeño.</p>
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<div class="key-idea">
-<p>Antes de integrar, valida la cardinalidad. Una dimensión que debería tener una fila por cliente no puede contener dos versiones simultáneas sin una regla explícita.</p>
+<p>Variables que utilizaremos con mayor frecuencia:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Significado</th>
+<th>Tipo analítico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mpg</code></td>
+<td>millas por galón</td>
+<td>cuantitativa continua</td>
+</tr>
+<tr class="even">
+<td><code>cyl</code></td>
+<td>número de cilindros</td>
+<td>cuantitativa discreta; puede tratarse como categoría</td>
+</tr>
+<tr class="odd">
+<td><code>disp</code></td>
+<td>desplazamiento del motor</td>
+<td>cuantitativa continua</td>
+</tr>
+<tr class="even">
+<td><code>hp</code></td>
+<td>caballos de fuerza</td>
+<td>cuantitativa continua</td>
+</tr>
+<tr class="odd">
+<td><code>wt</code></td>
+<td>peso en miles de libras</td>
+<td>cuantitativa continua</td>
+</tr>
+<tr class="even">
+<td><code>vs</code></td>
+<td>forma del motor</td>
+<td>cualitativa nominal</td>
+</tr>
+<tr class="odd">
+<td><code>am</code></td>
+<td>transmisión</td>
+<td>cualitativa nominal</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="características-básicas-y-tipos" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="características-básicas-y-tipos"><span class="header-section-number">13.4</span> 3. Características básicas y tipos</h2>
+<p>Las primeras preguntas son sencillas y decisivas:</p>
+<ul>
+<li>¿cuántas observaciones y variables hay?;</li>
+<li>¿qué representa cada fila?;</li>
+<li>¿cómo se llaman las variables?;</li>
+<li>¿cómo las almacenó R?;</li>
+<li>¿hay faltantes o categorías inesperadas?</li>
+</ul>
+<div id="qwebr-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Un <strong>tipo de almacenamiento</strong> no siempre coincide con el papel analítico. <code>cyl</code> está guardada como número, pero en una comparación puede funcionar mejor como categoría de 4, 6 u 8 cilindros.</p>
+<section id="valores-únicos-y-faltantes" class="level3" data-number="13.4.1">
+<h3 data-number="13.4.1" class="anchored" data-anchor-id="valores-únicos-y-faltantes"><span class="header-section-number">13.4.1</span> Valores únicos y faltantes</h3>
+<div id="qwebr-insertion-location-3"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>NA</code> significa “valor no disponible”; no significa automáticamente cero. La forma de tratarlo depende de por qué falta y de la decisión que puede afectar.</p>
+</div>
+</div>
+<details>
+<summary>
+<strong>Comprobación rápida</strong>
+</summary>
+<p><code>dim(datos)</code> devuelve 32 filas y 11 columnas. Después de convertir <code>vs</code> y <code>am</code>, R las reconoce como factores. La unidad de análisis sigue siendo un modelo de automóvil.</p>
+</details>
+</section>
+</section>
+<section id="estadísticas-descriptivas" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="estadísticas-descriptivas"><span class="header-section-number">13.5</span> 4. Estadísticas descriptivas</h2>
+<section id="una-vista-general" class="level3" data-number="13.5.1">
+<h3 data-number="13.5.1" class="anchored" data-anchor-id="una-vista-general"><span class="header-section-number">13.5.1</span> 4.1 Una vista general</h3>
+<div id="qwebr-insertion-location-4"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><code>summary()</code> es útil para orientarse, pero no sustituye una selección consciente de medidas. Para una variable numérica conviene observar al menos <strong>tamaño, centro, dispersión, posición y extremos</strong>.</p>
+</section>
+<section id="media-mediana-y-moda" class="level3" data-number="13.5.2">
+<h3 data-number="13.5.2" class="anchored" data-anchor-id="media-mediana-y-moda"><span class="header-section-number">13.5.2</span> 4.2 Media, mediana y moda</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Medida</th>
+<th>Pregunta que ayuda a responder</th>
+<th>Precaución</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Media</td>
+<td>¿cuál es el balance promedio?</td>
+<td>cambia con valores extremos</td>
+</tr>
+<tr class="even">
+<td>Mediana</td>
+<td>¿cuál es el punto central al ordenar?</td>
+<td>no usa la magnitud completa de los extremos</td>
+</tr>
+<tr class="odd">
+<td>Moda</td>
+<td>¿qué valor o categoría es más frecuente?</td>
+<td>puede haber más de una o ninguna moda útil</td>
+</tr>
+</tbody>
+</table>
+<div id="qwebr-insertion-location-5"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+<section id="la-trampa-del-promedio" class="level3" data-number="13.5.3">
+<h3 data-number="13.5.3" class="anchored" data-anchor-id="la-trampa-del-promedio"><span class="header-section-number">13.5.3</span> La trampa del promedio</h3>
+<div id="qwebr-insertion-location-6"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Las dos series tienen la misma media, pero no describen el mismo comportamiento. Para una decisión sobre riesgo, capacidad o consistencia, esa diferencia es material.</p>
+</section>
+<section id="mínimo-máximo-rango-cuartiles-y-percentiles" class="level3" data-number="13.5.4">
+<h3 data-number="13.5.4" class="anchored" data-anchor-id="mínimo-máximo-rango-cuartiles-y-percentiles"><span class="header-section-number">13.5.4</span> 4.3 Mínimo, máximo, rango, cuartiles y percentiles</h3>
+<p>Un percentil <code>p</code> es un punto de corte: aproximadamente <code>p %</code> de las observaciones queda en o por debajo de ese valor. El percentil 50 es la mediana.</p>
+<div id="qwebr-insertion-location-7"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><strong>Lectura empresarial:</strong> el percentil 90 permite preguntar “¿a partir de qué valor se encuentra el 10 % superior?”. El IQR describe la amplitud del 50 % central y es menos sensible a extremos que el rango.</p>
+</section>
+<section id="varianza-desviación-estándar-y-coeficiente-de-variación" class="level3" data-number="13.5.5">
+<h3 data-number="13.5.5" class="anchored" data-anchor-id="varianza-desviación-estándar-y-coeficiente-de-variación"><span class="header-section-number">13.5.5</span> 4.4 Varianza, desviación estándar y coeficiente de variación</h3>
+<div id="qwebr-insertion-location-8"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<ul>
+<li>La <strong>varianza</strong> está en unidades al cuadrado y se utiliza mucho dentro de métodos estadísticos.</li>
+<li>La <strong>desviación estándar</strong> vuelve a la unidad original y facilita la interpretación.</li>
+<li>El <strong>coeficiente de variación (CV)</strong> expresa la desviación respecto a la media y puede ayudar a comparar variabilidad relativa cuando la media es positiva y tiene sentido usar el cero como referencia.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El CV puede ser inestable o engañoso cuando la media es cero, cercana a cero o puede tomar valores negativos. No es una medida universal.</p>
+</div>
+</div>
+</section>
+<section id="un-perfil-reproducible" class="level3" data-number="13.5.6">
+<h3 data-number="13.5.6" class="anchored" data-anchor-id="un-perfil-reproducible"><span class="header-section-number">13.5.6</span> 4.5 Un perfil reproducible</h3>
+<div id="qwebr-insertion-location-9"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</section>
+</section>
+<section id="frecuencias-y-distribuciones" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="frecuencias-y-distribuciones"><span class="header-section-number">13.6</span> 5. Frecuencias y distribuciones</h2>
+<section id="variable-cualitativa" class="level3" data-number="13.6.1">
+<h3 data-number="13.6.1" class="anchored" data-anchor-id="variable-cualitativa"><span class="header-section-number">13.6.1</span> Variable cualitativa</h3>
+<div id="qwebr-insertion-location-10"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>El conteo responde “¿cuántos?” y la proporción responde “¿qué parte del total?”. Siempre explicita el denominador.</p>
+</section>
+<section id="histograma-y-densidad" class="level3" data-number="13.6.2">
+<h3 data-number="13.6.2" class="anchored" data-anchor-id="histograma-y-densidad"><span class="header-section-number">13.6.2</span> Histograma y densidad</h3>
+<div id="qwebr-insertion-location-11"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>El histograma depende del número de intervalos; la densidad depende del nivel de suavizado. Modifica <code>breaks = 5</code> y luego <code>breaks = 15</code>: el dato no cambió, pero su representación sí.</p>
+</section>
+<section id="forma-simetría-y-normalidad" class="level3" data-number="13.6.3">
+<h3 data-number="13.6.3" class="anchored" data-anchor-id="forma-simetría-y-normalidad"><span class="header-section-number">13.6.3</span> Forma: simetría y normalidad</h3>
+<p>Una cola larga hacia valores altos suele empujar la media por encima de la mediana. Para un curso aplicado, primero se observa la distribución y después se decide si una prueba formal es necesaria.</p>
+<div id="qwebr-insertion-location-12"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un valor <code>p</code> no mide “qué tan normal” es una distribución y no prueba que los datos sean normales. Además, con muestras grandes, diferencias pequeñas pueden resultar estadísticamente detectables. En AED pesan también la gráfica, el tamaño de muestra y el uso posterior del análisis.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="observaciones-atípicas-investigar-antes-de-eliminar" class="level2" data-number="13.7">
+<h2 data-number="13.7" class="anchored" data-anchor-id="observaciones-atípicas-investigar-antes-de-eliminar"><span class="header-section-number">13.7</span> 6. Observaciones atípicas: investigar antes de eliminar</h2>
+<p>La regla común del diagrama de caja marca valores fuera de:</p>
+<p><code>Q1 − 1.5 × IQR</code> y <code>Q3 + 1.5 × IQR</code>.</p>
+<div id="qwebr-insertion-location-13"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Una observación marcada puede ser:</p>
+<ul>
+<li>un error de digitación o unidad;</li>
+<li>un caso válido pero extraordinario;</li>
+<li>evidencia de un subgrupo;</li>
+<li>un evento que precisamente interesa investigar.</li>
+</ul>
+<p><strong>La regla detecta; el contexto decide.</strong></p>
+<section id="profundización-opcional-anomalía-multivariable" class="level3" data-number="13.7.1">
+<h3 data-number="13.7.1" class="anchored" data-anchor-id="profundización-opcional-anomalía-multivariable"><span class="header-section-number">13.7.1</span> Profundización opcional · anomalía multivariable</h3>
+<p>Una observación puede no ser extrema en una sola variable, pero sí presentar una combinación inusual. La distancia de Mahalanobis es una forma de explorarlo cuando las variables numéricas son adecuadas.</p>
+<div id="qwebr-insertion-location-14"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>No elimines automáticamente las observaciones con mayor distancia. Inspecciónalas y documenta la decisión.</p>
+</section>
+</section>
+<section id="relaciones-entre-variables" class="level2" data-number="13.8">
+<h2 data-number="13.8" class="anchored" data-anchor-id="relaciones-entre-variables"><span class="header-section-number">13.8</span> 7. Relaciones entre variables</h2>
+<p>El método depende de los tipos involucrados.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable A</th>
+<th>Variable B</th>
+<th>Herramientas iniciales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cualitativa</td>
+<td>cualitativa</td>
+<td>tabla cruzada y porcentajes condicionados</td>
+</tr>
+<tr class="even">
+<td>cualitativa</td>
+<td>cuantitativa</td>
+<td>resumen por grupos y diagrama de caja</td>
+</tr>
+<tr class="odd">
+<td>cuantitativa</td>
+<td>cuantitativa</td>
+<td>dispersión y correlación</td>
+</tr>
+</tbody>
+</table>
+<section id="dos-variables-cualitativas-tabla-cruzada" class="level3" data-number="13.8.1">
+<h3 data-number="13.8.1" class="anchored" data-anchor-id="dos-variables-cualitativas-tabla-cruzada"><span class="header-section-number">13.8.1</span> 7.1 Dos variables cualitativas: tabla cruzada</h3>
+<div id="qwebr-insertion-location-15"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><code>margin = 1</code> hace que cada fila sume 100 %. Con <code>margin = 2</code>, cada columna suma 100 %. La elección debe corresponder a la pregunta.</p>
+</section>
+<section id="cualitativa-y-cuantitativa-comparar-grupos" class="level3" data-number="13.8.2">
+<h3 data-number="13.8.2" class="anchored" data-anchor-id="cualitativa-y-cuantitativa-comparar-grupos"><span class="header-section-number">13.8.2</span> 7.2 Cualitativa y cuantitativa: comparar grupos</h3>
+<div id="qwebr-insertion-location-16"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>La comparación describe estos datos. No demuestra que cambiar el tipo de transmisión <strong>cause</strong> el cambio observado: peso, potencia y diseño también pueden diferir entre grupos.</p>
+</section>
+<section id="dos-variables-cuantitativas-dispersión-y-correlación" class="level3" data-number="13.8.3">
+<h3 data-number="13.8.3" class="anchored" data-anchor-id="dos-variables-cuantitativas-dispersión-y-correlación"><span class="header-section-number">13.8.3</span> 7.3 Dos variables cuantitativas: dispersión y correlación</h3>
+<div id="qwebr-insertion-location-17"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<ul>
+<li><strong>Pearson</strong> resume asociación lineal y es sensible a extremos.</li>
+<li><strong>Spearman</strong> trabaja con rangos y captura asociación monotónica; puede ser útil ante asimetría, escalas ordinales o valores extremos.</li>
+</ul>
+<p>Ambos coeficientes van de −1 a 1. Un valor cercano a 0 descarta una asociación fuerte del tipo que mide, pero no toda relación posible.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Correlación no implica causalidad.</strong> Una relación puede reflejar confusión, selección, temporalidad inversa o coincidencia. El lenguaje correcto es “se observa una asociación”; la causalidad exige un diseño y evidencia apropiados.</p>
+</div>
+</div>
+</section>
+<section id="matriz-de-correlaciones" class="level3" data-number="13.8.4">
+<h3 data-number="13.8.4" class="anchored" data-anchor-id="matriz-de-correlaciones"><span class="header-section-number">13.8.4</span> Matriz de correlaciones</h3>
+<div id="qwebr-insertion-location-18"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Una matriz sirve para detectar relaciones que merecen análisis. No es una máquina automática de conclusiones.</p>
+</section>
+</section>
+<section id="quick-reference-qué-medida-usar" class="level2" data-number="13.9">
+<h2 data-number="13.9" class="anchored" data-anchor-id="quick-reference-qué-medida-usar"><span class="header-section-number">13.9</span> 8. Quick Reference · ¿qué medida usar?</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Si quiero…</th>
+<th>Reviso primero…</th>
+<th>Lo complemento con…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>describir un valor típico</td>
+<td>mediana y media</td>
+<td>distribución y tamaño de muestra</td>
+</tr>
+<tr class="even">
+<td>encontrar la categoría más común</td>
+<td>moda/frecuencia</td>
+<td>proporción y denominador</td>
+</tr>
+<tr class="odd">
+<td>conocer extremos</td>
+<td>mínimo, máximo y rango</td>
+<td>contexto y calidad del dato</td>
+</tr>
+<tr class="even">
+<td>describir el 50 % central</td>
+<td>cuartiles e IQR</td>
+<td>diagrama de caja</td>
+</tr>
+<tr class="odd">
+<td>medir dispersión en la unidad original</td>
+<td>desviación estándar</td>
+<td>media/mediana e histograma</td>
+</tr>
+<tr class="even">
+<td>comparar variabilidad relativa</td>
+<td>CV</td>
+<td>validez del cero y magnitud de la media</td>
+</tr>
+<tr class="odd">
+<td>comparar categorías</td>
+<td>frecuencias/porcentajes</td>
+<td>denominador correcto</td>
+</tr>
+<tr class="even">
+<td>comparar una métrica entre grupos</td>
+<td>resumen por grupo</td>
+<td>boxplot y tamaño de cada grupo</td>
+</tr>
+<tr class="odd">
+<td>explorar dos métricas</td>
+<td>dispersión y correlación</td>
+<td>posibles confusores y no linealidad</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reto-guiado" class="level2" data-number="13.10">
+<h2 data-number="13.10" class="anchored" data-anchor-id="reto-guiado"><span class="header-section-number">13.10</span> 9. Reto guiado</h2>
+<p>Modifica el siguiente código para estudiar <code>hp</code> en lugar de <code>mpg</code> y <code>cyl</code> en lugar de <code>am</code>.</p>
+<div id="qwebr-insertion-location-19"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>Escribe tres frases:</p>
+<ol type="1">
+<li><strong>Observación:</strong> qué muestra directamente el resultado.</li>
+<li><strong>Interpretación:</strong> por qué puede ser relevante para una decisión.</li>
+<li><strong>Hipótesis:</strong> qué explicación plausible necesita evidencia adicional.</li>
+</ol>
+<details>
+<summary>
+<strong>Lista de verificación</strong>
+</summary>
+<ul>
+<li>¿Mencionaste la variable, la unidad y los grupos?</li>
+<li>¿Comparaste más de una medida?</li>
+<li>¿Revisaste distribución y tamaño de grupo?</li>
+<li>¿Evitaste usar “causa”, “demuestra” o “garantiza” sin diseño causal?</li>
+<li>¿Separaste con claridad lo observado de la explicación propuesta?</li>
+</ul>
+</details>
+</section>
+<section id="puente-hacia-el-taller-insureco" class="level2" data-number="13.11">
+<h2 data-number="13.11" class="anchored" data-anchor-id="puente-hacia-el-taller-insureco"><span class="header-section-number">13.11</span> 10. Puente hacia el taller InsureCO</h2>
+<p>El tutorial utilizó una base incluida en R para que todo pudiera ejecutarse dentro del navegador. En el <a href="./talleres/taller-insureco.html">Taller evaluable · InsureCO</a> aplicarás el mismo flujo a 1.338 pólizas y entregarás una recomendación ejecutiva reproducible.</p>
+</section>
+<section id="referencias-de-base" class="level2" data-number="13.12">
+<h2 data-number="13.12" class="anchored" data-anchor-id="referencias-de-base"><span class="header-section-number">13.12</span> Referencias de base</h2>
+<ul>
+<li>Pearson, R. (2018). <em>Exploratory Data Analysis Using R</em>.</li>
+<li>Wickham, H. et al.&nbsp;<em>dplyr: A Grammar of Data Manipulation</em>.</li>
+<li>Material del curso original: <code>Parte 1/AED_2.Rmd</code>, “AED univariados” y “AED bivariados”.</li>
+</ul>
 
 
 </section>
@@ -2754,13 +3153,13 @@ document.addEventListener("DOMContentLoaded",()=>{
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../interactivos/outliers.html" class="pagination-link" aria-label="Interactivo · El outlier y el promedio">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interactivo · El outlier y el promedio</span></span>
+      <a href="./sesiones/f2-viernes.html" class="pagination-link" aria-label="Sesión 3 · Viernes · Del dato a la evidencia">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sesión 3 · Viernes · Del dato a la evidencia</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../interactivos/contexto-filtro.html" class="pagination-link" aria-label="Interactivo · Contexto de filtro">
-        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Interactivo · Contexto de filtro</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./talleres/taller-insureco.html" class="pagination-link" aria-label="Taller evaluable · InsureCO">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Taller evaluable · InsureCO</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -2885,5 +3284,5 @@ qwebrInstance.then(
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

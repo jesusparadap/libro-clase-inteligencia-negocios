@@ -1,0 +1,181 @@
+﻿id_cliente,ciudad,region,segmento,edad,sexo,fecha_registro
+C001,Bucaramanga,Andina,Premium,28,M,2024-08-21
+C002,Bogotá,Andina,Premium,60,M,2025-11-08
+C003,Pereira,Andina,Frecuente,67,F,2025-07-28
+C004,Medellín,Andina,Premium,37,F,2024-01-09
+C005,Medellín,Andina,Nuevo,50,F,2024-06-20
+C006,Cali,Pacífica,Premium,35,M,2025-10-20
+C007,Bogotá,Andina,Frecuente,61,M,2025-11-17
+C008,Barranquilla,Caribe,Premium,36,F,2024-01-29
+C009,Bogotá,Andina,Frecuente,33,F,2024-12-03
+C010,Bogotá,Andina,Frecuente,51,F,2025-08-23
+C011,Cartagena,Caribe,Premium,65,F,2024-05-01
+C012,Pereira,Andina,Nuevo,51,F,2025-01-23
+C013,Barranquilla,Caribe,Nuevo,62,M,2024-03-08
+C014,Cartagena,Caribe,Premium,38,M,2025-03-28
+C015,Villavicencio,Orinoquía,Premium,47,F,2024-03-20
+C016,Villavicencio,Orinoquía,Frecuente,37,M,2025-09-25
+C017,Bogotá,Andina,Premium,23,F,2025-03-19
+C018,Santa Marta,Caribe,,39,M,2024-04-07
+C019,Medellín,Andina,Frecuente,50,F,2025-04-28
+C020,Pereira,Andina,Frecuente,51,M,2024-06-18
+C021,Santa Marta,Caribe,Nuevo,61,M,2025-07-31
+C022,Bucaramanga,Andina,Frecuente,60,F,2025-09-09
+C023,Santa Marta,Caribe,Premium,47,F,2025-11-12
+C024,Santa Marta,Caribe,Nuevo,42,M,2025-04-01
+C025,Pereira,Andina,Frecuente,49,F,2024-10-20
+C026,Santa Marta,Caribe,Premium,36,F,2025-03-24
+C027,Medellín,Andina,Frecuente,39,M,2025-11-15
+C028,Bucaramanga,Andina,Nuevo,45,F,2024-09-04
+C029,Cartagena,Caribe,Frecuente,52,F,2025-09-29
+C030,Bogotá,Andina,Nuevo,50,F,2025-05-10
+C031,Bucaramanga,Andina,Premium,33,M,2024-01-27
+C032,Medellín,Andina,Nuevo,54,M,2024-08-29
+C033,Bucaramanga,Andina,Frecuente,43,F,2024-09-09
+C034,Bogotá,Andina,Nuevo,68,M,2025-07-23
+C035,Bogotá,Andina,Frecuente,48,F,2025-03-02
+C036,Santa Marta,Caribe,Premium,49,F,2024-05-07
+C037,Villavicencio,Orinoquía,Frecuente,40,M,2025-08-15
+C038,Cali,Pacífica,Frecuente,26,M,2024-10-23
+C039,Villavicencio,Orinoquía,Nuevo,64,F,2025-06-14
+C040,Cartagena,Caribe,Premium,46,M,2024-07-10
+C041,Cali,Pacífica,Frecuente,31,F,2024-10-26
+C042,Barranquilla,Caribe,Nuevo,40,M,2024-02-25
+C043,Cartagena,Caribe,Frecuente,22,M,2024-05-30
+C044,Barranquilla,Caribe,Premium,55,F,2025-03-31
+C045,Pereira,Andina,Premium,51,F,2024-10-05
+C046,Villavicencio,Orinoquía,Nuevo,32,F,2025-07-10
+C047,Cartagena,Caribe,Premium,44,M,2025-10-01
+C048,Santa Marta,Caribe,Premium,46,F,2024-10-20
+C049,Cartagena,Caribe,Frecuente,46,F,2024-07-06
+C050,Bogotá,Andina,Nuevo,52,F,2024-10-19
+C051,Medellín,Andina,Frecuente,29,M,2025-10-05
+C052,Barranquilla,Caribe,Premium,51,M,2024-04-13
+C053,Cali,Pacífica,Nuevo,54,F,2024-09-13
+C054,Cali,Pacífica,Premium,31,M,2024-07-02
+C055,Cali,Pacífica,Frecuente,32,M,2025-01-10
+C056,Medellín,Andina,Premium,57,M,2024-03-18
+C057,Bogotá,Andina,Nuevo,60,F,2024-06-09
+C058,Bogotá,Andina,Frecuente,26,M,2025-01-09
+C059,Bucaramanga,Andina,Frecuente,28,F,2024-01-07
+C060,Santa Marta,Caribe,Premium,48,M,2024-02-16
+C061,Bucaramanga,Andina,Nuevo,38,M,2025-05-19
+C062,Villavicencio,Orinoquía,Frecuente,35,F,2024-07-10
+C063,Cartagena,Caribe,Nuevo,24,M,2025-08-29
+C064,Cartagena,Caribe,Frecuente,66,M,2024-05-03
+C065,Bogotá,Andina,Frecuente,30,M,2024-07-28
+C066,Villavicencio,Orinoquía,Premium,46,M,2025-04-12
+C067,Pereira,Andina,Frecuente,68,M,2024-07-29
+C068,Cartagena,Caribe,Frecuente,44,M,2024-09-27
+C069,Cartagena,Caribe,Nuevo,59,M,2025-05-12
+C070,Pereira,Andina,Frecuente,36,F,2024-03-31
+C071,Medellín,Andina,Premium,60,M,2024-01-11
+C072,Pereira,Andina,Premium,28,M,2025-10-03
+C073,barranquilla ,Caribe,Frecuente,57,F,2024-05-12
+C074,Bucaramanga,Andina,Premium,25,M,2024-01-07
+C075,Cali,Pacífica,Premium,65,F,2024-03-13
+C076,Villavicencio,Orinoquía,Frecuente,24,M,2024-07-23
+C077,Villavicencio,Orinoquía,Premium,37,F,2024-05-26
+C078,Santa Marta,Caribe,Premium,23,M,2025-03-20
+C079,Villavicencio,Orinoquía,Premium,51,M,2024-08-01
+C080,Bucaramanga,Andina,Nuevo,52,M,2025-09-01
+C081,Cali,Pacífica,Frecuente,33,F,2025-10-23
+C082,Cartagena,Caribe,Frecuente,61,F,2025-09-18
+C083,Cartagena,Caribe,Nuevo,29,M,2024-04-02
+C084,Barranquilla,Caribe,Nuevo,29,M,2025-04-16
+C085,Cartagena,Caribe,Nuevo,24,M,2025-01-06
+C086,Cali,Pacífica,Frecuente,55,M,2024-01-22
+C087,Santa Marta,Caribe,Premium,56,F,2025-03-06
+C088,Villavicencio,Orinoquía,Frecuente,63,M,2024-06-12
+C089,Cali,Pacífica,Nuevo,59,F,2025-05-09
+C090,Cali,Pacífica,Nuevo,64,M,2025-03-29
+C091,Barranquilla,Caribe,Frecuente,42,F,2025-02-05
+C092,Santa Marta,Caribe,Premium,68,M,2024-07-10
+C093,Cali,Pacífica,Frecuente,38,M,2025-02-23
+C094,Santa Marta,Caribe,Frecuente,57,M,2025-05-18
+C095,Cali,Pacífica,Nuevo,52,M,2024-03-14
+C096,Cartagena,Caribe,Nuevo,31,F,2025-06-18
+C097,Santa Marta,Caribe,Premium,68,F,2024-08-18
+C098,Villavicencio,Orinoquía,Premium,53,F,2024-08-22
+C099,Villavicencio,Orinoquía,Nuevo,55,F,2025-08-18
+C100,Barranquilla,Caribe,Frecuente,48,F,2024-12-22
+C101,Barranquilla,Caribe,Frecuente,66,M,2024-11-27
+C102,Cartagena,Caribe,Frecuente,47,M,2025-07-12
+C103,Bogotá,Andina,Premium,29,M,2024-08-22
+C104,Santa Marta,Caribe,Premium,35,M,2024-05-22
+C105,Bogotá,Andina,Nuevo,42,F,2025-03-02
+C106,Barranquilla,Caribe,Frecuente,45,M,2025-01-18
+C107,Cartagena,Caribe,Premium,44,F,2025-11-06
+C108,Bogotá,Andina,Frecuente,61,M,2024-10-17
+C109,Medellín,Andina,Nuevo,40,M,2024-12-22
+C110,Santa Marta,Caribe,Premium,64,F,2024-08-14
+C111,Medellín,Andina,Nuevo,65,F,2024-06-07
+C112,Cartagena,Caribe,Frecuente,62,M,2024-08-21
+C113,Cartagena,Caribe,Frecuente,59,M,2025-05-16
+C114,Villavicencio,Orinoquía,Nuevo,66,M,2024-08-03
+C115,Pereira,Andina,Frecuente,38,M,2024-02-14
+C116,Bucaramanga,Andina,Premium,63,M,2025-11-06
+C117,Santa Marta,Caribe,Nuevo,29,M,2024-01-11
+C118,Bucaramanga,Andina,Premium,60,M,2024-10-20
+C119,Santa Marta,Caribe,Frecuente,34,F,2024-08-23
+C120,Bogotá,Andina,Premium,39,F,2024-01-15
+C121,Cali,Pacífica,Premium,26,M,2024-01-04
+C122,Medellín,Andina,Nuevo,46,F,2024-08-11
+C123,Bogotá,Andina,Frecuente,58,F,2025-08-03
+C124,Santa Marta,Caribe,Premium,22,M,2025-01-24
+C125,Cartagena,Caribe,Premium,51,F,2025-03-29
+C126,Barranquilla,Caribe,Premium,62,F,2025-04-14
+C127,Villavicencio,Orinoquía,Frecuente,65,M,2025-01-25
+C128,Pereira,Andina,Premium,63,M,2025-02-25
+C129,Villavicencio,Orinoquía,Frecuente,40,M,2025-09-11
+C130,Bogotá,Andina,Frecuente,56,F,2024-10-22
+C131,Bucaramanga,Andina,Nuevo,58,M,2025-07-12
+C132,Barranquilla,Caribe,Frecuente,56,F,2025-01-13
+C133,Cartagena,Caribe,Nuevo,48,F,2024-11-26
+C134,Cartagena,Caribe,Frecuente,24,M,2024-08-19
+C135,Barranquilla,Caribe,Premium,34,F,2025-08-21
+C136,Medellín,Andina,Nuevo,32,F,2024-04-06
+C137,Villavicencio,Orinoquía,Premium,59,F,2024-12-27
+C138,Bucaramanga,Andina,Frecuente,67,M,2025-06-27
+C139,Cali,Pacífica,Nuevo,49,M,2024-10-01
+C140,Barranquilla,Caribe,Nuevo,55,M,2025-05-15
+C141,Cali,Pacífica,Nuevo,51,M,2024-06-07
+C142,Cali,Pacífica,Nuevo,62,M,2025-07-07
+C143,Medellín,Andina,Premium,40,F,2025-04-12
+C144,Santa Marta,Caribe,Frecuente,55,M,2025-04-14
+C145,Santa Marta,Caribe,Nuevo,47,F,2024-01-18
+C146,Barranquilla,Caribe,Nuevo,56,F,2024-01-26
+C147,Santa Marta,Caribe,Nuevo,51,F,2024-03-30
+C148,Cali,Pacífica,Nuevo,57,F,2024-03-31
+C149,Bogotá,Andina,Nuevo,49,F,2024-08-17
+C150,Santa Marta,Caribe,Frecuente,61,F,2024-12-14
+C151,Bogotá,Andina,Premium,31,M,2024-08-05
+C152,Bogotá,Andina,Premium,49,M,2024-10-15
+C153,Santa Marta,Caribe,Frecuente,64,M,2025-03-06
+C154,Pereira,Andina,Nuevo,52,F,2024-07-23
+C155,Bogotá,Andina,Nuevo,28,F,2024-11-18
+C156,Cartagena,Caribe,Nuevo,45,F,2025-06-18
+C157,Barranquilla,Caribe,Premium,42,F,2024-03-08
+C158,Pereira,Andina,Nuevo,66,M,2024-03-25
+C159,Pereira,Andina,Frecuente,65,F,2024-12-31
+C160,Cartagena,Caribe,Frecuente,27,M,2024-10-24
+C161,Pereira,Andina,Frecuente,42,F,2025-08-13
+C162,Cartagena,Caribe,Frecuente,66,M,2024-11-24
+C163,Bucaramanga,Andina,Nuevo,36,M,2025-06-02
+C164,Bucaramanga,Andina,Frecuente,41,F,2025-06-05
+C165,Bucaramanga,Andina,Premium,23,M,2024-12-21
+C166,Villavicencio,Orinoquía,Nuevo,36,F,2024-10-10
+C167,Pereira,Andina,Premium,23,M,2025-01-23
+C168,Villavicencio,Orinoquía,Premium,61,F,2024-07-01
+C169,Bucaramanga,Andina,Frecuente,64,M,2024-04-29
+C170,Cali,Pacífica,Premium,60,F,2024-12-20
+C171,Barranquilla,Caribe,Nuevo,61,M,2025-02-13
+C172,Bucaramanga,Andina,Nuevo,58,F,2025-06-04
+C173,Bogotá,Andina,Premium,28,F,2025-08-15
+C174,Cartagena,Caribe,Nuevo,26,M,2025-08-07
+C175,Villavicencio,Orinoquía,Premium,26,F,2025-06-01
+C176,Villavicencio,Orinoquía,Nuevo,45,M,2024-03-09
+C177,Medellín,Andina,Premium,59,F,2024-02-09
+C178,Cartagena,Caribe,Nuevo,60,F,2025-09-20
+C179,Bucaramanga,Andina,Nuevo,41,F,2024-09-24
+C180,Bucaramanga,Andina,Frecuente,24,F,2024-07-22

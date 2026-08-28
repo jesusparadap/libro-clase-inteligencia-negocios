@@ -1,0 +1,41 @@
+﻿id_producto,categoria,subcategoria,producto,costo_unitario,precio_lista
+P001,Tecnología,Computación,Computación 1,150000,223000
+P002,Tecnología,Audio,Audio 2,370000,583000
+P003,Tecnología,Accesorios,Accesorios 3,80000,159000
+P004,Tecnología,Accesorios,Accesorios 4,375000,489000
+P005,Tecnología,Computación,Computación 5,20000,37000
+P006,Tecnología,Audio,Audio 6,45000,83000
+P007,Tecnología,Computación,Computación 7,310000,424000
+P008,Tecnología,Accesorios,Accesorios 8,110000,202000
+P009,Tecnología,Audio,Audio 9,200000,275000
+P010,Tecnología,Audio,Audio 10,255000,339000
+P011,Hogar,Organización,Organización 1,50000,85000
+P012,Hogar,Decoración,Decoración 2,115000,148000
+P013,Hogar,Organización,Organización 3,205000,266000
+P014,Hogar,Organización,Organización 4,145000,276000
+P015,Hogar,Decoración,Decoración 5,195000,261000
+P016,Hogar,Decoración,Decoración 6,280000,371000
+P017,Hogar,Organización,Organización 7,165000,222000
+P018,Hogar,Decoración,Decoración 8,320000,490000
+P019,Hogar,Decoración,Decoración 9,305000,596000
+P020,Hogar,Cocina,Cocina 10,180000,302000
+P021,Cuidado personal,Belleza,Belleza 1,75000,97000
+P022,Cuidado personal,Higiene,Higiene 2,385000,538000
+P023,Cuidado personal,Belleza,Belleza 3,230000,319000
+P024,Cuidado personal,Belleza,Belleza 4,30000,43000
+P025,Cuidado personal,Bienestar,Bienestar 5,110000,224000
+P026,Cuidado personal,Higiene,Higiene 6,290000,556000
+P027,Cuidado personal,Bienestar,Bienestar 7,195000,406000
+P028,Cuidado personal,Belleza,Belleza 8,155000,210000
+P029,Cuidado personal,Belleza,Belleza 9,190000,255000
+P030,Cuidado personal,Belleza,Belleza 10,250000,352000
+P031,Accesorios,Viaje,Viaje 1,20000,44000
+P032,Accesorios,Moda,Moda 2,95000,158000
+P033,Accesorios,Moda,Moda 3,320000,434000
+P034,Accesorios,Viaje,Viaje 4,255000,422000
+P035,Accesorios,Bolsos,Bolsos 5,100000,131000
+P036,Accesorios,Bolsos,Bolsos 6,95000,142000
+P037,Accesorios,Moda,Moda 7,30000,54000
+P038,Accesorios,Bolsos,Bolsos 8,100000,154000
+P039,Accesorios,Bolsos,Bolsos 9,285000,392000
+P040,Accesorios,Moda,Moda 10,255000,506000

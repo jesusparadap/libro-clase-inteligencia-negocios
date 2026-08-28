@@ -1247,718 +1247,1510 @@
     ]
   },
   {
+    "objectID": "sesiones/f2-viernes.html",
+    "href": "sesiones/f2-viernes.html",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "",
+    "text": "12.1 Resultados de la sesión\nAl finalizar podrás:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#resultados-de-la-sesión",
+    "href": "sesiones/f2-viernes.html#resultados-de-la-sesión",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "",
+    "text": "seleccionar medidas descriptivas según la pregunta y el tipo de variable;\nejecutar un AED completo en R desde el navegador;\ncomparar distribuciones y grupos, no solo promedios;\nconstruir e interpretar tablas cruzadas y correlaciones;\ncomunicar un hallazgo sin confundir asociación con causalidad;\nproducir el primer taller evaluable de la semana 2.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#ruta-de-clase-180-minutos",
+    "href": "sesiones/f2-viernes.html#ruta-de-clase-180-minutos",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.2 Ruta de clase · 180 minutos",
+    "text": "12.2 Ruta de clase · 180 minutos\n\n\n\n\n\n\n\n\n\nMinutos\nBloque\nDinámica\nProducto\n\n\n\n\n0–15\nReconexión\nde los hallazgos de semana 1 a “¿un promedio basta?”\npregunta analítica\n\n\n15–35\nMisma media, distinto negocio\ndemo + discusión\nconflicto conceptual\n\n\n35–80\nCentro, posición y dispersión\nWebR: ejecutar → modificar → interpretar\nperfil descriptivo\n\n\n80–90\nPausa\n\n\n\n\n90–120\nDistribución, grupos y atípicos\nWebR + preguntas guiadas\ncomparación prudente\n\n\n120–145\nBivariado\ntablas cruzadas, dispersión y correlación\nlectura de asociación\n\n\n145–175\nTaller InsureCO\ntrabajo individual/parejas\nanálisis iniciado\n\n\n175–180\nCierre\nticket de salida\ndecisión + límite",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#preparación",
+    "href": "sesiones/f2-viernes.html#preparación",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.3 Preparación",
+    "text": "12.3 Preparación\n\nAbre el Tutorial ejecutable · Análisis exploratorio de datos.\nEspera a que WebR indique que está listo.\nEjecuta las celdas en orden; el código corre dentro del navegador.\nPara el taller, descarga insureco.csv y abre RStudio.\n\n\n\n\n\n\n\nImportante\n\n\n\nLa clase no evalúa memoria de sintaxis. Evalúa que el estudiante pueda formular, ejecutar, leer, verificar, interpretar y comunicar.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#apertura-la-trampa-del-promedio",
+    "href": "sesiones/f2-viernes.html#apertura-la-trampa-del-promedio",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.4 Apertura · la trampa del promedio",
+    "text": "12.4 Apertura · la trampa del promedio\n\nProfesor: presenta dos grupos con media 100 y dispersión radicalmente distinta. Antes de mostrar la desviación, pide una decisión. Después pregunta qué información faltaba.\n\nA &lt;- c(90, 95, 100, 105, 110)\nB &lt;- c(20, 30, 40, 50, 360)\n\nrbind(\n  A = c(media = mean(A), mediana = median(A), sd = sd(A)),\n  B = c(media = mean(B), mediana = median(B), sd = sd(B))\n)\nLa frase que guía el viernes es:\n\nCentro sin dispersión y distribución es una historia incompleta.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#laboratorio-guiado-en-webr",
+    "href": "sesiones/f2-viernes.html#laboratorio-guiado-en-webr",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.5 Laboratorio guiado en WebR",
+    "text": "12.5 Laboratorio guiado en WebR\nTrabaja las secciones 1–7 del tutorial con esta dinámica:\n\nanticipa qué salida esperas;\nejecuta;\ndescribe qué cambió;\nmodifica una variable o parámetro;\ninterpreta para una decisión;\nnombra una conclusión que todavía no es válida.\n\n\n12.5.1 Preguntas que deben quedar claras\n\n\n\n\n\n\n\nConcepto\nPregunta de comprensión\n\n\n\n\nMedia vs. mediana\n¿qué ocurre cuando aparecen extremos?\n\n\nPercentil 90\n¿qué umbral separa al 10 % superior?\n\n\nIQR\n¿dónde se concentra el 50 % central?\n\n\nDesviación estándar\n¿qué tan alejados están los valores de la media?\n\n\nCV\n¿cuándo tiene sentido comparar variabilidad relativa?\n\n\nFrecuencia vs. porcentaje\n¿cuál es el denominador?\n\n\nBoxplot\n¿una observación marcada es necesariamente un error?\n\n\nCorrelación\n¿qué asociación mide y qué causalidad no demuestra?",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#taller-evaluable",
+    "href": "sesiones/f2-viernes.html#taller-evaluable",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.6 Taller evaluable",
+    "text": "12.6 Taller evaluable\nInicia el Taller evaluable · InsureCO.\nEl núcleo reproduce las tres actividades del material original:\n\ndescribir la edad mediante centro y dispersión;\nrelacionar hábito de fumar y región con una tabla de contingencia;\nexplorar IMC y costo de póliza mediante dispersión y correlación.\n\nLa versión adaptada añade denominadores, comparación de grupos, prudencia causal, reproducibilidad y una nota ejecutiva.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#transferencia-a-tu-proyecto-de-grado",
+    "href": "sesiones/f2-viernes.html#transferencia-a-tu-proyecto-de-grado",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.7 Transferencia a tu proyecto de grado",
+    "text": "12.7 Transferencia a tu proyecto de grado\nSelecciona una variable resultado o KPI de tu proyecto y completa:\nUnidad de análisis:\nVariable/KPI:\nTipo:\nMedida de centro pertinente:\nMedida de dispersión pertinente:\nSegmentos a comparar:\nVisualización:\nUna interpretación incorrecta que debo evitar:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#ticket-de-salida",
+    "href": "sesiones/f2-viernes.html#ticket-de-salida",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.8 Ticket de salida",
+    "text": "12.8 Ticket de salida\nCompleta en una sola frase:\n\nPara apoyar la decisión ________, no basta con reportar ________; también necesito revisar ________, porque ________.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-viernes.html#checklist-de-cierre",
+    "href": "sesiones/f2-viernes.html#checklist-de-cierre",
+    "title": "12  Sesión 3 · Viernes · Del dato a la evidencia",
+    "section": "12.9 Checklist de cierre",
+    "text": "12.9 Checklist de cierre\n\nSé qué representa una fila.\nNo reporto media sin distribución y tamaño de muestra.\nPuedo construir un porcentaje con denominador explícito.\nInvestigo atípicos antes de excluirlos.\nNo confundo correlación con causalidad.\nPuedo reproducir el análisis InsureCO desde un archivo limpio.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sesión 3 · Viernes · Del dato a la evidencia</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html",
+    "href": "05-estadistica-decisiones.html",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "",
+    "text": "13.1 Resultados de aprendizaje\nEste tutorial adapta y amplía AED_2.Rmd, el material original de la Parte 1. Conserva su recorrido —reconocer los datos, resumir variables, detectar anomalías y estudiar relaciones— y lo orienta a estudiantes de MBA: menos demostración matemática y más criterio para decidir qué calcular, cómo leerlo y qué no concluir.\nAl terminar podrás:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#resultados-de-aprendizaje",
+    "href": "05-estadistica-decisiones.html#resultados-de-aprendizaje",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "",
+    "text": "reconocer la unidad de análisis, dimensiones, nombres y tipos de una tabla;\ncalcular e interpretar media, mediana, moda, mínimo, máximo, rango, cuartiles, IQR, varianza, desviación estándar, coeficiente de variación y percentiles;\nconstruir frecuencias, proporciones, tablas cruzadas, histogramas, diagramas de caja y dispersión;\ncomparar grupos y reconocer cuándo un promedio global oculta diferencias;\nidentificar observaciones atípicas sin confundirlas automáticamente con errores;\ninterpretar asociación y correlación sin afirmar causalidad.\n\n\n\n\n\n\n\nTipCómo usar las celdas\n\n\n\nEspera a que WebR indique que está listo. Ejecuta las celdas en orden con el botón Run. Después modifica un valor y vuelve a ejecutar. Si pierdes los objetos creados, regresa a Iniciar el tutorial.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#estrategia-general-de-aed",
+    "href": "05-estadistica-decisiones.html#estrategia-general-de-aed",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.2 1. Estrategia general de AED",
+    "text": "13.2 1. Estrategia general de AED\nAntes de buscar un resultado atractivo, sigue esta secuencia:\n\ndefine la pregunta y qué representa una fila;\ninspecciona dimensiones, nombres, tipos, valores únicos y faltantes;\nresume cada variable según su tipo;\nobserva distribuciones y posibles anomalías;\ncompara segmentos;\nexplora relaciones entre variables;\nsepara observación, interpretación e hipótesis.\n\n\nEl AED no es una colección de comandos. Es una conversación disciplinada con los datos antes de modelar o decidir.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#iniciar-el-tutorial",
+    "href": "05-estadistica-decisiones.html#iniciar-el-tutorial",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.3 2. Iniciar el tutorial",
+    "text": "13.3 2. Iniciar el tutorial\nUsaremos mtcars, una base incluida en R con 32 modelos de automóvil. Una fila representa un modelo y las columnas describen consumo, diseño y desempeño.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nVariables que utilizaremos con mayor frecuencia:\n\n\n\n\n\n\n\n\nVariable\nSignificado\nTipo analítico\n\n\n\n\nmpg\nmillas por galón\ncuantitativa continua\n\n\ncyl\nnúmero de cilindros\ncuantitativa discreta; puede tratarse como categoría\n\n\ndisp\ndesplazamiento del motor\ncuantitativa continua\n\n\nhp\ncaballos de fuerza\ncuantitativa continua\n\n\nwt\npeso en miles de libras\ncuantitativa continua\n\n\nvs\nforma del motor\ncualitativa nominal\n\n\nam\ntransmisión\ncualitativa nominal",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#características-básicas-y-tipos",
+    "href": "05-estadistica-decisiones.html#características-básicas-y-tipos",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.4 3. Características básicas y tipos",
+    "text": "13.4 3. Características básicas y tipos\nLas primeras preguntas son sencillas y decisivas:\n\n¿cuántas observaciones y variables hay?;\n¿qué representa cada fila?;\n¿cómo se llaman las variables?;\n¿cómo las almacenó R?;\n¿hay faltantes o categorías inesperadas?\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUn tipo de almacenamiento no siempre coincide con el papel analítico. cyl está guardada como número, pero en una comparación puede funcionar mejor como categoría de 4, 6 u 8 cilindros.\n\n13.4.1 Valores únicos y faltantes\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nAdvertencia\n\n\n\nNA significa “valor no disponible”; no significa automáticamente cero. La forma de tratarlo depende de por qué falta y de la decisión que puede afectar.\n\n\n\n\nComprobación rápida\n\ndim(datos) devuelve 32 filas y 11 columnas. Después de convertir vs y am, R las reconoce como factores. La unidad de análisis sigue siendo un modelo de automóvil.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#estadísticas-descriptivas",
+    "href": "05-estadistica-decisiones.html#estadísticas-descriptivas",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.5 4. Estadísticas descriptivas",
+    "text": "13.5 4. Estadísticas descriptivas\n\n13.5.1 4.1 Una vista general\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nsummary() es útil para orientarse, pero no sustituye una selección consciente de medidas. Para una variable numérica conviene observar al menos tamaño, centro, dispersión, posición y extremos.\n\n\n13.5.2 4.2 Media, mediana y moda\n\n\n\n\n\n\n\n\nMedida\nPregunta que ayuda a responder\nPrecaución\n\n\n\n\nMedia\n¿cuál es el balance promedio?\ncambia con valores extremos\n\n\nMediana\n¿cuál es el punto central al ordenar?\nno usa la magnitud completa de los extremos\n\n\nModa\n¿qué valor o categoría es más frecuente?\npuede haber más de una o ninguna moda útil\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n13.5.3 La trampa del promedio\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLas dos series tienen la misma media, pero no describen el mismo comportamiento. Para una decisión sobre riesgo, capacidad o consistencia, esa diferencia es material.\n\n\n13.5.4 4.3 Mínimo, máximo, rango, cuartiles y percentiles\nUn percentil p es un punto de corte: aproximadamente p % de las observaciones queda en o por debajo de ese valor. El percentil 50 es la mediana.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLectura empresarial: el percentil 90 permite preguntar “¿a partir de qué valor se encuentra el 10 % superior?”. El IQR describe la amplitud del 50 % central y es menos sensible a extremos que el rango.\n\n\n13.5.5 4.4 Varianza, desviación estándar y coeficiente de variación\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nLa varianza está en unidades al cuadrado y se utiliza mucho dentro de métodos estadísticos.\nLa desviación estándar vuelve a la unidad original y facilita la interpretación.\nEl coeficiente de variación (CV) expresa la desviación respecto a la media y puede ayudar a comparar variabilidad relativa cuando la media es positiva y tiene sentido usar el cero como referencia.\n\n\n\n\n\n\n\nAdvertencia\n\n\n\nEl CV puede ser inestable o engañoso cuando la media es cero, cercana a cero o puede tomar valores negativos. No es una medida universal.\n\n\n\n\n13.5.6 4.5 Un perfil reproducible\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#frecuencias-y-distribuciones",
+    "href": "05-estadistica-decisiones.html#frecuencias-y-distribuciones",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.6 5. Frecuencias y distribuciones",
+    "text": "13.6 5. Frecuencias y distribuciones\n\n13.6.1 Variable cualitativa\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEl conteo responde “¿cuántos?” y la proporción responde “¿qué parte del total?”. Siempre explicita el denominador.\n\n\n13.6.2 Histograma y densidad\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEl histograma depende del número de intervalos; la densidad depende del nivel de suavizado. Modifica breaks = 5 y luego breaks = 15: el dato no cambió, pero su representación sí.\n\n\n13.6.3 Forma: simetría y normalidad\nUna cola larga hacia valores altos suele empujar la media por encima de la mediana. Para un curso aplicado, primero se observa la distribución y después se decide si una prueba formal es necesaria.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nNota\n\n\n\nUn valor p no mide “qué tan normal” es una distribución y no prueba que los datos sean normales. Además, con muestras grandes, diferencias pequeñas pueden resultar estadísticamente detectables. En AED pesan también la gráfica, el tamaño de muestra y el uso posterior del análisis.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#observaciones-atípicas-investigar-antes-de-eliminar",
+    "href": "05-estadistica-decisiones.html#observaciones-atípicas-investigar-antes-de-eliminar",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.7 6. Observaciones atípicas: investigar antes de eliminar",
+    "text": "13.7 6. Observaciones atípicas: investigar antes de eliminar\nLa regla común del diagrama de caja marca valores fuera de:\nQ1 − 1.5 × IQR y Q3 + 1.5 × IQR.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUna observación marcada puede ser:\n\nun error de digitación o unidad;\nun caso válido pero extraordinario;\nevidencia de un subgrupo;\nun evento que precisamente interesa investigar.\n\nLa regla detecta; el contexto decide.\n\n13.7.1 Profundización opcional · anomalía multivariable\nUna observación puede no ser extrema en una sola variable, pero sí presentar una combinación inusual. La distancia de Mahalanobis es una forma de explorarlo cuando las variables numéricas son adecuadas.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nNo elimines automáticamente las observaciones con mayor distancia. Inspecciónalas y documenta la decisión.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#relaciones-entre-variables",
+    "href": "05-estadistica-decisiones.html#relaciones-entre-variables",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.8 7. Relaciones entre variables",
+    "text": "13.8 7. Relaciones entre variables\nEl método depende de los tipos involucrados.\n\n\n\n\n\n\n\n\nVariable A\nVariable B\nHerramientas iniciales\n\n\n\n\ncualitativa\ncualitativa\ntabla cruzada y porcentajes condicionados\n\n\ncualitativa\ncuantitativa\nresumen por grupos y diagrama de caja\n\n\ncuantitativa\ncuantitativa\ndispersión y correlación\n\n\n\n\n13.8.1 7.1 Dos variables cualitativas: tabla cruzada\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nmargin = 1 hace que cada fila sume 100 %. Con margin = 2, cada columna suma 100 %. La elección debe corresponder a la pregunta.\n\n\n13.8.2 7.2 Cualitativa y cuantitativa: comparar grupos\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nLa comparación describe estos datos. No demuestra que cambiar el tipo de transmisión cause el cambio observado: peso, potencia y diseño también pueden diferir entre grupos.\n\n\n13.8.3 7.3 Dos variables cuantitativas: dispersión y correlación\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nPearson resume asociación lineal y es sensible a extremos.\nSpearman trabaja con rangos y captura asociación monotónica; puede ser útil ante asimetría, escalas ordinales o valores extremos.\n\nAmbos coeficientes van de −1 a 1. Un valor cercano a 0 descarta una asociación fuerte del tipo que mide, pero no toda relación posible.\n\n\n\n\n\n\nAdvertencia\n\n\n\nCorrelación no implica causalidad. Una relación puede reflejar confusión, selección, temporalidad inversa o coincidencia. El lenguaje correcto es “se observa una asociación”; la causalidad exige un diseño y evidencia apropiados.\n\n\n\n\n13.8.4 Matriz de correlaciones\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nUna matriz sirve para detectar relaciones que merecen análisis. No es una máquina automática de conclusiones.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#quick-reference-qué-medida-usar",
+    "href": "05-estadistica-decisiones.html#quick-reference-qué-medida-usar",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.9 8. Quick Reference · ¿qué medida usar?",
+    "text": "13.9 8. Quick Reference · ¿qué medida usar?\n\n\n\n\n\n\n\n\nSi quiero…\nReviso primero…\nLo complemento con…\n\n\n\n\ndescribir un valor típico\nmediana y media\ndistribución y tamaño de muestra\n\n\nencontrar la categoría más común\nmoda/frecuencia\nproporción y denominador\n\n\nconocer extremos\nmínimo, máximo y rango\ncontexto y calidad del dato\n\n\ndescribir el 50 % central\ncuartiles e IQR\ndiagrama de caja\n\n\nmedir dispersión en la unidad original\ndesviación estándar\nmedia/mediana e histograma\n\n\ncomparar variabilidad relativa\nCV\nvalidez del cero y magnitud de la media\n\n\ncomparar categorías\nfrecuencias/porcentajes\ndenominador correcto\n\n\ncomparar una métrica entre grupos\nresumen por grupo\nboxplot y tamaño de cada grupo\n\n\nexplorar dos métricas\ndispersión y correlación\nposibles confusores y no linealidad",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#reto-guiado",
+    "href": "05-estadistica-decisiones.html#reto-guiado",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.10 9. Reto guiado",
+    "text": "13.10 9. Reto guiado\nModifica el siguiente código para estudiar hp en lugar de mpg y cyl en lugar de am.\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nEscribe tres frases:\n\nObservación: qué muestra directamente el resultado.\nInterpretación: por qué puede ser relevante para una decisión.\nHipótesis: qué explicación plausible necesita evidencia adicional.\n\n\n\nLista de verificación\n\n\n¿Mencionaste la variable, la unidad y los grupos?\n¿Comparaste más de una medida?\n¿Revisaste distribución y tamaño de grupo?\n¿Evitaste usar “causa”, “demuestra” o “garantiza” sin diseño causal?\n¿Separaste con claridad lo observado de la explicación propuesta?",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#puente-hacia-el-taller-insureco",
+    "href": "05-estadistica-decisiones.html#puente-hacia-el-taller-insureco",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.11 10. Puente hacia el taller InsureCO",
+    "text": "13.11 10. Puente hacia el taller InsureCO\nEl tutorial utilizó una base incluida en R para que todo pudiera ejecutarse dentro del navegador. En el Taller evaluable · InsureCO aplicarás el mismo flujo a 1.338 pólizas y entregarás una recomendación ejecutiva reproducible.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "05-estadistica-decisiones.html#referencias-de-base",
+    "href": "05-estadistica-decisiones.html#referencias-de-base",
+    "title": "13  Tutorial ejecutable · Análisis exploratorio de datos",
+    "section": "13.12 Referencias de base",
+    "text": "13.12 Referencias de base\n\nPearson, R. (2018). Exploratory Data Analysis Using R.\nWickham, H. et al. dplyr: A Grammar of Data Manipulation.\nMaterial del curso original: Parte 1/AED_2.Rmd, “AED univariados” y “AED bivariados”.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Tutorial ejecutable · Análisis exploratorio de datos</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html",
+    "href": "talleres/taller-insureco.html",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "",
+    "text": "14.1 Caso\nInsureCO dispone de 1.338 registros sobre personas aseguradas. La organización quiere comprender qué características describen a su cartera y qué relaciones merecen una investigación posterior.\nUna fila representa una persona asegurada.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#caso",
+    "href": "talleres/taller-insureco.html#caso",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "",
+    "text": "Variable\nSignificado\nTipo\n\n\n\n\nage\nedad en años\ncuantitativa\n\n\nsex\nsexo registrado\ncualitativa\n\n\nbmi\níndice de masa corporal\ncuantitativa\n\n\nchildren\nnúmero de hijos/dependientes\ncuantitativa discreta\n\n\nsmoker\nhábito de consumo de cigarrillos (yes/no)\ncualitativa\n\n\nregion\nregión de residencia\ncualitativa\n\n\ncharges\ncosto individual observado de la póliza\ncuantitativa\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos datos se utilizan con fines pedagógicos. charges es un costo observado; no debe interpretarse automáticamente como tarifa recomendada, riesgo causal o decisión de aseguramiento.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#descargar-los-datos",
+    "href": "talleres/taller-insureco.html#descargar-los-datos",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.2 Descargar los datos",
+    "text": "14.2 Descargar los datos\nDescargar insureco.csv\nGuárdalo en una carpeta fácil de identificar. No cambies los nombres de las variables antes de ejecutar el diagnóstico inicial.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#preparar-el-análisis-en-rstudio",
+    "href": "talleres/taller-insureco.html#preparar-el-análisis-en-rstudio",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.3 Preparar el análisis en RStudio",
+    "text": "14.3 Preparar el análisis en RStudio\n# El selector permite ubicar el archivo sin escribir una ruta manual.\ninsureco &lt;- read.csv(file.choose(), stringsAsFactors = FALSE)\n\ndim(insureco)\nnames(insureco)\nstr(insureco)\nhead(insureco)\ncolSums(is.na(insureco))\nCheckpoint: antes de calcular, confirma que hay 1.338 filas, 7 variables y explica qué representa una fila.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#pregunta-1-describir-la-edad",
+    "href": "talleres/taller-insureco.html#pregunta-1-describir-la-edad",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.4 Pregunta 1 · Describir la edad",
+    "text": "14.4 Pregunta 1 · Describir la edad\n\nDescribe la edad de las personas aseguradas mediante medidas de tendencia central, posición y dispersión. Decide qué combinación comunicarías a la gerencia y por qué.\n\n\n14.4.1 Código de partida\nmoda &lt;- function(x) {\n  frecuencias &lt;- table(x)\n  as.numeric(names(frecuencias)[frecuencias == max(frecuencias)])\n}\n\nedad &lt;- insureco$age\n\nresumen_edad &lt;- c(\n  n = sum(!is.na(edad)),\n  media = mean(edad, na.rm = TRUE),\n  mediana = median(edad, na.rm = TRUE),\n  moda = moda(edad)[1],\n  minimo = min(edad, na.rm = TRUE),\n  maximo = max(edad, na.rm = TRUE),\n  rango = diff(range(edad, na.rm = TRUE)),\n  p25 = quantile(edad, .25, na.rm = TRUE),\n  p75 = quantile(edad, .75, na.rm = TRUE),\n  IQR = IQR(edad, na.rm = TRUE),\n  varianza = var(edad, na.rm = TRUE),\n  desviacion = sd(edad, na.rm = TRUE),\n  CV = sd(edad, na.rm = TRUE) / mean(edad, na.rm = TRUE)\n)\n\nround(resumen_edad, 2)\n\npar(mfrow = c(1, 2))\nhist(edad, col = \"#9ecae1\", border = \"white\",\n     main = \"Distribución de edad\", xlab = \"Edad\")\nboxplot(edad, horizontal = TRUE, col = \"#99d8c9\",\n        main = \"Edad y posibles atípicos\")\npar(mfrow = c(1, 1))\n\n\n14.4.2 Debes responder\n\n¿Qué dicen media, mediana y moda? ¿Cuentan la misma historia?\n¿Cuál es la amplitud total y dónde se concentra el 50 % central?\n¿Qué medida de centro y qué medida de dispersión comunicarías?\n¿La gráfica cambia o matiza tu interpretación numérica?",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#pregunta-2-fumar-y-región-de-residencia",
+    "href": "talleres/taller-insureco.html#pregunta-2-fumar-y-región-de-residencia",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.5 Pregunta 2 · Fumar y región de residencia",
+    "text": "14.5 Pregunta 2 · Fumar y región de residencia\n\nCaracteriza la relación que puede existir entre el hábito de fumar y la región mediante una tabla de contingencia. No te limites a los conteos: selecciona el porcentaje cuyo denominador responda la pregunta.\n\ntabla &lt;- table(\n  Region = insureco$region,\n  Fumador = insureco$smoker\n)\n\ntabla\n\n# Cada fila suma 100 %: dentro de cada región,\n# ¿qué proporción fuma y qué proporción no fuma?\nporcentaje_region &lt;- prop.table(tabla, margin = 1) * 100\nround(porcentaje_region, 1)\n\nbarplot(t(porcentaje_region),\n        beside = FALSE,\n        col = c(\"#9ecae1\", \"#fdae6b\"),\n        legend.text = TRUE,\n        xlab = \"Región\", ylab = \"Porcentaje dentro de la región\",\n        main = \"Hábito de fumar por región\")\n\n14.5.1 Debes responder\n\n¿Cuál región tiene el mayor número de personas fumadoras?\n¿Cuál tiene la mayor proporción de personas fumadoras?\n¿Por qué comparar solo conteos puede ser engañoso?\n¿La tabla permite afirmar que la región causa el hábito de fumar? Justifica.\n\n\n\n\n\n\n\nTip\n\n\n\nUsa margin = 1 si la pregunta es “dentro de cada región, ¿qué porcentaje fuma?”. Usa margin = 2 si la pregunta condiciona por la categoría de fumador. El denominador cambia la historia.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#pregunta-3-imc-y-costo-de-la-póliza",
+    "href": "talleres/taller-insureco.html#pregunta-3-imc-y-costo-de-la-póliza",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.6 Pregunta 3 · IMC y costo de la póliza",
+    "text": "14.6 Pregunta 3 · IMC y costo de la póliza\n\nExplora la relación entre bmi y charges con un diagrama de dispersión y los coeficientes de Pearson y Spearman.\n\nplot(insureco$bmi, insureco$charges,\n     pch = 19, col = rgb(14/255, 90/255, 156/255, .35),\n     xlab = \"Índice de masa corporal (BMI)\",\n     ylab = \"Costo observado de la póliza\",\n     main = \"BMI y costo\")\nabline(lm(charges ~ bmi, data = insureco),\n       col = \"#b91c1c\", lwd = 2)\n\ncor(insureco$bmi, insureco$charges,\n    method = \"pearson\", use = \"complete.obs\")\ncor(insureco$bmi, insureco$charges,\n    method = \"spearman\", use = \"complete.obs\")\n\n14.6.1 Debes responder\n\n¿Cuál es el sentido y la fortaleza aparente de la asociación?\n¿La nube muestra subgrupos, asimetría o valores extremos?\n¿Qué variables disponibles podrían estar ocultando diferencias relevantes?\nCompleta: “Con estos resultados podemos afirmar ; todavía no podemos afirmar ”.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#extensión-mba-una-media-global-puede-ocultar-el-problema",
+    "href": "talleres/taller-insureco.html#extensión-mba-una-media-global-puede-ocultar-el-problema",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.7 Extensión MBA · una media global puede ocultar el problema",
+    "text": "14.7 Extensión MBA · una media global puede ocultar el problema\nLa relación entre IMC y costo puede comportarse distinto entre personas fumadoras y no fumadoras. Compara antes de concluir.\naggregate(charges ~ smoker, data = insureco,\n          FUN = function(x) c(\n            n = length(x),\n            media = mean(x),\n            mediana = median(x),\n            sd = sd(x),\n            p90 = quantile(x, .90)\n          ))\n\nboxplot(charges ~ smoker, data = insureco,\n        col = c(\"#9ecae1\", \"#fdae6b\"),\n        xlab = \"¿Fuma?\", ylab = \"Costo observado\",\n        main = \"Costo por hábito de fumar\")\n\nby(insureco[, c(\"bmi\", \"charges\")],\n   insureco$smoker,\n   function(d) cor(d$bmi, d$charges))\nEsta extensión no pide explicar causalmente el costo. Busca reconocer que una estadística agregada puede mezclar grupos con comportamientos diferentes.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#entregable",
+    "href": "talleres/taller-insureco.html#entregable",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.8 Entregable",
+    "text": "14.8 Entregable\nEntrega un PDF de máximo dos páginas y el script .R que lo reproduce desde una sesión limpia.\nEl PDF debe contener:\n\ntítulo, autor y pregunta de negocio;\nuna tabla compacta para la edad;\nuna tabla cruzada con porcentajes claramente denominados;\ndos visualizaciones: una obligatoria para bmi–charges y otra elegida por ti;\ntres hallazgos escritos como evidencia → significado → implicación;\nuna hipótesis razonable que requiera análisis adicional;\nuna limitación y una declaración breve del uso de IA.\n\n\n14.8.1 Plantilla para cada hallazgo\n\nEvidencia: [resultado numérico o patrón visible].\nSignificado: [qué describe en esta cartera].\nImplicación: [qué pregunta, revisión o decisión podría orientar].\nLímite: [qué no demuestra].",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#criterios-de-evaluación",
+    "href": "talleres/taller-insureco.html#criterios-de-evaluación",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.9 Criterios de evaluación",
+    "text": "14.9 Criterios de evaluación\n\n\n\nCriterio\nPuntos\n\n\n\n\nReproducibilidad y diagnóstico inicial\n20\n\n\nSelección e interpretación de medidas\n25\n\n\nComparación y denominadores correctos\n20\n\n\nVisualizaciones legibles y pertinentes\n15\n\n\nHallazgos, implicación y prudencia causal\n15\n\n\nDeclaración de IA y presentación\n5\n\n\nTotal\n100",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#uso-permitido-de-ia",
+    "href": "talleres/taller-insureco.html#uso-permitido-de-ia",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.10 Uso permitido de IA",
+    "text": "14.10 Uso permitido de IA\nPuedes pedir ayuda para explicar un error, comentar código, proponer verificaciones o cuestionar una interpretación. No debes entregar una conclusión que no puedas conectar con una salida reproducible.\nPrompt recomendado:\nCONTEXTO\nAnalizo 1.338 registros de InsureCO. Una fila representa una persona asegurada. Las variables disponibles son age, sex, bmi, children, smoker, region y charges.\n\nTAREA\nAudita mi interpretación. Separa: (1) observaciones respaldadas por las salidas, (2) hipótesis plausibles y (3) afirmaciones causales que estos datos no permiten.\n\nFORMATO\nTabla: frase original | clasificación | evidencia requerida | redacción prudente.\n\nRESTRICCIONES\nNo inventes resultados ni variables. Si falta una salida, solicítala.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "talleres/taller-insureco.html#checklist-antes-de-entregar",
+    "href": "talleres/taller-insureco.html#checklist-antes-de-entregar",
+    "title": "14  Taller evaluable · InsureCO",
+    "section": "14.11 Checklist antes de entregar",
+    "text": "14.11 Checklist antes de entregar\n\nEl script corre de arriba abajo después de reiniciar R.\nCada porcentaje dice cuál es su denominador.\nNo reporto solo la media.\nInvestigo extremos antes de eliminarlos.\nDistingo asociación y causalidad.\nCada cifra del PDF puede rastrearse a una línea de código.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Taller evaluable · InsureCO</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html",
+    "href": "sesiones/f2-sabado.html",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "",
+    "text": "15.1 Propósito\nEl sábado no es una maratón de nombres ni una clase de demostraciones matemáticas. Es una visita guiada a una caja de herramientas para que puedas:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#propósito",
+    "href": "sesiones/f2-sabado.html#propósito",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "",
+    "text": "distinguir descripción, regresión, clasificación y aprendizaje no supervisado;\nasociar una pregunta empresarial con una familia de técnicas;\nejecutar modelos preparados en Google Colab;\ncomparar contra una línea base y usar datos de prueba;\ninterpretar errores, umbrales, segmentos y componentes;\nreconocer cuándo un resultado no justifica una decisión.\n\n\n15.1.1 Cómo utilizar esta página como profesor\nEsta página es el guion de conducción. El notebook es la demostración y el espacio de práctica. En cada bloque conviene mantener la misma rutina:\n\nExplicar la intuición con lenguaje sencillo y una representación técnica mínima.\nPedir una predicción antes de ejecutar: “¿qué creen que ocurrirá?”.\nEjecutar una celda y nombrar literalmente qué representa cada salida.\nModificar un parámetro para que el grupo observe que el resultado depende de decisiones analíticas.\nTraducir a negocio: qué decisión podría apoyar y qué costo tiene equivocarse.\nCerrar con un límite: qué conclusión no está respaldada.\n\n\n\n\n\n\n\nTip\n\n\n\nNo necesitas explicar cómo se demuestra algebraicamente cada algoritmo. Sí conviene poder explicar qué problema resuelve, qué información recibe, qué aprende, qué devuelve, cómo se evalúa y cómo puede fallar.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#ruta-de-clase-360-minutos-efectivos-60-de-pausas",
+    "href": "sesiones/f2-sabado.html#ruta-de-clase-360-minutos-efectivos-60-de-pausas",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.2 Ruta de clase · 360 minutos efectivos + 60 de pausas",
+    "text": "15.2 Ruta de clase · 360 minutos efectivos + 60 de pausas\n\n\n\n\n\n\n\n\n\nMinutos\nBloque\nTécnica\nProducto\n\n\n\n\n0–25\nDe pregunta a tarea\nmapa supervisado/no supervisado\nficha de problema\n\n\n25–60\nDatos antes del modelo\nunidad, llaves, fuga, train/test y base\ntabla analítica validada\n\n\n60–90\nRelacionar\ncorrelación Pearson/Spearman\nhipótesis prudente\n\n\n90–150\nEstimar un número\nregresión simple y múltiple\nMAE/RMSE/R² vs. base\n\n\n150–165\nPausa\n\n\n\n\n165–235\nPredecir una categoría\nlogística + matriz de confusión + umbral\ndecisión sobre costo del error\n\n\n235–280\nReglas y ensambles\nárbol + Random Forest\ninterpretación y comparación\n\n\n280–325\nPausa larga\n\n\n\n\n325–375\nEncontrar perfiles\nK-means + evaluación\nperfiles de clientes\n\n\n375–395\nPCA y anomalías\nreducción + excepciones\nmapa de continuidad\n\n\n395–415\nMini-reto\numbral o k\nevidencia evaluable\n\n\n415–420\nCierre\nficha de modelo\ntransferencia al proyecto\n\n\n\nLas explicaciones, preguntas de anticipación y microactividades están desarrolladas dentro del notebook. El tiempo no se ocupa en transcribir código, sino en ejecutar, cambiar, comparar e interpretar.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#material-de-trabajo",
+    "href": "sesiones/f2-sabado.html#material-de-trabajo",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.3 Material de trabajo",
+    "text": "15.3 Material de trabajo\n\nLee la Caja de herramientas analíticas para decisiones.\nDescarga el notebook modelos_novaretail_colab.ipynb.\nAbre Google Colab, selecciona Archivo → Subir notebook y carga el .ipynb.\nDescarga el paquete recomendado datos_semana2.zip. Contiene los cuatro CSV.\nCuando el notebook muestre Elegir archivos, arrastra o selecciona datos_semana2.zip.\n\nComo alternativa puedes cargar los archivos individualmente:\n\nventas.csv\nclientes.csv\nproductos.csv\ninsureco.csv\n\nEl notebook valida nombres, columnas y dimensiones. Si falta un archivo, se detiene con un mensaje que indica exactamente cuál debe cargarse.\n\n\n\n\n\n\nImportante\n\n\n\nNinguna actividad evaluable exige API, GPU ni suscripción paga. Colab y las librerías utilizadas pueden ejecutarse con una cuenta gratuita.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloque-1-pregunta-antes-que-algoritmo",
+    "href": "sesiones/f2-sabado.html#bloque-1-pregunta-antes-que-algoritmo",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.4 Bloque 1 · Pregunta antes que algoritmo",
+    "text": "15.4 Bloque 1 · Pregunta antes que algoritmo\n\nProfesor: entrega cuatro preguntas y pide escoger la salida esperada antes de mencionar técnicas: número, categoría/probabilidad, grupo sin etiqueta o resumen de dimensiones.\n\n\n\n\n\n\n\n\n\nPregunta NovaRetail\nSalida\nFamilia\n\n\n\n\n¿Qué costo de póliza estimamos?\nnúmero\nregresión\n\n\n¿Qué transacción podría cancelarse?\nprobabilidad/clase\nclasificación\n\n\n¿Qué perfiles de clientes aparecen?\ngrupo sin etiqueta\nclustering\n\n\n¿Podemos resumir varias métricas?\ncomponentes\nPCA\n\n\n\n\n15.4.1 Quick check\nSi no puedes definir la unidad de análisis, la salida y el uso, todavía no debes escoger algoritmo.\n\n\n15.4.2 Explicación sencilla pero técnica\nUn modelo es una regla aprendida a partir de datos. Esa regla recibe información y produce una salida:\ninformación disponible (X) → modelo → salida estimada\nCuando conocemos históricamente la salida correcta, el aprendizaje es supervisado. Cuando no existe esa etiqueta y buscamos estructura, es no supervisado.\n\n\n\n\n\n\n\n\n\nTipo\nExiste y\nEjemplo\nCómo se evalúa inicialmente\n\n\n\n\nRegresión\nsí, numérica\ncosto de póliza\nerror fuera de muestra\n\n\nClasificación\nsí, categoría\ncancelada/completada\nmatriz y métricas\n\n\nClustering\nno\nperfiles de clientes\nseparación, estabilidad y utilidad\n\n\nPCA\nno\nresumir métricas\nvarianza explicada e interpretación\n\n\n\n\nCómo decirlo: “Supervisado no significa que una persona vigila al algoritmo. Significa que el histórico contiene una respuesta con la cual el modelo puede comparar lo que predice”.\n\n\n\n15.4.3 Actividad de clasificación de preguntas · 10 minutos\nPide al grupo que clasifique cinco preguntas de sus proyectos como descriptivas, regresión, clasificación o no supervisadas. Exige que justifiquen qué representa una fila y cuál sería la salida.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloque-2-auditoría-y-tabla-analítica",
+    "href": "sesiones/f2-sabado.html#bloque-2-auditoría-y-tabla-analítica",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.5 Bloque 2 · Auditoría y tabla analítica",
+    "text": "15.5 Bloque 2 · Auditoría y tabla analítica\nEjecuta las secciones 1–3 del notebook.\nDetente en cuatro comprobaciones:\n\nexiste un id_venta duplicado;\nclientes y productos tienen llave única;\nel join mantiene el número esperado de filas;\nlas variables usadas estarían disponibles en el momento real de decidir.\n\n\nUn modelo puede ejecutar sin error sobre una tabla equivocada. La validación de datos es parte del modelo.\n\n\n15.5.1 Conceptos para explicar\nUnidad de análisis: entidad representada por una fila. En ventas es una transacción; en la tabla de clustering será un cliente.\nLlave: variable que identifica una observación o conecta tablas. Una llave duplicada en una dimensión puede multiplicar filas al hacer un join.\nFuga de información: predictor que incorpora información futura o que se aprendió usando el conjunto de prueba. Puede crear un desempeño excelente pero imposible de reproducir en operación.\nPipeline: secuencia donde preparación y modelo se ejecutan de manera ordenada, aprendiendo transformaciones solamente con entrenamiento.\n\nPregunta al grupo: “Si quiero predecir una cancelación antes de que ocurra, ¿podría usar una variable registrada después de cerrar el caso?”. La respuesta es no: sería mirar la solución antes del examen.\n\n\n\n15.5.2 Producto del bloque\nCada estudiante debe poder completar:\nUna fila representa:\nLa llave es:\nEl objetivo existe en el momento:\nEstas variables sí están disponibles al decidir:\nEsta variable produciría fuga:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloque-3-correlación",
+    "href": "sesiones/f2-sabado.html#bloque-3-correlación",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.6 Bloque 3 · Correlación",
+    "text": "15.6 Bloque 3 · Correlación\nPregunta antes de ejecutar:\n\n¿Qué asociación esperas entre precio_lista, cantidad, descuento y valor_venta?\n\nDespués de la matriz y los diagramas, completa:\nObservamos:\nUna explicación plausible:\nUna explicación alternativa:\nNo podemos concluir:\n\n15.6.1 Qué debes explicar\nLa correlación reduce una relación a un número entre −1 y 1. Pearson resume proximidad a una línea; Spearman trabaja con el orden de los valores y puede captar relaciones monotónicas menos lineales.\nUn valor cercano a cero no significa “no existe ninguna relación”. Puede existir una curva, grupos mezclados o una tercera variable relevante. Por eso el orden correcto es:\n\ngráfica → coeficiente → segmentación → interpretación prudente\n\n\nEjemplo oral: “Las ventas de helado y los casos de insolación pueden aumentar juntos. La correlación no significa que el helado cause insolación; la temperatura puede afectar ambos”.\n\n\n\n15.6.2 Microactividad\nCompara Pearson y Spearman; después calcula por canal. El producto es una frase agregada, una frase segmentada y una explicación alternativa.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloque-4-regresión",
+    "href": "sesiones/f2-sabado.html#bloque-4-regresión",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.7 Bloque 4 · Regresión",
+    "text": "15.7 Bloque 4 · Regresión\nEl notebook compara:\n\nlínea base que predice siempre el promedio;\nregresión simple de charges con IMC;\nregresión múltiple con edad, IMC, hijos, sexo, hábito de fumar y región.\n\n\n15.7.1 Intuición del modelo\nEn una regresión simple construimos una recta:\ncosto estimado = intercepto + pendiente × IMC\nLa recta no pasa por todos los puntos. El residuo es la distancia vertical entre la observación y su predicción. El algoritmo elige coeficientes que reduzcan globalmente esos errores según su criterio de ajuste.\nEn regresión múltiple, el resultado combina varias variables. “Manteniendo constantes las demás variables” significa que el coeficiente intenta separar asociaciones dentro del conjunto incluido; no significa que el estudio sea causal.\n\n\n15.7.2 Por qué usamos una línea base\nPredecir siempre el promedio es una estrategia muy simple. Si un modelo complejo no la supera en prueba, su complejidad no aporta. El estudiante debe comparar modelos contra esa referencia, no solo mirar si Python imprimió un número.\n\n\n15.7.3 Lo que debes poder explicar\n\n\n\nConcepto\nLenguaje MBA\n\n\n\n\nX\ninformación disponible para estimar\n\n\ny\nresultado numérico que queremos estimar\n\n\nentrenamiento\nobservaciones usadas para aprender\n\n\nprueba\nobservaciones reservadas para evaluar generalización\n\n\nMAE\nerror absoluto promedio en pesos\n\n\nRMSE\nerror que penaliza más los fallos grandes\n\n\nR²\nvariación capturada; no es causalidad ni utilidad automática\n\n\n\n\n\n15.7.4 Discusión\nUn modelo puede tener buen R² y, aun así, ser inapropiado si utiliza información posterior a la decisión, falla en casos costosos o no supera una regla simple en condiciones reales.\n\n\n15.7.5 Resultado esperado y lectura docente\nCon semilla 42, el modelo simple con IMC explica muy poco; el múltiple alcanza aproximadamente R² = 0,77 y MAE ≈ 4.244. La comparación permite explicar que más información pertinente puede mejorar la estimación.\nNo digas “fumar causa un aumento de X” a partir del coeficiente. Di:\n\n“Dentro de este modelo y estos datos, la condición de fumador aporta información importante para estimar charges”.\n\n\n\n15.7.6 Extensiones dentro del notebook\n\ninspección de coeficientes;\nauditoría de residuos por grupo;\nescenarios de sensibilidad no causal;\nretiro de smoker para medir cuánto cambia el desempeño.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloques-5-y-6-clasificación-árbol-y-random-forest",
+    "href": "sesiones/f2-sabado.html#bloques-5-y-6-clasificación-árbol-y-random-forest",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.8 Bloques 5 y 6 · Clasificación, árbol y Random Forest",
+    "text": "15.8 Bloques 5 y 6 · Clasificación, árbol y Random Forest\nLa pregunta será si los datos disponibles permiten ordenar transacciones por riesgo de cancelación.\n\n15.8.1 Regresión logística\nProduce una probabilidad entre 0 y 1. Esa probabilidad se convierte en clase mediante un umbral. El valor 0,50 es una convención; no representa necesariamente el costo real del negocio.\n\n\n15.8.2 Árbol\nDivide las observaciones con preguntas sucesivas. Es visual y captura relaciones no lineales, pero un árbol muy profundo puede memorizar ruido.\n\n\n15.8.3 Random Forest\nConstruye muchos árboles con variaciones de observaciones y variables, y agrega sus predicciones. Suele ser más estable, pero ya no cabe en una única regla fácil de mostrar.\n\n\n15.8.4 Antes de mirar accuracy\nCalcula mentalmente qué accuracy obtiene un modelo que siempre predice “Completada”. Esa es la línea base que debemos superar de manera relevante.\n\n\n15.8.5 Costo de equivocarse\n\n\n\n\n\n\n\n\nError\nEjemplo\nCosto posible\n\n\n\n\nFalso positivo\nintervenir una venta que se completaría\ncosto/contacto/fricción\n\n\nFalso negativo\nno intervenir una venta que se cancela\nmargen, experiencia, pérdida\n\n\n\nModifica el umbral del Random Forest y observa el intercambio entre precision, recall y cantidad de alertas.\n\n\n15.8.6 Cómo explicar las métricas\n\n\n\nMétrica\nPregunta en lenguaje cotidiano\n\n\n\n\nPrecision\ncuando genero una alerta, ¿qué tan seguido tengo razón?\n\n\nRecall\nde todos los casos que debía detectar, ¿cuántos encontré?\n\n\nF1\n¿qué equilibrio existe entre las dos anteriores?\n\n\nROC-AUC\n¿el ranking coloca normalmente más arriba a los positivos?\n\n\n\nCuando solo 9 % cancela, predecir siempre “Completada” alcanza cerca de 91 % de accuracy y detecta cero cancelaciones. Esta es la razón para no escoger modelos por accuracy aislada.\n\n\n\n\n\n\nAdvertencia\n\n\n\nSi ROC-AUC y otras métricas muestran poca señal, no recomendamos desplegar por el simple hecho de que el código funciona. La conclusión correcta puede ser “los datos actuales no permiten una clasificación útil”.\n\n\n\n\n15.8.7 Árbol vs. bosque\n\nun árbol ofrece reglas visibles, pero puede ser inestable;\nRandom Forest combina muchos árboles y suele ganar estabilidad/predicción;\nla importancia de una variable no demuestra efecto causal;\nmayor desempeño no siempre compensa menor explicabilidad.\n\n\n\n15.8.8 Resultado esperado y conversación docente\nLos modelos de cancelación tienen poca señal: logística obtiene ROC-AUC cercana a 0,60 y Random Forest alrededor de 0,53. Esta es una oportunidad deliberada para enseñar:\n\nel código puede funcionar y el modelo puede no ser útil.\n\nPregunta qué información previa podría ayudar: tiempos de entrega prometidos, disponibilidad, historial de contacto o método de pago, siempre aclarando que son propuestas y no columnas existentes.\n\n\n15.8.9 Actividades dentro del notebook\n\ncomparar matrices de confusión;\nmover el umbral entre 0,20 y 0,60;\nconvertir capacidad operativa en número máximo de alertas;\nauditar errores por canal;\ncambiar profundidad del árbol;\ndistinguir importancia predictiva y causalidad.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#bloque-7-clustering-de-clientes",
+    "href": "sesiones/f2-sabado.html#bloque-7-clustering-de-clientes",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.9 Bloque 7 · Clustering de clientes",
+    "text": "15.9 Bloque 7 · Clustering de clientes\nPrimero se construye una fila por cliente con:\ntransacciones\ncompras completadas\ngasto total\nticket promedio\ndescuento promedio\ntasa de cancelación\nDespués se estandariza y se comparan alternativas de k.\n\n15.9.1 Intuición de K-means\nK-means alterna dos acciones: asigna cada cliente al centro más cercano y vuelve a calcular los centros. Repite hasta estabilizarse.\nLa distancia depende de las variables y su escala. Sin estandarizar, gasto_total dominaría a una tasa entre 0 y 1. Estandarizar convierte las variables a una referencia común de media 0 y desviación 1.\n\n\n15.9.2 Cómo escoger k\n\nel “codo” busca el punto donde agregar grupos reduce cada vez menos la distancia interna;\nsilhouette compara cohesión y separación;\nel tamaño evita clusters minúsculos sin capacidad operativa;\nla estabilidad pregunta si la solución cambia demasiado;\nla utilidad exige una acción diferenciada legítima.\n\nNo existe un botón que determine automáticamente el segmento verdadero.\n\n\n15.9.3 Preguntas de interpretación\n\n¿El silhouette favorece claramente una solución?\n¿Los grupos tienen tamaños suficientes?\n¿Media y mediana cuentan historias parecidas?\n¿Qué nombre empresarial propondrías y con qué evidencia?\n¿Qué acción diferenciada sería legítima?\n¿Qué riesgo ético u operativo aparece?\n\nEl algoritmo devuelve números de cluster; el significado se construye y valida.\n\n\n15.9.4 Cómo nombrar segmentos\nEvita nombres como “buenos”, “malos” o “premium” sin evidencia. Primero describe el perfil relativo:\n\n“Mayor frecuencia y gasto, descuento promedio cercano a la media”.\n\nDespués pregunta si ese perfil se mantiene al revisar mediana, tamaño y casos representativos. Solo entonces se propone un nombre empresarial.\n\n\n15.9.5 Resultado esperado\nLos silhouette para k = 3 y k = 4 son similares, alrededor de 0,27. No hay una separación contundente. La discusión debe combinar métrica, perfiles y utilidad, y puede concluir legítimamente que la segmentación necesita más datos o mejores variables.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#profundización-autónoma",
+    "href": "sesiones/f2-sabado.html#profundización-autónoma",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.10 Profundización autónoma",
+    "text": "15.10 Profundización autónoma\nEl notebook deja ejecutables:\n\nPCA: resumir varias métricas de cliente y visualizar en dos componentes;\nIsolation Forest: marcar combinaciones inusuales para investigación.\n\nLa caja de herramientas también presenta medoides, jerárquico, DBSCAN, recomendación, NLP y análisis espacial. Son rutas de continuidad: no se aplican todas en vivo ni se exigen en todo proyecto.\n\n15.10.1 PCA en lenguaje sencillo\nPCA construye nuevas dimensiones que resumen variación. Las cargas indican qué variables contribuyen; los scores ubican a cada cliente; la varianza explicada indica cuánto conserva cada componente. Una gráfica de dos componentes siempre pierde parte de la información.\n\n\n15.10.2 Anomalías en lenguaje sencillo\nIsolation Forest marca combinaciones fáciles de aislar. contamination = 0.03 no descubre que 3 % sea fraude: le ordena al algoritmo marcar aproximadamente 3 % para revisión. El resultado es una lista priorizada, no una condena.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#mini-reto-evaluable",
+    "href": "sesiones/f2-sabado.html#mini-reto-evaluable",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.11 Mini-reto evaluable",
+    "text": "15.11 Mini-reto evaluable\nEscoge una ruta del notebook:\n\n15.11.1 A · Umbral de clasificación\nCompara tres umbrales. Entrega métricas, matriz/costos y una recomendación —incluida la opción de no usar el modelo—.\n\n\n15.11.2 B · Número de clusters\nCompara k = 2, 3 y 4. Entrega silhouette, tamaños, perfiles y una recomendación —incluida la opción de no segmentar—.\n\n\n15.11.3 Formato\n\nuna tabla;\nuna visualización;\ndos hallazgos;\nuna decisión;\nuna limitación.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#ia-como-copiloto",
+    "href": "sesiones/f2-sabado.html#ia-como-copiloto",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.12 IA como copiloto",
+    "text": "15.12 IA como copiloto\nLa IA participa en cada bloque para proponer, explicar y auditar, pero no decide qué modelo “ganó”. Usa el prompt de la sección 17 y exige:\n\nno inventar columnas;\nseparar entrenamiento y prueba;\ncomparar con línea base;\nseñalar fuga;\ndistinguir asociación de causalidad;\nexplicar errores en términos empresariales.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#transferencia-a-tu-proyecto-de-grado",
+    "href": "sesiones/f2-sabado.html#transferencia-a-tu-proyecto-de-grado",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.13 Transferencia a tu proyecto de grado",
+    "text": "15.13 Transferencia a tu proyecto de grado\nCompleta la ficha mínima de modelo de la caja de herramientas.\nNo es obligatorio usar machine learning. Si tu pregunta, tamaño de muestra o calidad de datos no lo justifican, documentar esa decisión demuestra criterio analítico.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#ticket-de-salida",
+    "href": "sesiones/f2-sabado.html#ticket-de-salida",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.14 Ticket de salida",
+    "text": "15.14 Ticket de salida\n\nUtilizaría ________ para responder ________. Lo evaluaría con ________ porque el error más costoso es ________. No lo usaría para afirmar ________.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/f2-sabado.html#checklist",
+    "href": "sesiones/f2-sabado.html#checklist",
+    "title": "15  Sesión 4 · Sábado · De la evidencia a los modelos",
+    "section": "15.15 Checklist",
+    "text": "15.15 Checklist\n\nEmpiezo por la pregunta, no por el algoritmo.\nDefino unidad, X, y y momento de decisión.\nComparo con una línea base.\nEvalúo fuera de entrenamiento.\nConecto métricas con el costo del error.\nNo confundo importancia, asociación o clusters con causalidad.\nSé que “no usar el modelo” puede ser la mejor decisión.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Sesión 4 · Sábado · De la evidencia a los modelos</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html",
+    "href": "05b-caja-herramientas-modelos.html",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "",
+    "text": "16.1 1. Antes del modelo: ¿qué quiero decidir?\nEste capítulo organiza los materiales de las Partes 2, 3 y 4 como un portafolio de técnicas. No busca memorizar algoritmos ni demostrar matemáticamente cada método. La ruta es:\nUn algoritmo no corrige una pregunta ambigua. Antes de elegirlo, completa:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#antes-del-modelo-qué-quiero-decidir",
+    "href": "05b-caja-herramientas-modelos.html#antes-del-modelo-qué-quiero-decidir",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "",
+    "text": "Unidad de análisis:\nResultado o patrón de interés:\n¿Existe una respuesta conocida (y)?\nMomento en el que se hará la predicción:\nDatos disponibles en ese momento:\nCosto de un falso positivo:\nCosto de un falso negativo:\nUso previsto del resultado:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#mapa-general",
+    "href": "05b-caja-herramientas-modelos.html#mapa-general",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.2 2. Mapa general",
+    "text": "16.2 2. Mapa general\n\n\n\n\n\n\n\n\n\nSi quiero…\nTipo de tarea\nTécnicas para explorar\nProducto\n\n\n\n\nresumir qué ocurrió\ndescriptiva\nmedidas, tablas, gráficos\nperfil/KPI\n\n\nestudiar asociación\nexploratoria/explicativa\ncorrelación, regresión\nrelación estimada\n\n\nestimar un número\nsupervisada: regresión\nlineal, árboles, Random Forest\nvalor predicho\n\n\npredecir una categoría\nsupervisada: clasificación\nlogística, árbol, Random Forest\nclase/probabilidad\n\n\nencontrar grupos sin etiqueta\nno supervisada\nK-means, medoides, jerárquico, DBSCAN\ncluster\n\n\nresumir muchas variables\nno supervisada\nPCA\ncomponentes\n\n\ndetectar casos inusuales\nexploratoria/no supervisada\nIQR, Z-score, Isolation Forest, KDE\nalerta/anomalía\n\n\nsugerir productos\nrecomendación\ncolaborativo, contenido, híbrido\nranking\n\n\nanalizar texto\nNLP\nTF-IDF, LDA/NMF, embeddings, LLM\ntemas/clases/similitud\n\n\nestudiar patrones espaciales\ngeográfica\nmapas, densidad, KDE\nzonas/patrones\n\n\n\n\nEl nombre del modelo importa menos que la correspondencia entre pregunta, variable objetivo, datos disponibles, métrica y decisión.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#supervisado-y-no-supervisado",
+    "href": "05b-caja-herramientas-modelos.html#supervisado-y-no-supervisado",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.3 3. Supervisado y no supervisado",
+    "text": "16.3 3. Supervisado y no supervisado\n\n16.3.1 Aprendizaje supervisado\nExiste una respuesta conocida y en los datos históricos.\n\nSi y es numérica: regresión.\nSi y es una categoría: clasificación.\n\nEl modelo aprende una relación aproximada X → y y se evalúa con observaciones que no utilizó para aprender.\n\n\n16.3.2 Aprendizaje no supervisado\nNo existe una respuesta correcta conocida. Se buscan estructuras: grupos, componentes, densidades o anomalías.\nAquí no tiene sentido reportar accuracy contra una etiqueta inexistente. La evaluación combina criterios internos, estabilidad, utilidad empresarial e inspección humana.\n\n\n16.3.3 Ejemplo de la diferencia\n\n\n\n\n\n\n\n\nPregunta\n¿Hay respuesta conocida?\nEnfoque\n\n\n\n\n¿Esta transacción terminará cancelada?\nsí: estado histórico\nclasificación\n\n\n¿Qué valor de venta esperamos?\nsí: valor observado\nregresión\n\n\n¿Qué perfiles de clientes aparecen?\nno\nclustering\n\n\n¿Podemos resumir diez métricas en dos dimensiones?\nno\nPCA",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#flujo-mínimo-de-modelado",
+    "href": "05b-caja-herramientas-modelos.html#flujo-mínimo-de-modelado",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.4 4. Flujo mínimo de modelado",
+    "text": "16.4 4. Flujo mínimo de modelado\npregunta y uso\n      ↓\nunidad de análisis + objetivo\n      ↓\ndatos disponibles al decidir\n      ↓\nseparación entrenamiento/prueba\n      ↓\npreprocesamiento aprendido solo con entrenamiento\n      ↓\nmodelo + línea base\n      ↓\nmétrica coherente con el costo del error\n      ↓\nauditoría de errores, segmentos y limitaciones\n      ↓\ndecisión, monitoreo o descarte\n\n16.4.1 Entrenamiento y prueba\n\nEntrenamiento: datos con los que el modelo aprende.\nPrueba: datos reservados para simular observaciones no vistas.\nValidación cruzada: repite particiones para estimar con mayor estabilidad.\n\nEvaluar sobre los mismos datos de entrenamiento confunde memoria con capacidad de generalización.\n\n\n16.4.2 Fuga de información\nHay data leakage cuando el modelo recibe información que no estaría disponible en el momento real de decidir, o cuando el conjunto de prueba influye en la preparación/entrenamiento.\nEjemplo: predecir cancelación usando un campo registrado después de la cancelación produciría un resultado artificialmente bueno e inútil.\n\n\n16.4.3 Línea base\nAntes de celebrar un modelo, compáralo con una regla simple:\n\nregresión: predecir siempre la media/mediana;\nclasificación: predecir siempre la clase mayoritaria;\nseries: repetir el último valor o patrón estacional.\n\nSi el modelo no supera una base razonable, su complejidad no está justificada.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#correlación-detectar-asociación-no-decidir-causalidad",
+    "href": "05b-caja-herramientas-modelos.html#correlación-detectar-asociación-no-decidir-causalidad",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.5 5. Correlación: detectar asociación, no decidir causalidad",
+    "text": "16.5 5. Correlación: detectar asociación, no decidir causalidad\nLa correlación responde si dos variables se mueven conjuntamente de una forma específica.\nventas[[\"descuento\", \"cantidad\", \"valor_venta\"]].corr()\n\n\n\n\n\n\n\n\nMedida\nCaptura\nPrecaución\n\n\n\n\nPearson\nasociación lineal\nextremos y no linealidad\n\n\nSpearman\nasociación monotónica por rangos\nno captura toda relación posible\n\n\n\nUna correlación alta no identifica por sí sola causa, mecanismo ni decisión óptima.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#regresión-lineal-simple-y-múltiple",
+    "href": "05b-caja-herramientas-modelos.html#regresión-lineal-simple-y-múltiple",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.6 6. Regresión lineal simple y múltiple",
+    "text": "16.6 6. Regresión lineal simple y múltiple\n\n16.6.1 Pregunta\n\n¿Cuánto cambia o cuánto podemos estimar de una variable numérica?\n\nEn una regresión simple usamos una variable predictora. En una múltiple combinamos varias.\nresultado numérico ≈ intercepto + efecto de X1 + efecto de X2 + ... + error\n\n\n16.6.2 Dos propósitos que no deben confundirse\n\n\n\n\n\n\n\n\nPropósito\nPrioridad\nPregunta típica\n\n\n\n\nExplicativo\ninterpretar asociación y controlar variables pertinentes\n¿cómo se relaciona X con y manteniendo otras variables?\n\n\nPredictivo\ngeneralizar con el menor error posible\n¿qué valor tendrá y para una observación nueva?\n\n\n\nUn modelo muy interpretable no siempre es el mejor predictor; un predictor flexible no siempre explica bien.\n\n\n16.6.3 Qué leer\n\nsigno y magnitud de coeficientes;\ncategoría de referencia para variables cualitativas;\nerror fuera de muestra;\nresiduos y casos de error grande;\nestabilidad y plausibilidad.\n\n\n\n16.6.4 Métricas\n\n\n\n\n\n\n\n\nMétrica\nLectura práctica\nAtención\n\n\n\n\nMAE\nerror absoluto promedio en la unidad de y\ntodos los errores pesan linealmente\n\n\nRMSE\npenaliza más los errores grandes\nsensible a extremos\n\n\nR²\nproporción de variación explicada dentro del contexto evaluado\nno equivale a causalidad ni utilidad\n\n\n\nUna métrica debe leerse contra la escala del negocio. Un MAE de 20.000 puede ser excelente o inaceptable según el uso.\n\n\n16.6.5 Supuestos relevantes sin demostración\n\nrelación suficientemente bien representada;\nobservaciones pertinentes e independientes según el diseño;\nresiduos sin patrón grave;\nausencia de fuga;\npredicción dentro de un rango respaldado por datos.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#clasificación",
+    "href": "05b-caja-herramientas-modelos.html#clasificación",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.7 7. Clasificación",
+    "text": "16.7 7. Clasificación\n\n16.7.1 Pregunta\n\n¿A qué categoría pertenece probablemente una observación?\n\nEjemplos: cancelada/completada, abandono/no abandono, fraude/no fraude, responder/no responder.\nUn clasificador suele producir una probabilidad y después aplica un umbral para convertirla en clase. El umbral 0,50 es una convención, no una ley empresarial.\n\n\n16.7.2 Matriz de confusión\n\n\n\n\nReal positiva\nReal negativa\n\n\n\n\nPredicción positiva\nverdadero positivo\nfalso positivo\n\n\nPredicción negativa\nfalso negativo\nverdadero negativo\n\n\n\nPara NovaRetail:\n\nfalso positivo: activar una intervención para una venta que no se cancelaría;\nfalso negativo: no intervenir en una venta que terminará cancelada.\n\nLa mejor métrica depende de cuál error cuesta más.\n\n\n16.7.3 Métricas principales\n\n\n\n\n\n\n\nMétrica\nPregunta\n\n\n\n\nAccuracy\n¿qué proporción total clasificamos correctamente?\n\n\nPrecision\nde las alertas, ¿cuántas eran realmente positivas?\n\n\nRecall/sensibilidad\nde los positivos reales, ¿cuántos detectamos?\n\n\nF1\n¿cómo equilibramos precision y recall?\n\n\nROC-AUC\n¿qué tan bien ordena el modelo positivos frente a negativos en distintos umbrales?\n\n\n\nCon una clase rara, una accuracy alta puede ser trivial. Si solo 5 % cancela, predecir “no cancela” siempre logra 95 % y no detecta ningún caso.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#regresión-logística",
+    "href": "05b-caja-herramientas-modelos.html#regresión-logística",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.8 8. Regresión logística",
+    "text": "16.8 8. Regresión logística\nLa regresión logística modela la probabilidad de una clase. Es una primera opción valiosa porque:\n\ngenera probabilidades;\npermite una línea base interpretable;\nfunciona bien cuando la relación es razonablemente simple;\nfacilita discutir signo, magnitud y umbral.\n\nPrecaución: los coeficientes no son cambios directos de probabilidad; para audiencias ejecutivas conviene mostrar probabilidades predichas o efectos marginales, además del desempeño.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#árbol-de-decisión",
+    "href": "05b-caja-herramientas-modelos.html#árbol-de-decisión",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.9 9. Árbol de decisión",
+    "text": "16.9 9. Árbol de decisión\nUn árbol aprende reglas sucesivas:\n                  ¿descuento &gt; 15 %?\n                    /             \\\n                  sí               no\n                 /                  \\\n          ¿canal = Web?        probabilidad menor\n\n16.9.1 Fortalezas\n\nrepresentación visual intuitiva;\nrelaciones no lineales e interacciones;\nreglas accionables.\n\n\n\n16.9.2 Riesgos\n\nun árbol profundo memoriza ruido;\npequeños cambios pueden producir otra estructura;\n“importancia” no equivale a efecto causal;\nuna regla aprendida no es política automática.\n\nLa profundidad y otros parámetros controlan la flexibilidad. Muy poca flexibilidad produce sesgo; demasiada produce sobreajuste.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#random-forest-y-ensambles",
+    "href": "05b-caja-herramientas-modelos.html#random-forest-y-ensambles",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.10 10. Random Forest y ensambles",
+    "text": "16.10 10. Random Forest y ensambles\nRandom Forest combina muchos árboles construidos con muestras y subconjuntos de variables. La agregación suele mejorar estabilidad y predicción respecto a un solo árbol.\n\n16.10.1 Intercambio central\n\n\n\nUn árbol\nRandom Forest\n\n\n\n\nmás fácil de explicar\nsuele predecir mejor\n\n\nmás inestable\nmás estable\n\n\nreglas visibles\ndecisión agregada menos transparente\n\n\n\nLa importancia de variables indica cuánto ayuda una variable al modelo bajo una definición concreta. No afirma que cambiar esa variable cause el resultado.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#clustering-encontrar-grupos-sin-etiquetas",
+    "href": "05b-caja-herramientas-modelos.html#clustering-encontrar-grupos-sin-etiquetas",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.11 11. Clustering: encontrar grupos sin etiquetas",
+    "text": "16.11 11. Clustering: encontrar grupos sin etiquetas\n\n16.11.1 Pregunta\n\n¿Existen perfiles de observaciones con características similares?\n\nEn NovaRetail podemos construir una tabla por cliente:\ncliente | compras | gasto_total | ticket_promedio | descuento_promedio\nDespués estandarizamos porque gasto en pesos y número de compras tienen escalas distintas.\n\n\n16.11.2 K-means\n\nrepresenta cada grupo por un centroide;\nrequiere elegir k;\nfavorece grupos aproximadamente compactos;\nes sensible a escala e inicialización.\n\nEl algoritmo entrega cluster 0, cluster 1… El analista inspecciona perfiles y propone nombres. “Premium” no sale automáticamente del algoritmo.\n\n\n16.11.3 Medoides\nSe parece a K-means, pero el centro del grupo es una observación real. Puede ser más robusto ante extremos y admite otras medidas de distancia.\n\n\n16.11.4 Jerárquico\nConstruye una jerarquía y la representa con un dendrograma. Es útil para explorar grupos anidados y discutir diferentes niveles de corte.\n\n\n16.11.5 DBSCAN\nForma grupos a partir de zonas densas y puede marcar ruido. No exige k, pero requiere parámetros de vecindad/densidad y puede fallar cuando las densidades cambian mucho.\n\n\n16.11.6 Evaluar sin “respuesta correcta”\n\ncohesión/separación, por ejemplo silhouette;\nestabilidad ante muestras y parámetros;\ntamaño suficiente de los grupos;\ninterpretabilidad del perfil;\nutilidad para una acción diferenciada;\nrevisión de si el algoritmo solo reprodujo escala o una variable dominante.\n\n\n\n\n\n\n\nAdvertencia\n\n\n\nSegmentar personas puede amplificar sesgos o producir acciones injustas. Las variables, nombres y usos deben revisarse ética y operacionalmente.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#pca-reducir-complejidad",
+    "href": "05b-caja-herramientas-modelos.html#pca-reducir-complejidad",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.12 12. PCA: reducir complejidad",
+    "text": "16.12 12. PCA: reducir complejidad\n\n16.12.1 Pregunta\n\n¿Podemos resumir muchas variables correlacionadas en menos dimensiones conservando buena parte de su variación?\n\nPCA construye componentes como combinaciones de las variables originales.\n\n\n16.12.2 Qué interpretar\n\nvarianza explicada: cuánta información resume cada componente;\ncargas: qué variables contribuyen y en qué dirección;\nscores: posición de cada observación en los componentes.\n\n\n\n16.12.3 Precauciones\n\nestandariza cuando las unidades difieren;\nel componente maximiza varianza, no relevancia empresarial;\nel nombre del componente lo propone el analista;\nreducir dimensión puede sacrificar interpretación.\n\nPCA sirve para visualización, compresión, preprocesamiento y exploración; no es automáticamente un modelo predictivo.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#detección-de-anomalías",
+    "href": "05b-caja-herramientas-modelos.html#detección-de-anomalías",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.13 13. Detección de anomalías",
+    "text": "16.13 13. Detección de anomalías\n\n16.13.1 IQR\nDetecta extremos univariados con una regla transparente.\n\n\n16.13.2 Isolation Forest\nAísla observaciones mediante particiones aleatorias; las combinaciones inusuales suelen aislarse con menos divisiones.\nUna anomalía significa:\n\ncaso que merece investigación\n\nNo significa automáticamente fraude, error o cliente indeseable.\nEvalúa utilidad mediante revisión de casos, tasa de alertas, falsos positivos, estabilidad y costo de investigación.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#técnicas-de-continuidad",
+    "href": "05b-caja-herramientas-modelos.html#técnicas-de-continuidad",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.14 14. Técnicas de continuidad",
+    "text": "16.14 14. Técnicas de continuidad\nLos materiales de la Parte 4 también incluyen familias que no se desarrollan completas en las siete horas presenciales:\n\n\n\n\n\n\n\n\nFamilia\nPregunta\nCuándo continuar\n\n\n\n\nSistemas de recomendación\n¿qué opción ordenar para cada usuario?\ninteracciones usuario–producto o atributos de contenido\n\n\nNLP/LDA\n¿qué patrones aparecen en texto?\ncorpus suficiente y validación humana\n\n\nDatos geográficos/KDE\n¿dónde se concentran eventos?\ncoordenadas válidas, escala y contexto espacial\n\n\nSVD\n¿cómo aproximar una matriz con menos factores?\nreducción, recomendación o compresión\n\n\n\nPara texto, consulta Datos cualitativos, minería de texto e IA. Estas técnicas constituyen rutas autónomas, no modelos que deban aplicarse a todo proyecto.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#quick-reference-escoger-y-auditar",
+    "href": "05b-caja-herramientas-modelos.html#quick-reference-escoger-y-auditar",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.15 15. Quick Reference · escoger y auditar",
+    "text": "16.15 15. Quick Reference · escoger y auditar\n\n\n\n\n\n\n\n\n\n\nFamilia\nRequiere y\nSalida\nMétrica inicial\nPregunta de auditoría\n\n\n\n\nRegresión\nsí, numérica\nnúmero\nMAE/RMSE + base\n¿el error es aceptable en la unidad del negocio?\n\n\nLogística\nsí, categórica\nprobabilidad\nrecall/precision/AUC\n¿el umbral refleja el costo del error?\n\n\nÁrbol\nsí\nregla/clase/número\nfuera de muestra\n¿está sobreajustado?\n\n\nRandom Forest\nsí\nclase/número\nfuera de muestra\n¿la mejora compensa menor transparencia?\n\n\nK-means\nno\ncluster\nsilhouette + estabilidad\n¿los grupos son accionables o solo matemáticos?\n\n\nJerárquico\nno\ndendrograma\nestabilidad/cortes\n¿qué nivel de agrupación tiene sentido?\n\n\nPCA\nno\ncomponentes\nvarianza explicada\n¿qué información e interpretación se perdió?\n\n\nIsolation Forest\nno\nanomalía/score\nrevisión de alertas\n¿qué proporción de alertas merece acción?",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#ficha-mínima-de-modelo",
+    "href": "05b-caja-herramientas-modelos.html#ficha-mínima-de-modelo",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.16 16. Ficha mínima de modelo",
+    "text": "16.16 16. Ficha mínima de modelo\nTodo modelo del curso debe poder resumirse así:\nPregunta y decisión:\nUnidad de análisis:\nVariable objetivo (si existe):\nPredictores disponibles al decidir:\nSeparación train/test:\nLínea base:\nModelo y parámetros clave:\nMétrica y razón de elegirla:\nResultado fuera de muestra:\nErrores más costosos:\nSegmentos donde falla:\nRiesgos, sesgos y limitaciones:\nUso permitido / uso no permitido:",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#ia-como-copiloto-no-como-juez",
+    "href": "05b-caja-herramientas-modelos.html#ia-como-copiloto-no-como-juez",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.17 17. IA como copiloto, no como juez",
+    "text": "16.17 17. IA como copiloto, no como juez\nLa IA puede ayudar a proponer código, revisar un pipeline, explicar una métrica o identificar riesgos. El flujo responsable es:\n\nplantea la pregunta;\nentrega únicamente variables reales;\npide una línea base y una separación correcta;\nejecuta en Colab;\nrevisa salidas y errores;\naudita supuestos, fuga y lenguaje;\ndocumenta cambios.\n\nPrompt reutilizable:\nCONTEXTO\nTengo una tabla donde una fila representa [unidad]. Quiero apoyar la decisión [decisión]. La variable objetivo es [y] y solo dispongo de [X] en el momento de decidir.\n\nTAREA\nPropón una línea base y un pipeline reproducible. Separa entrenamiento y prueba antes de aprender transformaciones. Incluye una métrica coherente con [costo del error] y una auditoría por segmentos.\n\nFORMATO\n1. Supuestos. 2. Código comentado. 3. Pruebas de validación. 4. Guía de interpretación. 5. Riesgos.\n\nRESTRICCIONES\nNo inventes columnas. No uses información posterior al resultado. No interpretes asociación o importancia como causalidad. Señala cualquier dato que falte.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#laboratorio-en-google-colab",
+    "href": "05b-caja-herramientas-modelos.html#laboratorio-en-google-colab",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.18 18. Laboratorio en Google Colab",
+    "text": "16.18 18. Laboratorio en Google Colab\nUtiliza el notebook modelos_novaretail_colab.ipynb.\nEl notebook contiene:\n\ncarga guiada de datos_semana2.zip, o alternativamente de ventas.csv, clientes.csv, productos.csv e insureco.csv, mediante el selector de Colab;\nauditoría y construcción de una tabla analítica;\ncorrelación;\nregresión lineal simple y múltiple;\nclasificación con logística, árbol y Random Forest;\nmatriz de confusión, precision, recall, F1 y ROC-AUC;\nsegmentación de clientes con K-means;\nPCA y anomalías como profundización;\npreguntas de interpretación y transferencia.\n\nLa celda de carga permite seleccionar o arrastrar y soltar el ZIP. Después verifica que estén los cuatro nombres esperados, las columnas obligatorias y las dimensiones de referencia antes de construir modelos.\nNo transcribas el notebook en clase. La dinámica es:\n\nanticipar → ejecutar → observar → comparar → modificar → interpretar → auditar",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#transferencia-a-tu-proyecto",
+    "href": "05b-caja-herramientas-modelos.html#transferencia-a-tu-proyecto",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.19 19. Transferencia a tu proyecto",
+    "text": "16.19 19. Transferencia a tu proyecto\nElige una pregunta, no un algoritmo. Después completa la ficha mínima y decide:\n\nsi realmente existe una variable objetivo;\nsi la tarea es descriptiva, supervisada o no supervisada;\nqué datos estarán disponibles cuando se use el resultado;\nqué línea base corresponde;\nqué error importa;\nquién podría actuar;\nqué riesgo haría preferible no desplegar el modelo.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
+    "objectID": "05b-caja-herramientas-modelos.html#fuentes-internas-adaptadas",
+    "href": "05b-caja-herramientas-modelos.html#fuentes-internas-adaptadas",
+    "title": "16  Caja de herramientas analíticas para decisiones",
+    "section": "16.20 Fuentes internas adaptadas",
+    "text": "16.20 Fuentes internas adaptadas\n\nParte 2: regresión lineal simple, múltiple y tópicos de regresión.\nParte 3: modelos supervisados, explicativo vs. predictivo, preprocesamiento, árboles, Random Forest, ensambles y métricas de clasificación.\nParte 4: aprendizaje no supervisado, clustering, K-means, medoides, jerárquico, DBSCAN, PCA, recomendación, NLP y análisis espacial.",
+    "crumbs": [
+      "Semana 2 · De la evidencia a los modelos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
+    ]
+  },
+  {
     "objectID": "interactivos/evidencia-ia.html",
     "href": "interactivos/evidencia-ia.html",
-    "title": "12  Interactivo · Dato, hipótesis o invención",
+    "title": "17  Interactivo · Dato, hipótesis o invención",
     "section": "",
     "text": "Situación: “Las ventas aumentaron 10 % y el NPS cayó 12 puntos.”\n\nClasifica mentalmente cada frase y luego revela la respuesta.\n\n\n\n\n\nUna respuesta útil de IA puede contener hipótesis y recomendaciones. El problema aparece cuando esas categorías se presentan como si fueran hechos observados.",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Interactivo · Dato, hipótesis o invención</span>"
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Interactivo · Dato, hipótesis o invención</span>"
     ]
   },
   {
     "objectID": "interactivos/filter-select-groupby.html",
     "href": "interactivos/filter-select-groupby.html",
-    "title": "13  Interactivo · ¿Qué hace cada verbo?",
+    "title": "18  Interactivo · ¿Qué hace cada verbo?",
     "section": "",
-    "text": "13.1 Pruébalo tú mismo",
+    "text": "18.1 Pruébalo tú mismo",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
     ]
   },
   {
     "objectID": "interactivos/filter-select-groupby.html#pruébalo-tú-mismo",
     "href": "interactivos/filter-select-groupby.html#pruébalo-tú-mismo",
-    "title": "13  Interactivo · ¿Qué hace cada verbo?",
+    "title": "18  Interactivo · ¿Qué hace cada verbo?",
     "section": "",
     "text": "Original\n\n\nselect()\n\n\nfilter()\n\n\ngroup_by() + summarise()",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
     ]
   },
   {
     "objectID": "interactivos/filter-select-groupby.html#ahora-escríbelo-en-r",
     "href": "interactivos/filter-select-groupby.html#ahora-escríbelo-en-r",
-    "title": "13  Interactivo · ¿Qué hace cada verbo?",
-    "section": "13.2 Ahora escríbelo en R",
-    "text": "13.2 Ahora escríbelo en R\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "title": "18  Interactivo · ¿Qué hace cada verbo?",
+    "section": "18.2 Ahora escríbelo en R",
+    "text": "18.2 Ahora escríbelo en R\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
     ]
   },
   {
     "objectID": "interactivos/filter-select-groupby.html#preguntas-de-comprensión",
     "href": "interactivos/filter-select-groupby.html#preguntas-de-comprensión",
-    "title": "13  Interactivo · ¿Qué hace cada verbo?",
-    "section": "13.3 Preguntas de comprensión",
-    "text": "13.3 Preguntas de comprensión\n\n¿Cuál operación cambia columnas sin eliminar filas?\n¿Cuál cambia la población observada?\n¿Por qué un resumen por región ya no tiene granularidad de transacción?",
+    "title": "18  Interactivo · ¿Qué hace cada verbo?",
+    "section": "18.3 Preguntas de comprensión",
+    "text": "18.3 Preguntas de comprensión\n\n¿Cuál operación cambia columnas sin eliminar filas?\n¿Cuál cambia la población observada?\n¿Por qué un resumen por región ya no tiene granularidad de transacción?",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Interactivo · ¿Qué hace cada verbo?</span>"
     ]
   },
   {
     "objectID": "interactivos/outliers.html",
     "href": "interactivos/outliers.html",
-    "title": "14  Interactivo · El outlier y el promedio",
+    "title": "19  Interactivo · El outlier y el promedio",
     "section": "",
-    "text": "14.1 Mueve la operación extrema\n¿Qué medida permanece más estable? ¿Significa eso que siempre debemos preferirla?",
+    "text": "19.1 Mueve la operación extrema\n¿Qué medida permanece más estable? ¿Significa eso que siempre debemos preferirla?",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
     ]
   },
   {
     "objectID": "interactivos/outliers.html#mueve-la-operación-extrema",
     "href": "interactivos/outliers.html#mueve-la-operación-extrema",
-    "title": "14  Interactivo · El outlier y el promedio",
+    "title": "19  Interactivo · El outlier y el promedio",
     "section": "",
     "text": "Valor extremo:",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Interactivo · El outlier y el promedio</span>"
     ]
   },
   {
     "objectID": "interactivos/joins.html",
     "href": "interactivos/joins.html",
-    "title": "15  Interactivo · Cuando un join multiplica filas",
+    "title": "20  Interactivo · Cuando un join multiplica filas",
     "section": "",
-    "text": "15.1 Diagnóstico en R\nTenemos ventas:\nY una supuesta dimensión de clientes:",
+    "text": "20.1 Diagnóstico en R\nTenemos ventas:\nY una supuesta dimensión de clientes:",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
     ]
   },
   {
     "objectID": "interactivos/joins.html#diagnóstico-en-r",
     "href": "interactivos/joins.html#diagnóstico-en-r",
-    "title": "15  Interactivo · Cuando un join multiplica filas",
+    "title": "20  Interactivo · Cuando un join multiplica filas",
     "section": "",
     "text": "Please enable JavaScript to experience the dynamic code cell content on this page.\n\nAntes de integrar, valida la cardinalidad. Una dimensión que debería tener una fila por cliente no puede contener dos versiones simultáneas sin una regla explícita.",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Interactivo · Cuando un join multiplica filas</span>"
     ]
   },
   {
     "objectID": "interactivos/contexto-filtro.html",
     "href": "interactivos/contexto-filtro.html",
-    "title": "16  Interactivo · Contexto de filtro",
+    "title": "21  Interactivo · Contexto de filtro",
     "section": "",
-    "text": "16.1 Pregunta\nLa fórmula conceptual de Ventas = SUM(ValorVenta) permanece igual. Lo que cambia es el conjunto de filas visible para la medida.\nSi un gerente selecciona Caribe, ¿debería cambiar también el número de clientes? ¿Qué tendría que ocurrir en el modelo para que el filtro se propague correctamente?",
+    "text": "21.1 Pregunta\nLa fórmula conceptual de Ventas = SUM(ValorVenta) permanece igual. Lo que cambia es el conjunto de filas visible para la medida.\nSi un gerente selecciona Caribe, ¿debería cambiar también el número de clientes? ¿Qué tendría que ocurrir en el modelo para que el filtro se propague correctamente?",
     "crumbs": [
       "Laboratorios interactivos",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Interactivo · Contexto de filtro</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Interactivo · Contexto de filtro</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html",
     "href": "labs/lab-01-fundamentos-r.html",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
     "section": "",
-    "text": "17.1 R como calculadora\nEste laboratorio es material de consulta autónoma. No es necesario memorizarlo antes de comenzar la ruta principal.\n2 + 2\n\n[1] 4\n\n10 / 4\n\n[1] 2.5\n\n(120 + 150 + 180) / 3\n\n[1] 150",
+    "text": "22.1 R como calculadora\nEste laboratorio es material de consulta autónoma. No es necesario memorizarlo antes de comenzar la ruta principal.\n2 + 2\n\n[1] 4\n\n10 / 4\n\n[1] 2.5\n\n(120 + 150 + 180) / 3\n\n[1] 150",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#objetos",
     "href": "labs/lab-01-fundamentos-r.html#objetos",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.2 Objetos",
-    "text": "17.2 Objetos\n\nventas_mes &lt;- 12500000\nmeta_mes &lt;- 12000000\nregion &lt;- \"Caribe\"\ncumple_meta &lt;- ventas_mes &gt;= meta_mes\n\nConsulta:\n\nventas_mes\n\n[1] 12500000\n\ncumple_meta\n\n[1] TRUE",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.2 Objetos",
+    "text": "22.2 Objetos\n\nventas_mes &lt;- 12500000\nmeta_mes &lt;- 12000000\nregion &lt;- \"Caribe\"\ncumple_meta &lt;- ventas_mes &gt;= meta_mes\n\nConsulta:\n\nventas_mes\n\n[1] 12500000\n\ncumple_meta\n\n[1] TRUE",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#tipos-básicos",
     "href": "labs/lab-01-fundamentos-r.html#tipos-básicos",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.3 Tipos básicos",
-    "text": "17.3 Tipos básicos\n\nclass(ventas_mes)\n\n[1] \"numeric\"\n\nclass(region)\n\n[1] \"character\"\n\nclass(cumple_meta)\n\n[1] \"logical\"\n\n\nEncontrarás frecuentemente:\n\nnumeric / double;\ninteger;\ncharacter;\nlogical;\nfechas.",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.3 Tipos básicos",
+    "text": "22.3 Tipos básicos\n\nclass(ventas_mes)\n\n[1] \"numeric\"\n\nclass(region)\n\n[1] \"character\"\n\nclass(cumple_meta)\n\n[1] \"logical\"\n\n\nEncontrarás frecuentemente:\n\nnumeric / double;\ninteger;\ncharacter;\nlogical;\nfechas.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#operadores",
     "href": "labs/lab-01-fundamentos-r.html#operadores",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.4 Operadores",
-    "text": "17.4 Operadores\n\n17.4.1 Aritméticos\n+, -, *, /, ^\n\n\n17.4.2 Comparación\n&gt;, &lt;, &gt;=, &lt;=, ==, !=\n\n\n17.4.3 Lógicos\n&, |, !\n\nventas_mes &gt; meta_mes\n\n[1] TRUE\n\nregion == \"Caribe\"\n\n[1] TRUE\n\nventas_mes &gt; meta_mes & region == \"Caribe\"\n\n[1] TRUE",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.4 Operadores",
+    "text": "22.4 Operadores\n\n22.4.1 Aritméticos\n+, -, *, /, ^\n\n\n22.4.2 Comparación\n&gt;, &lt;, &gt;=, &lt;=, ==, !=\n\n\n22.4.3 Lógicos\n&, |, !\n\nventas_mes &gt; meta_mes\n\n[1] TRUE\n\nregion == \"Caribe\"\n\n[1] TRUE\n\nventas_mes &gt; meta_mes & region == \"Caribe\"\n\n[1] TRUE",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#funciones",
     "href": "labs/lab-01-fundamentos-r.html#funciones",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.5 Funciones",
-    "text": "17.5 Funciones\nUna función recibe argumentos y devuelve un resultado.\n\nround(12.567, digits = 2)\n\n[1] 12.57\n\nsqrt(144)\n\n[1] 12\n\n\nLa ayuda de R puede consultarse con:\n\n?round",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.5 Funciones",
+    "text": "22.5 Funciones\nUna función recibe argumentos y devuelve un resultado.\n\nround(12.567, digits = 2)\n\n[1] 12.57\n\nsqrt(144)\n\n[1] 12\n\n\nLa ayuda de R puede consultarse con:\n\n?round",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#valores-faltantes",
     "href": "labs/lab-01-fundamentos-r.html#valores-faltantes",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.6 Valores faltantes",
-    "text": "17.6 Valores faltantes\n\nventas &lt;- c(120, 150, NA, 180)\n\nmean(ventas)\n\n[1] NA\n\nmean(ventas, na.rm = TRUE)\n\n[1] 150\n\n\nNA significa que el valor está ausente. No debe confundirse automáticamente con cero.",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.6 Valores faltantes",
+    "text": "22.6 Valores faltantes\n\nventas &lt;- c(120, 150, NA, 180)\n\nmean(ventas)\n\n[1] NA\n\nmean(ventas, na.rm = TRUE)\n\n[1] 150\n\n\nNA significa que el valor está ausente. No debe confundirse automáticamente con cero.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#errores-como-parte-del-aprendizaje",
     "href": "labs/lab-01-fundamentos-r.html#errores-como-parte-del-aprendizaje",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.7 Errores como parte del aprendizaje",
-    "text": "17.7 Errores como parte del aprendizaje\nLee el mensaje de error antes de modificar código. Pregunta:\n\n¿qué función falló?\n¿qué objeto estaba utilizando?\n¿el nombre existe?\n¿el tipo de dato es correcto?\n¿falta cargar un paquete?",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.7 Errores como parte del aprendizaje",
+    "text": "22.7 Errores como parte del aprendizaje\nLee el mensaje de error antes de modificar código. Pregunta:\n\n¿qué función falló?\n¿qué objeto estaba utilizando?\n¿el nombre existe?\n¿el tipo de dato es correcto?\n¿falta cargar un paquete?",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-01-fundamentos-r.html#reto",
     "href": "labs/lab-01-fundamentos-r.html#reto",
-    "title": "17  Laboratorio 1 · Fundamentos de R",
-    "section": "17.8 Reto",
-    "text": "17.8 Reto\nCrea:\n\nun objeto con ventas actuales;\notro con la meta;\notro con crecimiento esperado;\nuna condición que indique si se alcanzó la meta.\n\nDespués calcula cuánto falta o cuánto se supera la meta.\n\n\n\n\n\n\nTip\n\n\n\nPide a una IA que explique el mensaje de error, no que reescriba inmediatamente todo tu código. Aprenderás más del proceso de depuración.",
+    "title": "22  Laboratorio 1 · Fundamentos de R",
+    "section": "22.8 Reto",
+    "text": "22.8 Reto\nCrea:\n\nun objeto con ventas actuales;\notro con la meta;\notro con crecimiento esperado;\nuna condición que indique si se alcanzó la meta.\n\nDespués calcula cuánto falta o cuánto se supera la meta.\n\n\n\n\n\n\nTip\n\n\n\nPide a una IA que explique el mensaje de error, no que reescriba inmediatamente todo tu código. Aprenderás más del proceso de depuración.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 1 · Fundamentos de R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html",
     "href": "labs/lab-02-estructuras.html",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
     "section": "",
-    "text": "18.1 Vectores\nUn vector contiene elementos del mismo tipo.\nventas_mensuales &lt;- c(12.5, 13.8, 12.1, 15.6, 16.2, 15.9)\nPodemos operar sobre el conjunto:\nmean(ventas_mensuales)\n\n[1] 14.35\n\nmedian(ventas_mensuales)\n\n[1] 14.7\n\nmax(ventas_mensuales)\n\n[1] 16.2\n\nsum(ventas_mensuales)\n\n[1] 86.1",
+    "text": "23.1 Vectores\nUn vector contiene elementos del mismo tipo.\nventas_mensuales &lt;- c(12.5, 13.8, 12.1, 15.6, 16.2, 15.9)\nPodemos operar sobre el conjunto:\nmean(ventas_mensuales)\n\n[1] 14.35\n\nmedian(ventas_mensuales)\n\n[1] 14.7\n\nmax(ventas_mensuales)\n\n[1] 16.2\n\nsum(ventas_mensuales)\n\n[1] 86.1",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#indexación",
     "href": "labs/lab-02-estructuras.html#indexación",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.2 Indexación",
-    "text": "18.2 Indexación\n\nventas_mensuales[1]\n\n[1] 12.5\n\nventas_mensuales[2:4]\n\n[1] 13.8 12.1 15.6\n\nventas_mensuales[ventas_mensuales &gt; 15]\n\n[1] 15.6 16.2 15.9",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.2 Indexación",
+    "text": "23.2 Indexación\n\nventas_mensuales[1]\n\n[1] 12.5\n\nventas_mensuales[2:4]\n\n[1] 13.8 12.1 15.6\n\nventas_mensuales[ventas_mensuales &gt; 15]\n\n[1] 15.6 16.2 15.9",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#vectores-de-texto",
     "href": "labs/lab-02-estructuras.html#vectores-de-texto",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.3 Vectores de texto",
-    "text": "18.3 Vectores de texto\n\nregiones &lt;- c(\"Caribe\", \"Andina\", \"Pacífica\", \"Orinoquía\")\nregiones[2]\n\n[1] \"Andina\"",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.3 Vectores de texto",
+    "text": "23.3 Vectores de texto\n\nregiones &lt;- c(\"Caribe\", \"Andina\", \"Pacífica\", \"Orinoquía\")\nregiones[2]\n\n[1] \"Andina\"",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#data-frames",
     "href": "labs/lab-02-estructuras.html#data-frames",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.4 Data frames",
-    "text": "18.4 Data frames\nUna tabla empresarial suele contener columnas de diferentes tipos.\n\nsucursales &lt;- data.frame(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160),\n  cumple_meta = c(TRUE, TRUE, FALSE)\n)\n\nsucursales\n\n        ciudad ventas cumple_meta\n1 Barranquilla    120        TRUE\n2       Bogotá    180        TRUE\n3     Medellín    160       FALSE\n\n\nAcceso a una columna:\n\nsucursales$ventas\n\n[1] 120 180 160\n\n\nObserva que una columna de un data frame puede comportarse como un vector.",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.4 Data frames",
+    "text": "23.4 Data frames\nUna tabla empresarial suele contener columnas de diferentes tipos.\n\nsucursales &lt;- data.frame(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160),\n  cumple_meta = c(TRUE, TRUE, FALSE)\n)\n\nsucursales\n\n        ciudad ventas cumple_meta\n1 Barranquilla    120        TRUE\n2       Bogotá    180        TRUE\n3     Medellín    160       FALSE\n\n\nAcceso a una columna:\n\nsucursales$ventas\n\n[1] 120 180 160\n\n\nObserva que una columna de un data frame puede comportarse como un vector.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#tibbles",
     "href": "labs/lab-02-estructuras.html#tibbles",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.5 Tibbles",
-    "text": "18.5 Tibbles\nEl tidyverse utiliza frecuentemente tibble, una versión moderna de las tablas en R.\n\nlibrary(tibble)\n\nsucursales_tbl &lt;- tibble(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160)\n)",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.5 Tibbles",
+    "text": "23.5 Tibbles\nEl tidyverse utiliza frecuentemente tibble, una versión moderna de las tablas en R.\n\nlibrary(tibble)\n\nsucursales_tbl &lt;- tibble(\n  ciudad = c(\"Barranquilla\", \"Bogotá\", \"Medellín\"),\n  ventas = c(120, 180, 160)\n)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#factores",
     "href": "labs/lab-02-estructuras.html#factores",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.6 Factores",
-    "text": "18.6 Factores\nLos factores representan variables categóricas y pueden ser útiles cuando existe un conjunto controlado de niveles.\n\nprioridad &lt;- factor(\n  c(\"Alta\", \"Media\", \"Baja\"),\n  levels = c(\"Baja\", \"Media\", \"Alta\"),\n  ordered = TRUE\n)",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.6 Factores",
+    "text": "23.6 Factores\nLos factores representan variables categóricas y pueden ser útiles cuando existe un conjunto controlado de niveles.\n\nprioridad &lt;- factor(\n  c(\"Alta\", \"Media\", \"Baja\"),\n  levels = c(\"Baja\", \"Media\", \"Alta\"),\n  ordered = TRUE\n)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#matrices",
     "href": "labs/lab-02-estructuras.html#matrices",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.7 Matrices",
-    "text": "18.7 Matrices\nUna matriz contiene elementos del mismo tipo en filas y columnas.\n\nm &lt;- matrix(1:9, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\nNo será una estructura central en las sesiones presenciales, pero es útil reconocerla.",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.7 Matrices",
+    "text": "23.7 Matrices\nUna matriz contiene elementos del mismo tipo en filas y columnas.\n\nm &lt;- matrix(1:9, nrow = 3)\nm\n\n     [,1] [,2] [,3]\n[1,]    1    4    7\n[2,]    2    5    8\n[3,]    3    6    9\n\n\nNo será una estructura central en las sesiones presenciales, pero es útil reconocerla.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#listas",
     "href": "labs/lab-02-estructuras.html#listas",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.8 Listas",
-    "text": "18.8 Listas\nUna lista puede contener objetos de distintos tipos.\n\nreporte &lt;- list(\n  periodo = \"2026-1\",\n  ventas = ventas_mensuales,\n  regiones = regiones\n)",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.8 Listas",
+    "text": "23.8 Listas\nUna lista puede contener objetos de distintos tipos.\n\nreporte &lt;- list(\n  periodo = \"2026-1\",\n  ventas = ventas_mensuales,\n  regiones = regiones\n)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#qué-estructura-veremos-más",
     "href": "labs/lab-02-estructuras.html#qué-estructura-veremos-más",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.9 ¿Qué estructura veremos más?",
-    "text": "18.9 ¿Qué estructura veremos más?\nPara análisis de negocios, la mayor parte del curso operará sobre data frames/tibbles, aunque comprender vectores ayuda a entender qué ocurre dentro de cada columna.",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.9 ¿Qué estructura veremos más?",
+    "text": "23.9 ¿Qué estructura veremos más?\nPara análisis de negocios, la mayor parte del curso operará sobre data frames/tibbles, aunque comprender vectores ayuda a entender qué ocurre dentro de cada columna.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-02-estructuras.html#reto",
     "href": "labs/lab-02-estructuras.html#reto",
-    "title": "18  Laboratorio 2 · Estructuras de datos en R",
-    "section": "18.10 Reto",
-    "text": "18.10 Reto\nConstruye un tibble con seis meses y sus ventas. Añade una variable lógica que indique si cada mes superó una meta de 14 millones.",
+    "title": "23  Laboratorio 2 · Estructuras de datos en R",
+    "section": "23.10 Reto",
+    "text": "23.10 Reto\nConstruye un tibble con seis meses y sus ventas. Añade una variable lógica que indique si cada mes superó una meta de 14 millones.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 2 · Estructuras de datos en R</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html",
     "href": "labs/lab-03-tidyverse.html",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
     "section": "",
-    "text": "19.1 Pipe\nEste laboratorio funciona como referencia rápida durante los ejercicios.\ndatos |&gt;\n  operacion_1() |&gt;\n  operacion_2()\nLéelo de izquierda a derecha: toma estos datos y luego…",
+    "text": "24.1 Pipe\nEste laboratorio funciona como referencia rápida durante los ejercicios.\ndatos |&gt;\n  operacion_1() |&gt;\n  operacion_2()\nLéelo de izquierda a derecha: toma estos datos y luego…",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#select",
     "href": "labs/lab-03-tidyverse.html#select",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.2 select()",
-    "text": "19.2 select()\n\nventas |&gt;\n  select(fecha, region, valor_venta)",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.2 select()",
+    "text": "24.2 select()\n\nventas |&gt;\n  select(fecha, region, valor_venta)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#filter",
     "href": "labs/lab-03-tidyverse.html#filter",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.3 filter()",
-    "text": "19.3 filter()\n\nventas |&gt;\n  filter(region == \"Caribe\", valor_venta &gt; 200000)",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.3 filter()",
+    "text": "24.3 filter()\n\nventas |&gt;\n  filter(region == \"Caribe\", valor_venta &gt; 200000)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#mutate",
     "href": "labs/lab-03-tidyverse.html#mutate",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.4 mutate()",
-    "text": "19.4 mutate()\n\nventas |&gt;\n  mutate(\n    tiene_descuento = descuento &gt; 0\n  )",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.4 mutate()",
+    "text": "24.4 mutate()\n\nventas |&gt;\n  mutate(\n    tiene_descuento = descuento &gt; 0\n  )",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#arrange",
     "href": "labs/lab-03-tidyverse.html#arrange",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.5 arrange()",
-    "text": "19.5 arrange()\n\nventas |&gt;\n  arrange(desc(valor_venta))",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.5 arrange()",
+    "text": "24.5 arrange()\n\nventas |&gt;\n  arrange(desc(valor_venta))",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#group_by-summarise",
     "href": "labs/lab-03-tidyverse.html#group_by-summarise",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.6 group_by() + summarise()",
-    "text": "19.6 group_by() + summarise()\n\nventas |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    clientes = n_distinct(id_cliente),\n    .groups = \"drop\"\n  )",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.6 group_by() + summarise()",
+    "text": "24.6 group_by() + summarise()\n\nventas |&gt;\n  group_by(region) |&gt;\n  summarise(\n    ventas = sum(valor_venta, na.rm = TRUE),\n    clientes = n_distinct(id_cliente),\n    .groups = \"drop\"\n  )",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#count",
     "href": "labs/lab-03-tidyverse.html#count",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.7 count()",
-    "text": "19.7 count()\n\nventas |&gt;\n  count(canal, sort = TRUE)",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.7 count()",
+    "text": "24.7 count()\n\nventas |&gt;\n  count(canal, sort = TRUE)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#distinct",
     "href": "labs/lab-03-tidyverse.html#distinct",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.8 distinct()",
-    "text": "19.8 distinct()\n\nventas |&gt;\n  distinct(id_cliente)",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.8 distinct()",
+    "text": "24.8 distinct()\n\nventas |&gt;\n  distinct(id_cliente)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#joins",
     "href": "labs/lab-03-tidyverse.html#joins",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.9 Joins",
-    "text": "19.9 Joins\nCuando dos tablas comparten una llave:\n\nventas |&gt;\n  left_join(clientes, by = \"id_cliente\")\n\nAntes del join revisa la unicidad de la llave para evitar multiplicar registros accidentalmente.",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.9 Joins",
+    "text": "24.9 Joins\nCuando dos tablas comparten una llave:\n\nventas |&gt;\n  left_join(clientes, by = \"id_cliente\")\n\nAntes del join revisa la unicidad de la llave para evitar multiplicar registros accidentalmente.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#pivot",
     "href": "labs/lab-03-tidyverse.html#pivot",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.10 Pivot",
-    "text": "19.10 Pivot\n\ndatos |&gt;\n  pivot_longer(\n    cols = starts_with(\"venta_\"),\n    names_to = \"periodo\",\n    values_to = \"venta\"\n  )\n\npivot_longer() y pivot_wider() cambian la forma de una tabla; no deberían cambiar el significado de las observaciones.",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.10 Pivot",
+    "text": "24.10 Pivot\n\ndatos |&gt;\n  pivot_longer(\n    cols = starts_with(\"venta_\"),\n    names_to = \"periodo\",\n    values_to = \"venta\"\n  )\n\npivot_longer() y pivot_wider() cambian la forma de una tabla; no deberían cambiar el significado de las observaciones.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-03-tidyverse.html#pro-tip",
     "href": "labs/lab-03-tidyverse.html#pro-tip",
-    "title": "19  Laboratorio 3 · Guía rápida de tidyverse",
-    "section": "19.11 Pro Tip",
-    "text": "19.11 Pro Tip\n\n\n\nNecesito…\nFunción\n\n\n\n\ncolumnas\nselect()\n\n\nfilas\nfilter()\n\n\ncrear variable\nmutate()\n\n\nordenar\narrange()\n\n\nagrupar\ngroup_by()\n\n\nindicador\nsummarise()\n\n\nfrecuencia\ncount()\n\n\núnicos\ndistinct()\n\n\ncombinar tablas\n*_join()\n\n\ncambiar forma\npivot_*()\n\n\n\nNo memorices todo a la vez. Regresa a esta página cuando lo necesites.",
+    "title": "24  Laboratorio 3 · Guía rápida de tidyverse",
+    "section": "24.11 Pro Tip",
+    "text": "24.11 Pro Tip\n\n\n\nNecesito…\nFunción\n\n\n\n\ncolumnas\nselect()\n\n\nfilas\nfilter()\n\n\ncrear variable\nmutate()\n\n\nordenar\narrange()\n\n\nagrupar\ngroup_by()\n\n\nindicador\nsummarise()\n\n\nfrecuencia\ncount()\n\n\núnicos\ndistinct()\n\n\ncombinar tablas\n*_join()\n\n\ncambiar forma\npivot_*()\n\n\n\nNo memorices todo a la vez. Regresa a esta página cuando lo necesites.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Laboratorio 3 · Guía rápida de tidyverse</span>"
     ]
   },
   {
     "objectID": "labs/lab-04-importacion.html",
     "href": "labs/lab-04-importacion.html",
-    "title": "20  Laboratorio 4 · Importación de datos",
+    "title": "25  Laboratorio 4 · Importación de datos",
     "section": "",
-    "text": "20.1 Comprobaciones posteriores\nInspecciona dimensiones, nombres, tipos, faltantes y primeras observaciones antes de iniciar cualquier análisis.",
+    "text": "25.1 Comprobaciones posteriores\nInspecciona dimensiones, nombres, tipos, faltantes y primeras observaciones antes de iniciar cualquier análisis.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Laboratorio 4 · Importación de datos</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Laboratorio 4 · Importación de datos</span>"
     ]
   },
   {
     "objectID": "labs/lab-05-ggplot.html",
     "href": "labs/lab-05-ggplot.html",
-    "title": "21  Laboratorio 5 · ggplot2",
+    "title": "26  Laboratorio 5 · ggplot2",
     "section": "",
-    "text": "21.1 Pregunta\nPiensa en la gramática: datos + estética + geometría + etiquetas.\n¿Qué comparación debe facilitar el gráfico? La elección visual debe venir después de la pregunta.",
+    "text": "26.1 Pregunta\nPiensa en la gramática: datos + estética + geometría + etiquetas.\n¿Qué comparación debe facilitar el gráfico? La elección visual debe venir después de la pregunta.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Laboratorio 5 · ggplot2</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Laboratorio 5 · ggplot2</span>"
     ]
   },
   {
     "objectID": "labs/lab-06-estadistica.html",
     "href": "labs/lab-06-estadistica.html",
-    "title": "22  Laboratorio 6 · Estadística de consulta",
+    "title": "27  Laboratorio 6 · Estadística de consulta",
     "section": "",
-    "text": "22.1 Tendencia central\nx &lt;- c(80, 90, 100, 110, 120)\nmean(x)\n\n[1] 100\n\nmedian(x)\n\n[1] 100",
+    "text": "27.1 Tendencia central\nx &lt;- c(80, 90, 100, 110, 120)\nmean(x)\n\n[1] 100\n\nmedian(x)\n\n[1] 100",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-06-estadistica.html#dispersión",
     "href": "labs/lab-06-estadistica.html#dispersión",
-    "title": "22  Laboratorio 6 · Estadística de consulta",
-    "section": "22.2 Dispersión",
-    "text": "22.2 Dispersión\n\nsd(x)\n\n[1] 15.81139\n\nrange(x)\n\n[1]  80 120\n\nIQR(x)\n\n[1] 20",
+    "title": "27  Laboratorio 6 · Estadística de consulta",
+    "section": "27.2 Dispersión",
+    "text": "27.2 Dispersión\n\nsd(x)\n\n[1] 15.81139\n\nrange(x)\n\n[1]  80 120\n\nIQR(x)\n\n[1] 20",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-06-estadistica.html#percentiles",
     "href": "labs/lab-06-estadistica.html#percentiles",
-    "title": "22  Laboratorio 6 · Estadística de consulta",
-    "section": "22.3 Percentiles",
-    "text": "22.3 Percentiles\n\nquantile(x, c(.25,.5,.75,.9))\n\n25% 50% 75% 90% \n 90 100 110 116",
+    "title": "27  Laboratorio 6 · Estadística de consulta",
+    "section": "27.3 Percentiles",
+    "text": "27.3 Percentiles\n\nquantile(x, c(.25,.5,.75,.9))\n\n25% 50% 75% 90% \n 90 100 110 116",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-06-estadistica.html#correlación",
     "href": "labs/lab-06-estadistica.html#correlación",
-    "title": "22  Laboratorio 6 · Estadística de consulta",
-    "section": "22.4 Correlación",
-    "text": "22.4 Correlación\n\ncor(datos$x, datos$y, use = \"complete.obs\")\n\nRecuerda: correlación no implica causalidad.",
+    "title": "27  Laboratorio 6 · Estadística de consulta",
+    "section": "27.4 Correlación",
+    "text": "27.4 Correlación\n\ncor(datos$x, datos$y, use = \"complete.obs\")\n\nRecuerda: correlación no implica causalidad.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-06-estadistica.html#reto",
     "href": "labs/lab-06-estadistica.html#reto",
-    "title": "22  Laboratorio 6 · Estadística de consulta",
-    "section": "22.5 Reto",
-    "text": "22.5 Reto\nCompara dos grupos que tengan promedios similares pero dispersión diferente. Explica cuál medida adicional comunicarías a una persona que debe tomar una decisión.",
+    "title": "27  Laboratorio 6 · Estadística de consulta",
+    "section": "27.5 Reto",
+    "text": "27.5 Reto\nCompara dos grupos que tengan promedios similares pero dispersión diferente. Explica cuál medida adicional comunicarías a una persona que debe tomar una decisión.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Laboratorio 6 · Estadística de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html",
     "href": "labs/lab-07-dax.html",
-    "title": "23  Laboratorio 7 · DAX de consulta",
+    "title": "28  Laboratorio 7 · DAX de consulta",
     "section": "",
-    "text": "23.1 Agregaciones\nEste laboratorio es una referencia rápida. DAX se aprende mejor entendiendo contexto y significado que memorizando funciones.",
+    "text": "28.1 Agregaciones\nEste laboratorio es una referencia rápida. DAX se aprende mejor entendiendo contexto y significado que memorizando funciones.",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html#agregaciones",
     "href": "labs/lab-07-dax.html#agregaciones",
-    "title": "23  Laboratorio 7 · DAX de consulta",
+    "title": "28  Laboratorio 7 · DAX de consulta",
     "section": "",
     "text": "Ventas = SUM(FactVentas[ValorVenta])\nClientes = DISTINCTCOUNT(FactVentas[IdCliente])",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html#división-segura",
     "href": "labs/lab-07-dax.html#división-segura",
-    "title": "23  Laboratorio 7 · DAX de consulta",
-    "section": "23.2 División segura",
-    "text": "23.2 División segura\nTicket Promedio = DIVIDE([Ventas], [Transacciones])",
+    "title": "28  Laboratorio 7 · DAX de consulta",
+    "section": "28.2 División segura",
+    "text": "28.2 División segura\nTicket Promedio = DIVIDE([Ventas], [Transacciones])",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html#modificar-contexto",
     "href": "labs/lab-07-dax.html#modificar-contexto",
-    "title": "23  Laboratorio 7 · DAX de consulta",
-    "section": "23.3 Modificar contexto",
-    "text": "23.3 Modificar contexto\nVentas Completadas =\nCALCULATE(\n    SUM(FactVentas[ValorVenta]),\n    FactVentas[Estado] = \"Completada\"\n)",
+    "title": "28  Laboratorio 7 · DAX de consulta",
+    "section": "28.3 Modificar contexto",
+    "text": "28.3 Modificar contexto\nVentas Completadas =\nCALCULATE(\n    SUM(FactVentas[ValorVenta]),\n    FactVentas[Estado] = \"Completada\"\n)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html#iteradores",
     "href": "labs/lab-07-dax.html#iteradores",
-    "title": "23  Laboratorio 7 · DAX de consulta",
-    "section": "23.4 Iteradores",
-    "text": "23.4 Iteradores\nMargen Estimado =\nSUMX(\n    FactVentas,\n    FactVentas[ValorVenta] -\n    FactVentas[Cantidad] * RELATED(DimProducto[CostoUnitario])\n)",
+    "title": "28  Laboratorio 7 · DAX de consulta",
+    "section": "28.4 Iteradores",
+    "text": "28.4 Iteradores\nMargen Estimado =\nSUMX(\n    FactVentas,\n    FactVentas[ValorVenta] -\n    FactVentas[Cantidad] * RELATED(DimProducto[CostoUnitario])\n)",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "labs/lab-07-dax.html#preguntas-para-depurar-una-medida",
     "href": "labs/lab-07-dax.html#preguntas-para-depurar-una-medida",
-    "title": "23  Laboratorio 7 · DAX de consulta",
-    "section": "23.5 Preguntas para depurar una medida",
-    "text": "23.5 Preguntas para depurar una medida\n\n¿Qué pretende medir?\n¿Cuál es su numerador y denominador?\n¿Qué filtros deberían afectarla?\n¿Qué tabla contiene cada campo?\n¿el resultado total coincide con una validación independiente?",
+    "title": "28  Laboratorio 7 · DAX de consulta",
+    "section": "28.5 Preguntas para depurar una medida",
+    "text": "28.5 Preguntas para depurar una medida\n\n¿Qué pretende medir?\n¿Cuál es su numerador y denominador?\n¿Qué filtros deberían afectarla?\n¿Qué tabla contiene cada campo?\n¿el resultado total coincide con una validación independiente?",
     "crumbs": [
       "Laboratorio de consulta",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Laboratorio 7 · DAX de consulta</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html",
     "href": "evaluacion/quices-autodiagnostico.html",
-    "title": "24  Autochequeos por sesión",
+    "title": "29  Autochequeos por sesión",
     "section": "",
-    "text": "24.1 Sesión 1 · Pregunta de negocio + IA\nIntenta responder antes de abrir la solución.",
+    "text": "29.1 Sesión 1 · Pregunta de negocio + IA\nIntenta responder antes de abrir la solución.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-1-pregunta-de-negocio-ia",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-1-pregunta-de-negocio-ia",
-    "title": "24  Autochequeos por sesión",
+    "title": "29  Autochequeos por sesión",
     "section": "",
-    "text": "24.1.1 ¿Cuál pregunta es más accionable?\n\n¿Cómo mejorar las ventas?\n\n¿Qué categorías con caída de ventas y alta satisfacción deberían priorizarse en una campaña de reactivación el próximo mes?\n\n¿Por qué compra la gente?\n\n\n\nRespuesta\n\nb. Define fenómeno, intervención y horizonte con suficiente precisión.\n\n\n\n24.1.2 La IA afirma: “la caída del NPS fue causada por demoras”. ¿Qué es?\n\n\nRespuesta\n\nUna hipótesis si no existe evidencia causal. No debe presentarse como hecho.",
+    "text": "29.1.1 ¿Cuál pregunta es más accionable?\n\n¿Cómo mejorar las ventas?\n\n¿Qué categorías con caída de ventas y alta satisfacción deberían priorizarse en una campaña de reactivación el próximo mes?\n\n¿Por qué compra la gente?\n\n\n\nRespuesta\n\nb. Define fenómeno, intervención y horizonte con suficiente precisión.\n\n\n\n29.1.2 La IA afirma: “la caída del NPS fue causada por demoras”. ¿Qué es?\n\n\nRespuesta\n\nUna hipótesis si no existe evidencia causal. No debe presentarse como hecho.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-2-r-manipulación-eda",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-2-r-manipulación-eda",
-    "title": "24  Autochequeos por sesión",
-    "section": "24.2 Sesión 2 · R + manipulación + EDA",
-    "text": "24.2 Sesión 2 · R + manipulación + EDA\n\n24.2.1 Después de group_by(region) |&gt; summarise(...), ¿qué representa una fila?\n\n\nRespuesta\n\nUna región. La granularidad cambió.\n\n\n\n24.2.2 ¿Por qué revisar la tabla antes del gráfico?\n\n\nRespuesta\n\nPorque una visualización puede representar perfectamente un KPI mal definido.",
+    "title": "29  Autochequeos por sesión",
+    "section": "29.2 Sesión 2 · R + manipulación + EDA",
+    "text": "29.2 Sesión 2 · R + manipulación + EDA\n\n29.2.1 Después de group_by(region) |&gt; summarise(...), ¿qué representa una fila?\n\n\nRespuesta\n\nUna región. La granularidad cambió.\n\n\n\n29.2.2 ¿Por qué revisar la tabla antes del gráfico?\n\n\nRespuesta\n\nPorque una visualización puede representar perfectamente un KPI mal definido.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-3-estadística",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-3-estadística",
-    "title": "24  Autochequeos por sesión",
-    "section": "24.3 Sesión 3 · Estadística",
-    "text": "24.3 Sesión 3 · Estadística\n\n24.3.1 Dos grupos tienen la misma media y distinta dispersión. ¿Son equivalentes?\n\n\nRespuesta\n\nNo. La media no describe variabilidad ni forma.\n\n\n\n24.3.2 Correlación positiva entre descuento y ventas, ¿demuestra causalidad?\n\n\nRespuesta\n\nNo. Describe asociación, no mecanismo causal.",
+    "title": "29  Autochequeos por sesión",
+    "section": "29.3 Sesión 3 · Estadística",
+    "text": "29.3 Sesión 3 · Estadística\n\n29.3.1 Dos grupos tienen la misma media y distinta dispersión. ¿Son equivalentes?\n\n\nRespuesta\n\nNo. La media no describe variabilidad ni forma.\n\n\n\n29.3.2 Correlación positiva entre descuento y ventas, ¿demuestra causalidad?\n\n\nRespuesta\n\nNo. Describe asociación, no mecanismo causal.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-4-calidad-etl",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-4-calidad-etl",
-    "title": "24  Autochequeos por sesión",
-    "section": "24.4 Sesión 4 · Calidad + ETL",
-    "text": "24.4 Sesión 4 · Calidad + ETL\n\n24.4.1 Web, web y WEB: ¿qué riesgo existe?\n\n\nRespuesta\n\nDividir una categoría real en grupos falsos y producir KPI erróneos sin error técnico.\n\n\n\n24.4.2 ¿Qué revisar antes de left_join()?\n\n\nRespuesta\n\nGranularidad, unicidad/cardinalidad de llaves y registros huérfanos.",
+    "title": "29  Autochequeos por sesión",
+    "section": "29.4 Sesión 4 · Calidad + ETL",
+    "text": "29.4 Sesión 4 · Calidad + ETL\n\n29.4.1 Web, web y WEB: ¿qué riesgo existe?\n\n\nRespuesta\n\nDividir una categoría real en grupos falsos y producir KPI erróneos sin error técnico.\n\n\n\n29.4.2 ¿Qué revisar antes de left_join()?\n\n\nRespuesta\n\nGranularidad, unicidad/cardinalidad de llaves y registros huérfanos.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-5-modelo-dax",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-5-modelo-dax",
-    "title": "24  Autochequeos por sesión",
-    "section": "24.5 Sesión 5 · Modelo + DAX",
-    "text": "24.5 Sesión 5 · Modelo + DAX\n\n24.5.1 ¿Por qué [Ventas] cambia al seleccionar región?\n\n\nRespuesta\n\nPorque la misma medida se evalúa bajo un contexto de filtro diferente.\n\n\n\n24.5.2 ¿DAX válido sintácticamente garantiza KPI correcto?\n\n\nRespuesta\n\nNo. Definición, relaciones y contexto pueden producir una medida conceptualmente incorrecta.",
+    "title": "29  Autochequeos por sesión",
+    "section": "29.5 Sesión 5 · Modelo + DAX",
+    "text": "29.5 Sesión 5 · Modelo + DAX\n\n29.5.1 ¿Por qué [Ventas] cambia al seleccionar región?\n\n\nRespuesta\n\nPorque la misma medida se evalúa bajo un contexto de filtro diferente.\n\n\n\n29.5.2 ¿DAX válido sintácticamente garantiza KPI correcto?\n\n\nRespuesta\n\nNo. Definición, relaciones y contexto pueden producir una medida conceptualmente incorrecta.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "evaluacion/quices-autodiagnostico.html#sesión-6-dashboard-storytelling",
     "href": "evaluacion/quices-autodiagnostico.html#sesión-6-dashboard-storytelling",
-    "title": "24  Autochequeos por sesión",
-    "section": "24.6 Sesión 6 · Dashboard + storytelling",
-    "text": "24.6 Sesión 6 · Dashboard + storytelling\n\n24.6.1 ¿Qué va primero: gráfico o decisión del usuario?\n\n\nRespuesta\n\nLa decisión. El gráfico facilita una tarea de interpretación.\n\n\n\n24.6.2 ¿Qué diferencia un hallazgo de una cifra?\n\n\nRespuesta\n\nEl hallazgo conecta evidencia con significado para el problema.",
+    "title": "29  Autochequeos por sesión",
+    "section": "29.6 Sesión 6 · Dashboard + storytelling",
+    "text": "29.6 Sesión 6 · Dashboard + storytelling\n\n29.6.1 ¿Qué va primero: gráfico o decisión del usuario?\n\n\nRespuesta\n\nLa decisión. El gráfico facilita una tarea de interpretación.\n\n\n\n29.6.2 ¿Qué diferencia un hallazgo de una cifra?\n\n\nRespuesta\n\nEl hallazgo conecta evidencia con significado para el problema.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
+      "<span class='chapter-number'>29</span>  <span class='chapter-title'>Autochequeos por sesión</span>"
     ]
   },
   {
     "objectID": "recursos/lecturas.html",
     "href": "recursos/lecturas.html",
-    "title": "25  Lecturas y rutas de profundización",
+    "title": "30  Lecturas y rutas de profundización",
     "section": "",
-    "text": "25.1 R y tidyverse\nLa ruta presencial está limitada a 36 horas. Estos recursos amplían el estudio sin inflar las sesiones.",
+    "text": "30.1 R y tidyverse\nLa ruta presencial está limitada a 36 horas. Estos recursos amplían el estudio sin inflar las sesiones.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
     ]
   },
   {
     "objectID": "recursos/lecturas.html#r-y-tidyverse",
     "href": "recursos/lecturas.html#r-y-tidyverse",
-    "title": "25  Lecturas y rutas de profundización",
+    "title": "30  Lecturas y rutas de profundización",
     "section": "",
     "text": "R for Data Science (2e) — importación, transformación, visualización y flujo reproducible.\nR para Inteligencia de Negocios — referencia complementaria para fundamentos, limpieza y análisis exploratorio.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
     ]
   },
   {
     "objectID": "recursos/lecturas.html#ia-y-analytics",
     "href": "recursos/lecturas.html#ia-y-analytics",
-    "title": "25  Lecturas y rutas de profundización",
-    "section": "25.2 IA y Analytics",
-    "text": "25.2 IA y Analytics\nPara cualquier lectura sobre IA, utiliza esta pregunta de control:\n\n¿La herramienta está reemplazando una habilidad que todavía necesito construir o ampliando una habilidad que ya comprendo?\n\nLa declaración de uso de IA del proyecto debe permitir rastrear qué se pidió, qué se aceptó, qué se corrigió y cómo se validó.",
+    "title": "30  Lecturas y rutas de profundización",
+    "section": "30.2 IA y Analytics",
+    "text": "30.2 IA y Analytics\nPara cualquier lectura sobre IA, utiliza esta pregunta de control:\n\n¿La herramienta está reemplazando una habilidad que todavía necesito construir o ampliando una habilidad que ya comprendo?\n\nLa declaración de uso de IA del proyecto debe permitir rastrear qué se pidió, qué se aceptó, qué se corrigió y cómo se validó.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
     ]
   },
   {
     "objectID": "recursos/lecturas.html#qué-estudiar-después",
     "href": "recursos/lecturas.html#qué-estudiar-después",
-    "title": "25  Lecturas y rutas de profundización",
-    "section": "25.3 Qué estudiar después",
-    "text": "25.3 Qué estudiar después\nRutas naturales: forecasting, clasificación, regresión predictiva, clustering, causalidad, optimización y agentes de datos. Permanecen como profundización porque no corresponden al núcleo de esta electiva intensiva.",
+    "title": "30  Lecturas y rutas de profundización",
+    "section": "30.3 Qué estudiar después",
+    "text": "30.3 Qué estudiar después\nRutas naturales: forecasting, clasificación, regresión predictiva, clustering, causalidad, optimización y agentes de datos. Permanecen como profundización porque no corresponden al núcleo de esta electiva intensiva.",
     "crumbs": [
       "Evaluación y recursos",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Lecturas y rutas de profundización</span>"
     ]
   },
   {
     "objectID": "extras/extra-forecasting.html",
     "href": "extras/extra-forecasting.html",
-    "title": "26  Profundización · Forecasting",
+    "title": "31  Profundización · Forecasting",
     "section": "",
     "text": "Este contenido no forma parte de las 30 horas centrales. Se deja como ruta posterior para estudiantes interesados en extender el análisis descriptivo hacia pronósticos.\nSe recomienda abordarlo después de dominar preparación, exploración, validación y comunicación de datos.",
     "crumbs": [
       "Profundización",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Profundización · Forecasting</span>"
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Profundización · Forecasting</span>"
     ]
   },
   {
     "objectID": "extras/extra-shiny.html",
     "href": "extras/extra-shiny.html",
-    "title": "27  Profundización · Shiny",
+    "title": "32  Profundización · Shiny",
     "section": "",
     "text": "Shiny permite construir aplicaciones web interactivas desde R. No forma parte de la evaluación central porque el curso prioriza Power BI como herramienta de BI, pero constituye una ruta útil de profundización.",
     "crumbs": [
       "Profundización",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Profundización · Shiny</span>"
+      "<span class='chapter-number'>32</span>  <span class='chapter-title'>Profundización · Shiny</span>"
     ]
   }
 ]

@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>16&nbsp; Caja de herramientas analíticas para decisiones – Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./interactivos/evidencia-ia.html" rel="next">
+<link href="./sesiones/f2-sabado.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bbde93b468415cd362b97874392ba5da.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f2-viernes.html">Semana 2 · De la evidencia a los modelos</a></li><li class="breadcrumb-item"><a href="./05b-caja-herramientas-modelos.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas analíticas para decisiones</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Analítica e Inteligencia de Negocios - Curso MBA Universidad del Atlántico</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analítica e Inteligencia de Negocios</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-como-usar-libro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Cómo utilizar este libro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00-preparacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparación del entorno</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 1 · De los datos a la información</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-viernes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Sesión 1 · Del problema empresarial al primer análisis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-analitica-negocios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">De los datos a las decisiones</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01b-ia-llm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">IA para el analista: LLMs, prompts y verificación</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01c-ia-agentes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">IA como agente de código: contexto, reglas y auditoría</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-primeros-pasos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Primeros pasos con R: escribir, ejecutar y verificar</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f1-sabado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sesión 2 · Del dato al hallazgo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-manipulacion-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Manipulación de datos: de la pregunta al KPI</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-exploracion-visualizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Exploración y visualización de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04b-mineria-texto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos cualitativos, minería de texto e IA</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Semana 2 · De la evidencia a los modelos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f2-viernes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sesión 3 · Viernes · Del dato a la evidencia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-estadistica-decisiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Tutorial ejecutable · Análisis exploratorio de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./talleres/taller-insureco.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Taller evaluable · InsureCO</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sesiones/f2-sabado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sesión 4 · Sábado · De la evidencia a los modelos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05b-caja-herramientas-modelos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas analíticas para decisiones</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorios interactivos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/evidencia-ia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interactivo · Dato, hipótesis o invención</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/filter-select-groupby.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Interactivo · ¿Qué hace cada verbo?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/outliers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Interactivo · El outlier y el promedio</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/joins.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Interactivo · Cuando un join multiplica filas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./interactivos/contexto-filtro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Interactivo · Contexto de filtro</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorio de consulta</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-01-fundamentos-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Laboratorio 1 · Fundamentos de R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-02-estructuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Laboratorio 2 · Estructuras de datos en R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-03-tidyverse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Laboratorio 3 · Guía rápida de tidyverse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-04-importacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Laboratorio 4 · Importación de datos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-05-ggplot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Laboratorio 5 · ggplot2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-06-estadistica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Laboratorio 6 · Estadística de consulta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./labs/lab-07-dax.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Laboratorio 7 · DAX de consulta</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación y recursos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluacion/quices-autodiagnostico.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Autochequeos por sesión</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos/lecturas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">Lecturas y rutas de profundización</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Profundización</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-forecasting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">Profundización · Forecasting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./extras/extra-shiny.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">Profundización · Shiny</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#antes-del-modelo-qué-quiero-decidir" id="toc-antes-del-modelo-qué-quiero-decidir" class="nav-link active" data-scroll-target="#antes-del-modelo-qué-quiero-decidir"><span class="header-section-number">16.1</span> 1. Antes del modelo: ¿qué quiero decidir?</a></li>
+  <li><a href="#mapa-general" id="toc-mapa-general" class="nav-link" data-scroll-target="#mapa-general"><span class="header-section-number">16.2</span> 2. Mapa general</a></li>
+  <li><a href="#supervisado-y-no-supervisado" id="toc-supervisado-y-no-supervisado" class="nav-link" data-scroll-target="#supervisado-y-no-supervisado"><span class="header-section-number">16.3</span> 3. Supervisado y no supervisado</a>
+  <ul class="collapse">
+  <li><a href="#aprendizaje-supervisado" id="toc-aprendizaje-supervisado" class="nav-link" data-scroll-target="#aprendizaje-supervisado"><span class="header-section-number">16.3.1</span> Aprendizaje supervisado</a></li>
+  <li><a href="#aprendizaje-no-supervisado" id="toc-aprendizaje-no-supervisado" class="nav-link" data-scroll-target="#aprendizaje-no-supervisado"><span class="header-section-number">16.3.2</span> Aprendizaje no supervisado</a></li>
+  <li><a href="#ejemplo-de-la-diferencia" id="toc-ejemplo-de-la-diferencia" class="nav-link" data-scroll-target="#ejemplo-de-la-diferencia"><span class="header-section-number">16.3.3</span> Ejemplo de la diferencia</a></li>
+  </ul></li>
+  <li><a href="#flujo-mínimo-de-modelado" id="toc-flujo-mínimo-de-modelado" class="nav-link" data-scroll-target="#flujo-mínimo-de-modelado"><span class="header-section-number">16.4</span> 4. Flujo mínimo de modelado</a>
+  <ul class="collapse">
+  <li><a href="#entrenamiento-y-prueba" id="toc-entrenamiento-y-prueba" class="nav-link" data-scroll-target="#entrenamiento-y-prueba"><span class="header-section-number">16.4.1</span> Entrenamiento y prueba</a></li>
+  <li><a href="#fuga-de-información" id="toc-fuga-de-información" class="nav-link" data-scroll-target="#fuga-de-información"><span class="header-section-number">16.4.2</span> Fuga de información</a></li>
+  <li><a href="#línea-base" id="toc-línea-base" class="nav-link" data-scroll-target="#línea-base"><span class="header-section-number">16.4.3</span> Línea base</a></li>
+  </ul></li>
+  <li><a href="#correlación-detectar-asociación-no-decidir-causalidad" id="toc-correlación-detectar-asociación-no-decidir-causalidad" class="nav-link" data-scroll-target="#correlación-detectar-asociación-no-decidir-causalidad"><span class="header-section-number">16.5</span> 5. Correlación: detectar asociación, no decidir causalidad</a></li>
+  <li><a href="#regresión-lineal-simple-y-múltiple" id="toc-regresión-lineal-simple-y-múltiple" class="nav-link" data-scroll-target="#regresión-lineal-simple-y-múltiple"><span class="header-section-number">16.6</span> 6. Regresión lineal simple y múltiple</a>
+  <ul class="collapse">
+  <li><a href="#pregunta" id="toc-pregunta" class="nav-link" data-scroll-target="#pregunta"><span class="header-section-number">16.6.1</span> Pregunta</a></li>
+  <li><a href="#dos-propósitos-que-no-deben-confundirse" id="toc-dos-propósitos-que-no-deben-confundirse" class="nav-link" data-scroll-target="#dos-propósitos-que-no-deben-confundirse"><span class="header-section-number">16.6.2</span> Dos propósitos que no deben confundirse</a></li>
+  <li><a href="#qué-leer" id="toc-qué-leer" class="nav-link" data-scroll-target="#qué-leer"><span class="header-section-number">16.6.3</span> Qué leer</a></li>
+  <li><a href="#métricas" id="toc-métricas" class="nav-link" data-scroll-target="#métricas"><span class="header-section-number">16.6.4</span> Métricas</a></li>
+  <li><a href="#supuestos-relevantes-sin-demostración" id="toc-supuestos-relevantes-sin-demostración" class="nav-link" data-scroll-target="#supuestos-relevantes-sin-demostración"><span class="header-section-number">16.6.5</span> Supuestos relevantes sin demostración</a></li>
+  </ul></li>
+  <li><a href="#clasificación" id="toc-clasificación" class="nav-link" data-scroll-target="#clasificación"><span class="header-section-number">16.7</span> 7. Clasificación</a>
+  <ul class="collapse">
+  <li><a href="#pregunta-1" id="toc-pregunta-1" class="nav-link" data-scroll-target="#pregunta-1"><span class="header-section-number">16.7.1</span> Pregunta</a></li>
+  <li><a href="#matriz-de-confusión" id="toc-matriz-de-confusión" class="nav-link" data-scroll-target="#matriz-de-confusión"><span class="header-section-number">16.7.2</span> Matriz de confusión</a></li>
+  <li><a href="#métricas-principales" id="toc-métricas-principales" class="nav-link" data-scroll-target="#métricas-principales"><span class="header-section-number">16.7.3</span> Métricas principales</a></li>
+  </ul></li>
+  <li><a href="#regresión-logística" id="toc-regresión-logística" class="nav-link" data-scroll-target="#regresión-logística"><span class="header-section-number">16.8</span> 8. Regresión logística</a></li>
+  <li><a href="#árbol-de-decisión" id="toc-árbol-de-decisión" class="nav-link" data-scroll-target="#árbol-de-decisión"><span class="header-section-number">16.9</span> 9. Árbol de decisión</a>
+  <ul class="collapse">
+  <li><a href="#fortalezas" id="toc-fortalezas" class="nav-link" data-scroll-target="#fortalezas"><span class="header-section-number">16.9.1</span> Fortalezas</a></li>
+  <li><a href="#riesgos" id="toc-riesgos" class="nav-link" data-scroll-target="#riesgos"><span class="header-section-number">16.9.2</span> Riesgos</a></li>
+  </ul></li>
+  <li><a href="#random-forest-y-ensambles" id="toc-random-forest-y-ensambles" class="nav-link" data-scroll-target="#random-forest-y-ensambles"><span class="header-section-number">16.10</span> 10. Random Forest y ensambles</a>
+  <ul class="collapse">
+  <li><a href="#intercambio-central" id="toc-intercambio-central" class="nav-link" data-scroll-target="#intercambio-central"><span class="header-section-number">16.10.1</span> Intercambio central</a></li>
+  </ul></li>
+  <li><a href="#clustering-encontrar-grupos-sin-etiquetas" id="toc-clustering-encontrar-grupos-sin-etiquetas" class="nav-link" data-scroll-target="#clustering-encontrar-grupos-sin-etiquetas"><span class="header-section-number">16.11</span> 11. Clustering: encontrar grupos sin etiquetas</a>
+  <ul class="collapse">
+  <li><a href="#pregunta-2" id="toc-pregunta-2" class="nav-link" data-scroll-target="#pregunta-2"><span class="header-section-number">16.11.1</span> Pregunta</a></li>
+  <li><a href="#k-means" id="toc-k-means" class="nav-link" data-scroll-target="#k-means"><span class="header-section-number">16.11.2</span> K-means</a></li>
+  <li><a href="#medoides" id="toc-medoides" class="nav-link" data-scroll-target="#medoides"><span class="header-section-number">16.11.3</span> Medoides</a></li>
+  <li><a href="#jerárquico" id="toc-jerárquico" class="nav-link" data-scroll-target="#jerárquico"><span class="header-section-number">16.11.4</span> Jerárquico</a></li>
+  <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan"><span class="header-section-number">16.11.5</span> DBSCAN</a></li>
+  <li><a href="#evaluar-sin-respuesta-correcta" id="toc-evaluar-sin-respuesta-correcta" class="nav-link" data-scroll-target="#evaluar-sin-respuesta-correcta"><span class="header-section-number">16.11.6</span> Evaluar sin “respuesta correcta”</a></li>
+  </ul></li>
+  <li><a href="#pca-reducir-complejidad" id="toc-pca-reducir-complejidad" class="nav-link" data-scroll-target="#pca-reducir-complejidad"><span class="header-section-number">16.12</span> 12. PCA: reducir complejidad</a>
+  <ul class="collapse">
+  <li><a href="#pregunta-3" id="toc-pregunta-3" class="nav-link" data-scroll-target="#pregunta-3"><span class="header-section-number">16.12.1</span> Pregunta</a></li>
+  <li><a href="#qué-interpretar" id="toc-qué-interpretar" class="nav-link" data-scroll-target="#qué-interpretar"><span class="header-section-number">16.12.2</span> Qué interpretar</a></li>
+  <li><a href="#precauciones" id="toc-precauciones" class="nav-link" data-scroll-target="#precauciones"><span class="header-section-number">16.12.3</span> Precauciones</a></li>
+  </ul></li>
+  <li><a href="#detección-de-anomalías" id="toc-detección-de-anomalías" class="nav-link" data-scroll-target="#detección-de-anomalías"><span class="header-section-number">16.13</span> 13. Detección de anomalías</a>
+  <ul class="collapse">
+  <li><a href="#iqr" id="toc-iqr" class="nav-link" data-scroll-target="#iqr"><span class="header-section-number">16.13.1</span> IQR</a></li>
+  <li><a href="#isolation-forest" id="toc-isolation-forest" class="nav-link" data-scroll-target="#isolation-forest"><span class="header-section-number">16.13.2</span> Isolation Forest</a></li>
+  </ul></li>
+  <li><a href="#técnicas-de-continuidad" id="toc-técnicas-de-continuidad" class="nav-link" data-scroll-target="#técnicas-de-continuidad"><span class="header-section-number">16.14</span> 14. Técnicas de continuidad</a></li>
+  <li><a href="#quick-reference-escoger-y-auditar" id="toc-quick-reference-escoger-y-auditar" class="nav-link" data-scroll-target="#quick-reference-escoger-y-auditar"><span class="header-section-number">16.15</span> 15. Quick Reference · escoger y auditar</a></li>
+  <li><a href="#ficha-mínima-de-modelo" id="toc-ficha-mínima-de-modelo" class="nav-link" data-scroll-target="#ficha-mínima-de-modelo"><span class="header-section-number">16.16</span> 16. Ficha mínima de modelo</a></li>
+  <li><a href="#ia-como-copiloto-no-como-juez" id="toc-ia-como-copiloto-no-como-juez" class="nav-link" data-scroll-target="#ia-como-copiloto-no-como-juez"><span class="header-section-number">16.17</span> 17. IA como copiloto, no como juez</a></li>
+  <li><a href="#laboratorio-en-google-colab" id="toc-laboratorio-en-google-colab" class="nav-link" data-scroll-target="#laboratorio-en-google-colab"><span class="header-section-number">16.18</span> 18. Laboratorio en Google Colab</a></li>
+  <li><a href="#transferencia-a-tu-proyecto" id="toc-transferencia-a-tu-proyecto" class="nav-link" data-scroll-target="#transferencia-a-tu-proyecto"><span class="header-section-number">16.19</span> 19. Transferencia a tu proyecto</a></li>
+  <li><a href="#fuentes-internas-adaptadas" id="toc-fuentes-internas-adaptadas" class="nav-link" data-scroll-target="#fuentes-internas-adaptadas"><span class="header-section-number">16.20</span> Fuentes internas adaptadas</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sesiones/f2-viernes.html">Semana 2 · De la evidencia a los modelos</a></li><li class="breadcrumb-item"><a href="./05b-caja-herramientas-modelos.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas analíticas para decisiones</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Caja de herramientas analíticas para decisiones</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="mba-hero">
+<p><strong>Pregunta empresarial:</strong> si describir los datos ya no es suficiente, ¿qué familia de modelos puede ayudarnos y qué evidencia necesitamos para confiar en ella?</p>
+</div>
+<p>Este capítulo organiza los materiales de las <strong>Partes 2, 3 y 4</strong> como un portafolio de técnicas. No busca memorizar algoritmos ni demostrar matemáticamente cada método. La ruta es:</p>
+<blockquote class="blockquote">
+<p><strong>conocer → ejecutar → interpretar → evaluar → saber cuándo usar</strong></p>
+</blockquote>
+<section id="antes-del-modelo-qué-quiero-decidir" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="antes-del-modelo-qué-quiero-decidir"><span class="header-section-number">16.1</span> 1. Antes del modelo: ¿qué quiero decidir?</h2>
+<p>Un algoritmo no corrige una pregunta ambigua. Antes de elegirlo, completa:</p>
+<pre class="text"><code>Unidad de análisis:
+Resultado o patrón de interés:
+¿Existe una respuesta conocida (y)?
+Momento en el que se hará la predicción:
+Datos disponibles en ese momento:
+Costo de un falso positivo:
+Costo de un falso negativo:
+Uso previsto del resultado:</code></pre>
+</section>
+<section id="mapa-general" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="mapa-general"><span class="header-section-number">16.2</span> 2. Mapa general</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Si quiero…</th>
+<th>Tipo de tarea</th>
+<th>Técnicas para explorar</th>
+<th>Producto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>resumir qué ocurrió</td>
+<td>descriptiva</td>
+<td>medidas, tablas, gráficos</td>
+<td>perfil/KPI</td>
+</tr>
+<tr class="even">
+<td>estudiar asociación</td>
+<td>exploratoria/explicativa</td>
+<td>correlación, regresión</td>
+<td>relación estimada</td>
+</tr>
+<tr class="odd">
+<td>estimar un número</td>
+<td>supervisada: regresión</td>
+<td>lineal, árboles, Random Forest</td>
+<td>valor predicho</td>
+</tr>
+<tr class="even">
+<td>predecir una categoría</td>
+<td>supervisada: clasificación</td>
+<td>logística, árbol, Random Forest</td>
+<td>clase/probabilidad</td>
+</tr>
+<tr class="odd">
+<td>encontrar grupos sin etiqueta</td>
+<td>no supervisada</td>
+<td>K-means, medoides, jerárquico, DBSCAN</td>
+<td>cluster</td>
+</tr>
+<tr class="even">
+<td>resumir muchas variables</td>
+<td>no supervisada</td>
+<td>PCA</td>
+<td>componentes</td>
+</tr>
+<tr class="odd">
+<td>detectar casos inusuales</td>
+<td>exploratoria/no supervisada</td>
+<td>IQR, Z-score, Isolation Forest, KDE</td>
+<td>alerta/anomalía</td>
+</tr>
+<tr class="even">
+<td>sugerir productos</td>
+<td>recomendación</td>
+<td>colaborativo, contenido, híbrido</td>
+<td>ranking</td>
+</tr>
+<tr class="odd">
+<td>analizar texto</td>
+<td>NLP</td>
+<td>TF-IDF, LDA/NMF, embeddings, LLM</td>
+<td>temas/clases/similitud</td>
+</tr>
+<tr class="even">
+<td>estudiar patrones espaciales</td>
+<td>geográfica</td>
+<td>mapas, densidad, KDE</td>
+<td>zonas/patrones</td>
+</tr>
+</tbody>
+</table>
+<div class="key-idea">
+El nombre del modelo importa menos que la correspondencia entre <strong>pregunta, variable objetivo, datos disponibles, métrica y decisión</strong>.
+</div>
+</section>
+<section id="supervisado-y-no-supervisado" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="supervisado-y-no-supervisado"><span class="header-section-number">16.3</span> 3. Supervisado y no supervisado</h2>
+<section id="aprendizaje-supervisado" class="level3" data-number="16.3.1">
+<h3 data-number="16.3.1" class="anchored" data-anchor-id="aprendizaje-supervisado"><span class="header-section-number">16.3.1</span> Aprendizaje supervisado</h3>
+<p>Existe una respuesta conocida <code>y</code> en los datos históricos.</p>
+<ul>
+<li>Si <code>y</code> es numérica: <strong>regresión</strong>.</li>
+<li>Si <code>y</code> es una categoría: <strong>clasificación</strong>.</li>
+</ul>
+<p>El modelo aprende una relación aproximada <code>X → y</code> y se evalúa con observaciones que no utilizó para aprender.</p>
+</section>
+<section id="aprendizaje-no-supervisado" class="level3" data-number="16.3.2">
+<h3 data-number="16.3.2" class="anchored" data-anchor-id="aprendizaje-no-supervisado"><span class="header-section-number">16.3.2</span> Aprendizaje no supervisado</h3>
+<p>No existe una respuesta correcta conocida. Se buscan estructuras: grupos, componentes, densidades o anomalías.</p>
+<p>Aquí no tiene sentido reportar <em>accuracy</em> contra una etiqueta inexistente. La evaluación combina criterios internos, estabilidad, utilidad empresarial e inspección humana.</p>
+</section>
+<section id="ejemplo-de-la-diferencia" class="level3" data-number="16.3.3">
+<h3 data-number="16.3.3" class="anchored" data-anchor-id="ejemplo-de-la-diferencia"><span class="header-section-number">16.3.3</span> Ejemplo de la diferencia</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pregunta</th>
+<th>¿Hay respuesta conocida?</th>
+<th>Enfoque</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>¿Esta transacción terminará cancelada?</td>
+<td>sí: estado histórico</td>
+<td>clasificación</td>
+</tr>
+<tr class="even">
+<td>¿Qué valor de venta esperamos?</td>
+<td>sí: valor observado</td>
+<td>regresión</td>
+</tr>
+<tr class="odd">
+<td>¿Qué perfiles de clientes aparecen?</td>
+<td>no</td>
+<td>clustering</td>
+</tr>
+<tr class="even">
+<td>¿Podemos resumir diez métricas en dos dimensiones?</td>
+<td>no</td>
+<td>PCA</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="flujo-mínimo-de-modelado" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="flujo-mínimo-de-modelado"><span class="header-section-number">16.4</span> 4. Flujo mínimo de modelado</h2>
+<pre class="text"><code>pregunta y uso
+      ↓
+unidad de análisis + objetivo
+      ↓
+datos disponibles al decidir
+      ↓
+separación entrenamiento/prueba
+      ↓
+preprocesamiento aprendido solo con entrenamiento
+      ↓
+modelo + línea base
+      ↓
+métrica coherente con el costo del error
+      ↓
+auditoría de errores, segmentos y limitaciones
+      ↓
+decisión, monitoreo o descarte</code></pre>
+<section id="entrenamiento-y-prueba" class="level3" data-number="16.4.1">
+<h3 data-number="16.4.1" class="anchored" data-anchor-id="entrenamiento-y-prueba"><span class="header-section-number">16.4.1</span> Entrenamiento y prueba</h3>
+<ul>
+<li><strong>Entrenamiento:</strong> datos con los que el modelo aprende.</li>
+<li><strong>Prueba:</strong> datos reservados para simular observaciones no vistas.</li>
+<li><strong>Validación cruzada:</strong> repite particiones para estimar con mayor estabilidad.</li>
+</ul>
+<p>Evaluar sobre los mismos datos de entrenamiento confunde memoria con capacidad de generalización.</p>
+</section>
+<section id="fuga-de-información" class="level3" data-number="16.4.2">
+<h3 data-number="16.4.2" class="anchored" data-anchor-id="fuga-de-información"><span class="header-section-number">16.4.2</span> Fuga de información</h3>
+<p>Hay <em>data leakage</em> cuando el modelo recibe información que no estaría disponible en el momento real de decidir, o cuando el conjunto de prueba influye en la preparación/entrenamiento.</p>
+<p>Ejemplo: predecir cancelación usando un campo registrado <strong>después</strong> de la cancelación produciría un resultado artificialmente bueno e inútil.</p>
+</section>
+<section id="línea-base" class="level3" data-number="16.4.3">
+<h3 data-number="16.4.3" class="anchored" data-anchor-id="línea-base"><span class="header-section-number">16.4.3</span> Línea base</h3>
+<p>Antes de celebrar un modelo, compáralo con una regla simple:</p>
+<ul>
+<li>regresión: predecir siempre la media/mediana;</li>
+<li>clasificación: predecir siempre la clase mayoritaria;</li>
+<li>series: repetir el último valor o patrón estacional.</li>
+</ul>
+<p>Si el modelo no supera una base razonable, su complejidad no está justificada.</p>
+</section>
+</section>
+<section id="correlación-detectar-asociación-no-decidir-causalidad" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="correlación-detectar-asociación-no-decidir-causalidad"><span class="header-section-number">16.5</span> 5. Correlación: detectar asociación, no decidir causalidad</h2>
+<p>La correlación responde si dos variables se mueven conjuntamente de una forma específica.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ventas[[<span class="st">"descuento"</span>, <span class="st">"cantidad"</span>, <span class="st">"valor_venta"</span>]].corr()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Medida</th>
+<th>Captura</th>
+<th>Precaución</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pearson</td>
+<td>asociación lineal</td>
+<td>extremos y no linealidad</td>
+</tr>
+<tr class="even">
+<td>Spearman</td>
+<td>asociación monotónica por rangos</td>
+<td>no captura toda relación posible</td>
+</tr>
+</tbody>
+</table>
+<p>Una correlación alta no identifica por sí sola causa, mecanismo ni decisión óptima.</p>
+</section>
+<section id="regresión-lineal-simple-y-múltiple" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="regresión-lineal-simple-y-múltiple"><span class="header-section-number">16.6</span> 6. Regresión lineal simple y múltiple</h2>
+<section id="pregunta" class="level3" data-number="16.6.1">
+<h3 data-number="16.6.1" class="anchored" data-anchor-id="pregunta"><span class="header-section-number">16.6.1</span> Pregunta</h3>
+<blockquote class="blockquote">
+<p>¿Cuánto cambia o cuánto podemos estimar de una variable numérica?</p>
+</blockquote>
+<p>En una regresión simple usamos una variable predictora. En una múltiple combinamos varias.</p>
+<pre class="text"><code>resultado numérico ≈ intercepto + efecto de X1 + efecto de X2 + ... + error</code></pre>
+</section>
+<section id="dos-propósitos-que-no-deben-confundirse" class="level3" data-number="16.6.2">
+<h3 data-number="16.6.2" class="anchored" data-anchor-id="dos-propósitos-que-no-deben-confundirse"><span class="header-section-number">16.6.2</span> Dos propósitos que no deben confundirse</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Propósito</th>
+<th>Prioridad</th>
+<th>Pregunta típica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Explicativo</td>
+<td>interpretar asociación y controlar variables pertinentes</td>
+<td>¿cómo se relaciona X con y manteniendo otras variables?</td>
+</tr>
+<tr class="even">
+<td>Predictivo</td>
+<td>generalizar con el menor error posible</td>
+<td>¿qué valor tendrá y para una observación nueva?</td>
+</tr>
+</tbody>
+</table>
+<p>Un modelo muy interpretable no siempre es el mejor predictor; un predictor flexible no siempre explica bien.</p>
+</section>
+<section id="qué-leer" class="level3" data-number="16.6.3">
+<h3 data-number="16.6.3" class="anchored" data-anchor-id="qué-leer"><span class="header-section-number">16.6.3</span> Qué leer</h3>
+<ul>
+<li>signo y magnitud de coeficientes;</li>
+<li>categoría de referencia para variables cualitativas;</li>
+<li>error fuera de muestra;</li>
+<li>residuos y casos de error grande;</li>
+<li>estabilidad y plausibilidad.</li>
+</ul>
+</section>
+<section id="métricas" class="level3" data-number="16.6.4">
+<h3 data-number="16.6.4" class="anchored" data-anchor-id="métricas"><span class="header-section-number">16.6.4</span> Métricas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Métrica</th>
+<th>Lectura práctica</th>
+<th>Atención</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>MAE</td>
+<td>error absoluto promedio en la unidad de <code>y</code></td>
+<td>todos los errores pesan linealmente</td>
+</tr>
+<tr class="even">
+<td>RMSE</td>
+<td>penaliza más los errores grandes</td>
+<td>sensible a extremos</td>
+</tr>
+<tr class="odd">
+<td>R²</td>
+<td>proporción de variación explicada dentro del contexto evaluado</td>
+<td>no equivale a causalidad ni utilidad</td>
+</tr>
+</tbody>
+</table>
+<p>Una métrica debe leerse contra la escala del negocio. Un MAE de 20.000 puede ser excelente o inaceptable según el uso.</p>
+</section>
+<section id="supuestos-relevantes-sin-demostración" class="level3" data-number="16.6.5">
+<h3 data-number="16.6.5" class="anchored" data-anchor-id="supuestos-relevantes-sin-demostración"><span class="header-section-number">16.6.5</span> Supuestos relevantes sin demostración</h3>
+<ul>
+<li>relación suficientemente bien representada;</li>
+<li>observaciones pertinentes e independientes según el diseño;</li>
+<li>residuos sin patrón grave;</li>
+<li>ausencia de fuga;</li>
+<li>predicción dentro de un rango respaldado por datos.</li>
+</ul>
+</section>
+</section>
+<section id="clasificación" class="level2" data-number="16.7">
+<h2 data-number="16.7" class="anchored" data-anchor-id="clasificación"><span class="header-section-number">16.7</span> 7. Clasificación</h2>
+<section id="pregunta-1" class="level3" data-number="16.7.1">
+<h3 data-number="16.7.1" class="anchored" data-anchor-id="pregunta-1"><span class="header-section-number">16.7.1</span> Pregunta</h3>
+<blockquote class="blockquote">
+<p>¿A qué categoría pertenece probablemente una observación?</p>
+</blockquote>
+<p>Ejemplos: cancelada/completada, abandono/no abandono, fraude/no fraude, responder/no responder.</p>
+<p>Un clasificador suele producir una <strong>probabilidad</strong> y después aplica un <strong>umbral</strong> para convertirla en clase. El umbral 0,50 es una convención, no una ley empresarial.</p>
+</section>
+<section id="matriz-de-confusión" class="level3" data-number="16.7.2">
+<h3 data-number="16.7.2" class="anchored" data-anchor-id="matriz-de-confusión"><span class="header-section-number">16.7.2</span> Matriz de confusión</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Real positiva</th>
+<th style="text-align: right;">Real negativa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Predicción positiva</td>
+<td style="text-align: right;">verdadero positivo</td>
+<td style="text-align: right;">falso positivo</td>
+</tr>
+<tr class="even">
+<td>Predicción negativa</td>
+<td style="text-align: right;">falso negativo</td>
+<td style="text-align: right;">verdadero negativo</td>
+</tr>
+</tbody>
+</table>
+<p>Para NovaRetail:</p>
+<ul>
+<li>falso positivo: activar una intervención para una venta que no se cancelaría;</li>
+<li>falso negativo: no intervenir en una venta que terminará cancelada.</li>
+</ul>
+<p>La mejor métrica depende de cuál error cuesta más.</p>
+</section>
+<section id="métricas-principales" class="level3" data-number="16.7.3">
+<h3 data-number="16.7.3" class="anchored" data-anchor-id="métricas-principales"><span class="header-section-number">16.7.3</span> Métricas principales</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Métrica</th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accuracy</td>
+<td>¿qué proporción total clasificamos correctamente?</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td>de las alertas, ¿cuántas eran realmente positivas?</td>
+</tr>
+<tr class="odd">
+<td>Recall/sensibilidad</td>
+<td>de los positivos reales, ¿cuántos detectamos?</td>
+</tr>
+<tr class="even">
+<td>F1</td>
+<td>¿cómo equilibramos precision y recall?</td>
+</tr>
+<tr class="odd">
+<td>ROC-AUC</td>
+<td>¿qué tan bien ordena el modelo positivos frente a negativos en distintos umbrales?</td>
+</tr>
+</tbody>
+</table>
+<p>Con una clase rara, una accuracy alta puede ser trivial. Si solo 5 % cancela, predecir “no cancela” siempre logra 95 % y no detecta ningún caso.</p>
+</section>
+</section>
+<section id="regresión-logística" class="level2" data-number="16.8">
+<h2 data-number="16.8" class="anchored" data-anchor-id="regresión-logística"><span class="header-section-number">16.8</span> 8. Regresión logística</h2>
+<p>La regresión logística modela la probabilidad de una clase. Es una primera opción valiosa porque:</p>
+<ul>
+<li>genera probabilidades;</li>
+<li>permite una línea base interpretable;</li>
+<li>funciona bien cuando la relación es razonablemente simple;</li>
+<li>facilita discutir signo, magnitud y umbral.</li>
+</ul>
+<p>Precaución: los coeficientes no son cambios directos de probabilidad; para audiencias ejecutivas conviene mostrar <strong>probabilidades predichas o efectos marginales</strong>, además del desempeño.</p>
+</section>
+<section id="árbol-de-decisión" class="level2" data-number="16.9">
+<h2 data-number="16.9" class="anchored" data-anchor-id="árbol-de-decisión"><span class="header-section-number">16.9</span> 9. Árbol de decisión</h2>
+<p>Un árbol aprende reglas sucesivas:</p>
+<pre class="text"><code>                  ¿descuento &gt; 15 %?
+                    /             \
+                  sí               no
+                 /                  \
+          ¿canal = Web?        probabilidad menor</code></pre>
+<section id="fortalezas" class="level3" data-number="16.9.1">
+<h3 data-number="16.9.1" class="anchored" data-anchor-id="fortalezas"><span class="header-section-number">16.9.1</span> Fortalezas</h3>
+<ul>
+<li>representación visual intuitiva;</li>
+<li>relaciones no lineales e interacciones;</li>
+<li>reglas accionables.</li>
+</ul>
+</section>
+<section id="riesgos" class="level3" data-number="16.9.2">
+<h3 data-number="16.9.2" class="anchored" data-anchor-id="riesgos"><span class="header-section-number">16.9.2</span> Riesgos</h3>
+<ul>
+<li>un árbol profundo memoriza ruido;</li>
+<li>pequeños cambios pueden producir otra estructura;</li>
+<li>“importancia” no equivale a efecto causal;</li>
+<li>una regla aprendida no es política automática.</li>
+</ul>
+<p>La profundidad y otros parámetros controlan la <strong>flexibilidad</strong>. Muy poca flexibilidad produce sesgo; demasiada produce sobreajuste.</p>
+</section>
+</section>
+<section id="random-forest-y-ensambles" class="level2" data-number="16.10">
+<h2 data-number="16.10" class="anchored" data-anchor-id="random-forest-y-ensambles"><span class="header-section-number">16.10</span> 10. Random Forest y ensambles</h2>
+<p>Random Forest combina muchos árboles construidos con muestras y subconjuntos de variables. La agregación suele mejorar estabilidad y predicción respecto a un solo árbol.</p>
+<section id="intercambio-central" class="level3" data-number="16.10.1">
+<h3 data-number="16.10.1" class="anchored" data-anchor-id="intercambio-central"><span class="header-section-number">16.10.1</span> Intercambio central</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Un árbol</th>
+<th>Random Forest</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>más fácil de explicar</td>
+<td>suele predecir mejor</td>
+</tr>
+<tr class="even">
+<td>más inestable</td>
+<td>más estable</td>
+</tr>
+<tr class="odd">
+<td>reglas visibles</td>
+<td>decisión agregada menos transparente</td>
+</tr>
+</tbody>
+</table>
+<p>La importancia de variables indica cuánto ayuda una variable al modelo bajo una definición concreta. No afirma que cambiar esa variable cause el resultado.</p>
+</section>
+</section>
+<section id="clustering-encontrar-grupos-sin-etiquetas" class="level2" data-number="16.11">
+<h2 data-number="16.11" class="anchored" data-anchor-id="clustering-encontrar-grupos-sin-etiquetas"><span class="header-section-number">16.11</span> 11. Clustering: encontrar grupos sin etiquetas</h2>
+<section id="pregunta-2" class="level3" data-number="16.11.1">
+<h3 data-number="16.11.1" class="anchored" data-anchor-id="pregunta-2"><span class="header-section-number">16.11.1</span> Pregunta</h3>
+<blockquote class="blockquote">
+<p>¿Existen perfiles de observaciones con características similares?</p>
+</blockquote>
+<p>En NovaRetail podemos construir una tabla por cliente:</p>
+<pre class="text"><code>cliente | compras | gasto_total | ticket_promedio | descuento_promedio</code></pre>
+<p>Después estandarizamos porque gasto en pesos y número de compras tienen escalas distintas.</p>
+</section>
+<section id="k-means" class="level3" data-number="16.11.2">
+<h3 data-number="16.11.2" class="anchored" data-anchor-id="k-means"><span class="header-section-number">16.11.2</span> K-means</h3>
+<ul>
+<li>representa cada grupo por un centroide;</li>
+<li>requiere elegir <code>k</code>;</li>
+<li>favorece grupos aproximadamente compactos;</li>
+<li>es sensible a escala e inicialización.</li>
+</ul>
+<p>El algoritmo entrega <code>cluster 0</code>, <code>cluster 1</code>… El analista inspecciona perfiles y propone nombres. “Premium” no sale automáticamente del algoritmo.</p>
+</section>
+<section id="medoides" class="level3" data-number="16.11.3">
+<h3 data-number="16.11.3" class="anchored" data-anchor-id="medoides"><span class="header-section-number">16.11.3</span> Medoides</h3>
+<p>Se parece a K-means, pero el centro del grupo es una observación real. Puede ser más robusto ante extremos y admite otras medidas de distancia.</p>
+</section>
+<section id="jerárquico" class="level3" data-number="16.11.4">
+<h3 data-number="16.11.4" class="anchored" data-anchor-id="jerárquico"><span class="header-section-number">16.11.4</span> Jerárquico</h3>
+<p>Construye una jerarquía y la representa con un dendrograma. Es útil para explorar grupos anidados y discutir diferentes niveles de corte.</p>
+</section>
+<section id="dbscan" class="level3" data-number="16.11.5">
+<h3 data-number="16.11.5" class="anchored" data-anchor-id="dbscan"><span class="header-section-number">16.11.5</span> DBSCAN</h3>
+<p>Forma grupos a partir de zonas densas y puede marcar ruido. No exige <code>k</code>, pero requiere parámetros de vecindad/densidad y puede fallar cuando las densidades cambian mucho.</p>
+</section>
+<section id="evaluar-sin-respuesta-correcta" class="level3" data-number="16.11.6">
+<h3 data-number="16.11.6" class="anchored" data-anchor-id="evaluar-sin-respuesta-correcta"><span class="header-section-number">16.11.6</span> Evaluar sin “respuesta correcta”</h3>
+<ul>
+<li>cohesión/separación, por ejemplo <em>silhouette</em>;</li>
+<li>estabilidad ante muestras y parámetros;</li>
+<li>tamaño suficiente de los grupos;</li>
+<li>interpretabilidad del perfil;</li>
+<li>utilidad para una acción diferenciada;</li>
+<li>revisión de si el algoritmo solo reprodujo escala o una variable dominante.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Segmentar personas puede amplificar sesgos o producir acciones injustas. Las variables, nombres y usos deben revisarse ética y operacionalmente.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="pca-reducir-complejidad" class="level2" data-number="16.12">
+<h2 data-number="16.12" class="anchored" data-anchor-id="pca-reducir-complejidad"><span class="header-section-number">16.12</span> 12. PCA: reducir complejidad</h2>
+<section id="pregunta-3" class="level3" data-number="16.12.1">
+<h3 data-number="16.12.1" class="anchored" data-anchor-id="pregunta-3"><span class="header-section-number">16.12.1</span> Pregunta</h3>
+<blockquote class="blockquote">
+<p>¿Podemos resumir muchas variables correlacionadas en menos dimensiones conservando buena parte de su variación?</p>
+</blockquote>
+<p>PCA construye componentes como combinaciones de las variables originales.</p>
+</section>
+<section id="qué-interpretar" class="level3" data-number="16.12.2">
+<h3 data-number="16.12.2" class="anchored" data-anchor-id="qué-interpretar"><span class="header-section-number">16.12.2</span> Qué interpretar</h3>
+<ul>
+<li><strong>varianza explicada:</strong> cuánta información resume cada componente;</li>
+<li><strong>cargas:</strong> qué variables contribuyen y en qué dirección;</li>
+<li><strong>scores:</strong> posición de cada observación en los componentes.</li>
+</ul>
+</section>
+<section id="precauciones" class="level3" data-number="16.12.3">
+<h3 data-number="16.12.3" class="anchored" data-anchor-id="precauciones"><span class="header-section-number">16.12.3</span> Precauciones</h3>
+<ul>
+<li>estandariza cuando las unidades difieren;</li>
+<li>el componente maximiza varianza, no relevancia empresarial;</li>
+<li>el nombre del componente lo propone el analista;</li>
+<li>reducir dimensión puede sacrificar interpretación.</li>
+</ul>
+<p>PCA sirve para visualización, compresión, preprocesamiento y exploración; no es automáticamente un modelo predictivo.</p>
+</section>
+</section>
+<section id="detección-de-anomalías" class="level2" data-number="16.13">
+<h2 data-number="16.13" class="anchored" data-anchor-id="detección-de-anomalías"><span class="header-section-number">16.13</span> 13. Detección de anomalías</h2>
+<section id="iqr" class="level3" data-number="16.13.1">
+<h3 data-number="16.13.1" class="anchored" data-anchor-id="iqr"><span class="header-section-number">16.13.1</span> IQR</h3>
+<p>Detecta extremos univariados con una regla transparente.</p>
+</section>
+<section id="isolation-forest" class="level3" data-number="16.13.2">
+<h3 data-number="16.13.2" class="anchored" data-anchor-id="isolation-forest"><span class="header-section-number">16.13.2</span> Isolation Forest</h3>
+<p>Aísla observaciones mediante particiones aleatorias; las combinaciones inusuales suelen aislarse con menos divisiones.</p>
+<p>Una anomalía significa:</p>
+<blockquote class="blockquote">
+<p><strong>caso que merece investigación</strong></p>
+</blockquote>
+<p>No significa automáticamente fraude, error o cliente indeseable.</p>
+<p>Evalúa utilidad mediante revisión de casos, tasa de alertas, falsos positivos, estabilidad y costo de investigación.</p>
+</section>
+</section>
+<section id="técnicas-de-continuidad" class="level2" data-number="16.14">
+<h2 data-number="16.14" class="anchored" data-anchor-id="técnicas-de-continuidad"><span class="header-section-number">16.14</span> 14. Técnicas de continuidad</h2>
+<p>Los materiales de la Parte 4 también incluyen familias que no se desarrollan completas en las siete horas presenciales:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Familia</th>
+<th>Pregunta</th>
+<th>Cuándo continuar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sistemas de recomendación</td>
+<td>¿qué opción ordenar para cada usuario?</td>
+<td>interacciones usuario–producto o atributos de contenido</td>
+</tr>
+<tr class="even">
+<td>NLP/LDA</td>
+<td>¿qué patrones aparecen en texto?</td>
+<td>corpus suficiente y validación humana</td>
+</tr>
+<tr class="odd">
+<td>Datos geográficos/KDE</td>
+<td>¿dónde se concentran eventos?</td>
+<td>coordenadas válidas, escala y contexto espacial</td>
+</tr>
+<tr class="even">
+<td>SVD</td>
+<td>¿cómo aproximar una matriz con menos factores?</td>
+<td>reducción, recomendación o compresión</td>
+</tr>
+</tbody>
+</table>
+<p>Para texto, consulta <a href="./04b-mineria-texto.html">Datos cualitativos, minería de texto e IA</a>. Estas técnicas constituyen <strong>rutas autónomas</strong>, no modelos que deban aplicarse a todo proyecto.</p>
+</section>
+<section id="quick-reference-escoger-y-auditar" class="level2" data-number="16.15">
+<h2 data-number="16.15" class="anchored" data-anchor-id="quick-reference-escoger-y-auditar"><span class="header-section-number">16.15</span> 15. Quick Reference · escoger y auditar</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 29%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Familia</th>
+<th style="text-align: center;">Requiere <code>y</code></th>
+<th>Salida</th>
+<th>Métrica inicial</th>
+<th>Pregunta de auditoría</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regresión</td>
+<td style="text-align: center;">sí, numérica</td>
+<td>número</td>
+<td>MAE/RMSE + base</td>
+<td>¿el error es aceptable en la unidad del negocio?</td>
+</tr>
+<tr class="even">
+<td>Logística</td>
+<td style="text-align: center;">sí, categórica</td>
+<td>probabilidad</td>
+<td>recall/precision/AUC</td>
+<td>¿el umbral refleja el costo del error?</td>
+</tr>
+<tr class="odd">
+<td>Árbol</td>
+<td style="text-align: center;">sí</td>
+<td>regla/clase/número</td>
+<td>fuera de muestra</td>
+<td>¿está sobreajustado?</td>
+</tr>
+<tr class="even">
+<td>Random Forest</td>
+<td style="text-align: center;">sí</td>
+<td>clase/número</td>
+<td>fuera de muestra</td>
+<td>¿la mejora compensa menor transparencia?</td>
+</tr>
+<tr class="odd">
+<td>K-means</td>
+<td style="text-align: center;">no</td>
+<td>cluster</td>
+<td>silhouette + estabilidad</td>
+<td>¿los grupos son accionables o solo matemáticos?</td>
+</tr>
+<tr class="even">
+<td>Jerárquico</td>
+<td style="text-align: center;">no</td>
+<td>dendrograma</td>
+<td>estabilidad/cortes</td>
+<td>¿qué nivel de agrupación tiene sentido?</td>
+</tr>
+<tr class="odd">
+<td>PCA</td>
+<td style="text-align: center;">no</td>
+<td>componentes</td>
+<td>varianza explicada</td>
+<td>¿qué información e interpretación se perdió?</td>
+</tr>
+<tr class="even">
+<td>Isolation Forest</td>
+<td style="text-align: center;">no</td>
+<td>anomalía/score</td>
+<td>revisión de alertas</td>
+<td>¿qué proporción de alertas merece acción?</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ficha-mínima-de-modelo" class="level2" data-number="16.16">
+<h2 data-number="16.16" class="anchored" data-anchor-id="ficha-mínima-de-modelo"><span class="header-section-number">16.16</span> 16. Ficha mínima de modelo</h2>
+<p>Todo modelo del curso debe poder resumirse así:</p>
+<pre class="text"><code>Pregunta y decisión:
+Unidad de análisis:
+Variable objetivo (si existe):
+Predictores disponibles al decidir:
+Separación train/test:
+Línea base:
+Modelo y parámetros clave:
+Métrica y razón de elegirla:
+Resultado fuera de muestra:
+Errores más costosos:
+Segmentos donde falla:
+Riesgos, sesgos y limitaciones:
+Uso permitido / uso no permitido:</code></pre>
+</section>
+<section id="ia-como-copiloto-no-como-juez" class="level2" data-number="16.17">
+<h2 data-number="16.17" class="anchored" data-anchor-id="ia-como-copiloto-no-como-juez"><span class="header-section-number">16.17</span> 17. IA como copiloto, no como juez</h2>
+<p>La IA puede ayudar a proponer código, revisar un pipeline, explicar una métrica o identificar riesgos. El flujo responsable es:</p>
+<ol type="1">
+<li>plantea la pregunta;</li>
+<li>entrega únicamente variables reales;</li>
+<li>pide una línea base y una separación correcta;</li>
+<li>ejecuta en Colab;</li>
+<li>revisa salidas y errores;</li>
+<li>audita supuestos, fuga y lenguaje;</li>
+<li>documenta cambios.</li>
+</ol>
+<p>Prompt reutilizable:</p>
+<pre class="text"><code>CONTEXTO
+Tengo una tabla donde una fila representa [unidad]. Quiero apoyar la decisión [decisión]. La variable objetivo es [y] y solo dispongo de [X] en el momento de decidir.
+
+TAREA
+Propón una línea base y un pipeline reproducible. Separa entrenamiento y prueba antes de aprender transformaciones. Incluye una métrica coherente con [costo del error] y una auditoría por segmentos.
+
+FORMATO
+1. Supuestos. 2. Código comentado. 3. Pruebas de validación. 4. Guía de interpretación. 5. Riesgos.
+
+RESTRICCIONES
+No inventes columnas. No uses información posterior al resultado. No interpretes asociación o importancia como causalidad. Señala cualquier dato que falte.</code></pre>
+</section>
+<section id="laboratorio-en-google-colab" class="level2" data-number="16.18">
+<h2 data-number="16.18" class="anchored" data-anchor-id="laboratorio-en-google-colab"><span class="header-section-number">16.18</span> 18. Laboratorio en Google Colab</h2>
+<p>Utiliza el notebook <a href="recursos/colab/modelos_novaretail_colab.ipynb"><code>modelos_novaretail_colab.ipynb</code></a>.</p>
+<p>El notebook contiene:</p>
+<ol type="1">
+<li>carga guiada de <a href="recursos/colab/datos_semana2.zip"><code>datos_semana2.zip</code></a>, o alternativamente de <code>ventas.csv</code>, <code>clientes.csv</code>, <code>productos.csv</code> e <code>insureco.csv</code>, mediante el selector de Colab;</li>
+<li>auditoría y construcción de una tabla analítica;</li>
+<li>correlación;</li>
+<li>regresión lineal simple y múltiple;</li>
+<li>clasificación con logística, árbol y Random Forest;</li>
+<li>matriz de confusión, precision, recall, F1 y ROC-AUC;</li>
+<li>segmentación de clientes con K-means;</li>
+<li>PCA y anomalías como profundización;</li>
+<li>preguntas de interpretación y transferencia.</li>
+</ol>
+<p>La celda de carga permite <strong>seleccionar o arrastrar y soltar</strong> el ZIP. Después verifica que estén los cuatro nombres esperados, las columnas obligatorias y las dimensiones de referencia antes de construir modelos.</p>
+<p>No transcribas el notebook en clase. La dinámica es:</p>
+<blockquote class="blockquote">
+<p><strong>anticipar → ejecutar → observar → comparar → modificar → interpretar → auditar</strong></p>
+</blockquote>
+</section>
+<section id="transferencia-a-tu-proyecto" class="level2" data-number="16.19">
+<h2 data-number="16.19" class="anchored" data-anchor-id="transferencia-a-tu-proyecto"><span class="header-section-number">16.19</span> 19. Transferencia a tu proyecto</h2>
+<p>Elige <strong>una</strong> pregunta, no un algoritmo. Después completa la ficha mínima y decide:</p>
+<ul>
+<li>si realmente existe una variable objetivo;</li>
+<li>si la tarea es descriptiva, supervisada o no supervisada;</li>
+<li>qué datos estarán disponibles cuando se use el resultado;</li>
+<li>qué línea base corresponde;</li>
+<li>qué error importa;</li>
+<li>quién podría actuar;</li>
+<li>qué riesgo haría preferible no desplegar el modelo.</li>
+</ul>
+</section>
+<section id="fuentes-internas-adaptadas" class="level2" data-number="16.20">
+<h2 data-number="16.20" class="anchored" data-anchor-id="fuentes-internas-adaptadas"><span class="header-section-number">16.20</span> Fuentes internas adaptadas</h2>
+<ul>
+<li><strong>Parte 2:</strong> regresión lineal simple, múltiple y tópicos de regresión.</li>
+<li><strong>Parte 3:</strong> modelos supervisados, explicativo vs.&nbsp;predictivo, preprocesamiento, árboles, Random Forest, ensambles y métricas de clasificación.</li>
+<li><strong>Parte 4:</strong> aprendizaje no supervisado, clustering, K-means, medoides, jerárquico, DBSCAN, PCA, recomendación, NLP y análisis espacial.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./sesiones/f2-sabado.html" class="pagination-link" aria-label="Sesión 4 · Sábado · De la evidencia a los modelos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sesión 4 · Sábado · De la evidencia a los modelos</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./interactivos/evidencia-ia.html" class="pagination-link" aria-label="Interactivo · Dato, hipótesis o invención">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Interactivo · Dato, hipótesis o invención</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

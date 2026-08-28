@@ -1,0 +1,502 @@
+﻿id_venta,id_cliente,id_producto,fecha,region,canal,categoria,cantidad,descuento,valor_venta,estado
+V0001,C174,P035,2026-01-19,Caribe,Tienda,Cuidado personal,4,0,262463.0,Completada
+V0002,C130,P039,2026-01-18,Caribe,Tienda,Hogar,2,0,336715.0,Completada
+V0003,C041,P028,2026-03-09,Orinoquía,Tienda,Accesorios,2,0,44137.0,Completada
+V0004,C025,P023,2026-03-20,Pacífica,Tienda,Tecnología,3,0.05,124402.0,Completada
+V0005,C076,P040,2026-03-19,Orinoquía,Marketplace,Tecnología,2,0.1,394608.0,Completada
+V0006,C075,P006,2026-02-28,Caribe,Marketplace,Hogar,1,0.2,237043.0,Completada
+V0007,C069,P005,2026-05-21,Pacífica,Web,Cuidado personal,2,0.15,328428.0,Completada
+V0008,C070,P036,2026-02-22,Andina,Tienda,Accesorios,3,0.05,371908.0,Completada
+V0009,C081,P014,2026-06-16,Andina,Tienda,Cuidado personal,4,0.1,217862.0,Completada
+V0010,C144,P035,2026-03-24,Andina,Web,Hogar,4,0,290147.0,Cancelada
+V0011,C024,P004,2026-01-05,Orinoquía,Web,Hogar,2,0.05,336385.0,Completada
+V0012,C120,P034,2026-03-18,Caribe,Web,Accesorios,1,0.1,258716.0,Completada
+V0013,C001,P017,2026-05-25,Pacífica,Marketplace,Cuidado personal,2,0.05,374292.0,Completada
+V0014,C164,P033,2026-05-07,Caribe,Marketplace,Cuidado personal,2,0.2,356444.0,Completada
+V0015,C093,P020,2026-02-02,Andina,Marketplace,Tecnología,2,0,128200.0,Cancelada
+V0016,C018,P035,2026-02-05,Caribe,Tienda,Accesorios,4,0.2,165571.0,Completada
+V0017,C177,P013,2026-06-10,Andina,Web,Accesorios,4,0.2,573894.0,Completada
+V0018,C064,P015,2026-01-11,Orinoquía,Marketplace,Accesorios,1,0,188516.0,Cancelada
+V0019,C059,P005,2026-01-28,Andina,Marketplace,Hogar,3,0,479398.0,Completada
+V0020,C139,P009,2026-06-19,Andina,Web,Accesorios,4,0,269919.0,Completada
+V0021,C109,P027,2026-04-28,Orinoquía,Web,Hogar,1,0,430336.0,Completada
+V0022,C028,P016,2026-02-07,Caribe,Web,Cuidado personal,4,0.2,374708.0,Completada
+V0023,C114,P036,2026-01-02,Orinoquía,Tienda,Cuidado personal,1,0,20000,Completada
+V0024,C124,P014,2026-04-02,Andina,Tienda,Accesorios,2,0.05,326361.0,Completada
+V0025,C109,P036,2026-06-23,Caribe,Web,Cuidado personal,4,0,479810.0,Completada
+V0026,C149,P035,2026-01-24,Andina,Web,Hogar,3,0,150629.0,Completada
+V0027,C015,P033,2026-01-28,Caribe,Marketplace,Accesorios,2,0,20000,Completada
+V0028,C031,P037,2026-02-19,Caribe,Marketplace,Hogar,1,0.05,255093.0,Cancelada
+V0029,C081,P016,2026-03-13,Caribe,Web,Cuidado personal,2,0.15,346786.0,Completada
+V0030,C118,P040,2026-05-04,Orinoquía,Web,Tecnología,1,0,222254.0,Completada
+V0031,C063,P024,2026-03-06,Andina,Marketplace,Cuidado personal,4,0,347329.0,Completada
+V0032,C142,P020,2026-06-04,Pacífica,Marketplace,Tecnología,2,0.15,355920.0,Completada
+V0033,C088,P014,2026-06-21,Caribe,Tienda,Hogar,3,0.15,233300.0,Completada
+V0034,C163,P028,2026-03-02,Orinoquía,Web,Tecnología,1,0,448897.0,Completada
+V0035,C110,P036,2026-01-04,Andina,Marketplace,Cuidado personal,1,0.15,339737.0,Completada
+V0036,C033,P003,2026-03-12,Caribe,Web,Hogar,1,0.05,388451.0,Completada
+V0037,C105,P040,2026-06-05,Andina,Marketplace,Hogar,2,0.1,194789.0,Completada
+V0038,C086,P027,2026-06-28,Andina,Web,Tecnología,2,0,146613.0,Completada
+V0039,C057,P013,2026-04-12,Andina,Marketplace,Tecnología,3,0.05,230891.0,Completada
+V0040,C085,P018,2026-01-25,Andina,Tienda,Hogar,3,0.05,286473.0,Completada
+V0041,C046,P038,2026-03-02,Orinoquía,Marketplace,Cuidado personal,1,0,324321.0,Cancelada
+V0042,C156,P033,2026-01-13,Orinoquía,Web,Cuidado personal,2,0.05,234176.0,Completada
+V0043,C176,P013,2026-03-14,Caribe,Marketplace,Accesorios,1,0.1,579106.0,Completada
+V0044,C077,P033,2026-03-22,Pacífica,Marketplace,Tecnología,4,0.15,263391.0,Completada
+V0045,C098,P012,2026-05-19,Orinoquía,Marketplace,Cuidado personal,3,0.15,173913.0,Completada
+V0046,C111,P038,2026-05-21,Caribe,Web,Cuidado personal,3,0,229365.0,Completada
+V0047,C044,P006,2026-03-17,Orinoquía,Web,Hogar,3,0.2,20000,Completada
+V0048,C051,P010,2026-01-02,Andina,Marketplace,Cuidado personal,2,0,242549.0,Completada
+V0049,C179,P025,2026-04-13,Caribe,Web,Accesorios,2,0.15,398368.0,Completada
+V0050,C046,P034,2026-04-02,Caribe,Tienda,Accesorios,2,0,139758.0,Completada
+V0051,C082,P029,2026-05-27,Orinoquía,Tienda,Accesorios,4,0.1,54084.0,Completada
+V0052,C067,P016,2026-06-09,Orinoquía,Tienda,Accesorios,4,0.05,20000,Completada
+V0053,C082,P035,2026-01-05,Pacífica,Web,Tecnología,2,0,236761.0,Completada
+V0054,C055,P005,2026-04-14,Orinoquía,Marketplace,Hogar,3,0.15,160326.0,Completada
+V0055,C150,P002,2026-05-13,Orinoquía,Web,Tecnología,4,0.2,299157.0,Completada
+V0056,C108,P035,2026-06-24,Pacífica,Web,Accesorios,2,0.2,400818.0,Completada
+V0057,C174,P026,2026-06-06,Andina,Web,Accesorios,4,0.15,2500000,Completada
+V0058,C165,P028,2026-02-28,Caribe,Web,Tecnología,4,0,272517.0,Completada
+V0059,C098,P018,2026-04-09,Caribe,Web,Accesorios,1,0,187981.0,Completada
+V0060,C058,P005,2026-06-02,Caribe,Marketplace,Tecnología,1,0,396326.0,Completada
+V0061,C145,P014,2026-04-23,Andina,Tienda,Hogar,3,0,271405.0,Completada
+V0062,C042,P020,2026-01-19,Andina,Marketplace,Tecnología,1,0.2,418182.0,Completada
+V0063,C063,P007,2026-06-25,Orinoquía,Web,Hogar,3,0.15,450462.0,Cancelada
+V0064,C137,P028,2026-06-12,Caribe,Marketplace,Tecnología,1,0,358552.0,Completada
+V0065,C163,P030,2026-06-05,Pacífica,Tienda,Accesorios,4,0,289027.0,Completada
+V0066,C112,P038,2026-03-11,Pacífica,Marketplace,Accesorios,2,0.05,200590.0,Completada
+V0067,C098,P022,2026-01-16,Pacífica,Web,Hogar,3,0.15,260544.0,Completada
+V0068,C067,P022,2026-03-20,Orinoquía,Tienda,Cuidado personal,3,0.2,78149.0,Completada
+V0069,C143,P016,2026-06-16,Caribe,Marketplace,Hogar,4,0.05,451856.0,Completada
+V0070,C104,P016,2026-03-22,Caribe,Tienda,Cuidado personal,3,0,374463.0,Completada
+V0071,C065,P015,2026-01-24,Pacífica,Web,Cuidado personal,2,0,168095.0,Completada
+V0072,C056,P031,2026-03-24,Caribe,Marketplace,Hogar,3,0,383517.0,Completada
+V0073,C137,P009,2026-03-02,Andina,Web,Hogar,1,0.15,183781.0,Completada
+V0074,C126,P007,2026-01-19,Pacífica,Marketplace,Hogar,3,0.15,351102.0,Completada
+V0075,C123,P008,2026-01-13,Orinoquía,Web,Cuidado personal,4,0.2,278225.0,Completada
+V0076,C145,P020,2026-01-08,Caribe,Tienda,Hogar,1,0.2,301658.0,Completada
+V0077,C077,P038,2026-04-10,Orinoquía,Marketplace,Hogar,1,0.05,282017.0,Cancelada
+V0078,C170,P006,2026-02-08,Caribe,Tienda,Hogar,2,0,124803.0,Completada
+V0079,C075,P003,2026-02-10,Caribe,Tienda,Tecnología,3,0.05,80321.0,Completada
+V0080,C161,P038,2026-06-26,Caribe,Marketplace,Hogar,2,0,376389.0,Completada
+V0081,C037,P005,2026-01-06,Caribe,Marketplace,Hogar,3,0.2,76410.0,Cancelada
+V0082,C177,P020,2026-06-13,Pacífica,Web,Tecnología,3,0.05,20000,Completada
+V0083,C083,P039,2026-03-01,Orinoquía,Web,Tecnología,1,0.15,20196.0,Completada
+V0084,C011,P012,2026-04-17,Caribe,Marketplace,Cuidado personal,4,0.1,90252.0,Completada
+V0085,C121,P023,2026-04-11,Andina,Marketplace,Accesorios,3,0,152124.0,Completada
+V0086,C127,P019,2026-06-13,Andina,Web,Accesorios,1,0.15,137972.0,Completada
+V0087,C132,P001,2026-06-28,Caribe,Web,Cuidado personal,4,0.05,95130.0,Completada
+V0088,C128,P029,2026-01-07,Caribe,Tienda,Cuidado personal,3,0.1,592441.0,Completada
+V0089,C162,P039,2026-02-23,Andina,Web,Accesorios,2,0,378107.0,Completada
+V0090,C058,P008,2026-04-04,Caribe,Marketplace,Accesorios,2,0,150266.0,Completada
+V0091,C063,P030,2026-05-05,Pacífica,Marketplace,Cuidado personal,4,0.05,121432.0,Completada
+V0092,C107,P022,2026-05-09,Andina,Tienda,Cuidado personal,1,0.2,341374.0,Completada
+V0093,C089,P022,2026-05-25,Pacífica,Marketplace,Accesorios,4,0.05,360893.0,Completada
+V0094,C099,P015,2026-04-02,Pacífica,Tienda,Hogar,3,0.1,145936.0,Completada
+V0095,C152,P022,2026-01-28,Orinoquía,Web,Hogar,4,0.1,221563.0,Completada
+V0096,C168,P010,2026-01-16,Orinoquía,Tienda,Hogar,3,0.05,261129.0,Completada
+V0097,C137,P025,2026-03-21,Orinoquía, web ,Tecnología,4,0.2,423401.0,Completada
+V0098,C162,P019,2026-02-24,Caribe,Marketplace,Tecnología,1,0,40264.0,Completada
+V0099,C012,P021,2026-01-10,Caribe,Marketplace,Tecnología,3,0,57898.0,Completada
+V0100,C106,P037,2026-06-26,Orinoquía,Tienda,Hogar,2,0.1,334662.0,Completada
+V0101,C037,P015,2026-04-21,Andina,Tienda,Accesorios,3,0.1,184111.0,Completada
+V0102,C120,P019,2026-06-18,Pacífica,Marketplace,Tecnología,2,0.2,188995.0,Completada
+V0103,C117,P020,2026-02-13,Orinoquía,Web,Cuidado personal,4,0,165465.0,Completada
+V0104,C076,P019,2026-01-27,Andina,Web,Cuidado personal,4,0.1,147267.0,Completada
+V0105,C074,P015,2026-05-26,Caribe,Marketplace,Tecnología,3,0.2,455943.0,Completada
+V0106,C169,P009,2026-06-04,Andina,Marketplace,Cuidado personal,1,0.15,136714.0,Completada
+V0107,C084,P027,2026-02-07,Orinoquía,Tienda,Cuidado personal,2,0,253269.0,Completada
+V0108,C043,P017,2026-04-26,Pacífica,Marketplace,Cuidado personal,3,0.2,199523.0,Completada
+V0109,C174,P026,2026-05-12,Caribe,Web,Tecnología,1,0.2,491238.0,Completada
+V0110,C095,P017,2026-05-13,Caribe,Web,Tecnología,3,0.05,542242.0,Completada
+V0111,C157,P015,2026-06-03,Andina,Web,Tecnología,4,0,20000,Completada
+V0112,C010,P020,2026-04-04,Orinoquía,Tienda,Hogar,1,0,31182.0,Completada
+V0113,C139,P027,2026-05-24,Andina,Web,Accesorios,2,0.15,24319.0,Completada
+V0114,C009,P024,2026-02-15,Caribe,Web,Accesorios,4,0,507800.0,Completada
+V0115,C016,P026,2026-03-07,Pacífica,Tienda,Cuidado personal,1,0,20000,Completada
+V0116,C164,P039,2026-01-02,Caribe,Marketplace,Hogar,3,0.15,153433.0,Completada
+V0117,C151,P014,2026-02-11,Andina,Marketplace,Hogar,2,0,476513.0,Cancelada
+V0118,C139,P017,2026-02-04,Caribe,Web,Hogar,1,0,359583.0,Completada
+V0119,C014,P009,2026-06-14,Caribe,Web,Hogar,1,0,238820.0,Completada
+V0120,C152,P007,2026-04-17,Orinoquía,Web,Cuidado personal,2,0.1,246772.0,Cancelada
+V0121,C123,P026,2026-04-22,Caribe,Marketplace,Cuidado personal,1,0,20000,Completada
+V0122,C156,P010,2026-01-05,Orinoquía,Tienda,Tecnología,3,0,354077.0,Cancelada
+V0123,C180,P008,2026-06-21,Pacífica,Web,Cuidado personal,2,0,77088.0,Completada
+V0124,C117,P026,2026-04-24,Orinoquía,Tienda,Accesorios,1,0,314746.0,Completada
+V0125,C018,P006,2026-01-03,Orinoquía,Web,Cuidado personal,4,0.05,203274.0,Completada
+V0126,C144,P036,2026-03-22,Pacífica,Tienda,Tecnología,1,0.1,317226.0,Completada
+V0127,C154,P020,2026-03-04,Pacífica,Marketplace,Accesorios,2,0,411179.0,Completada
+V0128,C143,P024,2026-01-25,Orinoquía,Tienda,Tecnología,3,0,95094.0,Cancelada
+V0129,C069,P002,2026-02-09,Andina,Web,Tecnología,3,0.15,101194.0,Completada
+V0130,C037,P037,2026-06-13,Pacífica,Tienda,Hogar,1,0.2,130305.0,Completada
+V0131,C095,P020,2026-06-11,Caribe,Tienda,Hogar,1,0,150338.0,Completada
+V0132,C021,P018,2026-04-22,Andina,Tienda,Tecnología,4,0.15,368028.0,Completada
+V0133,C111,P008,2026-03-22,Orinoquía,Web,Cuidado personal,4,0,296015.0,Completada
+V0134,C154,P004,2026-01-07,Pacífica,Tienda,Hogar,3,0.05,423873.0,Completada
+V0135,C111,P012,2026-02-13,Andina,Web,Cuidado personal,2,0.15,251779.0,Completada
+V0136,C011,P028,2026-01-15,Pacífica,Tienda,Accesorios,1,0.2,275382.0,Completada
+V0137,C104,P002,2026-03-06,Orinoquía,Marketplace,Accesorios,4,0,223348.0,Completada
+V0138,C112,P038,2026-04-17,Caribe,Web,Tecnología,1,0,119094.0,Completada
+V0139,C131,P008,2026-05-17,Pacífica,Marketplace,Cuidado personal,2,0,303228.0,Completada
+V0140,C027,P010,2026-03-07,Pacífica,Marketplace,Hogar,2,0,499433.0,Cancelada
+V0141,C119,P037,2026-05-15,Andina,Marketplace,Tecnología,3,0.05,366523.0,Completada
+V0142,C114,P020,2026-03-19,Andina,Web,Tecnología,1,0.05,476223.0,Completada
+V0143,C074,P005,2026-06-28,Caribe,Web,Accesorios,1,0.2,214253.0,Cancelada
+V0144,C147,P013,2026-03-20,Orinoquía,Web,Tecnología,4,0.05,274258.0,Completada
+V0145,C022,P033,2026-06-06,Andina,Tienda,Accesorios,1,0,498661.0,Completada
+V0146,C096,P019,2026-04-14,Orinoquía,Web,Hogar,3,0,441552.0,Cancelada
+V0147,C099,P019,2026-03-24,Caribe,Marketplace,Cuidado personal,2,0.15,317109.0,Completada
+V0148,C080,P026,2026-02-20,Caribe,Marketplace,Hogar,1,0,285103.0,Completada
+V0149,C176,P034,2026-01-21,Orinoquía,Marketplace,Cuidado personal,4,0.2,340619.0,Completada
+V0150,C047,P014,2026-03-25,Pacífica,Tienda,Cuidado personal,4,0,67714.0,Completada
+V0151,C130,P035,2026-06-17,Andina,Tienda,Hogar,1,0,498943.0,Completada
+V0152,C042,P012,2026-06-25,Andina,Marketplace,Accesorios,2,0,385871.0,Completada
+V0153,C157,P019,2026-06-26,Caribe,Web,Cuidado personal,4,0.05,213980.0,Completada
+V0154,C050,P024,2026-06-19,Andina,Web,Accesorios,4,0.2,167735.0,Completada
+V0155,C155,P009,2026-03-02,Pacífica,Web,Accesorios,4,0.2,512198.0,Completada
+V0156,C022,P011,2026-03-15,Caribe,Marketplace,Tecnología,2,0,205733.0,Completada
+V0157,C014,P026,2026-05-12,Caribe,Tienda,Accesorios,2,0.05,501996.0,Completada
+V0158,C082,P007,2026-06-21,Caribe,Web,Hogar,3,0,45649.0,Completada
+V0159,C036,P031,2026-04-20,Andina,Tienda,Cuidado personal,1,0.2,397482.0,Completada
+V0160,C039,P036,2026-06-20,Caribe,Web,Hogar,4,0.2,181463.0,Completada
+V0161,C160,P030,2026-01-04,Pacífica,Tienda,Cuidado personal,4,0.15,334499.0,Cancelada
+V0162,C037,P019,2026-04-01,Caribe,Marketplace,Hogar,3,0.15,331606.0,Completada
+V0163,C140,P033,2026-05-18,Orinoquía,Tienda,Tecnología,1,0.1,129032.0,Completada
+V0164,C065,P002,2026-03-26,Orinoquía,Tienda,Accesorios,1,0,240533.0,Completada
+V0165,C035,P003,2026-03-18,Andina,Marketplace,Tecnología,3,0,290739.0,Completada
+V0166,C047,P009,2026-01-23,Orinoquía,Marketplace,Accesorios,4,0.15,33855.0,Completada
+V0167,C080,P033,2026-04-27,Pacífica,Tienda,Tecnología,4,0,334494.0,Completada
+V0168,C092,P004,2026-06-11,Caribe,Marketplace,Hogar,3,0,20000,Completada
+V0169,C087,P012,2026-04-23,Pacífica,Web,Accesorios,4,0.05,247515.0,Completada
+V0170,C111,P039,2026-02-18,Pacífica,Tienda,Accesorios,3,0,20000,Completada
+V0171,C110,P011,2026-06-15,Caribe,Tienda,Cuidado personal,3,0.1,196404.0,Completada
+V0172,C112,P018,2026-06-26,Caribe,Marketplace,Cuidado personal,1,0.1,158498.0,Completada
+V0173,C174,P029,2026-01-05,Orinoquía,Web,Hogar,1,0.1,334318.0,Completada
+V0174,C009,P039,2026-02-22,Pacífica,Web,Accesorios,4,0.1,237285.0,Completada
+V0175,C081,P018,2026-02-04,Pacífica,Web,Tecnología,1,0.05,106305.0,Completada
+V0176,C031,P017,2026-03-23,Orinoquía,Marketplace,Accesorios,4,0.1,182996.0,Completada
+V0177,C116,P012,2026-06-15,Pacífica,Marketplace,Accesorios,1,0,283287.0,Completada
+V0178,C139,P019,2026-03-28,Pacífica,Marketplace,Tecnología,2,0.1,331943.0,Completada
+V0179,C061,P032,2026-01-12,Pacífica,Marketplace,Hogar,3,0,327813.0,Completada
+V0180,C080,P026,2026-06-24,Andina,Marketplace,Tecnología,4,0,324782.0,Completada
+V0181,C116,P030,2026-06-17,Orinoquía,Web,Tecnología,3,0,346272.0,Completada
+V0182,C015,P008,2026-05-05,Andina,Tienda,Accesorios,3,0.1,346627.0,Completada
+V0183,C021,P017,2026-02-21,Andina,Web,Hogar,3,0,71067.0,Completada
+V0184,C165,P011,2026-05-19,Pacífica,Marketplace,Tecnología,2,0.1,534199.0,Completada
+V0185,C165,P037,2026-03-21,Pacífica,Marketplace,Tecnología,2,0,275294.0,Cancelada
+V0186,C161,P035,2026-03-21,Orinoquía,Marketplace,Tecnología,3,0.05,230093.0,Completada
+V0187,C041,P029,2026-04-16,Andina,Marketplace,Accesorios,4,0,243996.0,Completada
+V0188,C082,P023,2026-04-05,Pacífica,Marketplace,Hogar,3,0,312098.0,Completada
+V0189,C037,P007,2026-01-10,Caribe,Web,Hogar,4,0,151983.0,Cancelada
+V0190,C084,P037,2026-06-11,Orinoquía,Tienda,Hogar,2,0.2,283097.0,Completada
+V0191,C024,P026,2026-05-15,Orinoquía,Marketplace,Accesorios,2,0,139742.0,Completada
+V0192,C127,P039,2026-06-22,Pacífica,Tienda,Tecnología,4,0,260937.0,Completada
+V0193,C104,P024,2026-01-13,Caribe,Tienda,Accesorios,1,0,333116.0,Cancelada
+V0194,C099,P033,2026-04-25,Andina, web ,Cuidado personal,3,0,341823.0,Cancelada
+V0195,C143,P024,2026-02-07,Caribe,Tienda,Tecnología,4,0,64147.0,Completada
+V0196,C086,P031,2026-05-15,Caribe,Tienda,Tecnología,2,0,414091.0,Cancelada
+V0197,C077,P038,2026-03-17,Andina,Web,Cuidado personal,4,0.15,483521.0,Cancelada
+V0198,C085,P008,2026-04-19,Pacífica,Web,Tecnología,3,0,624763.0,Completada
+V0199,C135,P040,2026-04-05,Orinoquía,Web,Hogar,2,0,226881.0,Completada
+V0200,C081,P027,2026-02-14,Caribe,Tienda,Tecnología,2,0.05,77683.0,Completada
+V0201,C084,P031,2026-05-13,Orinoquía,Marketplace,Tecnología,3,0.1,213558.0,Completada
+V0202,C091,P017,2026-05-16,Orinoquía,Marketplace,Cuidado personal,2,0.1,97189.0,Completada
+V0203,C074,P014,2026-06-23,Pacífica,Marketplace,Cuidado personal,4,0,2500000,Completada
+V0204,C032,P037,2026-06-18,Orinoquía,Web,Cuidado personal,4,0,631429.0,Completada
+V0205,C089,P029,2026-06-09,Pacífica,Tienda,Cuidado personal,4,0,596930.0,Completada
+V0206,C179,P018,2026-02-04,Andina,Marketplace,Cuidado personal,2,0.1,351188.0,Completada
+V0207,C085,P031,2026-01-22,Caribe,Marketplace,Hogar,2,0.05,230240.0,Completada
+V0208,C167,P013,2026-03-11,Andina,Web,Accesorios,3,0.05,224958.0,Completada
+V0209,C045,P027,2026-02-02,Caribe,Marketplace,Hogar,4,0,41086.0,Completada
+V0210,C003,P020,2026-05-20,Andina,Marketplace,Cuidado personal,1,0,210847.0,Completada
+V0211,C120,P018,2026-02-26,Pacífica,Web,Accesorios,1,0.1,317687.0,Completada
+V0212,C066,P012,2026-01-24,Andina,Marketplace,Accesorios,3,0.15,211824.0,Completada
+V0213,C103,P007,2026-02-05,Andina,Tienda,Accesorios,4,0,338363.0,Completada
+V0214,C061,P029,2026-03-11,Andina,Tienda,Cuidado personal,3,0.05,110845.0,Cancelada
+V0215,C120,P020,2026-02-13,Caribe,Web,Cuidado personal,3,0,242355.0,Completada
+V0216,C035,P031,2026-02-15,Pacífica,Web,Hogar,3,0,213065.0,Completada
+V0217,C021,P034,2026-04-17,Orinoquía,Marketplace,Hogar,3,0.1,275741.0,Completada
+V0218,C138,P010,2026-02-11,Caribe,Tienda,Hogar,4,0.1,49145.0,Completada
+V0219,C015,P030,2026-02-17,Andina,Marketplace,Accesorios,4,0.2,400733.0,Completada
+V0220,C079,P002,2026-04-09,Caribe,Marketplace,Accesorios,1,0.15,350485.0,Completada
+V0221,C018,P031,2026-01-10,Caribe,Tienda,Accesorios,4,0,231560.0,Completada
+V0222,C098,P029,2026-04-13,Andina,Marketplace,Accesorios,1,0,302116.0,Completada
+V0223,C136,P009,2026-06-08,Andina,Marketplace,Cuidado personal,1,0.05,583367.0,Completada
+V0224,C098,P015,2026-02-15,Pacífica,Web,Accesorios,3,0.1,558478.0,Completada
+V0225,C005,P016,2026-02-03,Pacífica,Tienda,Tecnología,1,0.1,461499.0,Cancelada
+V0226,C012,P026,2026-04-08,Caribe,Web,Tecnología,2,0,301355.0,Completada
+V0227,C082,P037,2026-05-25,Andina,Marketplace,Cuidado personal,3,0.1,290988.0,Completada
+V0228,C077,P018,2026-01-18,Pacífica,Tienda,Hogar,2,0.05,570357.0,Completada
+V0229,C135,P021,2026-06-14,Orinoquía,Tienda,Cuidado personal,4,0.2,454943.0,Completada
+V0230,C138,P031,2026-02-28,Pacífica,Web,Hogar,2,0.2,185056.0,Completada
+V0231,C136,P009,2026-04-08,Andina,Web,Tecnología,3,0.1,20000,Completada
+V0232,C095,P006,2026-05-24,Pacífica,Marketplace,Tecnología,2,0.05,119810.0,Completada
+V0233,C151,P036,2026-02-16,Pacífica,Web,Tecnología,2,0.2,323363.0,Completada
+V0234,C031,P031,2026-02-23,Pacífica,Tienda,Hogar,2,0,195529.0,Completada
+V0235,C167,P023,2026-03-09,Andina,Marketplace,Cuidado personal,3,0.1,281875.0,Completada
+V0236,C121,P021,2026-02-12,Orinoquía,Web,Tecnología,3,0.2,124714.0,Completada
+V0237,C150,P038,2026-06-14,Caribe,Marketplace,Hogar,3,0.1,258609.0,Completada
+V0238,C146,P016,2026-04-18,Andina,Web,Hogar,3,0.05,234720.0,Completada
+V0239,C044,P009,2026-06-18,Orinoquía,Marketplace,Accesorios,4,0,39411.0,Completada
+V0240,C020,P004,2026-01-14,Caribe,Marketplace,Tecnología,2,0.2,315415.0,Completada
+V0241,C016,P040,2026-06-22,Caribe,Marketplace,Hogar,4,0,425929.0,Completada
+V0242,C005,P034,2026-06-09,Caribe,Tienda,Accesorios,3,0,269541.0,Completada
+V0243,C050,P040,2026-05-09,Orinoquía,Tienda,Tecnología,3,0,408548.0,Completada
+V0244,C118,P037,2026-02-23,Orinoquía,Tienda,Cuidado personal,2,0.05,175947.0,Completada
+V0245,C122,P004,2026-06-01,Caribe,Marketplace,Tecnología,2,0.1,373798.0,Completada
+V0246,C025,P034,2026-01-08,Orinoquía,Web,Cuidado personal,2,0.1,335780.0,Cancelada
+V0247,C140,P037,2026-06-02,Orinoquía,Web,Tecnología,2,0,448943.0,Completada
+V0248,C102,P005,2026-03-06,Caribe,Tienda,Hogar,2,0.2,162468.0,Cancelada
+V0249,C177,P006,2026-05-24,Orinoquía,Marketplace,Cuidado personal,3,0.2,88797.0,Completada
+V0250,C020,P022,2026-05-25,Caribe,Web,Hogar,4,0.2,413155.0,Completada
+V0251,C092,P036,2026-04-14,Caribe,Marketplace,Cuidado personal,2,0,292057.0,Cancelada
+V0252,C064,P005,2026-01-09,Orinoquía,Tienda,Cuidado personal,2,0.2,110177.0,Completada
+V0253,C079,P029,2026-03-25,Andina,Marketplace,Accesorios,3,0,232965.0,Completada
+V0254,C115,P036,2026-05-17,Andina,Tienda,Hogar,4,0.05,320709.0,Completada
+V0255,C084,P025,2026-01-10,Caribe,Tienda,Cuidado personal,4,0.2,82118.0,Completada
+V0256,C134,P011,2026-06-13,Caribe,Marketplace,Hogar,2,0.1,196942.0,Completada
+V0257,C071,P027,2026-03-16,Pacífica,Web,Cuidado personal,1,0.05,209431.0,Completada
+V0258,C158,P013,2026-04-04,Pacífica,Tienda,Accesorios,2,0.1,262186.0,Completada
+V0259,C085,P029,2026-03-14,Caribe,Web,Cuidado personal,2,0.2,334504.0,Completada
+V0260,C081,P012,2026-04-11,Pacífica,Marketplace,Hogar,3,0.05,145190.0,Completada
+V0261,C030,P037,2026-02-19,Andina,Web,Accesorios,2,0,213488.0,Completada
+V0262,C054,P029,2026-03-27,Caribe,Marketplace,Accesorios,1,0.15,501350.0,Completada
+V0263,C109,P025,2026-01-15,Orinoquía,Tienda,Cuidado personal,4,0.15,270286.0,Cancelada
+V0264,C010,P024,2026-06-26,Orinoquía,Marketplace,Accesorios,1,0.1,465011.0,Completada
+V0265,C166,P026,2026-03-26,Andina,Marketplace,Cuidado personal,4,0.1,356756.0,Completada
+V0266,C131,P034,2026-05-19,Caribe,Tienda,Cuidado personal,2,0,426791.0,Completada
+V0267,C039,P023,2026-01-16,Pacífica,Web,Accesorios,1,0.1,286108.0,Completada
+V0268,C037,P023,2026-03-11,Orinoquía,Tienda,Tecnología,4,0.2,75245.0,Completada
+V0269,C082,P005,2026-03-02,Orinoquía,Web,Accesorios,1,0.05,443174.0,Completada
+V0270,C043,P016,2026-05-06,Pacífica,Marketplace,Tecnología,2,0.15,388948.0,Completada
+V0271,C164,P028,2026-04-01,Orinoquía,Web,Hogar,2,0,318334.0,Completada
+V0272,C055,P014,2026-03-25,Orinoquía,Web,Tecnología,1,0.15,71462.0,Cancelada
+V0273,C068,P032,2026-05-21,Caribe,Marketplace,Hogar,3,0,198312.0,Cancelada
+V0274,C030,P023,2026-03-28,Orinoquía,Marketplace,Accesorios,4,0.1,329273.0,Cancelada
+V0275,C035,P021,2026-01-08,Andina,Marketplace,Cuidado personal,3,0.15,423113.0,Completada
+V0276,C100,P027,2026-05-05,Andina,Web,Hogar,4,0.1,168562.0,Completada
+V0277,C048,P021,2026-04-20,Andina,Web,Hogar,1,0,107189.0,Completada
+V0278,C099,P036,2026-05-21,Caribe,Web,Hogar,4,0,205079.0,Completada
+V0279,C057,P019,2026-01-09,Orinoquía,Web,Accesorios,2,0,201987.0,Completada
+V0280,C127,P036,2026-05-04,Pacífica,Tienda,Accesorios,1,0.1,264126.0,Completada
+V0281,C109,P007,2026-06-27,Pacífica,Marketplace,Tecnología,2,0,269490.0,Completada
+V0282,C023,P029,2026-01-25,Caribe,Web,Cuidado personal,2,0,109220.0,Completada
+V0283,C053,P004,2026-05-12,Pacífica,Marketplace,Accesorios,3,0,298618.0,Cancelada
+V0284,C147,P018,2026-05-22,Andina,Web,Cuidado personal,1,0,326228.0,Completada
+V0285,C034,P016,2026-02-23,Orinoquía,Tienda,Cuidado personal,3,0.2,308931.0,Completada
+V0286,C162,P018,2026-06-14,Orinoquía,Web,Hogar,4,0.1,205918.0,Completada
+V0287,C095,P030,2026-04-11,Caribe,Marketplace,Tecnología,1,0.15,69036.0,Completada
+V0288,C017,P035,2026-04-07,Orinoquía,Marketplace,Cuidado personal,4,0.2,393584.0,Completada
+V0289,C034,P037,2026-04-26,Orinoquía,Web,Cuidado personal,3,0.1,320070.0,Completada
+V0290,C032,P011,2026-04-15,Caribe,Tienda,Accesorios,1,0,147988.0,Completada
+V0291,C071,P006,2026-06-12,Andina, web ,Hogar,3,0.2,347607.0,Completada
+V0292,C102,P020,2026-06-23,Pacífica,Marketplace,Hogar,2,0,179929.0,Completada
+V0293,C152,P015,2026-05-22,Caribe,Marketplace,Tecnología,4,0,419351.0,Completada
+V0294,C031,P028,2026-06-05,Caribe,Marketplace,Cuidado personal,4,0.2,261088.0,Completada
+V0295,C095,P020,2026-02-13,Andina,Web,Tecnología,2,0,252153.0,Completada
+V0296,C167,P011,2026-04-12,Caribe,Marketplace,Tecnología,2,0.1,195390.0,Completada
+V0297,C036,P008,2026-05-24,Orinoquía,Marketplace,Accesorios,4,0,297993.0,Completada
+V0298,C071,P006,2026-02-18,Orinoquía,Web,Hogar,3,0,214053.0,Completada
+V0299,C062,P032,2026-04-04,Pacífica,Tienda,Hogar,2,0,258412.0,Completada
+V0300,C082,P009,2026-04-28,Caribe,Marketplace,Tecnología,4,0,142824.0,Completada
+V0301,C056,P003,2026-01-26,Andina,Web,Tecnología,4,0,312066.0,Completada
+V0302,C180,P026,2026-01-21,Pacífica,Marketplace,Accesorios,2,0.05,265480.0,Completada
+V0303,C040,P035,2026-03-13,Caribe,Web,Tecnología,1,0.2,165876.0,Completada
+V0304,C063,P006,2026-04-04,Orinoquía,Marketplace,Hogar,4,0,253303.0,Cancelada
+V0305,C003,P011,2026-04-12,Caribe,Web,Hogar,3,0.15,420636.0,Completada
+V0306,C031,P002,2026-03-26,Pacífica,Tienda,Cuidado personal,4,0.15,409793.0,Completada
+V0307,C128,P037,2026-02-12,Caribe,Web,Tecnología,2,0,92640.0,Completada
+V0308,C131,P001,2026-01-28,Caribe,Marketplace,Tecnología,1,0,264052.0,Completada
+V0309,C010,P036,2026-06-24,Caribe,Web,Cuidado personal,4,0.2,200785.0,Completada
+V0310,C082,P018,2026-01-19,Pacífica,Tienda,Accesorios,3,0.15,313556.0,Completada
+V0311,C018,P030,2026-03-25,Caribe,Tienda,Hogar,3,0.05,392339.0,Completada
+V0312,C095,P013,2026-03-19,Caribe,Marketplace,Accesorios,3,0,20000,Cancelada
+V0313,C051,P035,2026-02-05,Andina,Web,Cuidado personal,1,0.2,123091.0,Completada
+V0314,C178,P001,2026-03-01,Caribe,Tienda,Cuidado personal,4,0.15,171061.0,Completada
+V0315,C072,P006,2026-01-08,Caribe,Tienda,Hogar,4,0,20000,Completada
+V0316,C025,P033,2026-02-21,Orinoquía,Marketplace,Tecnología,4,0.1,432287.0,Completada
+V0317,C101,P021,2026-03-15,Caribe,Web,Hogar,3,0,269040.0,Completada
+V0318,C150,P007,2026-02-04,Caribe,Tienda,Hogar,2,0.2,368509.0,Completada
+V0319,C054,P029,2026-03-15,Orinoquía,Web,Accesorios,3,0.2,355710.0,Completada
+V0320,C179,P039,2026-01-07,Caribe,Tienda,Cuidado personal,3,0.2,350715.0,Completada
+V0321,C174,P020,2026-03-27,Caribe,Marketplace,Hogar,2,0,397878.0,Completada
+V0322,C119,P007,2026-02-04,Orinoquía,Web,Hogar,1,0,232259.0,Completada
+V0323,C166,P006,2026-05-19,Andina,Tienda,Hogar,3,0.15,320328.0,Completada
+V0324,C114,P009,2026-01-28,Caribe,Tienda,Hogar,3,0.15,139120.0,Completada
+V0325,C102,P032,2026-01-13,Caribe,Web,Tecnología,4,0.2,350113.0,Completada
+V0326,C072,P029,2026-02-02,Pacífica,Tienda,Hogar,2,0,419119.0,Completada
+V0327,C108,P013,2026-06-26,Orinoquía,Web,Accesorios,2,0,365201.0,Completada
+V0328,C140,P032,2026-03-19,Caribe,Web,Cuidado personal,3,0.05,302402.0,Completada
+V0329,C072,P004,2026-04-17,Pacífica,Tienda,Tecnología,3,0.2,218715.0,Cancelada
+V0330,C169,P016,2026-03-18,Andina,Tienda,Tecnología,1,0,349365.0,Completada
+V0331,C179,P023,2026-05-01,Orinoquía,Web,Hogar,3,0.2,344009.0,Cancelada
+V0332,C127,P035,2026-03-06,Andina,Marketplace,Hogar,4,0.2,427734.0,Completada
+V0333,C001,P022,2026-05-07,Caribe,Tienda,Hogar,2,0.05,237448.0,Completada
+V0334,C038,P038,2026-06-05,Andina,Web,Tecnología,1,0,243252.0,Completada
+V0335,C026,P022,2026-03-11,Pacífica,Tienda,Cuidado personal,2,0.1,201885.0,Completada
+V0336,C082,P012,2026-06-18,Orinoquía,Marketplace,Accesorios,3,0.15,62113.0,Completada
+V0337,C001,P037,2026-04-28,Andina,Web,Cuidado personal,1,0,248260.0,Completada
+V0338,C145,P007,2026-04-05,Pacífica,Marketplace,Hogar,3,0.15,143647.0,Completada
+V0339,C172,P022,2026-04-01,Andina,Web,Cuidado personal,3,0,403741.0,Completada
+V0340,C066,P007,2026-06-01,Andina,Marketplace,Tecnología,1,0,513437.0,Completada
+V0341,C097,P023,2026-05-13,Orinoquía,Marketplace,Accesorios,1,0.05,545448.0,Completada
+V0342,C009,P019,2026-01-11,Andina,Tienda,Accesorios,3,0,203877.0,Completada
+V0343,C141,P006,2026-03-20,Caribe,Web,Hogar,4,0,323204.0,Completada
+V0344,C112,P011,2026-01-04,Orinoquía,Marketplace,Hogar,3,0.1,206314.0,Completada
+V0345,C013,P026,2026-05-18,Andina,Web,Cuidado personal,4,0,197345.0,Completada
+V0346,C023,P019,2026-06-21,Caribe,Web,Tecnología,4,0.05,160447.0,Completada
+V0347,C122,P008,2026-03-26,Caribe,Tienda,Hogar,4,0,315494.0,Completada
+V0348,C165,P035,2026-04-06,Orinoquía,Marketplace,Cuidado personal,3,0,362206.0,Completada
+V0349,C058,P018,2026-05-02,Pacífica,Tienda,Accesorios,2,0,404818.0,Completada
+V0350,C139,P027,2026-05-08,Caribe,Marketplace,Cuidado personal,1,0.2,301696.0,Completada
+V0351,C021,P026,2026-06-02,Orinoquía,Marketplace,Accesorios,2,0,167893.0,Completada
+V0352,C050,P009,2026-01-14,Orinoquía,Tienda,Hogar,1,0,214723.0,Completada
+V0353,C018,P006,2026-04-18,Andina,Marketplace,Hogar,4,0.15,314519.0,Completada
+V0354,C004,P040,2026-05-17,Pacífica,Web,Accesorios,4,0.2,166623.0,Completada
+V0355,C028,P037,2026-01-26,Orinoquía,Tienda,Hogar,3,0,90881.0,Completada
+V0356,C168,P032,2026-05-20,Pacífica,Web,Cuidado personal,4,0.05,184796.0,Completada
+V0357,C103,P003,2026-04-11,Andina,Web,Accesorios,2,0.15,378627.0,Completada
+V0358,C087,P020,2026-03-09,Orinoquía,Web,Cuidado personal,4,0,410678.0,Completada
+V0359,C083,P018,2026-06-14,Andina,Tienda,Cuidado personal,1,0.2,409500.0,Completada
+V0360,C125,P034,2026-03-27,Orinoquía,Tienda,Accesorios,1,0.15,235569.0,Completada
+V0361,C135,P037,2026-01-06,Andina,Tienda,Cuidado personal,2,0.2,224241.0,Completada
+V0362,C013,P024,2026-06-07,Caribe,Tienda,Tecnología,3,0.05,122278.0,Completada
+V0363,C062,P024,2026-04-20,Orinoquía,Marketplace,Accesorios,4,0,212525.0,Completada
+V0364,C042,P017,2026-06-27,Orinoquía,Marketplace,Cuidado personal,1,0,205870.0,Completada
+V0365,C057,P015,2026-06-07,Caribe,Web,Tecnología,3,0,354934.0,Completada
+V0366,C034,P012,2026-05-26,Caribe,Marketplace,Tecnología,1,0.05,415812.0,Completada
+V0367,C109,P025,2026-03-15,Pacífica,Marketplace,Cuidado personal,3,0,208945.0,Completada
+V0368,C027,P001,2026-05-22,Orinoquía,Web,Accesorios,3,0.1,45914.0,Completada
+V0369,C164,P021,2026-03-09,Pacífica,Web,Tecnología,3,0,134074.0,Completada
+V0370,C154,P026,2026-06-11,Andina,Marketplace,Hogar,2,0,274513.0,Completada
+V0371,C010,P038,2026-06-19,Orinoquía,Web,Cuidado personal,2,0.15,378870.0,Completada
+V0372,C092,P033,2026-03-28,Andina,Marketplace,Accesorios,2,0.15,181286.0,Completada
+V0373,C144,P012,2026-06-11,Andina,Web,Tecnología,1,0.15,33771.0,Completada
+V0374,C085,P024,2026-03-19,Pacífica,Tienda,Cuidado personal,3,0.05,302006.0,Completada
+V0375,C019,P031,2026-02-17,Caribe,Web,Tecnología,1,0.1,383762.0,Completada
+V0376,C039,P009,2026-02-11,Pacífica,Web,Tecnología,4,0.2,122073.0,Cancelada
+V0377,C125,P022,2026-06-06,Orinoquía,Tienda,Cuidado personal,3,0,317299.0,Completada
+V0378,C044,P037,2026-02-16,Caribe,Web,Cuidado personal,1,0,192820.0,Completada
+V0379,C002,P003,2026-05-07,Orinoquía,Marketplace,Accesorios,3,0.05,20000,Completada
+V0380,C174,P001,2026-06-24,Pacífica,Marketplace,Hogar,2,0,467068.0,Completada
+V0381,C043,P005,2026-01-10,Pacífica,Web,Hogar,3,0,392323.0,Completada
+V0382,C126,P023,2026-02-06,Pacífica,Web,Hogar,4,0,359622.0,Completada
+V0383,C044,P008,2026-03-23,Andina,Tienda,Hogar,1,0.1,267116.0,Completada
+V0384,C013,P007,2026-06-27,Pacífica,Marketplace,Tecnología,1,0.1,288599.0,Completada
+V0385,C180,P010,2026-02-23,Caribe,Web,Accesorios,1,0.05,131324.0,Completada
+V0386,C134,P018,2026-05-20,Orinoquía,Marketplace,Tecnología,2,0.15,380449.0,Completada
+V0387,C051,P039,2026-02-25,Caribe,Marketplace,Tecnología,3,0.05,209928.0,Completada
+V0388,C042,P003,2026-05-16,Andina, web ,Accesorios,2,0,500217.0,Completada
+V0389,C147,P032,2026-02-03,Pacífica,Tienda,Tecnología,1,0,320255.0,Completada
+V0390,C076,P017,2026-04-02,Pacífica,Marketplace,Hogar,1,0.05,264837.0,Completada
+V0391,C030,P007,2026-01-01,Caribe,Web,Cuidado personal,2,0.15,298621.0,Completada
+V0392,C069,P006,2026-03-27,Pacífica,Web,Accesorios,3,0.1,145073.0,Completada
+V0393,C177,P031,2026-04-21,Caribe,Web,Accesorios,2,0.05,368401.0,Completada
+V0394,C041,P007,2026-04-19,Andina,Marketplace,Tecnología,4,0.2,233838.0,Cancelada
+V0395,C176,P009,2026-04-16,Orinoquía,Tienda,Accesorios,1,0.2,295074.0,Completada
+V0396,C168,P021,2026-01-23,Orinoquía,Tienda,Tecnología,2,0,70744.0,Completada
+V0397,C099,P010,2026-05-20,Caribe,Web,Hogar,1,0.15,54644.0,Completada
+V0398,C127,P011,2026-01-25,Andina,Marketplace,Accesorios,4,0.2,283417.0,Completada
+V0399,C097,P026,2026-02-03,Andina,Web,Cuidado personal,4,0.15,354446.0,Completada
+V0400,C081,P008,2026-04-24,Orinoquía,Tienda,Accesorios,1,0.05,290918.0,Completada
+V0401,C155,P040,2026-06-10,Orinoquía,Web,Tecnología,2,0,257585.0,Completada
+V0402,C058,P030,2026-03-18,Pacífica,Web,Tecnología,4,0.2,259094.0,Completada
+V0403,C091,P019,2026-05-17,Orinoquía,Tienda,Tecnología,3,0,265802.0,Completada
+V0404,C105,P007,2026-03-20,Caribe,Tienda,Accesorios,2,0,161036.0,Completada
+V0405,C087,P007,2026-04-02,Caribe,Web,Hogar,1,0.15,24691.0,Completada
+V0406,C002,P034,2026-06-02,Orinoquía,Marketplace,Hogar,4,0.05,325095.0,Cancelada
+V0407,C033,P007,2026-04-22,Orinoquía,Marketplace,Hogar,3,0.2,229089.0,Completada
+V0408,C102,P022,2026-03-15,Orinoquía,Web,Hogar,2,0,179245.0,Completada
+V0409,C142,P014,2026-02-07,Orinoquía,Marketplace,Cuidado personal,3,0,357370.0,Completada
+V0410,C139,P021,2026-06-04,Andina,Marketplace,Hogar,3,0.1,112929.0,Completada
+V0411,C074,P028,2026-01-17,Orinoquía,Marketplace,Accesorios,1,0.1,124126.0,Completada
+V0412,C015,P013,2026-03-25,Orinoquía,Tienda,Tecnología,2,0.15,20000,Completada
+V0413,C139,P003,2026-03-27,Pacífica,Tienda,Tecnología,4,0.2,217303.0,Completada
+V0414,C131,P019,2026-06-22,Andina,Marketplace,Accesorios,1,0,150971.0,Completada
+V0415,C065,P013,2026-05-28,Orinoquía,Web,Cuidado personal,4,0.15,305492.0,Completada
+V0416,C050,P019,2026-04-06,Pacífica,Marketplace,Hogar,1,0.2,250081.0,Completada
+V0417,C068,P009,2026-02-19,Andina,Marketplace,Tecnología,3,0.1,153844.0,Completada
+V0418,C040,P021,2026-05-02,Pacífica,Web,Hogar,3,0,363264.0,Completada
+V0419,C018,P033,2026-02-14,Pacífica,Tienda,Cuidado personal,4,0.1,20000,Completada
+V0420,C085,P022,2026-03-10,Pacífica,Tienda,Hogar,2,0.15,204201.0,Cancelada
+V0421,C165,P040,2026-05-08,Orinoquía,Marketplace,Tecnología,1,0,356930.0,Completada
+V0422,C139,P019,2026-01-17,Orinoquía,Tienda,Accesorios,3,0,345154.0,Completada
+V0423,C132,P006,2026-01-06,Orinoquía,Web,Tecnología,1,0,201529.0,Completada
+V0424,C176,P028,2026-01-07,Andina,Marketplace,Hogar,4,0.2,454694.0,Completada
+V0425,C014,P012,2026-03-18,Andina,Tienda,Accesorios,1,0,251958.0,Cancelada
+V0426,C116,P026,2026-04-11,Andina,Web,Accesorios,1,0.05,221930.0,Completada
+V0427,C150,P003,2026-06-28,Caribe,Marketplace,Tecnología,1,0.2,137481.0,Completada
+V0428,C023,P019,2026-04-13,Caribe,Web,Cuidado personal,4,0.1,109174.0,Completada
+V0429,C140,P019,2026-06-05,Orinoquía,Tienda,Hogar,3,0.2,351294.0,Completada
+V0430,C011,P001,2026-05-20,Caribe,Marketplace,Hogar,4,0,365383.0,Completada
+V0431,C055,P027,2026-06-28,Caribe,Web,Hogar,2,0,256759.0,Completada
+V0432,C030,P012,2026-06-26,Andina,Tienda,Cuidado personal,1,0,20000,Completada
+V0433,C051,P038,2026-04-11,Orinoquía,Marketplace,Tecnología,3,0,246790.0,Completada
+V0434,C018,P013,2026-03-16,Andina,Tienda,Cuidado personal,4,0.1,310589.0,Completada
+V0435,C110,P011,2026-01-11,Pacífica,Marketplace,Hogar,2,0,137842.0,Completada
+V0436,C174,P022,2026-04-15,Orinoquía,Web,Cuidado personal,4,0,206634.0,Completada
+V0437,C072,P009,2026-05-07,Pacífica,Web,Tecnología,3,0.2,345997.0,Completada
+V0438,C149,P038,2026-04-25,Caribe,Tienda,Tecnología,2,0.2,430816.0,Completada
+V0439,C058,P038,2026-06-28,Pacífica,Marketplace,Accesorios,3,0.05,214909.0,Completada
+V0440,C094,P033,2026-01-22,Orinoquía,Marketplace,Tecnología,2,0.05,194620.0,Cancelada
+V0441,C169,P010,2026-06-24,Andina,Marketplace,Hogar,4,0.1,177006.0,Completada
+V0442,C017,P017,2026-03-08,Caribe,Tienda,Accesorios,1,0,289163.0,Completada
+V0443,C167,P021,2026-01-23,Pacífica,Web,Accesorios,3,0,511551.0,Completada
+V0444,C151,P005,2026-05-09,Andina,Web,Accesorios,4,0,117358.0,Completada
+V0445,C002,P033,2026-02-15,Orinoquía,Web,Cuidado personal,2,0.1,99944.0,Completada
+V0446,C039,P012,2026-02-12,Caribe,Marketplace,Cuidado personal,1,0,273243.0,Completada
+V0447,C152,P011,2026-06-27,Orinoquía,Web,Tecnología,4,0,101250.0,Completada
+V0448,C152,P011,2026-02-21,Andina,Tienda,Hogar,1,0.1,278520.0,Cancelada
+V0449,C154,P037,2026-06-01,Andina,Tienda,Hogar,3,0.05,255424.0,Completada
+V0450,C124,P011,2026-02-27,Andina,Web,Accesorios,4,0.2,348092.0,Cancelada
+V0451,C176,P022,2026-04-20,Andina,Marketplace,Hogar,1,0,140297.0,Completada
+V0452,C005,P013,2026-05-28,Orinoquía,Web,Hogar,4,0,142957.0,Completada
+V0453,C137,P033,2026-01-03,Caribe,Tienda,Accesorios,4,0.2,414405.0,Completada
+V0454,C108,P024,2026-01-23,Caribe,Marketplace,Accesorios,4,0.1,150185.0,Completada
+V0455,C179,P037,2026-01-14,Orinoquía,Web,Cuidado personal,2,0.2,64857.0,Completada
+V0456,C154,P035,2026-04-09,Orinoquía,Tienda,Tecnología,2,0,137790.0,Completada
+V0457,C177,P021,2026-04-12,Caribe,Marketplace,Tecnología,1,0,125303.0,Completada
+V0458,C138,P028,2026-05-12,Orinoquía,Marketplace,Cuidado personal,3,0,243188.0,Completada
+V0459,C065,P020,2026-05-12,Andina,Web,Accesorios,4,0.05,337589.0,Completada
+V0460,C180,P011,2026-01-07,Caribe,Marketplace,Hogar,4,0.05,421499.0,Completada
+V0461,C038,P031,2026-05-14,Caribe,Tienda,Accesorios,1,0,274064.0,Completada
+V0462,C156,P003,2026-06-13,Pacífica,Tienda,Cuidado personal,4,0,256816.0,Cancelada
+V0463,C127,P029,2026-01-07,Pacífica,Marketplace,Tecnología,3,0.15,504424.0,Completada
+V0464,C044,P003,2026-03-08,Caribe,Marketplace,Hogar,1,0.1,173242.0,Completada
+V0465,C052,P034,2026-01-24,Caribe,Web,Accesorios,1,0.1,175267.0,Completada
+V0466,C071,P015,2026-05-07,Pacífica,Marketplace,Cuidado personal,4,0,371932.0,Completada
+V0467,C129,P019,2026-03-04,Caribe,Web,Hogar,3,0,204563.0,Completada
+V0468,C145,P031,2026-02-25,Pacífica,Marketplace,Accesorios,3,0.05,296598.0,Completada
+V0469,C163,P015,2026-06-23,Orinoquía,Marketplace,Tecnología,2,0.05,152582.0,Completada
+V0470,C068,P016,2026-03-03,Orinoquía,Web,Tecnología,4,0.15,272221.0,Completada
+V0471,C069,P012,2026-06-22,Caribe,Marketplace,Hogar,2,0.1,130647.0,Completada
+V0472,C068,P014,2026-02-07,Andina,Tienda,Hogar,2,0.2,279194.0,Cancelada
+V0473,C127,P040,2026-01-25,Pacífica,Tienda,Tecnología,1,0.15,301293.0,Completada
+V0474,C148,P018,2026-04-06,Pacífica,Marketplace,Cuidado personal,3,0.05,298718.0,Completada
+V0475,C139,P003,2026-05-12,Andina,Marketplace,Hogar,4,0.05,496512.0,Completada
+V0476,C177,P001,2026-01-22,Orinoquía,Tienda,Accesorios,2,0,343722.0,Completada
+V0477,C068,P016,2026-03-16,Caribe,Web,Cuidado personal,3,0.1,177566.0,Completada
+V0478,C108,P024,2026-03-28,Andina,Web,Accesorios,4,0,189345.0,Completada
+V0479,C026,P018,2026-02-18,Orinoquía,Tienda,Hogar,4,0.2,471290.0,Completada
+V0480,C003,P012,2026-04-16,Andina,Tienda,Hogar,2,0.05,232326.0,Completada
+V0481,C102,P007,2026-06-06,Pacífica,Web,Cuidado personal,1,0,258306.0,Completada
+V0482,C086,P017,2026-03-12,Pacífica,Web,Tecnología,3,0.05,536860.0,Completada
+V0483,C051,P037,2026-05-21,Caribe,Web,Tecnología,2,0.1,134678.0,Completada
+V0484,C115,P006,2026-04-20,Pacífica,Web,Accesorios,3,0.2,430028.0,Completada
+V0485,C019,P006,2026-02-11,Andina, web ,Cuidado personal,2,0.05,90063.0,Completada
+V0486,C069,P039,2026-06-13,Pacífica,Marketplace,Cuidado personal,3,0.15,350914.0,Completada
+V0487,C033,P016,2026-06-09,Pacífica,Marketplace,Accesorios,1,0,183469.0,Completada
+V0488,C017,P031,2026-05-02,Andina,Web,Tecnología,1,0,305919.0,Completada
+V0489,C080,P015,2026-02-24,Caribe,Tienda,Cuidado personal,3,0.05,216690.0,Completada
+V0490,C009,P023,2026-03-28,Andina,Tienda,Hogar,4,0,220290.0,Completada
+V0491,C046,P038,2026-05-15,Pacífica,Marketplace,Accesorios,4,0.1,485306.0,Completada
+V0492,C059,P006,2026-04-10,Pacífica,Web,Accesorios,3,0.1,515931.0,Completada
+V0493,C035,P023,2026-03-16,Pacífica,Tienda,Cuidado personal,1,0.2,430046.0,Completada
+V0494,C111,P019,2026-05-08,Orinoquía,Web,Tecnología,1,0.2,271295.0,Completada
+V0495,C042,P025,2026-04-08,Pacífica,Tienda,Accesorios,3,0,370796.0,Completada
+V0496,C157,P018,2026-03-21,Orinoquía,Marketplace,Hogar,3,0.1,158752.0,Completada
+V0497,C159,P029,2026-03-23,Andina,Tienda,Hogar,4,0.05,304253.0,Completada
+V0498,C137,P002,2026-02-04,Pacífica,Tienda,Hogar,3,0,311240.0,Completada
+V0499,C004,P032,2026-02-11,Andina,Marketplace,Accesorios,4,0,245389.0,Completada
+V0500,C009,P022,2026-01-27,Orinoquía,Web,Accesorios,2,0.15,159127.0,Completada
+V0025,C109,P036,2026-06-23,Caribe,Web,Cuidado personal,4,0,479810.0,Completada
