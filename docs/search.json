@@ -1801,7 +1801,7 @@
     "href": "05b-caja-herramientas-modelos.html",
     "title": "16  Caja de herramientas analíticas para decisiones",
     "section": "",
-    "text": "16.1 1. Antes del modelo: ¿qué quiero decidir?\nEste capítulo organiza los materiales de las Partes 2, 3 y 4 como un portafolio de técnicas. No busca memorizar algoritmos ni demostrar matemáticamente cada método. La ruta es:\nUn algoritmo no corrige una pregunta ambigua. Antes de elegirlo, completa:",
+    "text": "16.1 1. Antes del modelo: ¿qué quiero decidir?\nUn algoritmo no corrige una pregunta ambigua. Antes de elegirlo, completa:",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
@@ -2011,17 +2011,6 @@
     "title": "16  Caja de herramientas analíticas para decisiones",
     "section": "16.19 19. Transferencia a tu proyecto",
     "text": "16.19 19. Transferencia a tu proyecto\nElige una pregunta, no un algoritmo. Después completa la ficha mínima y decide:\n\nsi realmente existe una variable objetivo;\nsi la tarea es descriptiva, supervisada o no supervisada;\nqué datos estarán disponibles cuando se use el resultado;\nqué línea base corresponde;\nqué error importa;\nquién podría actuar;\nqué riesgo haría preferible no desplegar el modelo.",
-    "crumbs": [
-      "Semana 2 · De la evidencia a los modelos",
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
-    ]
-  },
-  {
-    "objectID": "05b-caja-herramientas-modelos.html#fuentes-internas-adaptadas",
-    "href": "05b-caja-herramientas-modelos.html#fuentes-internas-adaptadas",
-    "title": "16  Caja de herramientas analíticas para decisiones",
-    "section": "16.20 Fuentes internas adaptadas",
-    "text": "16.20 Fuentes internas adaptadas\n\nParte 2: regresión lineal simple, múltiple y tópicos de regresión.\nParte 3: modelos supervisados, explicativo vs. predictivo, preprocesamiento, árboles, Random Forest, ensambles y métricas de clasificación.\nParte 4: aprendizaje no supervisado, clustering, K-means, medoides, jerárquico, DBSCAN, PCA, recomendación, NLP y análisis espacial.",
     "crumbs": [
       "Semana 2 · De la evidencia a los modelos",
       "<span class='chapter-number'>16</span>  <span class='chapter-title'>Caja de herramientas analíticas para decisiones</span>"
